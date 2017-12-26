@@ -22,18 +22,18 @@
 \contentsline {section}{\numberline {2.5}分類手法}{10}
 \contentsline {subsection}{\numberline {2.5.1}Linear Discriminant Analysis}{10}
 \contentsline {subsection}{\numberline {2.5.2}Support Vector Machine}{12}
-\contentsline {subsection}{\numberline {2.5.3}Logistic Regression}{13}
-\contentsline {section}{\numberline {2.6}従来手法のまとめ}{13}
-\contentsline {subsection}{\numberline {2.6.1}従来の運動想起BCIの構成と問題点}{13}
-\contentsline {chapter}{\numberline { 3 }提案手法}{15}
-\contentsline {section}{\numberline {3.1}ニューラルネットワーク}{15}
-\contentsline {subsection}{\numberline {3.1.1}フィードフォワードニューラルネットワーク}{15}
-\contentsline {subsection}{\numberline {3.1.2}リカレントニューラルネットワーク}{15}
-\contentsline {subsection}{\numberline {3.1.3}畳み込みニューラルネットワーク}{15}
-\contentsline {section}{\numberline {3.2}FIRフィルタと畳み込み層}{15}
-\contentsline {chapter}{\numberline { 4 }実験と結果}{16}
-\contentsline {chapter}{\numberline { 5 }結論と考察}{17}
-\contentsline {chapter}{Appendix}{18}
-\contentsline {section}{\numberline {A.1}セクション}{18}
-\contentsline {subsection}{\numberline {A.1.1}サブセクション}{18}
-\contentsline {chapter}{参考文献}{20}
+\contentsline {subsection}{\numberline {2.5.3}Logistic Regression}{14}
+\contentsline {section}{\numberline {2.6}従来手法のまとめ}{14}
+\contentsline {subsection}{\numberline {2.6.1}従来の運動想起BCIの構成と問題点}{14}
+\contentsline {chapter}{\numberline { 3 }提案手法}{16}
+\contentsline {section}{\numberline {3.1}ニューラルネットワーク}{16}
+\contentsline {subsection}{\numberline {3.1.1}フィードフォワードニューラルネットワーク}{16}
+\contentsline {subsection}{\numberline {3.1.2}リカレントニューラルネットワーク}{16}
+\contentsline {subsection}{\numberline {3.1.3}畳み込みニューラルネットワーク}{16}
+\contentsline {section}{\numberline {3.2}FIRフィルタと畳み込み層}{16}
+\contentsline {chapter}{\numberline { 4 }実験と結果}{17}
+\contentsline {chapter}{\numberline { 5 }結論と考察}{18}
+\contentsline {chapter}{Appendix}{19}
+\contentsline {section}{\numberline {A.1}セクション}{19}
+\contentsline {subsection}{\numberline {A.1.1}サブセクション}{19}
+\contentsline {chapter}{参考文献}{21}
