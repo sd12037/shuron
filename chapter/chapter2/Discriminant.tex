@@ -1,7 +1,7 @@
 \section{分類手法}
 分類問題の説明を行う。
 
-\subsection{Linear Discriminant Analysis}
+\subsection{Linear Discriminant Analysis(LDA)}
 \label{subsec:LDA}
 Linear Discriminant Analysis(LDA)は統計分析において伝統的に用いられてきた歴史ある手法である。
 特にBCIではCSPによる特徴量抽出の後に用いられることが多い。
@@ -18,7 +18,7 @@ zに対してある閾値を設定し、\(z \geq -w_0\)の場合はクラス\(C_
 \(w\)の取り方を上手く調整することによって、クラス分離を行いやすい射影を選択できる。
 クラス分類性能を向上させる\(w\)を得るために、まず以下のようにクラス毎の平均ベクトル\(m_1,m_2\)を定義する。
 \begin{eqnarray}
-    m_{1} & = & \frac{1}{|C_1|}\sum_{x\in C_1}x \nonumber \\
+    m_{1} & = & \frac{1}{|C_1|}\sum_{x\in C_1}x  \\
     m_{2} & = & \frac{1}{|C_2|}\sum_{x\in C_2}x
 \end{eqnarray}
 ここに、\(|C_i|\)はクラス\(C_i\)に属するデータの数である。
@@ -39,7 +39,7 @@ zに対してある閾値を設定し、\(z \geq -w_0\)の場合はクラス\(C_
 この問題を解決するためにはデータの分散を考慮する必要がある。
 まず射影先での各クラスの分散は以下で表記できる。
 \begin{eqnarray}
-    \sigma^2_{1} & = & \sum_{x\in C_1}\{w^T(x-m_1)\}^2 \nonumber \\
+    \sigma^2_{1} & = & \sum_{x\in C_1}\{w^T(x-m_1)\}^2  \\
     \sigma^2_{2} & = & \sum_{x\in C_2}\{w^T(x-m_2)\}^2
 \end{eqnarray}
 ここで、全データのクラス毎の分散の和を総クラス内分散として以下で定義する。
@@ -73,7 +73,7 @@ LDAでは以下の評価関数を用いる。
 % 中心極限定理によりこの仮定は正当化されうる。
 
 
-\subsection{Support Vector Machine}
+\subsection{Support Vector Machine(SVM)}
 脳波の分類ではSupport Vector Machine(SVM)の応用例もある。
 基本的にSVMはマージン最大化の考えによって汎化性能の向上に成功した
 2クラス分類のための線形分類器である。まずマージン最大化という概念について説明する。
@@ -115,11 +115,15 @@ SVMではこのマージン最大化によって以下の分類超平面を定�
 となるような制約を\(w,w_0\)に対して要請する。
 この条件式に伴って、任意のデータ点において\(t_n(w^Tx+w_0) \geq 1 \)という制約が与えられる。
 最終的にマージン最大化問題(\ref{eq:obj margin})は以下で定式化される。
-\begin{align}
-     \argmin_{w_0,w} &&& \frac{|w|^2}{2} \nonumber  \\
-     s.t. &&& t_n(w^Tx+w_0)  \geq 1 
-    \label{eq:obj last margin}
-\end{align}
+\begin{equation}
+    \begin{aligned}
+    & \argmin_{w_0,w}
+    & & \frac{|w|^2}{2}  \\
+    & \text{s.t.}
+    & &  t_n(w^Tx+w_0)  \geq 1 
+    \end{aligned}
+    \label{eq:obj nonlinear}
+\end{equation}
 目的関数の分母は、単に勾配を計算する際に約分できるというテクニックによるものである。
 分子の二乗は、最適化問題の解を変更せずに勾配計算などを容易に行うための変形である。
 図\ref{fig:margin}に分類面の定め方によりマージンが異なっている様子を見ることができる。
@@ -139,11 +143,15 @@ SVMではこのマージン最大化によって以下の分類超平面を定�
     \label{eq:displane}
 \end{equation}
 この場合においてもこれまでと同様の議論で最適化問題を以下のように定式化できる。
-\begin{align}
-    \argmin_{w_0,w} &&& \frac{|w|^2}{2} \nonumber  \\
-    s.t. &&& t_n(w^T\phi(x)+w_0)  \geq 1 
-   \label{eq:obj nonlinear}
-\end{align}
+\begin{equation}
+    \begin{aligned}
+    & \argmin_{w_0,w}
+    & & \frac{|w|^2}{2} \\
+    & \text{s.t.}
+    & &  t_n(w^T\phi(x)+w_0)  \geq 1 
+    \end{aligned}
+    \label{eq:obj nonlinear}
+\end{equation}
 
 実データは線形分離不可能な場合が多いため、
 通常SVMを用いる場合は上記のような非線形に拡張されたものを用いる。
@@ -155,10 +163,36 @@ SVMではこのマージン最大化によって以下の分類超平面を定�
 また、制約付き最適化問題をラグランジュ法によって変形することで双対問題を獲得することができる。
 双対問題においては非線形変換後の内積のみが必要となり、具体的な非線形変換の計算をデータ\(x\)に対して実施する必要はない。
 すなわち、非線形変換\(\phi(x)\)を具体的に考える代わりに、
-その内積\(\phi^T(x_i)\phi(x_j)\)を定義することでSVMの非線形への拡張が可能である。
-このような方法はカーネル法として知られており、このときに用いられる内積計算をカーネルと呼ぶ。
+その内積\(\phi(x_i)^T\phi(x_j)\)を定義することでSVMの非線形への拡張が可能である。
+このような方法はカーネル法として知られており、このときに用いられる内積計算をカーネル
+\(k(x_i,x_j)=\phi(x_i)^T\phi(x_j)\)と呼ぶ。
 カーネルは内積の公理を満たせば直ちに適用できるわけではないため、適用可能条件について注意する必要がある。
-ただし、BCIも含めた多くの応用ではガウス基底カーネルが用いられる事が多く、
-既に知られた優れた性質を持つカーネルを活用することがほとんどである。
+ただし、BCIも含めた多くの応用では既に知られた優れた性質を持つカーネルを活用することがほとんどである。
+基本的にソフトマージンカーネルSVMを用いればよく、ソフトマージンのハイパーパラメータとカーネルの設計を変えることで
+通常の線形SVMの働きをさせることも可能である。
+ソフトマージンカーネルSVMの識別関数は以下で表される。
+\begin{equation}
+    y(x) = \sum_{n=1}^Na_nt_nk(x,x_n) + b
+\end{equation}
+ここで学習データの数を\(N\)としている。
+また最適化問題は以下で定式化される。
+\begin{equation}
+    \begin{aligned}
+    & \argmax_{a_1,\cdots,a_N}
+    & & \sum_{n=1}^N a_n - \frac{1}{2}\sum_{i=1}^N \sum_{j=1}^N a_ia_jt_it_jk(x_i,x_j) \\
+    & \text{s.t.}
+    & & 0 \leq a_n \leq C  \\
+    & & &  \sum_{n=1}^N a_nt_n=0
+    \end{aligned}
+    \label{eq:kernel SVM}
+\end{equation}
+ここに\(C\)はソフトマージンのハイパーパラメータであり、誤分類に対しての厳しさを表す。
+最適化問題の解である\(a_1,\cdots,a_N\)と任意の\(i\)を選んで以下の条件式に代入することで閾値\(b\)も求まる。
 
-\subsection{Logistic Regression}
+\begin{equation}
+    t_i\left( \sum_{n=1}^Na_nt_nk(x,x_n) + b \right)=1
+    \label{eq:bias}
+\end{equation}
+ただし、(\ref{eq:bias})は理論的には正しいが無駄な計算も含まれており、かつ数値誤差が生じやすいために実装上は異なった計算式を使うことを指摘しておく。
+
+\subsection{Logistic Regression(LR)}
