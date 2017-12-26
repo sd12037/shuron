@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt,oneside,openany]{jsbook}
+\documentclass[a4paper,11pt,oneside,openany, report]{jsbook}
 % \documentclass[11pt, a4paper, papersize, dvipdfmx]{jsarticle}
 % \documentclass{jsarticle}
 % \documentclass[fleqn, 11pt]{jsarticle}
@@ -77,16 +77,19 @@
 \mainmatter
 %input 終了後改ページなし
 %include 終了後改ページあり
+\include{math_rule}
 
-\chapter{序論}
+\chapter{研究背景}
 \input{chapter/chapter1/INTRO}
 
-\chapter{従来手法}
+\chapter{BCIのための要素技術}
 \input{chapter/chapter2/FEATURE}
 \input{chapter/chapter2/SIGNAL}
 \input{chapter/chapter2/BSS}
-\input{chapter/chapter2/CSP}
 \input{chapter/chapter2/Discriminant}
+
+\chapter{従来の運動想起型BCI}
+\input{chapter/chapter2/CSP}
 \input{chapter/chapter2/oldSOTA}
 
 \chapter{提案手法}
