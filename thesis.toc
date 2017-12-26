@@ -22,8 +22,8 @@
 \contentsline {section}{\numberline {2.5}分類手法}{10}
 \contentsline {subsection}{\numberline {2.5.1}Linear Discriminant Analysis}{10}
 \contentsline {subsection}{\numberline {2.5.2}Support Vector Machine}{12}
-\contentsline {subsection}{\numberline {2.5.3}Logistic Regression}{12}
-\contentsline {section}{\numberline {2.6}従来手法のまとめ}{12}
+\contentsline {subsection}{\numberline {2.5.3}Logistic Regression}{13}
+\contentsline {section}{\numberline {2.6}従来手法のまとめ}{13}
 \contentsline {subsection}{\numberline {2.6.1}従来の運動想起BCIの構成と問題点}{13}
 \contentsline {chapter}{\numberline { 3 }提案手法}{15}
 \contentsline {section}{\numberline {3.1}ニューラルネットワーク}{15}
