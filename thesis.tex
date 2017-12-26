@@ -1,0 +1,151 @@
+\documentclass[a4paper,11pt,oneside,openany]{jsbook}
+% \documentclass{jsarticle}
+% \documentclass[fleqn, 11pt]{jsarticle}
+%
+\usepackage[top=20mm, bottom=20mm, left=25mm, right=25mm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{bm}
+% \usepackage{graphicx}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{subfigure}
+\usepackage{verbatim}
+\usepackage{wrapfig}
+\usepackage{ascmac}
+\usepackage{makeidx}
+\usepackage{cite}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{here}
+\usepackage{latexsym}
+\usepackage{bm}
+\usepackage{url}
+\usepackage{amsfonts}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{afterpage}
+\usepackage{caption}
+\captionsetup[figure]{format=plain, labelformat=simple, font=normalsize}
+\captionsetup[table]{format=plain, labelformat=simple, font=normalsize}
+
+%
+\makeindex
+%
+\setlength{\textwidth}{\fullwidth}
+% \setlength{\textheight}{40\baselineskip}
+% \addtolength{\textheight}{\topskip}
+% \setlength{\voffset}{1.55in}
+%
+\newcommand{\diff}{\mathrm{d}}  %微分記号
+\newcommand{\divergence}{\mathrm{div}\,}  %ダイバージェンス
+\newcommand{\grad}{\mathrm{grad}\,}  %グラディエント
+\newcommand{\rot}{\mathrm{rot}\,}  %ローテーション
+\renewcommand{\prechaptername}{ }
+\renewcommand{\postchaptername}{ }
+\newcommand{\argmax}{\mathop{\rm arg~max}\limits}
+\newcommand{\argmin}{\mathop{\rm arg~min}\limits}
+\newcolumntype{Y}{>{\centering\arraybackslash}X} %中央揃え
+\newcolumntype{Z}{>{\raggedleft\arraybackslash}X} 
+%
+
+
+
+
+\title{深層学習を用いた脳波信号からの運動意図推定}
+\author{佐野\ \ 光 \\ Sano\ \ Hikaru}
+% \author{Hikaru\ \ Sano}
+\date{\today}
+
+
+\begin{document}
+%
+
+
+%
+\maketitle
+%
+%
+\frontmatter
+%%
+% \addcontentsline{toc}{chapter}{はじめに}
+% \include{abstract}
+\setcounter{tocdepth}{2}
+\tableofcontents
+%
+%
+\mainmatter
+%input 終了後改ページなし
+%include 終了後改ページあり
+
+\chapter{序論}
+\input{chapter/chapter1/INTRO}
+
+\chapter{従来手法}
+\input{chapter/chapter2/FEATURE}
+\input{chapter/chapter2/SIGNAL}
+\input{chapter/chapter2/BSS}
+\input{chapter/chapter2/CSP}
+\input{chapter/chapter2/Discriminant}
+\input{chapter/chapter2/oldSOTA}
+
+\chapter{提案手法}
+\input{chapter/chapter3/NN}
+
+\chapter{実験と結果}
+
+\chapter{結論と考察}
+%
+%
+\appendix
+%
+\include{appendix}
+%
+%
+\chapter*{謝辞}
+% \addcontentsline{toc}{chapter}{謝辞}
+...
+...
+
+
+\begin{thebibliography}{99}
+  \bibitem{csssp} Guido Dornhege, Benjamin Blankertz, Matthias Krauledat, Florian Losch, Gabriel Curio, Klaus-Robert M?ller,
+      ``Combined optimization of spatial and temporal
+      filters for improving Brain-Computer Interfacing
+      '',
+      {\it IEEE TRANSACTIONS ON BIOMEDICAL ENGINEERING},
+      Vol. XX,
+      No. Y,
+      2006.
+
+  \bibitem{fbcsp} Kai Keng Ang, Zheng Yang Chin, Haihong Zhang, Cuntai Guan
+      ``Filter Bank Common Spatial Pattern (FBCSP) in Brain-Computer Interface'',
+      {\it IEEE TRANSACTIONS ON BIOMEDICAL ENGINEERING},
+      {\it in Proc. 2008 Int. Joint Conf. Neural Netw.},
+      pp. 2390-2397,
+      2008.
+
+  \bibitem{deepconv} Robin Tibor Schirrmeister,
+      Jost Tobias Springenberg,
+      Lukas Dominique Josef Fiederer,
+      Martin Glasstetter,
+      Katharina Eggensperger,
+      Michael Tangermann,
+      Frank Hutter,
+      Wolfram Burgard,
+      ``Deep learning with convolutional neural networks for EEG decoding and visualization'',
+      {\it Human Brain Mapping},
+      Vol. 38,
+      No. 11,
+      pp. 5391-5420,
+      2017.
+\end{thebibliography}
+%
+%
+% \include{reference_acknowledgment}
+%
+%
+\newpage
+\printindex
+%
+%
+\end{document}

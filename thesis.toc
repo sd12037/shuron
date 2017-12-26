@@ -1,0 +1,39 @@
+\contentsline {chapter}{\numberline { 1 }序論}{1}
+\contentsline {section}{\numberline {1.1}研究背景}{1}
+\contentsline {section}{\numberline {1.2}BCIの概要}{1}
+\contentsline {subsection}{\numberline {1.2.1}外部刺激型BCI}{1}
+\contentsline {subsection}{\numberline {1.2.2}運動想起型BCI}{1}
+\contentsline {chapter}{\numberline { 2 }従来手法}{2}
+\contentsline {section}{\numberline {2.1}特徴量工学}{2}
+\contentsline {subsection}{\numberline {2.1.1}他分野での特徴量工学}{2}
+\contentsline {subsection}{\numberline {2.1.2}脳波解析における特徴量工学}{2}
+\contentsline {section}{\numberline {2.2}フーリエ解析と時間周波数解析}{2}
+\contentsline {subsection}{\numberline {2.2.1}周波数スペクトル}{2}
+\contentsline {subsection}{\numberline {2.2.2}スペクトログラム}{3}
+\contentsline {section}{\numberline {2.3}多変量解析}{3}
+\contentsline {subsection}{\numberline {2.3.1}Principal Component Analysis(PCA)}{3}
+\contentsline {subsection}{\numberline {2.3.2}Indipendent Component Analysis(ICA)}{5}
+\contentsline {subsection}{\numberline {2.3.3}Blind Source Separation(BSS)}{5}
+\contentsline {section}{\numberline {2.4}Common Spatial Patternとその派生手法}{8}
+\contentsline {subsection}{\numberline {2.4.1}脳波信号の定式化}{8}
+\contentsline {subsection}{\numberline {2.4.2}Common Spatial Pattern(CSP)}{8}
+\contentsline {subsection}{\numberline {2.4.3}Common Spatiospectral Pattern(CSSSP)}{9}
+\contentsline {subsection}{\numberline {2.4.4}Filter Bank Common Spatial Pattern(FBCSP)}{10}
+\contentsline {section}{\numberline {2.5}分類手法}{10}
+\contentsline {subsection}{\numberline {2.5.1}Linear Discriminant Analysis}{10}
+\contentsline {subsection}{\numberline {2.5.2}Support Vector Machine}{12}
+\contentsline {subsection}{\numberline {2.5.3}Logistic Regression}{12}
+\contentsline {section}{\numberline {2.6}従来手法のまとめ}{12}
+\contentsline {subsection}{\numberline {2.6.1}従来の運動想起BCIの構成と問題点}{13}
+\contentsline {chapter}{\numberline { 3 }提案手法}{15}
+\contentsline {section}{\numberline {3.1}ニューラルネットワーク}{15}
+\contentsline {subsection}{\numberline {3.1.1}フィードフォワードニューラルネットワーク}{15}
+\contentsline {subsection}{\numberline {3.1.2}リカレントニューラルネットワーク}{15}
+\contentsline {subsection}{\numberline {3.1.3}畳み込みニューラルネットワーク}{15}
+\contentsline {section}{\numberline {3.2}FIRフィルタと畳み込み層}{15}
+\contentsline {chapter}{\numberline { 4 }実験と結果}{16}
+\contentsline {chapter}{\numberline { 5 }結論と考察}{17}
+\contentsline {chapter}{Appendix}{18}
+\contentsline {section}{\numberline {A.1}セクション}{18}
+\contentsline {subsection}{\numberline {A.1.1}サブセクション}{18}
+\contentsline {chapter}{参考文献}{20}

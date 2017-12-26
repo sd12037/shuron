@@ -1,0 +1,16 @@
+\renewcommand{\thechapter}{A}
+\stepcounter{chapter}
+\def\theequation{A.\arabic{section}.\arabic{equation}}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\chapter*{Appendix}
+\addcontentsline{toc}{chapter}{Appendix}
+
+
+\section{セクション}
+
+\subsection{サブセクション}
+
+
+
