@@ -52,6 +52,7 @@ LDAでは以下の評価関数を用いる。
 \begin{eqnarray}
     J(w) & = & \frac{d^2}{\sigma^2} \nonumber \\
     & = & \frac{\{w^T(m_1-m_2)\}^2}{\sum_{x\in C_1}\{w^T(x-m_1)\}^2 + \sum_{x\in C_2}\{w^T(x-m_2)\}^2}
+    \label{eq:lda_obj}
 \end{eqnarray}
 このクラス間の平均とクラス内の分散を考慮した評価関数を用いることで、
 射影先でデータがクラス毎に小さくまとまり、かつ異なるクラスのデータがなるべく離れるようになる(図\ref{fig:var_dis})。
@@ -72,6 +73,25 @@ LDAでは以下の評価関数を用いる。
 % 必ずしもガウス分布であるという仮定は必要ないが、\(z\)は複数の確率変数の線型結合であるため
 % 中心極限定理によりこの仮定は正当化されうる。
 
+LDAの評価関数(\ref{eq:lda_obj})は以下のように変形が可能である。
+\begin{eqnarray}
+    \label{eq:lda_obj_mat}
+    J(w) 
+    & = & \frac{\{w^T(m_1-m_2)\}^2}{\sum_{x\in C_1}\{w^T(x-m_1)\}^2 + \sum_{x\in C_2}\{w^T(x-m_2)\}^2} \nonumber \\
+    & = & \frac{w^T(m_1-m_2)(m_1-m_2)^Tw} {w^T\left\{ \sum_{x\in C_1} (x-m_1)(x-m_1)^T + \sum_{x\in C_2} (x-m_2)(x-m_2)^T \right\}w} \nonumber \\
+    & = & \frac{w^TS_Bw} {w^TS_Ww} \\
+    \nonumber 
+    % & where & \nonumber \\ 
+    % & &S_B = (m_1-m_2)(m_1-m_2)^T \\
+    % & &S_W = \sum_{x\in C_1} (x-m_1)(x-m_1)^T + \sum_{x\in C_2} (x-m_2)(x-m_2)^T
+\end{eqnarray}
+ここで
+\begin{eqnarray}
+    S_B &=& (m_1-m_2)(m_1-m_2)^T \\
+    S_W &=& \sum_{x\in C_1} (x-m_1)(x-m_1)^T + \sum_{x\in C_2} (x-m_2)(x-m_2)^T
+\end{eqnarray}
+である。このとき\(S_B\)をクラス間共分散行列、\(S_W\)をクラス内共分散行列と言う。
+(\ref{eq:lda_obj_mat})を\(w\)に関して微分して\(0\)と置くことで問題は解析的に解ける。
 
 \subsection{Support Vector Machine(SVM)}
 脳波の分類ではSupport Vector Machine(SVM)の応用例もある。
@@ -177,8 +197,8 @@ BCIも含めた多くの応用では既に知られた優れた性質を持つ�
     \item[・ガウス基底カーネル：特徴空間が無限次元となる。] \mbox{}\par
     \begin{center} \(k(x,x')=\exp\left(-\frac{|x-x'|^2}{2\sigma^2}\right)\) \end{center}
 \end{description}
-通常、カーネルを用いる場合にはハイパーパラメータが付随する。多項式カーネルの場合は\(c,M\)、
-ガウス基底カーネルの場合は\(\sigma\)がハイパーパラメータとなり、これらの調整次第で
+通常、カーネルを用いる場合にはハイパーパラメータが付随する。多項式カーネルの場合はスカラーの\(c,M\)、
+ガウス基底カーネルの場合はスカラーの\(\sigma\)がハイパーパラメータとなり、これらの調整次第で
 得られる分類面は異なる。
 　
 応用上はソフトマージンカーネルSVMを用いればよく、ソフトマージンのハイパーパラメータとカーネルの設計を変えることで
@@ -189,6 +209,7 @@ BCIも含めた多くの応用では既に知られた優れた性質を持つ�
     \label{dis_kernel}
 \end{equation}
 ここで学習データの数を\(N\)としている。
+また\(a_n\)はスカラーのパラメータであり、ラグランジュ法で双対問題を考えた際のラグランジュ乗数である。
 また最適化問題は以下で定式化される。
 \begin{equation}
     \begin{aligned}
@@ -200,7 +221,7 @@ BCIも含めた多くの応用では既に知られた優れた性質を持つ�
     \end{aligned}
     \label{eq:kernel SVM}
 \end{equation}
-ここに\(C\)はソフトマージンのハイパーパラメータであり、誤分類に対しての厳しさを表す。
+ここに\(C\)はソフトマージンのハイパーパラメータでありスカラーである。値が小さいほど\(a_n\)の取れる範囲が制限され、値が大きいほど誤分類に寛容となる。
 最適化問題の解である\(a_1,\cdots,a_N\)と任意の\(n\)を選んで以下の条件式に代入することで閾値\(b\)も求まる。
 
 \begin{equation}

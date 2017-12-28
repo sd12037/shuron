@@ -20,7 +20,7 @@ CSPは脳波解析の分野で発展した手法であるため、その定式�
 と表すことができる。従って、以降統一のため、\(M\)を電極の個数、
 \(N\)を計測時間点数とした場合の脳波信号を以下で定義する\begin{equation}
     X =(x_1, \cdots, x_N)\in \mathbb{R}^{M \times N}\    
-\end{equation}。
+\end{equation}
 
 
 運動想起を\(K\)回行った場合には、\(K\)個の\(X\)が得られる。
@@ -58,15 +58,63 @@ CSPでは、ベクトル\(w \in \mathbb {R}^M\)を新たな基底とした電極
     & \text{s.t.}
     & &  \sum_{d=1,2} \mathbb E_{X \in C_d} \left[\sigma^2 (\hat X, w) \right] = 1
     \end{aligned}
-    \label{objcsp}
+    \label{eq:objcsp}
 \end{equation}
+最大化問題(\ref{eq:objcsp})を解いて得られる\(w_{csp}\)は、
+クラス\(C_1\)に属する脳波の分散を最大化するような基底である。
+一方で、制約条件によって2つのクラスの分散の和が\(1\)であるとされているため、
+自動的にクラス\(C_2\)に属する脳波の分散を最小化する基底ともなる。
+すなわち\(w_{csp}\)によって得られるスカラー信号は一方のクラスの信号のみを増幅させ、他方を減衰させる働きをする。
+(\ref{eq:objcsp})は更に以下で定式化することができる。
+\begin{equation}
+    \begin{aligned}
+    & \max_w
+    & & w^T\Sigma_1 w \\
+    & \text{s.t.}
+    & &  w^T(\Sigma_1+\Sigma_2)w = 1
+    \end{aligned}
+    \label{eq:objcsp2}
+\end{equation}
+ここで
+\begin{equation}
+    \Sigma_i = \mathbb E_{X\in C_i}\left[\frac{\hat X \hat X^T}{{\rm tr}(\hat X \hat X^T)}\right]
+\end{equation}
+である。この問題の解はラグランジュ法によって解析的に求めることが可能である。
+簡単な計算によって(\ref{eq:objcsp2})は以下の一般化固有値問題に帰着される\cite{csp_eigen}。
+\begin{equation}
+    \Sigma_1w = \lambda(\Sigma_1+\Sigma_2)w
+\end{equation}
+この一般化固有値問題は右辺の\(\Sigma_1+\Sigma_2\)が正則であれば、
+その逆行列を両辺左から掛けることで普通の固有値問題に変形できる。
 
-最大化問題(\ref{objcsp})を解いて得られる\(w\)は、
-クラス\(C_1\)に属する脳波の振幅を最大化するような基底となっている。
-一方で、制約条件によってクラス\(C_2\)に属する脳波の振幅を最小化する基底ともなっている。
-この最適化問題の解法はよく知られており、標準的な解法は一般化固有値問題を解くことと等価である。計算量の観点から効率の良い解法も提案されている。固有値が分散に、固有ベクトルが新しい基底に対応し、
-最大固有値に属する固有ベクトルと、最小固有値に属する固有ベクトルを新たな基底として用いる。
-通常は変換先での時間分散の対数値を特徴量として用いる。以下の図はトイデータを使ったCSPによる特徴量抽出の様子である。
+一般化固有値問題が解けた時のM個の固有値を\(\lambda_1 \geq \lambda_2 \geq \cdots \geq \lambda_M\)とする。
+また、\(\lambda_i\)に属する固有ベクトルを\(w^{(i)}\)とする。
+このとき最適化問題の解に相当するのは\(w^{(1)}\)であり、
+\(C_1\)に属する脳波を増幅し、\(C_2\)に属する脳波を減衰させたスカラー信号を獲得できる。
+一方で\(w^{(M)}\)は\(C_1\)に属する脳波を減衰し、\(C_2\)に属する脳波を増幅させたスカラー信号を獲得できる。
+従って通常は、\(w^{(1)},w_M\)の固有ベクトルを対で用いる。同様に\(w^{(2)},w^{(M-1)}\)を対で取り出して4つの固有ベクトルを用いることもできる。
+一般に\(2m(<M)\)個の固有ベクトルを使うこととすれば、特徴量\(\sigma^2(\hat X,w^{(i)})\)を\(2m\)個準備することができる。
+ここで単に\(z=w^{(i)}\hat X\)を用いないのは、CSPによって得られる特徴量は振幅に大きな違いがあるためである。
+通常はCSPによって獲得される特徴量\(y\)は以下の形式となる。
+\begin{equation}
+    y = (\sigma^2(\hat X,w^{(1)}), \cdots, \sigma^2(\hat X,w^{(m)}), \cdots, \sigma^2(\hat X,w^{(M-m+1)}), \cdots, \sigma^2(\hat X,w^{(M)}))^T
+\end{equation}
+あるいは\(y=(y_1, \cdots, y_{2m})\)に対して以下のような変換を行った特徴量\(f\)を使う。
+\begin{eqnarray}
+    f_i &=& \log \left( \frac{y_i}{\sum_{i=1}^{2m}y_i} \right) \nonumber \\
+    f &=& (f_1, \cdots, f_{2m})^T 
+\end{eqnarray}
+また\(m=1,2\)が多くのCSPの応用研究で使われており、\(m\)を増やしてもBCIの性能向上には繋がらないことが報告されている\cite{cvscsp}。
+% 行列\(W_{csp}\)を
+% \begin{equation}
+%     W_{csp}=(w^{(1)},\cdots,w^{(m)},\cdots,w^{(M-m+1)},\cdots,w^{(M)}) \in \mathbb R^{2m \times M}
+% \end{equation}
+% によって構成し、脳波信号\(X \in \mathbb R^{M\times N}\)から以下の変換によって\(Z \in \mathbb R^{2m \times N}\)を獲得できる。
+% \begin{equation}
+%     Z = W_{csp}^TX
+% \end{equation}
+% ここで通常は\(Z=(z_1, z_2, \cdot, z_N)\)の成分毎の時間分散を特徴量とする。
+% \(Z\)の脳波のパワーを評価することが可能となる。
 
 \begin{figure}
     \centering

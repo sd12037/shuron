@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2017.12.21)  27 DEC 2017 05:07
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2017.12.21)  28 DEC 2017 08:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -539,15 +539,15 @@ File: images/mean_dis.png Graphic file (type bmp)
  <images/mean_dis.png> [9]
 File: images/var_dis.png Graphic file (type bmp)
 
-<images/var_dis.png> [10]
+<images/var_dis.png> [10] [11]
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 122.
+(Font)              scaled to size 6.72699pt on input line 142.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 122.
+(Font)              scaled to size 4.805pt on input line 142.
 File: images/margin.png Graphic file (type bmp)
- <images/margin.png> [11] [12]
-Underfull \hbox (badness 1033) in paragraph at lines 209--217
-\JY1/mc/m/n/10 ただし 、 \OT1/ptm/m/n/10 (2.30) \JY1/mc/m/n/10 は無駄な計算も含
+ <images/margin.png> [12]
+Underfull \hbox (badness 1033) in paragraph at lines 230--238
+\JY1/mc/m/n/10 ただし 、 \OT1/ptm/m/n/10 (2.33) \JY1/mc/m/n/10 は無駄な計算も含
 まれている 。 $\OML/cmm/m/it/10 a[] \OT1/cmr/m/n/10 = 0$ \JY1/mc/m/n/10 となる
 ような $\OML/cmm/m/it/10 x[]$ \JY1/mc/m/n/10 に対して
  []
@@ -562,7 +562,7 @@ LaTeX Warning: Citation `csp' on page 14 undefined on input line 5.
 
 ]
 File: images/apple.png Graphic file (type bmp)
- <images/apple.png> [15]) (./chapter/chapter2/oldSOTA.tex
+ <images/apple.png> [15] [16]) (./chapter/chapter2/oldSOTA.tex
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
@@ -570,25 +570,25 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
- [16] [17]) [18]
+ [17]) [18] [19]
  4 
-(./chapter/chapter3/NN.tex) [19
+(./chapter/chapter3/NN.tex) [20
 
 ]
  5 
-[20
+[21
 
 ]
  6 
-[21
+[22
 
 ]
 \openout2 = `appendix.aux'.
 
- (./appendix.tex) [22
+ (./appendix.tex) [23
 
 
-] [23
+] [24
 
 
 ]
@@ -600,7 +600,10 @@ LaTeX Font Info:    Font shape `JY1/mc/m/it' in size <10> not available
 (Font)              Font shape `JY1/mc/m/n' tried instead on input line 119.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 119.
- [24
+Missing character: There is no ^^e2 in font ptmr7t!
+Missing character: There is no ^^80 in font ptmr7t!
+Missing character: There is no ^^93 in font ptmr7t!
+ [25
 
 ]
 No file thesis.ind.
@@ -617,12 +620,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4485 strings out of 493723
- 63224 string characters out of 6152569
- 144974 words of memory out of 5000000
- 7851 multiletter control sequences out of 15000+600000
+ 4490 strings out of 493723
+ 63286 string characters out of 6152569
+ 145974 words of memory out of 5000000
+ 7856 multiletter control sequences out of 15000+600000
  32660 words of font info for 130 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  36i,9n,39p,293b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (27 pages, 88208 bytes).
+Output written on thesis.dvi (28 pages, 95228 bytes).
