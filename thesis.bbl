@@ -1,0 +1,41 @@
+\begin{thebibliography}{1}
+
+\bibitem{ICA1}
+Hiromu Gotanda, Takaaki Ishibashi, Nobuo Iwasaki, and Katsuhiro Inoue.
+\newblock 独立成分分析の基礎と応用.
+\newblock Technical Report 1743, 数理解析研究所, 2011.
+
+\bibitem{ICA2}
+村田昇.
+\newblock 入門 独立性分析.
+\newblock 東京電機大学出版, 2004.
+
+\bibitem{csp_eigen}
+B.~Blankertz, M.~Kawanabe, R.~Tomioka, F.~Hohlefeld, V.~Nikulin, and K.~R. M.
+\newblock In-variant common spatial patterns: Alleviating nonstationarities in
+  brain-computer interfacing.
+\newblock {\em Advances in Neural Information Processing Systems}, Vol.~20, pp.
+  113--120, 2008.
+
+\bibitem{cvscsp}
+Jyoti~Singh Kirara and R.~K.~Agrawala and.
+\newblock Optimal spatio-spectral variable size subbands filter formotor
+  imagery brain computer interface.
+\newblock {\em Procedia Computer Science}, Vol.~84, pp. 14--21, 2016.
+
+\bibitem{csssp}
+Guido Dornhege, Benjamin Blankertz, Matthias Krauledat, Florian Losch, Gabriel
+  Curio, and Klaus-Robert Muller.
+\newblock Combined optimization of spatial and temporal filters for improving
+  brain-computer interfacing.
+\newblock {\em IEEE TRANSACTIONS ON BIOMEDICAL ENGINEERING}, Vol.~XX, No.~Y,
+  2006.
+
+\bibitem{fbcsp}
+Kai~Keng Ang, Zheng~Yang Chin, Haihong Zhang, and Cuntai Guan.
+\newblock Filter bank common spatial pattern (fbcsp) in brain-computer
+  interface.
+\newblock {\em IEEE TRANSACTIONS ON BIOMEDICAL ENGINEERING}, Vol.~XX, No.~Y,
+  pp. 2390--2397, 2008.
+
+\end{thebibliography}

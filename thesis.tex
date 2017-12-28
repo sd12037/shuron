@@ -68,6 +68,8 @@
 %
 \frontmatter
 %%
+\include{math_rule}
+
 % \addcontentsline{toc}{chapter}{はじめに}
 % \include{abstract}
 \setcounter{tocdepth}{2}
@@ -77,27 +79,39 @@
 \mainmatter
 %input 終了後改ページなし
 %include 終了後改ページあり
-\include{math_rule}
 
 \chapter{研究背景}
 \input{chapter/chapter1/INTRO}
 
 \chapter{BCIのための要素技術}
+この章ではBCIに用いられる要素技術について述べる。
+ここで紹介する技術はBCIに限らずデータを扱う場面で広く持ちいられている手法であるため、
+一般的な定式化と用途を述べた後に、脳波解析における応用方法や問題点について述べる。
 \input{chapter/chapter2/FEATURE}
 \input{chapter/chapter2/SIGNAL}
 \input{chapter/chapter2/BSS}
 \input{chapter/chapter2/Discriminant}
 
 \chapter{従来の運動想起型BCI}
+この章ではまず、BCIのために開発された解析手法であるCommon Spatial Patternについて紹介する。
+その後、前章の要素技術を含めた従来の運動想起型BCIの構成方法について述べ、課題点を明らかにする。
 \input{chapter/chapter2/CSP}
 \input{chapter/chapter2/oldSOTA}
 
 \chapter{提案手法}
+この章では初めに提案手法の大部分を占めるニューラルネットワークについて簡単に述べる。
+その後、ニューラルネットワークを用いて運動想起型BCIを構築するアイデアと、
+その具体的な提案モデルについて解説する。
 \input{chapter/chapter3/NN}
 
-\chapter{実験と結果}
+\chapter{実験方法}
+この章では実験に用いたデータについて説明し、
+その後、データを用いた実験に対してどのような評価を行うのかを明示する。
 
-\chapter{結論と考察}
+\chapter{結果と考察}
+この章では従来手法と提案手法の実験結果をそれぞれ示す。
+結果に対して考察と本研究の結論を述べ、更に今後考えうる改善案などについて簡単に述べる。
+
 %
 %
 \appendix
@@ -111,48 +125,59 @@
 ...
 
 
-\begin{thebibliography}{99}
-  \bibitem{csssp} Guido Dornhege, Benjamin Blankertz, Matthias Krauledat, Florian Losch, Gabriel Curio, Klaus-Robert M?ller,
-      ``Combined optimization of spatial and temporal
-      filters for improving Brain-Computer Interfacing
-      '',
-      {\it IEEE TRANSACTIONS ON BIOMEDICAL ENGINEERING},
-      Vol. XX,
-      No. Y,
-      2006.
+% \begin{thebibliography}{99}
+%     \bibitem{csssp} Guido Dornhege, Benjamin Blankertz, Matthias Krauledat, Florian Losch, Gabriel Curio, Klaus-Robert M?ller,
+%         ``Combined optimization of spatial and temporal
+%         filters for improving Brain-Computer Interfacing
+%         '',
+%         {\it IEEE TRANSACTIONS ON BIOMEDICAL ENGINEERING},
+%         Vol. XX,
+%         No. Y,
+%         2006.
 
-  \bibitem{fbcsp} Kai Keng Ang, Zheng Yang Chin, Haihong Zhang, Cuntai Guan
-      ``Filter Bank Common Spatial Pattern (FBCSP) in Brain-Computer Interface'',
-      {\it IEEE TRANSACTIONS ON BIOMEDICAL ENGINEERING},
-      {\it in Proc. 2008 Int. Joint Conf. Neural Netw.},
-      pp. 2390-2397,
-      2008.
+%     \bibitem{fbcsp} Kai Keng Ang, Zheng Yang Chin, Haihong Zhang, Cuntai Guan
+%         ``Filter Bank Common Spatial Pattern (FBCSP) in Brain-Computer Interface'',
+%         {\it IEEE TRANSACTIONS ON BIOMEDICAL ENGINEERING},
+%         {\it in Proc. 2008 Int. Joint Conf. Neural Netw.},
+%         pp. 2390-2397,
+%         2008.
 
-  \bibitem{deepconv} Robin Tibor Schirrmeister,
-      Jost Tobias Springenberg,
-      Lukas Dominique Josef Fiederer,
-      Martin Glasstetter,
-      Katharina Eggensperger,
-      Michael Tangermann,
-      Frank Hutter,
-      Wolfram Burgard,
-      ``Deep learning with convolutional neural networks for EEG decoding and visualization'',
-      {\it Human Brain Mapping},
-      Vol. 38,
-      No. 11,
-      pp. 5391-5420,
-      2017.
-  \bibitem{csp_eigen} B. Blankertz, M. Kawanabe, R. Tomioka, F. Hohlefeld, V. Nikulin, 
-        and K. R. M¨uller, “Invariant common spatial patterns: Alleviating
-        nonstationarities in brain-computer interfacing,” {\it Advances in
-        Neural Information Processing Systems}, vol. 20, pp. 113-120, 2008.
-  \bibitem{cvscsp} Jyoti Singh Kirara, R. K. Agrawala, 
-      ``Optimal Spatio-Spectral Variable Size Subbands Filter For Motor
-      Imagery Brain Computer Interface'',
-      {\it  Procedia Computer Science },
-      84 ( 2016 ) 14 – 21
-\end{thebibliography}
+%     \bibitem{deepconv} Robin Tibor Schirrmeister,
+%         Jost Tobias Springenberg,
+%         Lukas Dominique Josef Fiederer,
+%         Martin Glasstetter,
+%         Katharina Eggensperger,
+%         Michael Tangermann,
+%         Frank Hutter,
+%         Wolfram Burgard,
+%         ``Deep learning with convolutional neural networks for EEG decoding and visualization'',
+%         {\it Human Brain Mapping},
+%         Vol. 38,
+%         No. 11,
+%         pp. 5391-5420,
+%         2017.
+%     \bibitem{csp_eigen} B. Blankertz, M. Kawanabe, R. Tomioka, F. Hohlefeld, V. Nikulin, 
+%         and K. R. M¨uller, “Invariant common spatial patterns: Alleviating
+%         nonstationarities in brain-computer interfacing,” {\it Advances in
+%         Neural Information Processing Systems}, vol. 20, pp. 113-120, 2008.
+%     \bibitem{cvscsp} Jyoti Singh Kirara, R. K. Agrawala, 
+%         ``Optimal Spatio-Spectral Variable Size Subbands Filter For Motor
+%         Imagery Brain Computer Interface'',
+%         {\it  Procedia Computer Science },
+%         84, 14-21, 2016.
+%     \bibitem{ICA1}
+%         Hiromu Gotanda, Takaaki Ishibashi, Nobuo Iwasaki, Katsuhiro Inoue,
+%         ``独立成分分析の基礎と応用'',
+%         {\it 数理解析研究所講究録},
+%         第 1743 巻, 6-20, 2011.
+%     \bibitem{ICA2} Noboru Murata, ``入門独立成分分析'', 東京電機大学出版, 2004.
+
+% \end{thebibliography}
 %
+\bibliography{reference}
+% \bibliographystyle{jplain}
+\bibliographystyle{junsrt}
+
 %
 % \include{reference_acknowledgment}
 %

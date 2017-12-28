@@ -1,8 +1,6 @@
 
-
-
 \section{Common Spatial Patternとその派生手法}
-運動想起型BCIに対しては``Common Spatial Pattern(CSP)''\cite{csp}が1999年に提案されて以降、
+運動想起型BCIに対しては``Common Spatial Pattern(CSP)''が1999年に提案されて以降、
 非常に活発に応用研究がされている。その後、ベンチマークとして引用されてきただけでなく、
 CSPの拡張手法も数多く提案されてきた。
 CSPは脳波解析の分野で発展した手法であるため、その定式化も脳波計測時のデータ構造に合わせた
@@ -124,29 +122,38 @@ CSPでは、ベクトル\(w \in \mathbb {R}^M\)を新たな基底とした電極
   
 
 \subsection{Common Spatiospectral Pattern(CSSSP)}
-CSPではバンドパスフィルタ\(\cal H\)通過後の信号を扱ったため、バンドパスフィルタの設計を終えてからでなければCSPの問題を解くことができない。
-しかし、バンドパスフィルタの設計次第ではCSPの解が変わることが想定される。そこで、バンドパスフィルタの設計をCSPの問題の中に取り込んだのがCSSSP\cite{csssp}である。
+CSPではバンドパスフィルタ\(\cal H\)通過後の信号を扱ったため、
+バンドパスフィルタの設計を終えてからでなければCSPの問題を解くことができない。
+従って、あるバンドパスフィルタを通過した脳波に対して、最適化問題を解いているに過ぎなく、
+バンドパスフィルタ自体が適切であったかに関しては一切述べられない。
+このことによって生じる問題点に関しては、更に詳しく後述する。
+CSSSPの主なモチベーションはバンドパスフィルタの設計をCSPの問題の中に取り込むことである\cite{csssp}。
 
 まず脳波信号\(X = \left[ x_1, \cdots, x_N \right] \in \mathbb{R}^{M \times N}\)に対して、
 観測時間点を\(\tau\ > 0\)だけずらした\(X_{\tau} = \left[ x_{1+\tau}, \cdots, x_{N+\tau} \right] \in \mathbb{R}^{M \times N}\)を考える。
-ここで$\tau = 1,\ldots,T$であり、$T$がFIRフィルタの次数の役割を担う。
-更にクラス\( C_d \)に属する\( X \)に関して、
+ここで$\tau = 1,\ldots,T$である。
+更にクラス\( C_d \)に属する\( X \)に関して各\(\tau\)毎に、
 \begin{equation}
     \Sigma_{d}^{\tau} = \mathbb E_{X \in C_d} \left[ XX_{\tau}^T + X_{\tau}X^T \right]
 \end{equation}
-を定義する。ただし、\( \Sigma_{d}^{0} = \mathbb E_{X \in C_d} \left[XX^T \right] \)とする。FIRフィルタの実数係数ベクトルを$b=[1,b_2,\ldots,b_T]^T$として、
-CSSSPの最適化問題は以下で表現される。
+を定義する。ただし\(\tau=0\)のとき\( \Sigma_{d}^{0} = \mathbb E_{X \in C_d} \left[XX^T \right] \)とする。
+更に、\(T\)個の要素を持つ係数ベクトル$b=[b_1,b_2,\ldots,b_T]^T$とする。
+ここでCSSSPの最適化問題は以下で表現される。
 \begin{equation}
     \begin{aligned}
-    & \max_{b_2,\ldots,b_T} \max_{w}
-    & & w^T \left\{ \sum_{\tau = 0}^{T-1} \left( \sum_{j=1}^{T-\tau} b_j b_{j+\tau} \right) \Sigma_1^{\tau} \right\} w - \frac{\alpha}{T}|b|_1 \\
-    & \text{subject to}
-    & &  w^T \left[\sum_{\tau = 0}^{T-1} \left\{ \sum_{j=1}^{T-\tau}b_jb_{j+\tau} \right\} (\Sigma_1^{\tau} + \Sigma_2^{\tau}) \right] w = 1
+        & \max_{b_2,\ldots,b_T} \max_{w}
+        & & w^T \left\{ \sum_{\tau = 0}^{T-1} \left( \sum_{j=1}^{T-\tau} b_j b_{j+\tau} \right) \Sigma_1^{\tau} \right\} w - \frac{\alpha}{T}|b|_1 \\
+        & \text{subject to}
+        & &  w^T \left[\sum_{\tau = 0}^{T-1} \left\{ \sum_{j=1}^{T-\tau}b_jb_{j+\tau} \right\} (\Sigma_1^{\tau} + \Sigma_2^{\tau}) \right] w = 1
     \end{aligned}
 \end{equation}
-この最適化問題では空間重みベクトル\(w \in \mathbb R^M\)とFIRフィルタの実数係数ベクトル$b$を同時に評価することが可能である。
+この最適化問題の目的関数第1項は\(b\)をFIRフィルタ\(f\)の係数ベクトルとした場合に、
+\(f\)を通過後の脳波\(X\)に対してCSPの最適化問題を適用していることに相当する。
+従ってCSSSPでは空間重みベクトル\(w \in \mathbb R^M\)と次数が\(T\)のFIRフィルタのフィルタ係数\(b\)を同時に評価することが可能である。
 目的関数における第二項は正則化項であり、$\alpha$はハイパーパラメータである。
-この正則化によってFIRフィルタの系列ベクトルに対してスパース性が要請され、FIRフィルタが異常に複雑になることが避けられる。
+この正則化によってFIRフィルタの系列ベクトルに対してスパース性が要請され、
+フィルタリングに用いられる時系列点数は必要最小限に抑えられる。
+このことによりFIRフィルタが必要以上に複雑になることが避けられる。
 
 
 \subsection{Filter Bank Common Spatial Pattern(FBCSP)}
