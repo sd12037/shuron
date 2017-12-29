@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2017.12.21)  29 DEC 2017 08:11
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2017.12.21)  29 DEC 2017 09:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -328,6 +328,9 @@ Writing index file thesis.idx
 
 LaTeX Warning: Label `eq:obj nonlinear' multiply defined.
 
+
+LaTeX Warning: Label `fig:FBCSP' multiply defined.
+
 (./appendix.aux))
 \openout1 = `thesis.aux'.
 
@@ -537,12 +540,32 @@ Underfull \hbox (badness 1033) in paragraph at lines 231--239
 
 ) [13]
  3 
-(./chapter/chapter2/CSP.tex [14
+(./chapter/chapter2/CSP.tex
+File: images/CSP.png Graphic file (type bmp)
+ <images/CSP.png> [14
 
-]
+] [15]
 File: images/apple.png Graphic file (type bmp)
- <images/apple.png> [15] [16])
-(./chapter/chapter2/oldSOTA.tex
+ <images/apple.png>
+[16]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 160.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 160.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 160.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 160.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 160.
+
+
+LaTeX Warning: Reference `fig:CSSSP' on page 17 undefined on input line 160.
+
+File: images/CSSSP.png Graphic file (type bmp)
+<images/CSSSP.png>
+File: images/FBCSP.png Graphic file (type bmp)
+ <images/FBCSP.png>) (./chapter/chapter2/oldSOTA.tex [17]
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
@@ -550,25 +573,25 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
- [17]) [18] [19]
+ [18]) [19] [20]
  4 
-(./chapter/chapter3/NN.tex) [20
+(./chapter/chapter3/NN.tex) [21
 
 ]
  5 
-[21
+[22
 
 ]
  6 
-[22
+[23
 
 ]
 \openout2 = `appendix.aux'.
 
- (./appendix.tex) [23
+ (./appendix.tex) [24
 
 
-] (./thesis.bbl [24
+] (./thesis.bbl [25
 
 
 ]
@@ -580,7 +603,7 @@ LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 17.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 17.
-) [25
+) [26
 
 ]
 No file thesis.ind.
@@ -590,16 +613,19 @@ See the caption package documentation for explanation.
 
 (./thesis.aux (./math_rule.aux) (./appendix.aux))
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4488 strings out of 493723
- 63258 string characters out of 6152569
+ 4506 strings out of 493723
+ 63545 string characters out of 6152569
  150974 words of memory out of 5000000
- 7852 multiletter control sequences out of 15000+600000
- 32141 words of font info for 129 fonts, out of 8000000 for 9000
+ 7867 multiletter control sequences out of 15000+600000
+ 32660 words of font info for 130 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  36i,9n,39p,293b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (29 pages, 102136 bytes).
+Output written on thesis.dvi (30 pages, 104768 bytes).
