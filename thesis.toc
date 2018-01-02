@@ -13,34 +13,34 @@
 \contentsline {subsubsection}{フーリエ変換}{3}
 \contentsline {subsubsection}{離散周波数フーリエ変換}{4}
 \contentsline {subsubsection}{離散時間フーリエ変換}{4}
-\contentsline {subsubsection}{離散フーリエ変換}{4}
-\contentsline {subsection}{\numberline {2.2.2}周波数スペクトル}{5}
-\contentsline {subsection}{\numberline {2.2.3}スペクトログラム}{5}
-\contentsline {section}{\numberline {2.3}多変量解析}{5}
+\contentsline {subsubsection}{離散フーリエ変換}{5}
+\contentsline {subsection}{\numberline {2.2.2}パワースペクトル密度}{5}
+\contentsline {subsection}{\numberline {2.2.3}スペクトログラム}{6}
+\contentsline {section}{\numberline {2.3}多変量解析}{6}
 \contentsline {subsection}{\numberline {2.3.1}Principal Component Analysis(PCA)}{6}
 \contentsline {subsection}{\numberline {2.3.2}Indipendent Component Analysis(ICA)}{7}
-\contentsline {subsection}{\numberline {2.3.3}Blind Source Separation(BSS)}{8}
-\contentsline {section}{\numberline {2.4}分類手法}{11}
-\contentsline {subsection}{\numberline {2.4.1}Linear Discriminant Analysis(LDA)}{11}
+\contentsline {subsection}{\numberline {2.3.3}Blind Source Separation(BSS)}{9}
+\contentsline {section}{\numberline {2.4}分類手法}{10}
+\contentsline {subsection}{\numberline {2.4.1}Linear Discriminant Analysis(LDA)}{10}
 \contentsline {subsection}{\numberline {2.4.2}Support Vector Machine(SVM)}{13}
-\contentsline {subsection}{\numberline {2.4.3}Logistic Regression(LR)}{15}
-\contentsline {chapter}{\numberline { 3 }従来の運動想起型BCI}{16}
-\contentsline {section}{\numberline {3.1}Common Spatial Patternとその派生手法}{16}
-\contentsline {subsection}{\numberline {3.1.1}脳波信号の定式化}{16}
-\contentsline {subsection}{\numberline {3.1.2}Common Spatial Pattern(CSP)}{16}
-\contentsline {subsection}{\numberline {3.1.3}Common Sparse Spatio Spectral Pattern(CSSSP)}{18}
-\contentsline {subsection}{\numberline {3.1.4}Filter Bank Common Spatial Pattern(FBCSP)}{19}
-\contentsline {section}{\numberline {3.2}従来手法のまとめ}{20}
-\contentsline {subsection}{\numberline {3.2.1}従来の運動想起BCIの構成と問題点}{20}
-\contentsline {chapter}{\numberline { 4 }提案手法}{23}
-\contentsline {section}{\numberline {4.1}ニューラルネットワーク}{23}
-\contentsline {subsection}{\numberline {4.1.1}フィードフォワードニューラルネットワーク}{23}
-\contentsline {subsection}{\numberline {4.1.2}リカレントニューラルネットワーク}{23}
-\contentsline {subsection}{\numberline {4.1.3}畳み込みニューラルネットワーク}{23}
-\contentsline {section}{\numberline {4.2}FIRフィルタと畳み込み層}{23}
-\contentsline {chapter}{\numberline { 5 }実験方法}{24}
-\contentsline {chapter}{\numberline { 6 }結果と考察}{25}
-\contentsline {chapter}{Appendix}{26}
-\contentsline {section}{\numberline {A.1}セクション}{26}
-\contentsline {subsection}{\numberline {A.1.1}サブセクション}{26}
-\contentsline {chapter}{参考文献}{28}
+\contentsline {subsection}{\numberline {2.4.3}Logistic Regression(LR)}{16}
+\contentsline {chapter}{\numberline { 3 }従来の運動想起型BCI}{17}
+\contentsline {section}{\numberline {3.1}Common Spatial Patternとその派生手法}{17}
+\contentsline {subsection}{\numberline {3.1.1}脳波信号の定式化}{17}
+\contentsline {subsection}{\numberline {3.1.2}Common Spatial Pattern(CSP)}{17}
+\contentsline {subsection}{\numberline {3.1.3}Common Sparse Spatio Spectral Pattern(CSSSP)}{19}
+\contentsline {subsection}{\numberline {3.1.4}Filter Bank Common Spatial Pattern(FBCSP)}{20}
+\contentsline {section}{\numberline {3.2}従来手法のまとめ}{21}
+\contentsline {subsection}{\numberline {3.2.1}従来の運動想起BCIの構成と問題点}{21}
+\contentsline {chapter}{\numberline { 4 }提案手法}{24}
+\contentsline {section}{\numberline {4.1}ニューラルネットワーク}{24}
+\contentsline {subsection}{\numberline {4.1.1}フィードフォワードニューラルネットワーク}{24}
+\contentsline {subsection}{\numberline {4.1.2}リカレントニューラルネットワーク}{24}
+\contentsline {subsection}{\numberline {4.1.3}畳み込みニューラルネットワーク}{24}
+\contentsline {section}{\numberline {4.2}FIRフィルタと畳み込み層}{24}
+\contentsline {chapter}{\numberline { 5 }実験方法}{25}
+\contentsline {chapter}{\numberline { 6 }結果と考察}{26}
+\contentsline {chapter}{Appendix}{27}
+\contentsline {section}{\numberline {A.1}セクション}{27}
+\contentsline {subsection}{\numberline {A.1.1}サブセクション}{27}
+\contentsline {chapter}{参考文献}{29}
