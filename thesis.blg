@@ -5,45 +5,45 @@ A level-1 auxiliary file: math_rule.aux
 A level-1 auxiliary file: appendix.aux
 The style file: junsrt.bst
 Database file #1: reference.bib
-You've used 8 entries,
+You've used 12 entries,
             2270 wiz_defined-function locations,
-            590 strings with 5403 characters,
-and the built_in function-call counts, 2654 in all, are:
-= -- 193
-> -- 98
-< -- 12
-+ -- 38
-- -- 30
-* -- 138
-:= -- 338
-add.period$ -- 24
-call.type$ -- 8
-change.case$ -- 6
+            615 strings with 6072 characters,
+and the built_in function-call counts, 3962 in all, are:
+= -- 292
+> -- 135
+< -- 17
++ -- 53
+- -- 41
+* -- 197
+:= -- 493
+add.period$ -- 36
+call.type$ -- 12
+change.case$ -- 9
 chr.to.int$ -- 0
-cite$ -- 8
-duplicate$ -- 166
-empty$ -- 238
-format.name$ -- 60
-if$ -- 652
+cite$ -- 12
+duplicate$ -- 255
+empty$ -- 370
+format.name$ -- 82
+if$ -- 984
 int.to.chr$ -- 0
-int.to.str$ -- 8
-missing$ -- 9
-newline$ -- 43
-num.names$ -- 8
-pop$ -- 51
+int.to.str$ -- 12
+missing$ -- 14
+newline$ -- 63
+num.names$ -- 12
+pop$ -- 81
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 131
+skip$ -- 199
 stack$ -- 0
-substring$ -- 120
-swap$ -- 51
-text.length$ -- 12
+substring$ -- 184
+swap$ -- 78
+text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 16
-width$ -- 9
-write$ -- 88
-is.kanji.str$ -- 98
+while$ -- 24
+width$ -- 14
+write$ -- 130
+is.kanji.str$ -- 145

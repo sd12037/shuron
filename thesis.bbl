@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{スペクトル解析}
 日野幹雄.
@@ -15,18 +15,35 @@ Hiromu Gotanda, Takaaki Ishibashi, Nobuo Iwasaki, and Katsuhiro Inoue.
 \newblock 入門 独立性分析.
 \newblock 東京電機大学出版, 2004.
 
-\bibitem{csp_eigen}
-B.~Blankertz, M.~Kawanabe, R.~Tomioka, F.~Hohlefeld, V.~Nikulin, and K.~R. M.
-\newblock In-variant common spatial patterns: Alleviating nonstationarities in
-  brain-computer interfacing.
-\newblock {\em Advances in Neural Information Processing Systems}, Vol.~20, pp.
-  113--120, 2008.
+\bibitem{脳波解析入門}
+開一夫, 金山範明河内山隆紀, 松本敦宮腰誠.
+\newblock 脳波解析入門:EEGLABとSPMを使いこなす.
+\newblock 東京大学出版会, 2016.
+
+\bibitem{CSP1990}
+Zoltan~J. Koles, Michael~S. Lazar, and Steven~Z. Zhou.
+\newblock Spatial patterns underlying population differences in the background
+  eeg.
+\newblock {\em Brain Topography}, Vol.~2, pp. 275--284, 1990.
+
+\bibitem{CSP1999}
+G.~Pfurtscheller, C.~Guger, and H.~Ramoser.
+\newblock International work-conference on artificial neural networks.
+\newblock In {\em Engineering Applications of Bio-Inspired Artificial Neural
+  Networks}, 1999.
 
 \bibitem{cvscsp}
 Jyoti~Singh Kirara and R.~K.~Agrawala and.
 \newblock Optimal spatio-spectral variable size subbands filter formotor
   imagery brain computer interface.
 \newblock {\em Procedia Computer Science}, Vol.~84, pp. 14--21, 2016.
+
+\bibitem{fbcsp}
+Kai~Keng Ang, Zheng~Yang Chin, Haihong Zhang, and Cuntai Guan.
+\newblock Filter bank common spatial pattern (fbcsp) in brain-computer
+  interface.
+\newblock {\em IEEE TRANSACTIONS ON BIOMEDICAL ENGINEERING}, Vol.~XX, No.~Y,
+  pp. 2390--2397, 2008.
 
 \bibitem{csssp}
 Guido Dornhege, Benjamin Blankertz, Matthias Krauledat, Florian Losch, Gabriel
@@ -36,12 +53,19 @@ Guido Dornhege, Benjamin Blankertz, Matthias Krauledat, Florian Losch, Gabriel
 \newblock {\em IEEE TRANSACTIONS ON BIOMEDICAL ENGINEERING}, Vol.~XX, No.~Y,
   2006.
 
-\bibitem{fbcsp}
-Kai~Keng Ang, Zheng~Yang Chin, Haihong Zhang, and Cuntai Guan.
-\newblock Filter bank common spatial pattern (fbcsp) in brain-computer
-  interface.
-\newblock {\em IEEE TRANSACTIONS ON BIOMEDICAL ENGINEERING}, Vol.~XX, No.~Y,
-  pp. 2390--2397, 2008.
+\bibitem{csp_eigen}
+B.~Blankertz, M.~Kawanabe, R.~Tomioka, F.~Hohlefeld, V.~Nikulin, and K.~R. M.
+\newblock In-variant common spatial patterns: Alleviating nonstationarities in
+  brain-computer interfacing.
+\newblock {\em Advances in Neural Information Processing Systems}, Vol.~20, pp.
+  113--120, 2008.
+
+\bibitem{ERDとERS}
+G.~Pfurtscheller and F.~H.~L. da~Silva.
+\newblock Event-related eeg/meg synchronization and desyn-chronization: Basic
+  principles.
+\newblock {\em Clinical Neurophysiology}, Vol. 110, No.~11, pp. 1842--1857,
+  1999.
 
 \bibitem{fbcspBCICOMPE}
 Kai~Keng Ang, Zheng~Yang Chin, ChuanchuWang, , Cuntai Guan, and Haihong Zhang.
