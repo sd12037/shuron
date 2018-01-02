@@ -5,36 +5,36 @@ A level-1 auxiliary file: math_rule.aux
 A level-1 auxiliary file: appendix.aux
 The style file: junsrt.bst
 Database file #1: reference.bib
-You've used 7 entries,
+You've used 8 entries,
             2270 wiz_defined-function locations,
-            585 strings with 5335 characters,
-and the built_in function-call counts, 2463 in all, are:
-= -- 181
-> -- 94
+            590 strings with 5403 characters,
+and the built_in function-call counts, 2654 in all, are:
+= -- 193
+> -- 98
 < -- 12
-+ -- 36
-- -- 29
-* -- 137
-:= -- 314
-add.period$ -- 21
-call.type$ -- 7
++ -- 38
+- -- 30
+* -- 138
+:= -- 338
+add.period$ -- 24
+call.type$ -- 8
 change.case$ -- 6
 chr.to.int$ -- 0
-cite$ -- 7
-duplicate$ -- 149
-empty$ -- 213
-format.name$ -- 58
-if$ -- 604
+cite$ -- 8
+duplicate$ -- 166
+empty$ -- 238
+format.name$ -- 60
+if$ -- 652
 int.to.chr$ -- 0
-int.to.str$ -- 7
-missing$ -- 7
-newline$ -- 38
-num.names$ -- 7
-pop$ -- 39
+int.to.str$ -- 8
+missing$ -- 9
+newline$ -- 43
+num.names$ -- 8
+pop$ -- 51
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 122
+skip$ -- 131
 stack$ -- 0
 substring$ -- 120
 swap$ -- 51
@@ -43,7 +43,7 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 15
-width$ -- 8
-write$ -- 78
-is.kanji.str$ -- 90
+while$ -- 16
+width$ -- 9
+write$ -- 88
+is.kanji.str$ -- 98

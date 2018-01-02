@@ -1,5 +1,10 @@
 \begin{thebibliography}{1}
 
+\bibitem{スペクトル解析}
+日野幹雄.
+\newblock スペクトル解析（統計ライブラリー）.
+\newblock 朝倉書店, 1977.
+
 \bibitem{ICA1}
 Hiromu Gotanda, Takaaki Ishibashi, Nobuo Iwasaki, and Katsuhiro Inoue.
 \newblock 独立成分分析の基礎と応用.
