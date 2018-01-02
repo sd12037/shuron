@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2017.12.21)  29 DEC 2017 09:52
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2017.12.21)  2 JAN 2018 14:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -492,10 +492,15 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 
 ]
  2 
-(./chapter/chapter2/FEATURE.tex) (./chapter/chapter2/SIGNAL.tex [2
+(./chapter/chapter2/FEATURE.tex
+File: images/EEGfootmove.png Graphic file (type bmp)
+ <images/EEGfootmove.png>
+File: images/EEGhandmove.png Graphic file (type bmp)
 
-])
-(./chapter/chapter2/BSS.tex
+<images/EEGhandmove.png>) (./chapter/chapter2/SIGNAL.tex [2
+
+] [3] [4])
+(./chapter/chapter2/BSS.tex [5]
 File: images/x(t).png Graphic file (type bmp)
  <images/x(t).png>
 File: images/z(t).png Graphic file (type bmp)
@@ -504,50 +509,50 @@ Overfull \hbox (1.90002pt too wide) in paragraph at lines 42--56
 []$[]$ $[]$ 
  []
 
-[3]
 File: images/z=Wx.png Graphic file (type bmp)
- <images/z=Wx.png> [4]
+<images/z=Wx.png> [6]
 File: images/ica_pca.png Graphic file (type bmp)
  <images/ica_pca.png>
 Overfull \hbox (19.92897pt too wide) in paragraph at lines 122--123
  [][] 
  []
 
-[5] [6]
+[7] [8] [9]
 File: images/bss.png Graphic file (type bmp)
  <images/bss.png>
 Overfull \hbox (19.92897pt too wide) in paragraph at lines 193--194
  [][] 
  []
 
-) (./chapter/chapter2/Discriminant.tex [7] [8]
+) (./chapter/chapter2/Discriminant.tex [10]
 File: images/mean_dis.png Graphic file (type bmp)
  <images/mean_dis.png>
 File: images/var_dis.png Graphic file (type bmp)
 
-<images/var_dis.png> [9] [10]
+<images/var_dis.png> [11] [12]
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 6.72699pt on input line 143.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 4.805pt on input line 143.
+ [13]
 File: images/margin.png Graphic file (type bmp)
- <images/margin.png> [11] [12]
+ <images/margin.png> [14]
 Underfull \hbox (badness 1033) in paragraph at lines 231--239
-\JY1/mc/m/n/10 ただし 、 \OT1/ptm/m/n/10 (2.34) \JY1/mc/m/n/10 は無駄な計算も含
+\JY1/mc/m/n/10 ただし 、 \OT1/ptm/m/n/10 (2.43) \JY1/mc/m/n/10 は無駄な計算も含
 まれている 。 $\OML/cmm/m/it/10 a[] \OT1/cmr/m/n/10 = 0$ \JY1/mc/m/n/10 となる
 ような $\OML/cmm/m/it/10 x[]$ \JY1/mc/m/n/10 に対して
  []
 
-) [13]
+) [15]
  3 
 (./chapter/chapter2/CSP.tex
 File: images/CSP.png Graphic file (type bmp)
- <images/CSP.png> [14
+ <images/CSP.png> [16
 
-] [15]
+] [17]
 File: images/apple.png Graphic file (type bmp)
  <images/apple.png>
-[16]
+[18]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 160.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
@@ -560,12 +565,12 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 160.
 
 
-LaTeX Warning: Reference `fig:CSSSP' on page 17 undefined on input line 160.
+LaTeX Warning: Reference `fig:CSSSP' on page 19 undefined on input line 160.
 
 File: images/CSSSP.png Graphic file (type bmp)
 <images/CSSSP.png>
 File: images/FBCSP.png Graphic file (type bmp)
- <images/FBCSP.png>) (./chapter/chapter2/oldSOTA.tex [17]
+ <images/FBCSP.png>) (./chapter/chapter2/oldSOTA.tex [19]
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
@@ -573,25 +578,25 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
- [18]) [19] [20]
+ [20]) [21] [22]
  4 
-(./chapter/chapter3/NN.tex) [21
+(./chapter/chapter3/NN.tex) [23
 
 ]
  5 
-[22
+[24
 
 ]
  6 
-[23
+[25
 
 ]
 \openout2 = `appendix.aux'.
 
- (./appendix.tex) [24
+ (./appendix.tex) [26
 
 
-] (./thesis.bbl [25
+] (./thesis.bbl [27
 
 
 ]
@@ -603,7 +608,7 @@ LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 17.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 17.
-) [26
+) [28
 
 ]
 No file thesis.ind.
@@ -620,12 +625,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4506 strings out of 493723
- 63545 string characters out of 6152569
+ 4522 strings out of 493723
+ 63801 string characters out of 6152569
  150974 words of memory out of 5000000
- 7867 multiletter control sequences out of 15000+600000
+ 7881 multiletter control sequences out of 15000+600000
  32660 words of font info for 130 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 36i,9n,39p,293b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,9n,39p,293b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (30 pages, 104768 bytes).
+Output written on thesis.dvi (32 pages, 116940 bytes).
