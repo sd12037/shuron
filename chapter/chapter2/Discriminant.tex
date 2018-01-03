@@ -201,9 +201,33 @@ BCIも含めた多くの応用では既に知られた優れた性質を持つ�
 通常、カーネルを用いる場合にはハイパーパラメータが付随する。多項式カーネルの場合はスカラーの\(c,M\)、
 ガウス基底カーネルの場合はスカラーの\(\sigma\)がハイパーパラメータとなり、これらの調整次第で
 得られる分類面は異なる。
-　
 応用上はソフトマージンカーネルSVMを用いればよく、ソフトマージンのハイパーパラメータとカーネルの設計を変えることで
 通常の線形SVMの働きをさせることも可能である。
+図\ref{fig:linear}-\ref{fig:kernel}に2次元データに対するSVMの分類境界を示す。
+図\ref{fig:xor}の通り、線形SVMでは線形分離不可能な問題に対して不適切な境界を設ける。
+\begin{figure}[t]
+    \begin{minipage}{0.5\hsize}
+     \begin{center}
+      \includegraphics[width=50mm]{images/linearSVM.png}
+     \end{center}
+     \caption{線形SVM（線形分離可能）}
+     \label{fig:linear}
+    \end{minipage}
+    \begin{minipage}{0.5\hsize}
+     \begin{center}
+      \includegraphics[width=50mm]{images/xorlinearSVM.png}
+     \end{center}
+     \caption{線形SVM（線形分離不可能）}
+     \label{fig:xor}
+    \end{minipage}
+\end{figure}
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=70mm]{images/xorkernelSVM.png}
+    \caption{ガウシアンカーネルSVM（線形分離不可能）}
+    \label{fig:kernel}
+\end{figure}
+
 ソフトマージンカーネルSVMの識別関数は以下で表される。
 \begin{equation}
     y(x) = \sum_{n=1}^Na_nt_nk(x,x_n) + b
@@ -238,3 +262,56 @@ BCIも含めた多くの応用では既に知られた優れた性質を持つ�
 実用上省メモリに貢献できる。
 
 \subsection{Logistic Regression(LR)}
+Logistic Regression(LR)は対数オッズ比を線形モデルで表現した分類手法である。
+クラス分類においてデータ\(x\)がクラス\(C_i\)に属する確率を\(p(y=C_i\mid x)\)と表す。
+この時、事象\(y=C_i\)のオッズ比は以下で表される。
+\begin{equation}
+    odds(y=C_i) = \frac{p(y=C_i \mid x)}{1-p(y=C_i \mid x)}
+    \label{eq:odds}
+\end{equation}
+2クラス分類においては\(odds(y=C_1) \geq 1\)であれば\(C_1\)に分類する
+などの規則を設けることで分類が可能になる。
+ここで、対数オッズは以下で表される。
+\begin{equation}
+    logodds(y=C_i) = \log \left\{ \frac{p(y=C_i \mid x)}{1-p(y=C_i \mid x)} \right\}
+    \label{eq:logodds}
+\end{equation}
+(\ref{eq:odds})が\(1\)以上の値となる時、(\ref{eq:logodds})は\(0\)以上の値となる。
+LRでは多次元データ\(x\in \mathbb R^D\)に対して\(w \in \mathbb R^D\)として、
+線形モデル\(z=w^Tx \in \mathbb R\)によって対数オッズ比を出力するモデルを構築する。
+\(y = C_1\)の対数オッズ比を線形モデルで表現すると以下で表される。
+\begin{equation}
+    \log \left\{ \frac{p(y=C_1 \mid x)}{1-p(y=C_1 \mid x)} \right\} = w^Tx
+    \label{eq:logoddsmodel}
+\end{equation}
+この時、以下の式変形によってよく知られたシグモイド関数\(\sigma(z)=1/(1+\exp(-z))\)が導出される。
+\begin{eqnarray}
+    && \log \left\{ \frac{p(y=C_1 \mid x)}{1-p(y=C_1 \mid x)} \right\}  =  w^Tx \nonumber \\
+    \iff && \frac{p(y=C_1 \mid x)}{1-p(y=C_1 \mid x)}  =  \exp(w^Tx) \nonumber \\
+    \iff && \frac{1}{p(y=C_1 \mid x)}-1  =  \exp(-w^Tx) \nonumber \\
+    \iff && p(y=C_1 \mid x)  =  \frac{1}{1+\exp(-w^Tx)} 
+    \label{eq:logisticmodel}
+\end{eqnarray}
+シグモイド関数に関しては、
+\begin{eqnarray}
+    \label{eq:logminas}
+    \sigma(-z) = 1-\sigma(x)　\\
+    \sigma'(z) = \sigma(z)(1-\sigma(z))
+\end{eqnarray}
+という性質が知られている。
+ここで\(y=C_1\)という事象を\(y=1\)に対応させ、\(y=C_2\)という事象を\(y=-1\)に対応させると、
+(\ref{eq:logisticmodel})と(\ref{eq:logminas})用いて、
+\begin{equation}
+    p(y\mid x,w) = \sigma(yw^Tx)
+\end{equation}
+とすることができる。{\rm i.i.d.}を仮定して対数尤度の最尤推定を考えると
+以下のロジスティック損失の最小化問題に帰着される。ここで、\(N\)は訓練データ数とした。
+\begin{eqnarray}
+    \argmax_w \sum_{i=1}^N \log \{\sigma(y_nw^Tx_n)\} & = & \argmin_w \sum_{i=1}^N -\log \{\sigma(y_nw^Tx_n)\} \nonumber \\
+    &=& \argmin_w \sum_{n=1}^N \log \left\{ \frac{1}{\sigma(y_nw^Tx_n)} \right\} \nonumber \\
+    &=& \argmin_w \sum_{n=1}^N \log \left\{ 1+\exp(-y_nw^Tx_n) \right\}
+\end{eqnarray}
+以上から、LRの学習はオッズ比を対数線形モデルで表現し最尤推定を行うことに相当する。
+導出の過程から明らかなようにシグモイド関数は非線形変換であるが、スケールの変換を行うだけで
+線形分離不可能な問題に対応できるわけではなく、モデルとしては単層パーセプトロンと等価である。
+目的関数は凸であり、学習は勾配法、ニュートン法、準ニュートン法などが用いられる。

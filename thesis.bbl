@@ -20,6 +20,39 @@ Hiromu Gotanda, Takaaki Ishibashi, Nobuo Iwasaki, and Katsuhiro Inoue.
 \newblock 脳波解析入門:EEGLABとSPMを使いこなす.
 \newblock 東京大学出版会, 2016.
 
+\bibitem{ERDとERS}
+G.~Pfurtscheller and F.~H.~L. da~Silva.
+\newblock Event-related eeg/meg synchronization and desyn-chronization: Basic
+  principles.
+\newblock {\em Clinical Neurophysiology}, Vol. 110, No.~11, pp. 1842--1857,
+  1999.
+
+\bibitem{Beta波によるBCI}
+G.~Pfurtscheller and T.~Solis-Escalante.
+\newblock Could the beta rebound in the eeg be suitable to realize a “brain
+  switch”?
+\newblock {\em Clinical Neurophysiology}, Vol. 120, No.~1, pp. 24--29, 2009.
+
+\bibitem{時間周波数解析の比較}
+Kenji Kato, Kensho Takahashi, Nobuaki Mizuguchi, and Junichi Ushiba.
+\newblock Online detection of amplitude modulation of motor-related eeg
+  desynchronization using a lock-in amplifier: Comparison with a fast fourier
+  transform, a continuous wavelet transform, and an autoregressive algorithm.
+\newblock {\em Journal of Neuroscience Methods}, Vol. 293, pp. 289--298, 2018.
+
+\bibitem{EMD}
+Guo Xiaojing, Wu~Xiaopei, and Zhang Dexiang.
+\newblock Motor imagery eeg detection by empirical mode decomposition.
+\newblock In {\em 2008 IEEE International Joint Conference on Neural Networks
+  (IEEE World Congress on Computational Intelligence)}, pp. 2619--2622, June
+  2008.
+
+\bibitem{IMF}
+SachinTaran, VarunBajaj, DheerajSharma, SiulySiuly, and A.Sengur.
+\newblock Features based on analytic imf for classifying motor imagery eeg
+  signals in bci applications.
+\newblock {\em Measurement}, Vol. 116, pp. 68--76, 2018.
+
 \bibitem{CSP1990}
 Zoltan~J. Koles, Michael~S. Lazar, and Steven~Z. Zhou.
 \newblock Spatial patterns underlying population differences in the background
@@ -60,17 +93,36 @@ B.~Blankertz, M.~Kawanabe, R.~Tomioka, F.~Hohlefeld, V.~Nikulin, and K.~R. M.
 \newblock {\em Advances in Neural Information Processing Systems}, Vol.~20, pp.
   113--120, 2008.
 
-\bibitem{ERDとERS}
-G.~Pfurtscheller and F.~H.~L. da~Silva.
-\newblock Event-related eeg/meg synchronization and desyn-chronization: Basic
-  principles.
-\newblock {\em Clinical Neurophysiology}, Vol. 110, No.~11, pp. 1842--1857,
-  1999.
+\bibitem{カーネルCSP}
+N.~Behrooz, B.~Reza, and J.~M. Zolghadri.
+\newblock An efficient hybrid linear and kernel csp approach for eeg feature
+  extraction.
+\newblock {\em Neurocomputing}, Vol.~73, pp. 432--437, 2009.
+
+\bibitem{正則化CSP}
+F.~Lotte and C.~Guan.
+\newblock Regularizing common spatial patterns to improve bci designs: Unified
+  theory and new algorithms.
+\newblock {\em IEEE Transactions on Biomedical Engineering}, Vol.~58, No.~2,
+  pp. 355--362, 2011.
 
 \bibitem{fbcspBCICOMPE}
 Kai~Keng Ang, Zheng~Yang Chin, ChuanchuWang, , Cuntai Guan, and Haihong Zhang.
 \newblock Filter bank common spatial pattern algorithm on bci competition iv
   datasets 2a and 2b.
 \newblock {\em frontiers in NEUROSCIENCE}, Vol.~29, pp. 2390--2397, March 2012.
+
+\bibitem{kNMF}
+M.~Sakai.
+\newblock Kernel nonnegative matrix factorization with constraint increasing
+  the discriminability of two classes for the eeg feature extraction.
+\newblock In {\em 2013 International Conference on Signal-Image Technology
+  Internet-Based Systems}, pp. 966--970, Dec 2013.
+
+\bibitem{kNMF2}
+Hyekyoung Lee, Andrzej Cichocki, and Seungjin Choi.
+\newblock Kernel nonnegative matrix factorization for spectral {EEG} feature
+  extraction.
+\newblock {\em Neurocomputing}, Vol.~72, No. 13-15, pp. 3182--3190, 2009.
 
 \end{thebibliography}
