@@ -13,19 +13,51 @@
 このセクションでは、多数存在する運動想起型BCIの構築方法に関して、
 統一的な視点に立って概観する。その後、従来手法全般に対する問題点を提示し、このチャプターを終える。
 
-\subsection{脳波の特徴量}
+\subsection{特徴量の観点からの従来手法}
 運動想起を1回行った際に計測された脳波を以下で表記する。
 \begin{equation}
     X =(x_1, \cdots, x_N)\in \mathbb{R}^{M \times N}\    
 \end{equation}
 ここに\(M\)は電極の個数、\(N\)は計測時間点数である。
-空間フィルタとは\(W\in \mathbb R^{M \times m}\)によって
-脳波を\(W^TX \in \mathbb R^{m \times N}\)と変換する。
-時間周波数解析\(h(\cdot)\)は基本的には時間的に局在する基底関数を\(K\)個準備し、
-各時間\(n\)において脳波を基底関数の重ね合わせで表現した際の係数\(A = h(W^TX) \in \mathbb R^{m \times N \times K}\)へと変換する。
+空間フィルタは\(W\in \mathbb R^{M \times M}\)によって
+脳波を\(W^TX \in \mathbb R^{M \times N}\)と変換する。
+通常は更に電極の軸に関して次元削減を行うが、ここでは単に線形変換とする（必要であれば、後に削除すれば良い）。
+時間周波数解析\(h(\cdot)\)は時間的に局在する基底関数を\(K\)個準備した場合、
+各時間\(n\)において信号を基底関数の重ね合わせで表現した際の係数\(h(X) \in \mathbb R^{M \times N \times K}\)へと変換する。
+空間フィルタと時間周波数解析の両方を用いる場合には、以下の形式で表される特徴量を抽出する。
+\begin{equation}
+    Z = h(W^TX) \in \mathbb R^{M\times N \times K}
+    \label{eq:EEGfeatures}
+\end{equation} 
+一方でフィルタバンクを用いるFBCSPなどは以下の形式で表すことができる。
+\begin{eqnarray}
+    && {\cal H}  =  \{ {\cal H}_1,\cdots, {\cal H}_K \} \\
+    && \hat X_k  = {\cal H}_k(X) \in \mathbb R^{M\times N} \\
+    && Z_k  = W_k^T{\cal H}_k(\hat X_k) \in \mathbb R^{M\times N} \\
+    && Z  =  (Z_1,\cdots, Z_K) \in \mathbb R^{M\times N \times K}
+    \label{eq:EEGfeaturesbandpass}
+\end{eqnarray} 
+ここに\({\cal H}\)はフィルタバンクであり、\(K\)はフィルタの個数に相当する。
+いずれにしても、抽出される特徴量は\(Z\in \mathbb R^{M\times N \times K}\)という
+3階テンソル(電極×時間×周波数)である。
 
-\subsection{従来の運動想起BCIの構成}
-まず典型的な運動想起型BCIの構成について述べる。
+A. S. Aghaei\cite{Ztfc}も同様のことに言及しており、脳波\(X\)から\(Z\in \mathbb R^{M\times N \times K}\)
+を獲得する様々な手法について比較している。
+更に\(Z\)が得られた後の次元削減および運動想起部位を出力する分類器も含め、
+一連の手法に関して、
+電極軸と周波数軸に対する双線形変換によるアプローチを提案している(図\ref{fig:fbcsp bilinear}(b,c))。
+図中で``space"と表現されている単語は本論文中では電極に相当する。\(\Omega\)は運動想起部位であり、
+\(\hat \Omega\)がBCIの予測出力である。
+\begin{figure}
+    \centering
+    \includegraphics[width=14cm]{images/bilinear.png}
+    \caption{脳波を3階テンソルとした手法の模式図(参照\cite{Ztfc})}
+    \label{fig:fbcsp bilinear}
+\end{figure}
+
+
+\subsection{構成の観点からの従来手法}
+次に典型的な運動想起型BCIの構成について述べる。
 典型的な運動想起BCIは、運動想起に関連している脳波を取り出すための前処理\(\cal H(\cdot)\)
 によって脳波の生データから\(\hat X\)を獲得することが一般的である。
 \begin{equation}
@@ -67,7 +99,7 @@
 \end{equation}
 と表され、形式上は合成関数である。それぞれの関数の役割を明示しなければ、BCIは単に以下の合成関数である。
 \begin{equation}
-    Y = (f_K\circ \cdots \circ f_2\circ f_1)(X)
+    Y = (f_K\circ \cdots \circ f_1)(X)
     \label{eq:bci_gosei4}
 \end{equation}
 BCIを合成関数(\ref{eq:bci_gosei4})を出発点にして見ると、
@@ -75,78 +107,16 @@ BCIを合成関数(\ref{eq:bci_gosei4})を出発点にして見ると、
 それぞれに役割を付与し、与えた役割を担うような調整が個々に行われていると見なせる。
 ただし、関数\(f_i\)を設計するためには\(f_{i-1}\)の設計が終了していなければならない。
 
-個々の関数\(f_i(\cdot)\)を設計する場合には、その候補となる関数族\(\{f_i(\cdot,\theta_i)\mid \theta_i \in \Theta_i\}\)を仮定する。
-ここに\(\Theta_i\)は\(\theta_i\)が取りうる全ての値の集合である。
-例えば、CSPを用いた\(Y = (g_{lda}\circ f_{csp} \circ {{\cal H}_{buttord}})(X)\)で表されるBCIを考え、
-バタワースバンドパスフィルタ、CSP、LDAについて設計を行う場合は以下の関数族を仮定する。
-\begin{eqnarray}
-    {\cal H}_{buttord}(\cdot) &=& \{{\cal H}(\cdot,w_p,w_s,r_p,r_s) \mid w_p,w_s \in \mathbb R^2, r_p,r_s \in \mathbb R\} \\
-    \label{eq:H_buttord}
-    f_{csp}(\cdot) &=& \{f(\cdot, W_{csp})\ \mid W_{csp} \in \mathbb R^{m\times M} \}\\
-    \label{eq:f_csp}
-    g_{lda}(\cdot) &=& \{g(\cdot,W_{lda})\ \mid W_{lda} \in \mathbb R^{d \times m}\}    
-    \label{eq:g_lda}
-\end{eqnarray}
-\(w_p,w_s\)はそれぞれ通過帯域コーナー周波数、阻止帯域コーナー周波数である。
-\(r_p,r_s\)はそれぞれ通過帯域リップル、阻止帯域の減衰量である。
-\(W_{csp}\)はCSPにおける線形変換の表現行列であり、
-電極数\(M\)の次元を持つ脳波を\(m (< M)\)の任意の次元の電極空間に圧縮する。
-\(W_{lda}\)はLDAにおける線形変換の表現行列であり、
-\(m\)次元の電極空間から分類クラスの数より小さな任意の\(d\)次元への射影を担う。
-バンドパスフィルタのパラメータに関しては人手で決定され、
-CSPとLDAのパラメータはそれぞれの学習アルゴリズムによって決定される。
-ただし、\({\cal H}_{buttord}\)の設計を終えなければ、\(f_{csp}\)の設計に入ることはできない。
-あるいは結果が期待通りでなかった場合には、\({\cal H}_{buttord}\)の設計に戻らなければならない。
-CSSSPはこの問題を解決した手法であると言えるが、同様の問題が\(f_{lda}\)と\(f_{csp}\)の間にも存在する。
-
-
-
-% このようにして構築されたBCIはバンドパスフィルタ\(\cal H\)、空間フィルタ\(f\)、分類器\(g\)
-% を要素とした集合として記述することができる。
-% \begin{equation}
-%     BCI=\{{\cal H},f,g\}
-%     \label{eq:BCI}
-% \end{equation}
-% また、時間周波数解析や行列分解・テンソル分解によって特徴量抽出を行う手法も提案されている。
-% しかし、BCIを構築する上では（あるいは脳波解析をする上では）周波数帯域と頭皮領域の考慮は欠かせないことであり、
-% バンドパスフィルタや空間フィルタは一般的に用いられる。
-% 従って独自の特徴量抽出手法を\(h(\cdot)\)とすれば、
-% 以下のように典型的なBCIに要素を追加した形で表記することができる。
-% \begin{equation}
-%     BCI=\{{\cal H},f,g,h\}
-%     \label{eq:generalBCI}
-% \end{equation}
-
-% 以上の観点から、BCIを設計することは集合(\ref{eq:generalBCI})の要素をどのように決定するかを考えるということに相当する。
-% 最も神経科学的知見に忠実な運動想起BCIは、
-% バンドパスフィルタ\(\cal H\)を事象関連脱同期の周波数帯域によって決定し、
-% 空間フィルタ\(f\)を身体部位と対応する脳領域によって構成し、
-% 処理された信号に対して閾値を設けることで分類器\(g\)を構築する。
-% 機械学習の手法を取り入れた代表的なBCIは
-% バンドパスフィルタ\(\cal H\)を試行錯誤、あるいは何らかの評価指標に基づいて決定し、
-% 空間フィルタ\(f\)をCSPによって構成し、
-% 処理された信号に対してLDAなどを用いて分類器\(g\)を構築している。
-% 更にCSSSPはバンドパスフィルタ\(\cal H\)と空間フィルタ\(f\)を同時に考慮した同時最適化手法、
-% FBCSPはバンドパスフィルタ\(\cal H\)を複数用意し、複数の周波数帯域から特徴量抽出を行う手法である。
-
-% 従来手法に則ってBCIを設計することの問題点を検討する。
-% そのために典型的なワークフローの概略を示す。
-% まず、予め(\ref{eq:generalBCI})の要素を定める。
-% 具体的にはバンドパスフィルタ\(\cal H\)をバタワースフィルタ、
-% 空間フィルタ\(f\)をCSP、分類器\(g\)をLDAなどと定めることである。
-% この時に検討されるBCIを以下で表記する。
-% \begin{equation}
-%     BCI=\{{\cal H}_{buttord},f_{csp},g_{lda}\}
-%     \label{eq:a BCI}
-% \end{equation}
-% ここで(\ref{eq:a BCI})の各要素も実数スカラー、実数ベクトル、実数行列などを要素に持つ集合であり、
-% 以下のように表される。
+% 個々の関数\(f_i(\cdot)\)を設計する場合には、その候補となる関数族\(\{f_i(\cdot,\theta_i)\mid \theta_i \in \Theta_i\}\)を仮定する。
+% ここに\(\Theta_i\)は\(\theta_i\)が取りうる全ての値の集合である。
+% 例えば、CSPを用いた\(Y = (g_{lda}\circ f_{csp} \circ {{\cal H}_{buttord}})(X)\)で表されるBCIを考え、
+% バタワースバンドパスフィルタ、CSP、LDAについて設計を行う場合は以下の関数族を仮定する。
 % \begin{eqnarray}
-%     {\cal H}_{buttord} &=& \{w_p,w_s,r_p,r_s \mid w_p,w_s \in \mathbb R^2, r_p,r_s \in \mathbb R\} \\
+%     {\cal H}_{buttord}(\cdot) &=& \{{\cal H}(\cdot,w_p,w_s,r_p,r_s) \mid w_p,w_s \in \mathbb R^2, r_p,r_s \in \mathbb R\} \\
 %     \label{eq:H_buttord}
-%     f_{csp} &=& \{W_{csp}\ \mid W_{csp} \in \mathbb R^{m\times M} \}\\
+%     f_{csp}(\cdot) &=& \{f(\cdot, W_{csp})\ \mid W_{csp} \in \mathbb R^{m\times M} \}\\
 %     \label{eq:f_csp}
-%     g_{lda} &=& \{W_{lda}\ \mid W_{lda} \in \mathbb R^{d \times m}\}    
+%     g_{lda}(\cdot) &=& \{g(\cdot,W_{lda})\ \mid W_{lda} \in \mathbb R^{d \times m}\}    
 %     \label{eq:g_lda}
 % \end{eqnarray}
 % \(w_p,w_s\)はそれぞれ通過帯域コーナー周波数、阻止帯域コーナー周波数である。
@@ -155,20 +125,14 @@ CSSSPはこの問題を解決した手法であると言えるが、同様の問
 % 電極数\(M\)の次元を持つ脳波を\(m (< M)\)の任意の次元の電極空間に圧縮する。
 % \(W_{lda}\)はLDAにおける線形変換の表現行列であり、
 % \(m\)次元の電極空間から分類クラスの数より小さな任意の\(d\)次元への射影を担う。
+% ここではバンドパスフィルタのパラメータに関しては人手で決定され、
+% CSPとLDAのパラメータはそれぞれの学習アルゴリズムによって決定される場合を想定する。
+% ここで例に挙げたBCIは\({\cal H}_{buttord}\)の設計を終えなければ、\(f_{csp}\)の設計に入ることはできない。
+% あるいは結果が期待通りでなかった場合には、\({\cal H}_{buttord}\)の設計に戻らなければならない。
+% \({\cal H}_{buttord}\)が\(f_{csp}\)の学習結果にどのような影響を及ぼすのかは定かではないため、
+% この後戻り設計は試行錯誤によって解決するしか無い。
+% 一方でCSSSPはこの問題を解決した手法であると言えるが、
+% 同様の問題が\(f_{lda}\)と\(f_{csp}\)の間にも存在する。
 
-% 改めて(\ref{eq:a BCI})についてその要素を書き下すと以下のように記述できる。
-% \begin{equation}
-%     BCI=\{\{w_p,w_s,r_p,r_s\},
-%     \{W_{csp}\},
-%     \{W_{lda}\}\}
-%     \label{eq:a BCI all}
-% \end{equation}
-% すなわちここで検討しているBCIは
-% (\ref{eq:a BCI all})の要素を決定することによって構築され、
-% 第1の要素に含まれるパラメータがバンドパスフィルタを決定し、
-% 第2の要素に含まれるパラメータが空間フィルタを決定し、
-% 第3の要素に含まれるパラメータが分類器を決定する。
-% 脳波処理を適切に行うための手法を柔軟に検討できるかのように見えるが、
-% ここで考慮したBCIには実際には明らかな制限が存在する。
-% CSPのパラメータの決定方法については\ref{subsec:CSP}で述べ、
-% 同様にLDAのパラメータの決定方法については\ref{subsec:LDA}で述べた。
+
+

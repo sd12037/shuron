@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2017.12.21)  3 JAN 2018 15:37
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2017.12.21)  4 JAN 2018 11:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -331,9 +331,6 @@ LaTeX Warning: Label `eq:obj nonlinear' multiply defined.
 
 LaTeX Warning: Label `fig:Cz' multiply defined.
 
-
-LaTeX Warning: Label `fig:FBCSP' multiply defined.
-
 (./appendix.aux))
 \openout1 = `thesis.aux'.
 
@@ -590,9 +587,7 @@ File: images/apple.png Graphic file (type bmp)
 LaTeX Warning: Reference `fig:CSSSP' on page 22 undefined on input line 159.
 
 File: images/CSSSP.png Graphic file (type bmp)
-<images/CSSSP.png> [22]
-File: images/FBCSP.png Graphic file (type bmp)
- <images/FBCSP.png>) (./chapter/chapter2/oldSOTA.tex
+<images/CSSSP.png> [22]) (./chapter/chapter2/oldSOTA.tex
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
@@ -600,25 +595,30 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 5.
- [23] [24]) [25]
- 4 
-(./chapter/chapter3/NN.tex) [26
+ [23]
+File: images/bilinear.png Graphic file (type bmp)
 
-]
+<images/bilinear.png> [24]) [25]
+ 4 
+(./chapter/chapter3/NN.tex [26
+
+] [27]
+File: images/activations.png Graphic file (type bmp)
+ <images/activations.png> [28]) [29]
  5 
-[27
+[30
 
 ]
  6 
-[28
+[31
 
 ]
 \openout2 = `appendix.aux'.
 
- (./appendix.tex) [29
+ (./appendix.tex) [32
 
 
-] (./thesis.bbl [30
+] (./thesis.bbl [33
 
 
 ]
@@ -630,9 +630,9 @@ LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 27.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 27.
- [31
+ [34
 
-]) [32]
+]) [35]
 No file thesis.ind.
 
 Package caption Warning: Unused \captionsetup[table] on input line 30.
@@ -647,12 +647,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4564 strings out of 493723
- 64480 string characters out of 6152569
+ 4573 strings out of 493723
+ 64673 string characters out of 6152569
  150974 words of memory out of 5000000
- 7918 multiletter control sequences out of 15000+600000
+ 7926 multiletter control sequences out of 15000+600000
  32660 words of font info for 130 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  36i,9n,39p,293b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (36 pages, 133504 bytes).
+Output written on thesis.dvi (39 pages, 147696 bytes).

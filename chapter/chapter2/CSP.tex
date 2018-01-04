@@ -181,13 +181,13 @@ CSSSPを解いて得られるフィルタ係数\(b\)は最適化問題の解で�
 例えば左手の運動想起時と下肢の運動想起時では重要な周波数帯域が異なり、
 CSSSPの解がいずれかの情報を失ってしまっている可能性が考えられる。FBCSPはこのような問題の解決を図る手法である\cite{fbcsp}。
 
-まず、FBCSPではバンドパスフィルタバンク\(\{ {\cal H}_1, \ldots, {\cal H}_F \}\)を定義する。
-このバンドパスフィルタバンクは1つ1つのフィルタ\({\cal H}_f\)が異なる周波数領域を通過させるように設計される。
-各バンドパスフィルタを通過した\(\hat X_f = {\cal H}_f(X)\)に対して、
+まず、FBCSPではバンドパスフィルタバンク\(\{ {\cal H}_1, \ldots, {\cal H}_K \}\)を定義する。
+このバンドパスフィルタバンクは1つ1つのフィルタ\({\cal H}_k\)が異なる周波数領域を通過させるように設計される。
+各バンドパスフィルタを通過した\(\hat X_k = {\cal H}_k(X)\)に対して、
 それぞれCSPの問題を解くことで各周波数領域における空間的な特徴量を獲得することが可能となる。
-\({\hat X}_f\)に対してCSPによって取り出した特徴量を\(f_f\)とすれば、最終的な特徴ベクトル\(f\)は
+\({\hat X}_k\)に対してCSPによって取り出した特徴量を\(f_k\)とすれば、最終的な特徴ベクトル\(f\)は
 \begin{equation}
-    f = (f_1^T,\cdots, f_F^T)^T
+    f = (f_1^T,\cdots, f_K^T)^T
 \end{equation}
 であり、単に各周波数帯域のCSPによる特徴量を連結したベクトルとなる。
 ただしCSSSPとは異なり、CSPとバンドパスフィルタの同時最適化を行ってはいない。
@@ -196,9 +196,10 @@ CSSSPの解がいずれかの情報を失ってしまっている可能性が考
 それぞれの最適な電極の重み付けをCSPによって獲得したにすぎない。
 そのため、FBCSPによって得られた特徴量から更に特徴量を抽出する手法が別途用いられる図\ref{fig:FBCSP}。
 また、FBCSP後の特徴量の選定を行う方法として相互情報量を用いた手法が提案されている\cite{fbcspBCICOMPE}。
-\begin{figure}
-    \centering
-    \includegraphics[width=12cm]{images/FBCSP.png}
-    \caption{FBCSPを用いた処理の全体像}
-    \label{fig:FBCSP}
-\end{figure}
+
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=12cm]{images/FBCSP.png}
+%     \caption{FBCSPを用いた処理の全体像}
+%     \label{fig:FBCSP}
+% \end{figure}

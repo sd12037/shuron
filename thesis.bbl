@@ -112,6 +112,13 @@ Kai~Keng Ang, Zheng~Yang Chin, ChuanchuWang, , Cuntai Guan, and Haihong Zhang.
   datasets 2a and 2b.
 \newblock {\em frontiers in NEUROSCIENCE}, Vol.~29, pp. 2390--2397, March 2012.
 
+\bibitem{Ztfc}
+A.~S. Aghaei, M.~S. Mahanta, and K.~N. Plataniotis.
+\newblock Separable common spatio-spectral patterns for motor imagery bci
+  systems.
+\newblock {\em IEEE Transactions on Biomedical Engineering}, Vol.~63, No.~1,
+  pp. 15--29, Jan 2016.
+
 \bibitem{kNMF}
 M.~Sakai.
 \newblock Kernel nonnegative matrix factorization with constraint increasing
@@ -124,5 +131,13 @@ Hyekyoung Lee, Andrzej Cichocki, and Seungjin Choi.
 \newblock Kernel nonnegative matrix factorization for spectral {EEG} feature
   extraction.
 \newblock {\em Neurocomputing}, Vol.~72, No. 13-15, pp. 3182--3190, 2009.
+
+\bibitem{ベイズドロップアウト}
+Yarin Gal and Zoubin Ghahramani.
+\newblock Dropout as a bayesian approximation: representing model uncertainty
+  in deep learning.
+\newblock In {\em ICML'16 Proceedings of the 33rd International Conference on
+  International Conference on Machine Learning)}, Vol.~48, pp. 1050--1059, June
+  2016.
 
 \end{thebibliography}
