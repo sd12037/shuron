@@ -5,45 +5,48 @@ A level-1 auxiliary file: math_rule.aux
 A level-1 auxiliary file: appendix.aux
 The style file: junsrt.bst
 Database file #1: reference.bib
-You've used 27 entries,
+Warning--can't use both author and editor fields in sparsemethod
+Warning--can't use both author and editor fields in bootCSP
+You've used 41 entries,
             2270 wiz_defined-function locations,
-            719 strings with 8969 characters,
-and the built_in function-call counts, 9902 in all, are:
-= -- 778
-> -- 283
-< -- 48
-+ -- 112
-- -- 85
-* -- 522
-:= -- 1171
-add.period$ -- 82
-call.type$ -- 27
-change.case$ -- 24
+            808 strings with 11864 characters,
+and the built_in function-call counts, 14886 in all, are:
+= -- 1166
+> -- 435
+< -- 72
++ -- 172
+- -- 131
+* -- 788
+:= -- 1769
+add.period$ -- 124
+call.type$ -- 41
+change.case$ -- 34
 chr.to.int$ -- 0
-cite$ -- 27
-duplicate$ -- 638
-empty$ -- 936
-format.name$ -- 170
-if$ -- 2503
+cite$ -- 43
+duplicate$ -- 958
+empty$ -- 1396
+format.name$ -- 262
+if$ -- 3749
 int.to.chr$ -- 0
-int.to.str$ -- 27
-missing$ -- 29
-newline$ -- 138
-num.names$ -- 29
-pop$ -- 169
+int.to.str$ -- 41
+missing$ -- 43
+newline$ -- 208
+num.names$ -- 43
+pop$ -- 255
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 528
+skip$ -- 792
 stack$ -- 0
-substring$ -- 567
-swap$ -- 234
-text.length$ -- 48
+substring$ -- 839
+swap$ -- 346
+text.length$ -- 72
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 69
-width$ -- 29
-write$ -- 297
-is.kanji.str$ -- 331
+warning$ -- 2
+while$ -- 105
+width$ -- 43
+write$ -- 453
+is.kanji.str$ -- 503
+(There were 2 warnings)

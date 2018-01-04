@@ -24,51 +24,25 @@ G.~Pfurtscheller and F.~H.~L. da~Silva.
 \newblock 運動想起フィードバック訓練による事象関連脱同期 (erd) 出現の検証.
 \newblock システム制御情報学会論文誌, Vol.~22, No.~5, pp. 199--205, 2009.
 
-\bibitem{スペクトル解析}
-日野幹雄.
-\newblock スペクトル解析（統計ライブラリー）.
-\newblock 朝倉書店, 1977.
-
-\bibitem{ICA1}
-Hiromu Gotanda, Takaaki Ishibashi, Nobuo Iwasaki, and Katsuhiro Inoue.
-\newblock 独立成分分析の基礎と応用.
-\newblock Technical Report 1743, 数理解析研究所, 2011.
-
-\bibitem{ICA2}
-村田昇.
-\newblock 入門 独立成分分析.
-\newblock 東京電機大学出版, 2004.
-
-\bibitem{ディープローカルミニマム}
-Kenji Kawaguchi.
-\newblock Deep learning without poor local minima.
-\newblock In D.~D. Lee, M.~Sugiyama, U.~V. Luxburg, I.~Guyon, and R.~Garnett,
-  editors, {\em Advances in Neural Information Processing Systems 29}, pp.
-  586--594. Curran Associates, Inc., 2016.
-
-\bibitem{DeepvsShallow}
-Hrushikesh Mhaskar and Tomaso~A. Poggio.
-\newblock Deep vs. shallow networks : An approximation theory perspective.
-\newblock {\em Analysis and Applications}, Vol.~14, , November 2016.
-
-\bibitem{ベイズドロップアウト}
-Yarin Gal and Zoubin Ghahramani.
-\newblock Dropout as a bayesian approximation: representing model uncertainty
-  in deep learning.
-\newblock In {\em ICML'16 Proceedings of the 33rd International Conference on
-  International Conference on Machine Learning}, Vol.~48, pp. 1050--1059, June
-  2016.
-
-\bibitem{脳波解析入門}
-開一夫, 金山範明河内山隆紀, 松本敦宮腰誠.
-\newblock 脳波解析入門:EEGLABとSPMを使いこなす.
-\newblock 東京大学出版会, 2016.
+\bibitem{プリミティブERD}
+D.~Huang, K.~Qian, S.~Oxenham, D.~Y. Fei, and O.~Bai.
+\newblock Event-related desynchronization/ synchronization-based brain-computer
+  interface towards volitional cursor control in a 2d center-out paradigm.
+\newblock In {\em 2011 IEEE Symposium on Computational Intelligence, Cognitive
+  Algorithms, Mind, and Brain (CCMB)}, pp. 1--8, April 2011.
 
 \bibitem{Beta波によるBCI}
 G.~Pfurtscheller and T.~Solis-Escalante.
 \newblock Could the beta rebound in the eeg be suitable to realize a “brain
   switch”?
 \newblock {\em Clinical Neurophysiology}, Vol. 120, No.~1, pp. 24--29, 2009.
+
+\bibitem{waveletFSVM}
+Q.~Xu, H.~Zhou, Y.~Wang, and J.~Huang.
+\newblock Fuzzy support vector machine for classification of eeg signals using
+  wavelet-based features.
+\newblock {\em Medical Engineering \& Physics}, Vol.~31, No.~7, pp. 858--865,
+  2009.
 
 \bibitem{時間周波数解析の比較}
 Kenji Kato, Kensho Takahashi, Nobuaki Mizuguchi, and Junichi Ushiba.
@@ -77,18 +51,31 @@ Kenji Kato, Kensho Takahashi, Nobuaki Mizuguchi, and Junichi Ushiba.
   transform, a continuous wavelet transform, and an autoregressive algorithm.
 \newblock {\em Journal of Neuroscience Methods}, Vol. 293, pp. 289--298, 2018.
 
-\bibitem{EMD}
-Guo Xiaojing, Wu~Xiaopei, and Zhang Dexiang.
-\newblock Motor imagery eeg detection by empirical mode decomposition.
-\newblock In {\em 2008 IEEE International Joint Conference on Neural Networks
-  (IEEE World Congress on Computational Intelligence)}, pp. 2619--2622, June
-  2008.
+\bibitem{運動準備電位肢体}
+北山真平, 佐々木実, 伊藤聡, 安田晴信, 小嶋俊史.
+\newblock 運動準備電位による四肢動作推定.
+\newblock 日本AEM学会誌, Vol.~22, No.~2, 2014.
 
-\bibitem{IMF}
-SachinTaran, VarunBajaj, DheerajSharma, SiulySiuly, and A.Sengur.
-\newblock Features based on analytic imf for classifying motor imagery eeg
-  signals in bci applications.
-\newblock {\em Measurement}, Vol. 116, pp. 68--76, 2018.
+\bibitem{運動準備電位指}
+Yong Li, Xiaorong Gao, Hesheng Liu, and Shangkai Gao.
+\newblock Classification of single-trial electroencephalogram during finger
+  movement.
+\newblock {\em IEEE Transactions on Biomedical Engineering}, Vol.~51, No.~6,
+  pp. 1019--1025, June 2004.
+
+\bibitem{運動準備電位想起}
+中村翔太郎, 吉川大弘, 古橋武.
+\newblock 脳波を用いた手足の運動想起判別への空間フィルタ適用に関する検討.
+\newblock 日本知能情報ファジィ学会 ファジィ システム シンポジウム 講演論文集,
+  Vol.~25, pp. 19--19, 2009.
+
+\bibitem{運動準備電位想起2}
+翔太郎中村, 弘武高橋, 大弘吉川, 武古橋.
+\newblock
+  脳波を用いた手足の運動想起判別における準備電位の傾きを用いた特徴抽出法に関する検討.
+\newblock 知能と情報 : 日本知能情報ファジィ学会誌 : journal of Japan Society
+  for Fuzzy Theory and Intelligent Informatics, Vol.~22, No.~4, pp. 427--433,
+  aug 2010.
 
 \bibitem{CSP1990}
 Zoltan~J. Koles, Michael~S. Lazar, and Steven~Z. Zhou.
@@ -101,6 +88,27 @@ G.~Pfurtscheller, C.~Guger, and H.~Ramoser.
 \newblock International work-conference on artificial neural networks.
 \newblock In {\em Engineering Applications of Bio-Inspired Artificial Neural
   Networks}, 1999.
+
+\bibitem{csssp}
+Guido Dornhege, Benjamin Blankertz, Matthias Krauledat, Florian Losch, Gabriel
+  Curio, and Klaus-Robert Muller.
+\newblock Combined optimization of spatial and temporal filters for improving
+  brain-computer interfacing.
+\newblock {\em IEEE TRANSACTIONS ON BIOMEDICAL ENGINEERING}, Vol.~XX, No.~Y,
+  2006.
+
+\bibitem{正則化CSP}
+F.~Lotte and C.~Guan.
+\newblock Regularizing common spatial patterns to improve bci designs: Unified
+  theory and new algorithms.
+\newblock {\em IEEE Transactions on Biomedical Engineering}, Vol.~58, No.~2,
+  pp. 355--362, 2011.
+
+\bibitem{カーネルCSP}
+N.~Behrooz, B.~Reza, and J.~M. Zolghadri.
+\newblock An efficient hybrid linear and kernel csp approach for eeg feature
+  extraction.
+\newblock {\em Neurocomputing}, Vol.~73, pp. 432--437, 2009.
 
 \bibitem{cvscsp}
 Jyoti~Singh Kirara and R.~K.~Agrawala and.
@@ -116,13 +124,107 @@ Kai~Keng Ang, Zheng~Yang Chin, Haihong Zhang, and Cuntai Guan.
   (IEEE World Congress on Computational Intelligence)}, pp. 2390--2397, June
   2008.
 
-\bibitem{csssp}
-Guido Dornhege, Benjamin Blankertz, Matthias Krauledat, Florian Losch, Gabriel
-  Curio, and Klaus-Robert Muller.
-\newblock Combined optimization of spatial and temporal filters for improving
-  brain-computer interfacing.
-\newblock {\em IEEE TRANSACTIONS ON BIOMEDICAL ENGINEERING}, Vol.~XX, No.~Y,
-  2006.
+\bibitem{BCIの比較}
+Bashashati H, Ward RK, Birch GE, and Bashashati A.
+\newblock Comparing different classifiers in sensory motor brain computer
+  interfaces.
+\newblock {\em PLoS ONE}, Vol.~10, No.~6, 2015.
+
+\bibitem{脳波解析BCI}
+板井陽俊, 船瀬親王.
+\newblock Bciシステムの構築を目指した単一試行脳波の解析技術.
+\newblock 日本神経回路学会誌, Vol.~19, No.~3, pp. 118--125, 2012.
+
+\bibitem{脳波分析BCI}
+吉岡将孝.
+\newblock 脳波分析に基づいた Brain-Machine Interface
+  パワーアシストシステムの構築 -周期パワースペクトルによる運動に関する
+  脳波の解析および関節トルクの推定-.
+\newblock PhD thesis, 前橋工科大学, 2016.
+
+\bibitem{ERSBCI}
+E.~Thomas, J.~Fruitet, and M.~Clerc.
+\newblock Investigating brief motor imagery for an erd/ers based bci.
+\newblock In {\em 2012 Annual International Conference of the IEEE Engineering
+  in Medicine and Biology Society}, pp. 2929--2932, Aug 2012.
+
+\bibitem{京大ドクター}
+笹山瑛由.
+\newblock ブレイン‐マシン・インタフェースに向けた多チャネル
+  脳波計測による脳内情報抽出法および識別法に関する研究.
+\newblock PhD thesis, 京都大学, 2012.
+
+\bibitem{sparsemethod}
+S.~R. Sreeja, Joytirmoy Rabha, Debasis Samanta, Pabitra Mitra, and Monalisa
+  Sarma.
+\newblock {\em Classification of Motor Imagery Based EEG Signals Using Sparsity
+  Approach}, pp. 47--59.
+\newblock Springer International Publishing, Cham, 2017.
+
+\bibitem{bootCSP}
+Rachel Rajan and Sunny Thekkan~Devassy.
+\newblock {\em Improving Classification Performance by Combining Feature
+  Vectors with a Boosting Approach for Brain Computer Interface (BCI)}, pp.
+  73--85.
+\newblock Springer International Publishing, Cham, 2017.
+
+\bibitem{CheapLearning}
+Henry~W. Lin, Max Tegmark, and David Rolnick.
+\newblock Why does deep and cheap learning work so well?
+\newblock {\em Journal of Statistical Physics}, Vol. 168, pp. 1223--1247, 2017.
+
+\bibitem{DeepvsShallow}
+Hrushikesh Mhaskar and Tomaso~A. Poggio.
+\newblock Deep vs. shallow networks : An approximation theory perspective.
+\newblock {\em Analysis and Applications}, Vol.~14, , November 2016.
+
+\bibitem{ディープローカルミニマム}
+Kenji Kawaguchi.
+\newblock Deep learning without poor local minima.
+\newblock In D.~D. Lee, M.~Sugiyama, U.~V. Luxburg, I.~Guyon, and R.~Garnett,
+  editors, {\em Advances in Neural Information Processing Systems 29}, pp.
+  586--594. Curran Associates, Inc., 2016.
+
+\bibitem{スペクトル解析}
+日野幹雄.
+\newblock スペクトル解析（統計ライブラリー）.
+\newblock 朝倉書店, 1977.
+
+\bibitem{ICA1}
+Hiromu Gotanda, Takaaki Ishibashi, Nobuo Iwasaki, and Katsuhiro Inoue.
+\newblock 独立成分分析の基礎と応用.
+\newblock Technical Report 1743, 数理解析研究所, 2011.
+
+\bibitem{ICA2}
+村田昇.
+\newblock 入門 独立成分分析.
+\newblock 東京電機大学出版, 2004.
+
+\bibitem{ベイズドロップアウト}
+Yarin Gal and Zoubin Ghahramani.
+\newblock Dropout as a bayesian approximation: representing model uncertainty
+  in deep learning.
+\newblock In {\em ICML'16 Proceedings of the 33rd International Conference on
+  International Conference on Machine Learning}, Vol.~48, pp. 1050--1059, June
+  2016.
+
+\bibitem{脳波解析入門}
+開一夫, 金山範明河内山隆紀, 松本敦宮腰誠.
+\newblock 脳波解析入門:EEGLABとSPMを使いこなす.
+\newblock 東京大学出版会, 2016.
+
+\bibitem{EMD}
+Guo Xiaojing, Wu~Xiaopei, and Zhang Dexiang.
+\newblock Motor imagery eeg detection by empirical mode decomposition.
+\newblock In {\em 2008 IEEE International Joint Conference on Neural Networks
+  (IEEE World Congress on Computational Intelligence)}, pp. 2619--2622, June
+  2008.
+
+\bibitem{IMF}
+SachinTaran, VarunBajaj, DheerajSharma, SiulySiuly, and A.Sengur.
+\newblock Features based on analytic imf for classifying motor imagery eeg
+  signals in bci applications.
+\newblock {\em Measurement}, Vol. 116, pp. 68--76, 2018.
 
 \bibitem{csp_eigen}
 B.~Blankertz, M.~Kawanabe, R.~Tomioka, F.~Hohlefeld, V.~Nikulin, and K.~R. M.
@@ -130,19 +232,6 @@ B.~Blankertz, M.~Kawanabe, R.~Tomioka, F.~Hohlefeld, V.~Nikulin, and K.~R. M.
   brain-computer interfacing.
 \newblock {\em Advances in Neural Information Processing Systems}, Vol.~20, pp.
   113--120, 2008.
-
-\bibitem{カーネルCSP}
-N.~Behrooz, B.~Reza, and J.~M. Zolghadri.
-\newblock An efficient hybrid linear and kernel csp approach for eeg feature
-  extraction.
-\newblock {\em Neurocomputing}, Vol.~73, pp. 432--437, 2009.
-
-\bibitem{正則化CSP}
-F.~Lotte and C.~Guan.
-\newblock Regularizing common spatial patterns to improve bci designs: Unified
-  theory and new algorithms.
-\newblock {\em IEEE Transactions on Biomedical Engineering}, Vol.~58, No.~2,
-  pp. 355--362, 2011.
 
 \bibitem{fbcspBCICOMPE}
 Kai~Keng Ang, Zheng~Yang Chin, ChuanchuWang, , Cuntai Guan, and Haihong Zhang.

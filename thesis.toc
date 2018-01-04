@@ -1,61 +1,61 @@
-\contentsline {chapter}{\numberline { 1 }緒言}{1}
+\contentsline {chapter}{\numberline { 1 }序論}{1}
 \contentsline {section}{\numberline {1.1}研究背景}{1}
 \contentsline {section}{\numberline {1.2}BCIの概要}{2}
-\contentsline {subsection}{\numberline {1.2.1}誘発型BCIと自発型BCI}{2}
 \contentsline {subsubsection}{誘発型BCI}{2}
-\contentsline {subsubsection}{自発型BCI}{3}
-\contentsline {subsection}{\numberline {1.2.2}BCIの動作原理}{3}
-\contentsline {section}{\numberline {1.3}研究の目的}{4}
-\contentsline {chapter}{\numberline { 2 }BCIのための要素技術}{5}
-\contentsline {section}{\numberline {2.1}周波数解析}{5}
-\contentsline {subsection}{\numberline {2.1.1}4種類のフーリエ変換}{5}
-\contentsline {subsubsection}{フーリエ変換}{5}
-\contentsline {subsubsection}{離散周波数フーリエ変換}{6}
-\contentsline {subsubsection}{離散時間フーリエ変換}{6}
-\contentsline {subsubsection}{離散フーリエ変換}{6}
-\contentsline {subsection}{\numberline {2.1.2}パワースペクトル密度}{7}
-\contentsline {section}{\numberline {2.2}多変量解析}{7}
-\contentsline {subsection}{\numberline {2.2.1}Principal Component Analysis(PCA)}{7}
-\contentsline {subsection}{\numberline {2.2.2}Indipendent Component Analysis(ICA)}{10}
-\contentsline {subsection}{\numberline {2.2.3}Blind Source Separation(BSS)}{10}
-\contentsline {section}{\numberline {2.3}分類手法}{13}
-\contentsline {subsection}{\numberline {2.3.1}Linear Discriminant Analysis(LDA)}{13}
-\contentsline {subsection}{\numberline {2.3.2}Support Vector Machine(SVM)}{15}
-\contentsline {subsection}{\numberline {2.3.3}Logistic Regression(LR)}{18}
-\contentsline {section}{\numberline {2.4}ニューラルネットワーク}{19}
-\contentsline {subsection}{\numberline {2.4.1}モデル構築と学習}{19}
-\contentsline {subsection}{\numberline {2.4.2}ニューラルネットワークに用いられる層}{19}
-\contentsline {subsubsection}{Linear層}{19}
-\contentsline {subsubsection}{Bilinear層}{20}
-\contentsline {subsubsection}{Convolution層}{20}
-\contentsline {subsubsection}{Recurrent層}{20}
-\contentsline {subsubsection}{LSTM層}{20}
-\contentsline {subsection}{\numberline {2.4.3}活性化関数}{21}
-\contentsline {subsubsection}{シグモイド関数}{21}
-\contentsline {subsubsection}{双曲線正接関数}{21}
-\contentsline {subsubsection}{ランプ関数}{21}
-\contentsline {subsubsection}{leaklyReLU関数}{21}
-\contentsline {subsubsection}{elu関数}{21}
-\contentsline {subsubsection}{ソフトマックス関数}{22}
-\contentsline {subsection}{\numberline {2.4.4}過学習抑制手法}{22}
-\contentsline {subsubsection}{ドロップアウト}{22}
-\contentsline {subsubsection}{バッチ正規化}{22}
-\contentsline {chapter}{\numberline { 3 }従来の運動想起型BCI}{23}
-\contentsline {section}{\numberline {3.1}特徴量工学}{23}
-\contentsline {subsection}{\numberline {3.1.1}頭皮領域と空間フィルタ}{23}
-\contentsline {subsection}{\numberline {3.1.2}脳波と時間周波数解析}{25}
-\contentsline {section}{\numberline {3.2}Common Spatial Patternとその派生手法}{26}
-\contentsline {subsection}{\numberline {3.2.1}脳波信号の定式化}{26}
-\contentsline {subsection}{\numberline {3.2.2}Common Spatial Pattern(CSP)}{26}
-\contentsline {subsection}{\numberline {3.2.3}Common Sparse Spatio Spectral Pattern(CSSSP)}{28}
-\contentsline {subsection}{\numberline {3.2.4}Filter Bank Common Spatial Pattern(FBCSP)}{29}
-\contentsline {section}{\numberline {3.3}従来手法のまとめ}{29}
-\contentsline {subsection}{\numberline {3.3.1}特徴量の観点からの従来手法}{30}
-\contentsline {subsection}{\numberline {3.3.2}構成の観点からの従来手法}{30}
-\contentsline {chapter}{\numberline { 4 }提案手法}{32}
-\contentsline {chapter}{\numberline { 5 }実験方法}{33}
-\contentsline {chapter}{\numberline { 6 }結果と考察}{34}
-\contentsline {chapter}{Appendix}{35}
-\contentsline {section}{\numberline {A.1}セクション}{35}
-\contentsline {subsection}{\numberline {A.1.1}サブセクション}{35}
-\contentsline {chapter}{参考文献}{37}
+\contentsline {subsubsection}{自発型BCI}{2}
+\contentsline {subsubsection}{BCIの動作原理}{3}
+\contentsline {subsubsection}{運動想起型BCI周辺の研究}{4}
+\contentsline {section}{\numberline {1.3}研究の目的}{5}
+\contentsline {chapter}{\numberline { 2 }BCIのための要素技術}{7}
+\contentsline {section}{\numberline {2.1}周波数解析}{7}
+\contentsline {subsection}{\numberline {2.1.1}4種類のフーリエ変換}{7}
+\contentsline {subsubsection}{フーリエ変換}{7}
+\contentsline {subsubsection}{離散周波数フーリエ変換}{8}
+\contentsline {subsubsection}{離散時間フーリエ変換}{8}
+\contentsline {subsubsection}{離散フーリエ変換}{8}
+\contentsline {subsection}{\numberline {2.1.2}パワースペクトル密度}{9}
+\contentsline {section}{\numberline {2.2}多変量解析}{9}
+\contentsline {subsection}{\numberline {2.2.1}Principal Component Analysis(PCA)}{9}
+\contentsline {subsection}{\numberline {2.2.2}Indipendent Component Analysis(ICA)}{12}
+\contentsline {subsection}{\numberline {2.2.3}Blind Source Separation(BSS)}{12}
+\contentsline {section}{\numberline {2.3}分類手法}{15}
+\contentsline {subsection}{\numberline {2.3.1}Linear Discriminant Analysis(LDA)}{15}
+\contentsline {subsection}{\numberline {2.3.2}Support Vector Machine(SVM)}{17}
+\contentsline {subsection}{\numberline {2.3.3}Logistic Regression(LR)}{20}
+\contentsline {section}{\numberline {2.4}ニューラルネットワーク}{21}
+\contentsline {subsection}{\numberline {2.4.1}モデル構築と学習}{21}
+\contentsline {subsection}{\numberline {2.4.2}ニューラルネットワークに用いられる層}{21}
+\contentsline {subsubsection}{Linear層}{21}
+\contentsline {subsubsection}{Bilinear層}{22}
+\contentsline {subsubsection}{Convolution層}{22}
+\contentsline {subsubsection}{Recurrent層}{22}
+\contentsline {subsubsection}{LSTM層}{22}
+\contentsline {subsection}{\numberline {2.4.3}活性化関数}{23}
+\contentsline {subsubsection}{シグモイド関数}{23}
+\contentsline {subsubsection}{双曲線正接関数}{23}
+\contentsline {subsubsection}{ランプ関数}{23}
+\contentsline {subsubsection}{leaklyReLU関数}{23}
+\contentsline {subsubsection}{elu関数}{23}
+\contentsline {subsubsection}{ソフトマックス関数}{24}
+\contentsline {subsection}{\numberline {2.4.4}過学習抑制手法}{24}
+\contentsline {subsubsection}{ドロップアウト}{24}
+\contentsline {subsubsection}{バッチ正規化}{24}
+\contentsline {chapter}{\numberline { 3 }従来の運動想起型BCI}{25}
+\contentsline {section}{\numberline {3.1}特徴量工学}{25}
+\contentsline {subsection}{\numberline {3.1.1}頭皮領域と空間フィルタ}{25}
+\contentsline {subsection}{\numberline {3.1.2}脳波と時間周波数解析}{27}
+\contentsline {section}{\numberline {3.2}Common Spatial Patternとその派生手法}{28}
+\contentsline {subsection}{\numberline {3.2.1}脳波信号の定式化}{28}
+\contentsline {subsection}{\numberline {3.2.2}Common Spatial Pattern(CSP)}{28}
+\contentsline {subsection}{\numberline {3.2.3}Common Sparse Spatio Spectral Pattern(CSSSP)}{30}
+\contentsline {subsection}{\numberline {3.2.4}Filter Bank Common Spatial Pattern(FBCSP)}{31}
+\contentsline {section}{\numberline {3.3}従来手法のまとめ}{31}
+\contentsline {subsection}{\numberline {3.3.1}特徴量の観点からの従来手法}{32}
+\contentsline {subsection}{\numberline {3.3.2}構成の観点からの従来手法}{32}
+\contentsline {chapter}{\numberline { 4 }提案手法}{34}
+\contentsline {chapter}{\numberline { 5 }実験方法}{35}
+\contentsline {chapter}{\numberline { 6 }結果と考察}{36}
+\contentsline {chapter}{Appendix}{37}
+\contentsline {section}{\numberline {A.1}セクション}{37}
+\contentsline {subsection}{\numberline {A.1.1}サブセクション}{37}
+\contentsline {chapter}{参考文献}{39}

@@ -1,192 +1,209 @@
 \relax 
 \@input{math_rule.aux}
-\@writefile{toc}{\contentsline {chapter}{\numberline { 1 }緒言}{1}}
+\@writefile{toc}{\contentsline {chapter}{\numberline { 1 }序論}{1}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{toc}{\contentsline {section}{\numberline {1.1}研究背景}{1}}
 \citation{運動想起}
-\citation{ERDとERS,ERDリハビリ,運動フィードバック}
 \@writefile{toc}{\contentsline {section}{\numberline {1.2}BCIの概要}{2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.1}誘発型BCIと自発型BCI}{2}}
 \@writefile{toc}{\contentsline {subsubsection}{誘発型BCI}{2}}
+\@writefile{toc}{\contentsline {subsubsection}{自発型BCI}{2}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces BCIの分類と本研究の焦点\relax }}{3}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:BCIclass}{{1.1}{3}}
-\@writefile{toc}{\contentsline {subsubsection}{自発型BCI}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.2}BCIの動作原理}{3}}
+\@writefile{toc}{\contentsline {subsubsection}{BCIの動作原理}{3}}
+\citation{ERDとERS,ERDリハビリ,運動フィードバック}
+\citation{プリミティブERD,Beta波によるBCI,waveletFSVM}
+\citation{時間周波数解析の比較}
+\citation{運動準備電位肢体}
+\citation{運動準備電位指}
+\citation{運動準備電位想起,運動準備電位想起2}
+\citation{CSP1990,CSP1999}
+\citation{csssp,正則化CSP,カーネルCSP,cvscsp}
+\citation{fbcsp}
+\citation{BCIの比較}
 \@writefile{lof}{\contentsline {figure}{\numberline {1.2}{\ignorespaces BCIのスキームと課題点\relax }}{4}}
 \newlabel{fig:BCIsystem}{{1.2}{4}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.3}研究の目的}{4}}
-\@writefile{toc}{\contentsline {chapter}{\numberline { 2 }BCIのための要素技術}{5}}
+\@writefile{toc}{\contentsline {subsubsection}{運動想起型BCI周辺の研究}{4}}
+\citation{脳波解析BCI,脳波分析BCI,ERSBCI}
+\citation{時間周波数解析の比較}
+\citation{京大ドクター}
+\citation{sparsemethod,bootCSP}
+\@writefile{toc}{\contentsline {section}{\numberline {1.3}研究の目的}{5}}
+\citation{CheapLearning}
+\citation{DeepvsShallow}
+\citation{ディープローカルミニマム}
+\@writefile{toc}{\contentsline {chapter}{\numberline { 2 }BCIのための要素技術}{7}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}周波数解析}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}4種類のフーリエ変換}{5}}
-\@writefile{toc}{\contentsline {subsubsection}{フーリエ変換}{5}}
-\newlabel{eq:FT}{{2.1}{5}}
-\newlabel{eq:iFT}{{2.2}{5}}
-\@writefile{toc}{\contentsline {subsubsection}{離散周波数フーリエ変換}{6}}
-\newlabel{eq:sFT}{{2.4}{6}}
-\newlabel{eq:siFT}{{2.5}{6}}
-\@writefile{toc}{\contentsline {subsubsection}{離散時間フーリエ変換}{6}}
-\newlabel{eq:tFT}{{2.6}{6}}
-\newlabel{eq:tiFT}{{2.7}{6}}
-\@writefile{toc}{\contentsline {subsubsection}{離散フーリエ変換}{6}}
-\newlabel{eq:tsFT}{{2.8}{6}}
-\newlabel{eq:tsiFT}{{2.9}{6}}
+\newlabel{chapter:BCIのための要素技術}{{2}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}周波数解析}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}4種類のフーリエ変換}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{フーリエ変換}{7}}
+\newlabel{eq:FT}{{2.1}{7}}
+\newlabel{eq:iFT}{{2.2}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{離散周波数フーリエ変換}{8}}
+\newlabel{eq:sFT}{{2.4}{8}}
+\newlabel{eq:siFT}{{2.5}{8}}
+\@writefile{toc}{\contentsline {subsubsection}{離散時間フーリエ変換}{8}}
+\newlabel{eq:tFT}{{2.6}{8}}
+\newlabel{eq:tiFT}{{2.7}{8}}
+\@writefile{toc}{\contentsline {subsubsection}{離散フーリエ変換}{8}}
+\newlabel{eq:tsFT}{{2.8}{8}}
+\newlabel{eq:tsiFT}{{2.9}{8}}
 \citation{スペクトル解析}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}パワースペクトル密度}{7}}
-\newlabel{period}{{2.10}{7}}
-\newlabel{eq:wh_theorem}{{2.11}{7}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}多変量解析}{7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Principal Component Analysis(PCA)}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces x(t)の波形と散布図\relax }}{8}}
-\newlabel{fig:x(t)}{{2.1}{8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces z(t)の波形と散布図\relax }}{8}}
-\newlabel{fig:z(t)}{{2.2}{8}}
-\newlabel{eq:var}{{2.14}{8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces PCAによって得られる基底\relax }}{9}}
-\newlabel{fig:z=Wx}{{2.3}{9}}
-\newlabel{reduction}{{2.16}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}パワースペクトル密度}{9}}
+\newlabel{period}{{2.10}{9}}
+\newlabel{eq:wh_theorem}{{2.11}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}多変量解析}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Principal Component Analysis(PCA)}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces x(t)の波形と散布図\relax }}{10}}
+\newlabel{fig:x(t)}{{2.1}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces z(t)の波形と散布図\relax }}{10}}
+\newlabel{fig:z(t)}{{2.2}{10}}
+\newlabel{eq:var}{{2.14}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces PCAによって得られる基底\relax }}{11}}
+\newlabel{fig:z=Wx}{{2.3}{11}}
+\newlabel{reduction}{{2.16}{11}}
 \citation{ICA1}
 \citation{ICA2}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Indipendent Component Analysis(ICA)}{10}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Blind Source Separation(BSS)}{10}}
-\newlabel{eq:bss1}{{2.19}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces 無相関な基底を得るPCAと独立な基底を獲るICAの比較\relax }}{11}}
-\newlabel{fig:ica_pca}{{2.4}{11}}
-\newlabel{eq:bss2}{{2.20}{11}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces BSS問題に対するPCAとICA\relax }}{12}}
-\newlabel{fig:bss}{{2.5}{12}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}分類手法}{13}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Linear Discriminant Analysis(LDA)}{13}}
-\newlabel{subsec:LDA}{{2.3.1}{13}}
-\newlabel{eq:dis}{{2.26}{13}}
-\newlabel{eq:sig}{{2.29}{13}}
-\newlabel{eq:lda_obj}{{2.30}{13}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces クラス毎の平均間の距離を射影先で最大化した判別分析\relax }}{14}}
-\newlabel{fig:mean_dis}{{2.6}{14}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces クラス毎の平均間の距離を射影先で最大化し、総クラス内分散を最小化した判別分析\relax }}{14}}
-\newlabel{fig:var_dis}{{2.7}{14}}
-\newlabel{eq:lda_obj_mat}{{2.31}{15}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Support Vector Machine(SVM)}{15}}
-\newlabel{eq:displane}{{2.34}{15}}
-\newlabel{eq:distance}{{2.35}{15}}
-\newlabel{eq:margin}{{2.36}{15}}
-\newlabel{eq:obj margin}{{2.37}{15}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces 分類面によってマージンの大きさが異なる様子\relax }}{16}}
-\newlabel{fig:margin}{{2.8}{16}}
-\newlabel{eq:obj nonlinear}{{2.38}{16}}
-\newlabel{eq:displane2}{{2.39}{16}}
-\newlabel{eq:obj nonlinear}{{2.40}{16}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces 線形SVM（線形分離可能）\relax }}{17}}
-\newlabel{fig:linear}{{2.9}{17}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces 線形SVM（線形分離不可能）\relax }}{17}}
-\newlabel{fig:xor}{{2.10}{17}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces ガウシアンカーネルSVM（線形分離不可能）\relax }}{17}}
-\newlabel{fig:kernel}{{2.11}{17}}
-\newlabel{dis_kernel}{{2.41}{17}}
-\newlabel{eq:kernel SVM}{{2.42}{18}}
-\newlabel{eq:bias}{{2.43}{18}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}Logistic Regression(LR)}{18}}
-\newlabel{eq:odds}{{2.44}{18}}
-\newlabel{eq:logodds}{{2.45}{18}}
-\newlabel{eq:logoddsmodel}{{2.46}{18}}
-\newlabel{eq:logisticmodel}{{2.47}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Indipendent Component Analysis(ICA)}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Blind Source Separation(BSS)}{12}}
+\newlabel{eq:bss1}{{2.19}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces 無相関な基底を得るPCAと独立な基底を獲るICAの比較\relax }}{13}}
+\newlabel{fig:ica_pca}{{2.4}{13}}
+\newlabel{eq:bss2}{{2.20}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces BSS問題に対するPCAとICA\relax }}{14}}
+\newlabel{fig:bss}{{2.5}{14}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}分類手法}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Linear Discriminant Analysis(LDA)}{15}}
+\newlabel{subsec:LDA}{{2.3.1}{15}}
+\newlabel{eq:dis}{{2.26}{15}}
+\newlabel{eq:sig}{{2.29}{15}}
+\newlabel{eq:lda_obj}{{2.30}{15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces クラス毎の平均間の距離を射影先で最大化した判別分析\relax }}{16}}
+\newlabel{fig:mean_dis}{{2.6}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces クラス毎の平均間の距離を射影先で最大化し、総クラス内分散を最小化した判別分析\relax }}{16}}
+\newlabel{fig:var_dis}{{2.7}{16}}
+\newlabel{eq:lda_obj_mat}{{2.31}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Support Vector Machine(SVM)}{17}}
+\newlabel{eq:displane}{{2.34}{17}}
+\newlabel{eq:distance}{{2.35}{17}}
+\newlabel{eq:margin}{{2.36}{17}}
+\newlabel{eq:obj margin}{{2.37}{17}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces 分類面によってマージンの大きさが異なる様子\relax }}{18}}
+\newlabel{fig:margin}{{2.8}{18}}
+\newlabel{eq:obj nonlinear}{{2.38}{18}}
+\newlabel{eq:displane2}{{2.39}{18}}
+\newlabel{eq:obj nonlinear}{{2.40}{18}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces 線形SVM（線形分離可能）\relax }}{19}}
+\newlabel{fig:linear}{{2.9}{19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces 線形SVM（線形分離不可能）\relax }}{19}}
+\newlabel{fig:xor}{{2.10}{19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces ガウシアンカーネルSVM（線形分離不可能）\relax }}{19}}
+\newlabel{fig:kernel}{{2.11}{19}}
+\newlabel{dis_kernel}{{2.41}{19}}
+\newlabel{eq:kernel SVM}{{2.42}{20}}
+\newlabel{eq:bias}{{2.43}{20}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}Logistic Regression(LR)}{20}}
+\newlabel{eq:odds}{{2.44}{20}}
+\newlabel{eq:logodds}{{2.45}{20}}
+\newlabel{eq:logoddsmodel}{{2.46}{20}}
+\newlabel{eq:logisticmodel}{{2.47}{20}}
 \citation{ディープローカルミニマム,DeepvsShallow}
-\newlabel{eq:logminas}{{2.48}{19}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}ニューラルネットワーク}{19}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}モデル構築と学習}{19}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}ニューラルネットワークに用いられる層}{19}}
-\@writefile{toc}{\contentsline {subsubsection}{Linear層}{19}}
-\@writefile{toc}{\contentsline {subsubsection}{Bilinear層}{20}}
-\@writefile{toc}{\contentsline {subsubsection}{Convolution層}{20}}
-\newlabel{eq:convlayer}{{2.55}{20}}
-\@writefile{toc}{\contentsline {subsubsection}{Recurrent層}{20}}
-\newlabel{eq:reccurent}{{2.56}{20}}
-\@writefile{toc}{\contentsline {subsubsection}{LSTM層}{20}}
-\newlabel{eq:LSTM}{{2.62}{20}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.3}活性化関数}{21}}
-\@writefile{toc}{\contentsline {subsubsection}{シグモイド関数}{21}}
-\@writefile{toc}{\contentsline {subsubsection}{双曲線正接関数}{21}}
-\@writefile{toc}{\contentsline {subsubsection}{ランプ関数}{21}}
-\@writefile{toc}{\contentsline {subsubsection}{leaklyReLU関数}{21}}
-\@writefile{toc}{\contentsline {subsubsection}{elu関数}{21}}
+\newlabel{eq:logminas}{{2.48}{21}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}ニューラルネットワーク}{21}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}モデル構築と学習}{21}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}ニューラルネットワークに用いられる層}{21}}
+\@writefile{toc}{\contentsline {subsubsection}{Linear層}{21}}
+\@writefile{toc}{\contentsline {subsubsection}{Bilinear層}{22}}
+\@writefile{toc}{\contentsline {subsubsection}{Convolution層}{22}}
+\newlabel{eq:convlayer}{{2.55}{22}}
+\@writefile{toc}{\contentsline {subsubsection}{Recurrent層}{22}}
+\newlabel{eq:reccurent}{{2.56}{22}}
+\@writefile{toc}{\contentsline {subsubsection}{LSTM層}{22}}
+\newlabel{eq:LSTM}{{2.62}{22}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.3}活性化関数}{23}}
+\@writefile{toc}{\contentsline {subsubsection}{シグモイド関数}{23}}
+\@writefile{toc}{\contentsline {subsubsection}{双曲線正接関数}{23}}
+\@writefile{toc}{\contentsline {subsubsection}{ランプ関数}{23}}
+\@writefile{toc}{\contentsline {subsubsection}{leaklyReLU関数}{23}}
+\@writefile{toc}{\contentsline {subsubsection}{elu関数}{23}}
 \citation{ベイズドロップアウト}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.12}{\ignorespaces 5つの活性化関数\relax }}{22}}
-\newlabel{fig:activation}{{2.12}{22}}
-\@writefile{toc}{\contentsline {subsubsection}{ソフトマックス関数}{22}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.4}過学習抑制手法}{22}}
-\@writefile{toc}{\contentsline {subsubsection}{ドロップアウト}{22}}
-\@writefile{toc}{\contentsline {subsubsection}{バッチ正規化}{22}}
-\@writefile{toc}{\contentsline {chapter}{\numberline { 3 }従来の運動想起型BCI}{23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.12}{\ignorespaces 5つの活性化関数\relax }}{24}}
+\newlabel{fig:activation}{{2.12}{24}}
+\@writefile{toc}{\contentsline {subsubsection}{ソフトマックス関数}{24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.4}過学習抑制手法}{24}}
+\@writefile{toc}{\contentsline {subsubsection}{ドロップアウト}{24}}
+\@writefile{toc}{\contentsline {subsubsection}{バッチ正規化}{24}}
+\@writefile{toc}{\contentsline {chapter}{\numberline { 3 }従来の運動想起型BCI}{25}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}特徴量工学}{23}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}頭皮領域と空間フィルタ}{23}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}特徴量工学}{25}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}頭皮領域と空間フィルタ}{25}}
 \citation{脳波解析入門}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces 0秒～4秒間に足の運動想起を行った際の脳波（EEG）\relax }}{24}}
-\newlabel{fig:EEGfootmove}{{3.1}{24}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces 0秒～4秒間に手の運動想起を行った際の脳波（EEG）\relax }}{24}}
-\newlabel{fig:EEGhandmove}{{3.2}{24}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces 0秒～4秒間に足の運動想起を行った際の脳波（EEG）\relax }}{26}}
+\newlabel{fig:EEGfootmove}{{3.1}{26}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces 0秒～4秒間に手の運動想起を行った際の脳波（EEG）\relax }}{26}}
+\newlabel{fig:EEGhandmove}{{3.2}{26}}
 \citation{ERDとERS}
 \citation{Beta波によるBCI}
 \citation{時間周波数解析の比較}
 \citation{EMD,IMF}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces 0秒～4秒間に足の運動想起を行った際のCz電極の波形\relax }}{25}}
-\newlabel{fig:Cz}{{3.3}{25}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces スモールラプラシアンフィルタを適用した際のCz電極の波形\relax }}{25}}
-\newlabel{fig:Cz}{{3.4}{25}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}脳波と時間周波数解析}{25}}
-\newlabel{eq:time-freq}{{3.5}{25}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces 0秒～4秒間に足の運動想起を行った際のCz電極の波形\relax }}{27}}
+\newlabel{fig:Cz}{{3.3}{27}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces スモールラプラシアンフィルタを適用した際のCz電極の波形\relax }}{27}}
+\newlabel{fig:Cz}{{3.4}{27}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}脳波と時間周波数解析}{27}}
+\newlabel{eq:time-freq}{{3.5}{27}}
 \citation{CSP1990}
 \citation{CSP1999,cvscsp,fbcsp,csssp,csp_eigen,カーネルCSP,正則化CSP}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces CSPの利用方法\relax }}{26}}
-\newlabel{fig:CSP}{{3.5}{26}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Common Spatial Patternとその派生手法}{26}}
-\newlabel{sec:CSP}{{3.2}{26}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}脳波信号の定式化}{26}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Common Spatial Pattern(CSP)}{26}}
-\newlabel{subsec:CSP}{{3.2.2}{26}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces CSPの利用方法\relax }}{28}}
+\newlabel{fig:CSP}{{3.5}{28}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Common Spatial Patternとその派生手法}{28}}
+\newlabel{sec:CSP}{{3.2}{28}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}脳波信号の定式化}{28}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Common Spatial Pattern(CSP)}{28}}
+\newlabel{subsec:CSP}{{3.2.2}{28}}
 \citation{csp_eigen}
 \citation{cvscsp}
 \citation{csssp}
-\newlabel{timevar}{{3.8}{27}}
-\newlabel{eq:objcsp}{{3.9}{27}}
-\newlabel{eq:objcsp2}{{3.10}{27}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces 林檎の図\relax }}{28}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Common Sparse Spatio Spectral Pattern(CSSSP)}{28}}
-\newlabel{eq:csssp}{{3.16}{28}}
+\newlabel{timevar}{{3.8}{29}}
+\newlabel{eq:objcsp}{{3.9}{29}}
+\newlabel{eq:objcsp2}{{3.10}{29}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces 林檎の図\relax }}{30}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Common Sparse Spatio Spectral Pattern(CSSSP)}{30}}
+\newlabel{eq:csssp}{{3.16}{30}}
 \citation{fbcsp}
 \citation{fbcspBCICOMPE}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces CSSSPの働き\relax }}{29}}
-\newlabel{fig:FBCSP}{{3.7}{29}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}Filter Bank Common Spatial Pattern(FBCSP)}{29}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}従来手法のまとめ}{29}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces CSSSPの働き\relax }}{31}}
+\newlabel{fig:FBCSP}{{3.7}{31}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}Filter Bank Common Spatial Pattern(FBCSP)}{31}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}従来手法のまとめ}{31}}
 \citation{Ztfc}
 \citation{Ztfc}
 \citation{Ztfc}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}特徴量の観点からの従来手法}{30}}
-\newlabel{eq:EEGfeatures}{{3.19}{30}}
-\newlabel{eq:EEGfeaturesbandpass}{{3.23}{30}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}構成の観点からの従来手法}{30}}
-\newlabel{eq:bandpass}{{3.24}{30}}
-\newlabel{eq:spatfilter}{{3.25}{30}}
-\newlabel{eq:classifier}{{3.26}{30}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}特徴量の観点からの従来手法}{32}}
+\newlabel{eq:EEGfeatures}{{3.19}{32}}
+\newlabel{eq:EEGfeaturesbandpass}{{3.23}{32}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}構成の観点からの従来手法}{32}}
+\newlabel{eq:bandpass}{{3.24}{32}}
+\newlabel{eq:spatfilter}{{3.25}{32}}
+\newlabel{eq:classifier}{{3.26}{32}}
 \citation{kNMF,kNMF2}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces 脳波を3階テンソルとした手法の模式図(参照\cite  {Ztfc})\relax }}{31}}
-\newlabel{fig:fbcsp bilinear}{{3.8}{31}}
-\newlabel{eq:bci_gosei}{{3.27}{31}}
-\newlabel{eq:bci_gosei2}{{3.28}{31}}
-\newlabel{eq:bci_gosei3}{{3.29}{31}}
-\newlabel{eq:bci_gosei4}{{3.30}{31}}
-\@writefile{toc}{\contentsline {chapter}{\numberline { 4 }提案手法}{32}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces 脳波を3階テンソルとした手法の模式図(参照\cite  {Ztfc})\relax }}{33}}
+\newlabel{fig:fbcsp bilinear}{{3.8}{33}}
+\newlabel{eq:bci_gosei}{{3.27}{33}}
+\newlabel{eq:bci_gosei2}{{3.28}{33}}
+\newlabel{eq:bci_gosei3}{{3.29}{33}}
+\newlabel{eq:bci_gosei4}{{3.30}{33}}
+\@writefile{toc}{\contentsline {chapter}{\numberline { 4 }提案手法}{34}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline { 5 }実験方法}{33}}
+\@writefile{toc}{\contentsline {chapter}{\numberline { 5 }実験方法}{35}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline { 6 }結果と考察}{34}}
+\@writefile{toc}{\contentsline {chapter}{\numberline { 6 }結果と考察}{36}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@input{appendix.aux}
@@ -195,28 +212,42 @@
 \bibcite{ERDとERS}{2}
 \bibcite{ERDリハビリ}{3}
 \bibcite{運動フィードバック}{4}
-\bibcite{スペクトル解析}{5}
-\bibcite{ICA1}{6}
-\bibcite{ICA2}{7}
-\bibcite{ディープローカルミニマム}{8}
-\bibcite{DeepvsShallow}{9}
-\bibcite{ベイズドロップアウト}{10}
-\bibcite{脳波解析入門}{11}
-\bibcite{Beta波によるBCI}{12}
-\bibcite{時間周波数解析の比較}{13}
-\bibcite{EMD}{14}
-\bibcite{IMF}{15}
-\bibcite{CSP1990}{16}
-\bibcite{CSP1999}{17}
-\@writefile{toc}{\contentsline {chapter}{参考文献}{37}}
+\bibcite{プリミティブERD}{5}
+\bibcite{Beta波によるBCI}{6}
+\bibcite{waveletFSVM}{7}
+\bibcite{時間周波数解析の比較}{8}
+\bibcite{運動準備電位肢体}{9}
+\bibcite{運動準備電位指}{10}
+\bibcite{運動準備電位想起}{11}
+\bibcite{運動準備電位想起2}{12}
+\bibcite{CSP1990}{13}
+\bibcite{CSP1999}{14}
+\@writefile{toc}{\contentsline {chapter}{参考文献}{39}}
+\bibcite{csssp}{15}
+\bibcite{正則化CSP}{16}
+\bibcite{カーネルCSP}{17}
 \bibcite{cvscsp}{18}
 \bibcite{fbcsp}{19}
-\bibcite{csssp}{20}
-\bibcite{csp_eigen}{21}
-\bibcite{カーネルCSP}{22}
-\bibcite{正則化CSP}{23}
-\bibcite{fbcspBCICOMPE}{24}
-\bibcite{Ztfc}{25}
-\bibcite{kNMF}{26}
-\bibcite{kNMF2}{27}
+\bibcite{BCIの比較}{20}
+\bibcite{脳波解析BCI}{21}
+\bibcite{脳波分析BCI}{22}
+\bibcite{ERSBCI}{23}
+\bibcite{京大ドクター}{24}
+\bibcite{sparsemethod}{25}
+\bibcite{bootCSP}{26}
+\bibcite{CheapLearning}{27}
+\bibcite{DeepvsShallow}{28}
+\bibcite{ディープローカルミニマム}{29}
+\bibcite{スペクトル解析}{30}
+\bibcite{ICA1}{31}
+\bibcite{ICA2}{32}
+\bibcite{ベイズドロップアウト}{33}
+\bibcite{脳波解析入門}{34}
+\bibcite{EMD}{35}
+\bibcite{IMF}{36}
+\bibcite{csp_eigen}{37}
+\bibcite{fbcspBCICOMPE}{38}
+\bibcite{Ztfc}{39}
+\bibcite{kNMF}{40}
+\bibcite{kNMF2}{41}
 \bibstyle{junsrt}

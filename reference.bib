@@ -2,6 +2,28 @@
 %  論文CSP
 %=============================================================
 
+@Inbook{sparsemethod,
+author="Sreeja, S. R.
+and Rabha, Joytirmoy
+and Samanta, Debasis
+and Mitra, Pabitra
+and Sarma, Monalisa",
+editor="Horain, Patrick
+and Achard, Catherine
+and Mallem, Malik",
+title="Classification of Motor Imagery Based EEG Signals Using Sparsity Approach",
+bookTitle="Intelligent Human Computer Interaction: 9th International Conference, IHCI 2017, Evry, France, December 11-13, 2017, Proceedings",
+year="2017",
+publisher="Springer International Publishing",
+address="Cham",
+pages="47--59",
+abstract="The advancement in brain-computer interface systems (BCIs) gives a new hope to people with special needs in restoring their independence. Since, BCIs using motor imagery (MI) rhythms provides high degree of freedom, it is been used for many real-time applications, especially for locked-in people. The available BCIs using MI-based EEG signals usually makes use of spatial filtering and powerful classification methods to attain better accuracy and performance. Inter-subject variability and speed of the classifier is still a issue in MI-based BCIs. To address the aforementioned issues, in this work, we propose a new classification method, spatial filtering based sparsity (SFS) approach for MI-based BCIs. The proposed method makes use of common spatial pattern (CSP) to spatially filter the MI signals. Then frequency bandpower and wavelet features from the spatially filtered signals are used to bulid two different over-complete dictionary matrix. This dictionary matrix helps to overcome the issue of inter-subject variability. Later, sparse representation based classification is carried out to classify the two-class MI signals. We analysed the performance of the proposed approach using publicly available MI dataset IVa from BCI competition III. The proposed SFS method provides better classification accuracy and runtime than the well-known support vector machine (SVM) and logistic regression (LR) classification methods. This SFS method can be further used to develop a real-time application for people with special needs.",
+isbn="978-3-319-72038-8",
+doi="10.1007/978-3-319-72038-8_5",
+url="https://doi.org/10.1007/978-3-319-72038-8_5"
+}
+
+
 @article{
 csssp,
 author = "Guido Dornhege and Benjamin Blankertz and Matthias Krauledat and Florian Losch and Gabriel Curio and Klaus-Robert Muller",
@@ -118,11 +140,41 @@ year = "2009",
 volume = "73",
 pages = "432-437",
 }
+@Inbook{bootCSP,
+author="Rajan, Rachel
+and Thekkan Devassy, Sunny",
+editor="Horain, Patrick
+and Achard, Catherine
+and Mallem, Malik",
+title="Improving Classification Performance by Combining Feature Vectors with a Boosting Approach for Brain Computer Interface (BCI)",
+bookTitle="Intelligent Human Computer Interaction: 9th International Conference, IHCI 2017, Evry, France, December 11-13, 2017, Proceedings",
+year="2017",
+publisher="Springer International Publishing",
+address="Cham",
+pages="73--85",
+abstract="In the classification of multichannel electroencephalograph (EEG) based BCI studies, the spatial and spectral information related to brain activities associated with BCI paradigms are usually pre-determined as default without speculation, which can lead to loses effects in practical applications due to individual variability across different subjects. Recent studies have shown that feature combination of each specifically tailored for different physiological phenomena such as Readiness Potential (RP) and Event Related Desynchronization (ERD) might benefit BCI making it robust against artifacts. Hence, the objective is to design a CSSBP with combined feature vectors, where the signal is divided into several sub bands using a band pass filter, and this channel and frequency configurations are then modeled as preconditions before learning base learners and introducing a new heuristic of stochastic gradient boost for training the base learners under these preconditions. Results showed that Boosting approach using feature combination clearly outperformed the state-of-the-art algorithms, and improved the classification performance, resulting in increased robustness.",
+isbn="978-3-319-72038-8",
+doi="10.1007/978-3-319-72038-8_7",
+url="https://doi.org/10.1007/978-3-319-72038-8_7"
+}
 
 %=============================================================
 %  論文ERD
 %=============================================================
 
+
+@INPROCEEDINGS{プリミティブERD, 
+author={D. Huang and K. Qian and S. Oxenham and D. Y. Fei and O. Bai}, 
+booktitle={2011 IEEE Symposium on Computational Intelligence, Cognitive Algorithms, Mind, and Brain (CCMB)}, 
+title={Event-related desynchronization/ synchronization-based brain-computer interface towards volitional cursor control in a 2D center-out paradigm}, 
+year={2011}, 
+volume={}, 
+number={}, 
+pages={1-8}, 
+keywords={brain-computer interfaces;decision trees;electroencephalography;feature extraction;genetic algorithms;medical signal processing;signal classification;2D center out paradigm;EEG activity;brain rhythmic activities;decision tree classifier;event related desynchronization synchronization based brain computer interface;feature selection;genetic algorithm based mahalanobis linear distance classifier;human movement intention;human natural behavior;model adaptation method;motor imagery;noninvasive EEG based brain computer interface;online center out cursor control paradigm;two dimensional BCI;two dimensional cursor control;volitional cursor control;Adaptation models;Analytical models;Calibration;Computational modeling;Humans;Signal processing;Synchronization;Brain Computer Interfaces;Event-Related Desynchronization (ERD);Event-Related Synchronization (ERS);Movement Intention;Two-Dimensional Cursor Control}, 
+doi={10.1109/CCMB.2011.5952122}, 
+ISSN={}, 
+month={April},}
 
 @article{
 ERDとERS,
@@ -163,7 +215,7 @@ month={Jan},}
 waveletFSVM,
 author = "Q. Xu and H. Zhou and Y. Wang and J. Huang",
 title = "Fuzzy support vector machine for classification of eeg signals using wavelet-based features",
-journal = "Medical Engineering & Physics",
+journal = "Medical Engineering \& Physics",
 year = "2009",
 volume = "31",
 number = "7",
@@ -244,6 +296,49 @@ school = "豊田工業大学",
 year = "2016"
 }
 
+@phdthesis{脳波分析BCI,
+author = "吉岡 将孝",
+title = "脳波分析に基づいた Brain-Machine Interface
+パワーアシストシステムの構築
+-周期パワースペクトルによる運動に関する
+脳波の解析および関節トルクの推定-",
+school = "前橋工科大学",
+year = "2016"
+}
+
+@phdthesis{京大ドクター,
+author = "笹山 瑛由",
+title = "ブレイン‐マシン・インタフェースに向けた多チャネル
+脳波計測による脳内情報抽出法および識別法に関する研究",
+school = "京都大学",
+year = "2012",
+url = "https://dx.doi.org/10.14989/doctor.k16799"
+}
+
+@article{脳波解析BCI,
+author = "板井 陽俊 and 船瀬 親王",
+title = "BCIシステムの構築を目指した単一試行脳波の解析技術",
+journal = "日本神経回路学会誌",
+volume = "19",
+number = "3",
+pages = "118-125",
+year = "2012"
+}
+
+
+
+@INPROCEEDINGS{ERSBCI, 
+author={E. Thomas and J. Fruitet and M. Clerc}, 
+booktitle={2012 Annual International Conference of the IEEE Engineering in Medicine and Biology Society}, 
+title={Investigating brief motor imagery for an ERD/ERS based BCI}, 
+year={2012}, 
+volume={}, 
+number={}, 
+pages={2929-2932}, 
+keywords={biocontrol;brain-computer interfaces;electroencephalography;feature extraction;medical image processing;EEG;ERD/ERS based BCI;ERS features;brain computer interface;brief motor imagery;event related synchronisation;feature extraction;intentional control tasks;offline single trial BCI;Accuracy;Brain computer interfaces;Electroencephalography;Integrated circuits;Spectrogram;Support vector machines;Training;Algorithms;Brain-Computer Interfaces;Electroencephalography;Humans;Imagination}, 
+doi={10.1109/EMBC.2012.6346577}, 
+ISSN={1094-687X}, 
+month={Aug},}
 %=============================================================
 %  脳神経科学
 %=============================================================
@@ -284,6 +379,54 @@ volume = "9",
 number = "6",
 pages = "735-739"
 }
+
+@article{運動準備電位肢体,
+author="北山 真平 and 佐々木 実 and 伊藤 聡 and 安田 晴信 and 小嶋 俊史",
+title="運動準備電位による四肢動作推定",
+journal="日本AEM学会誌",
+year="2014",
+volume="22",
+number="2",
+DOI=""
+}
+
+@article{運動準備電位想起,
+  title={脳波を用いた手足の運動想起判別への空間フィルタ適用に関する検討},
+  author={中村 翔太郎 and 吉川 大弘 and 古橋 武},
+  journal={日本知能情報ファジィ学会 ファジィ システム シンポジウム 講演論文集},
+  volume={25},
+  number={ },
+  pages={19-19},
+  year={2009},
+  doi={10.14864/fss.25.0.19.0}
+}
+@article{運動準備電位想起2,
+author="中村, 翔太郎 and 高橋, 弘武 and 吉川, 大弘 and 古橋, 武",
+title="脳波を用いた手足の運動想起判別における準備電位の傾きを用いた特徴抽出法に関する検討",
+journal="知能と情報 : 日本知能情報ファジィ学会誌 : journal of Japan Society for Fuzzy Theory and Intelligent Informatics",
+ISSN="13477986",
+publisher="Japan Society for Fuzzy Theory and Intelligent Informatics",
+year="2010",
+month="aug",
+volume="22",
+number="4",
+pages="427-433",
+URL="https://ci.nii.ac.jp/naid/10026563281/",
+DOI="10.3156/jsoft.22.427",
+}
+
+@ARTICLE{運動準備電位指, 
+author={Yong Li and Xiaorong Gao and Hesheng Liu and Shangkai Gao}, 
+journal={IEEE Transactions on Biomedical Engineering}, 
+title={Classification of single-trial electroencephalogram during finger movement}, 
+year={2004}, 
+volume={51}, 
+number={6}, 
+pages={1019-1025}, 
+keywords={biomechanics;electroencephalography;medical signal processing;signal classification;spatiotemporal phenomena;EEG signal classification;EEG-based brain-computer interface;finger movement;high recognition rate;single-trial electroencephalogram;spatio-temporal analysis;Biomedical engineering;Brain computer interfaces;Classification algorithms;Computer interfaces;Data mining;Electroencephalography;Fingers;Humans;Rhythm;Signal processing algorithms;Adult;Algorithms;Cerebral Cortex;Electroencephalography;Evoked Potentials, Motor;Fingers;Humans;Male;Motor Cortex;Movement;Pattern Recognition, Automated;Reproducibility of Results;Sensitivity and Specificity;Somatosensory Cortex;Task Performance and Analysis}, 
+doi={10.1109/TBME.2004.826688}, 
+ISSN={0018-9294}, 
+month={June},}
 %=============================================================
 %  論文ニューラルネットワーク
 %=============================================================
@@ -329,6 +472,20 @@ pages = {1223-1247},
 url = {https://doi.org/10.1007/s10955-017-1836-5}
 }
 
+@article {ConvNet,
+author = {Schirrmeister, Robin Tibor and Springenberg, Jost Tobias and Fiederer,
+  Lukas Dominique Josef and Glasstetter, Martin and Eggensperger, Katharina and Tangermann, Michael and
+  Hutter, Frank and Burgard, Wolfram and Ball, Tonio},
+title = {Deep learning with convolutional neural networks for EEG decoding and visualization},
+journal = {Human Brain Mapping},
+issn = {1097-0193},
+url = {http://dx.doi.org/10.1002/hbm.23730},
+doi = {10.1002/hbm.23730},
+month = {aug},
+year = {2017},
+keywords = {electroencephalography, EEG analysis, machine learning, end-to-end learning, brain–machine interface,
+  brain–computer interface, model interpretability, brain mapping},
+}
 %=============================================================
 %  カンファレンス
 %=============================================================
