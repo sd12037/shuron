@@ -1,5 +1,29 @@
 \begin{thebibliography}{10}
 
+\bibitem{運動想起}
+M.~Jeannerod and V.~Frak.
+\newblock Mental imaging of motor activity in humans.
+\newblock {\em Current opinion in neurobiology}, Vol.~9, No.~6, pp. 735--739,
+  1999.
+
+\bibitem{ERDとERS}
+G.~Pfurtscheller and F.~H.~L. da~Silva.
+\newblock Event-related eeg/meg synchronization and desyn-chronization: Basic
+  principles.
+\newblock {\em Clinical Neurophysiology}, Vol. 110, No.~11, pp. 1842--1857,
+  1999.
+
+\bibitem{ERDリハビリ}
+高橋光, 郷古学, 伊藤宏司.
+\newblock 機能的電気刺激(fes)による感覚情報の事象関連非同期(erd)への影響.
+\newblock 電子情報通信学会技術研究報告. NC, ニューロコンピューティング, Vol.
+  108, No. 130, pp. 7--12, jul 2008.
+
+\bibitem{運動フィードバック}
+高橋光, 郷古学, 伊藤宏司.
+\newblock 運動想起フィードバック訓練による事象関連脱同期 (erd) 出現の検証.
+\newblock システム制御情報学会論文誌, Vol.~22, No.~5, pp. 199--205, 2009.
+
 \bibitem{スペクトル解析}
 日野幹雄.
 \newblock スペクトル解析（統計ライブラリー）.
@@ -12,7 +36,7 @@ Hiromu Gotanda, Takaaki Ishibashi, Nobuo Iwasaki, and Katsuhiro Inoue.
 
 \bibitem{ICA2}
 村田昇.
-\newblock 入門 独立性分析.
+\newblock 入門 独立成分分析.
 \newblock 東京電機大学出版, 2004.
 
 \bibitem{ディープローカルミニマム}
@@ -39,13 +63,6 @@ Yarin Gal and Zoubin Ghahramani.
 開一夫, 金山範明河内山隆紀, 松本敦宮腰誠.
 \newblock 脳波解析入門:EEGLABとSPMを使いこなす.
 \newblock 東京大学出版会, 2016.
-
-\bibitem{ERDとERS}
-G.~Pfurtscheller and F.~H.~L. da~Silva.
-\newblock Event-related eeg/meg synchronization and desyn-chronization: Basic
-  principles.
-\newblock {\em Clinical Neurophysiology}, Vol. 110, No.~11, pp. 1842--1857,
-  1999.
 
 \bibitem{Beta波によるBCI}
 G.~Pfurtscheller and T.~Solis-Escalante.

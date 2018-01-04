@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2017.12.21)  4 JAN 2018 14:08
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2017.12.21)  4 JAN 2018 18:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -455,4 +455,207 @@ LaTeX Font Info:    Try loading font information for OT1+phv on input line 76.
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(F
+(Font)              scaled to size 23.90964pt on input line 76.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 23.90964pt on input line 76.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 23.90964pt on input line 76.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 23.90964pt on input line 76.
+
+(./thesis.toc [3
+
+
+])
+\tf@toc=\write4
+\openout4 = `thesis.toc'.
+
+ [4]
+ 1 
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 19.9311pt on input line 83.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 19.9311pt on input line 83.
+(./chapter/chapter1/INTRO.tex
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 1.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 1.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 1.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 1.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 9.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 9.
+ [1
+
+
+]
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 60.
+ [2]
+File: images/BCIclass.png Graphic file (type bmp)
+
+<images/BCIclass.png> [3]
+File: images/BCIsystem.png Graphic file (type bmp)
+ <images/BCIsystem.png>)
+(./chapter/chapter1/Objective.tex) [4]
+ 2 
+(./chapter/chapter2/SIGNAL.tex [5
+
+] [6]) (./chapter/chapter2/BSS.tex [7]
+File: images/x(t).png Graphic file (type bmp)
+
+<images/x(t).png>
+File: images/z(t).png Graphic file (type bmp)
+ <images/z(t).png>
+Overfull \hbox (1.90002pt too wide) in paragraph at lines 42--56
+[]$[]$ $[]$ 
+ []
+
+File: images/z=Wx.png Graphic file (type bmp)
+<images/z=Wx.png> [8] [9]
+File: images/ica_pca.png Graphic file (type bmp)
+ <images/ica_pca.png>
+Overfull \hbox (19.92897pt too wide) in paragraph at lines 122--123
+ [][] 
+ []
+
+[10] [11]
+File: images/bss.png Graphic file (type bmp)
+ <images/bss.png>
+Overfull \hbox (19.92897pt too wide) in paragraph at lines 193--194
+ [][] 
+ []
+
+) (./chapter/chapter2/Discriminant.tex [12]
+File: images/mean_dis.png Graphic file (type bmp)
+ <images/mean_dis.png>
+File: images/var_dis.png Graphic file (type bmp)
+
+<images/var_dis.png> [13] [14]
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 143.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 143.
+ [15]
+File: images/margin.png Graphic file (type bmp)
+ <images/margin.png> [16]
+File: images/linearSVM.png Graphic file (type bmp)
+
+<images/linearSVM.png>
+File: images/xorlinearSVM.png Graphic file (type bmp)
+ <images/xorlinearSVM.png>
+Overfull \hbox (1.90002pt too wide) in paragraph at lines 209--223
+[]$[]$ $[]$ 
+ []
+
+File: images/xorkernelSVM.png Graphic file (type bmp)
+<images/xorkernelSVM.png> [17]
+Underfull \hbox (badness 1033) in paragraph at lines 255--263
+\JY1/mc/m/n/10 ただし 、 \OT1/ptm/m/n/10 (2.43) \JY1/mc/m/n/10 は無駄な計算も含
+まれている 。 $\OML/cmm/m/it/10 a[] \OT1/cmr/m/n/10 = 0$ \JY1/mc/m/n/10 となる
+ような $\OML/cmm/m/it/10 x[]$ \JY1/mc/m/n/10 に対して
+ []
+
+[18]) (./chapter/chapter3/NN.tex [19] [20]
+File: images/activations.png Graphic file (type bmp)
+ <images/activations.png> [21])
+[22]
+ 3 
+(./chapter/chapter2/FEATURE.tex
+File: images/EEGfootmove.png Graphic file (type bmp)
+ <images/EEGfootmove.png>
+File: images/EEGhandmove.png Graphic file (type bmp)
+
+<images/EEGhandmove.png>
+File: images/CzEEG.png Graphic file (type bmp)
+ <images/CzEEG.png> [23
+
+]
+File: images/rapCzEEG.png Graphic file (type bmp)
+ <images/rapCzEEG.png> [24]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 95.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 95.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 95.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 95.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 95.
+
+
+LaTeX Warning: Reference `fig:ERD' on page 25 undefined on input line 95.
+
+[25]) (./chapter/chapter2/CSP.tex
+File: images/CSP.png Graphic file (type bmp)
+ <images/CSP.png> [26]
+File: images/apple.png Graphic file (type bmp)
+ <images/apple.png>
+[27]
+
+LaTeX Warning: Reference `fig:CSSSP' on page 28 undefined on input line 159.
+
+File: images/CSSSP.png Graphic file (type bmp)
+<images/CSSSP.png> [28]) (./chapter/chapter2/oldSOTA.tex [29]
+File: images/bilinear.png Graphic file (type bmp)
+
+<images/bilinear.png> [30]) [31]
+ 4 
+[32
+
+]
+ 5 
+[33
+
+]
+ 6 
+[34
+
+]
+\openout2 = `appendix.aux'.
+
+ (./appendix.tex) [35
+
+
+] (./thesis.bbl [36
+
+
+]
+LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 6.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 6.
+LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 6.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 6.
+ [37
+
+]) [38]
+No file thesis.ind.
+(./thesis.aux (./math_rule.aux) (./appendix.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4587 strings out of 493723
+ 64955 string characters out of 6152569
+ 152974 words of memory out of 5000000
+ 7935 multiletter control sequences out of 15000+600000
+ 32660 words of font info for 130 fonts, out of 8000000 for 9000
+ 934 hyphenation exceptions out of 8191
+ 36i,9n,39p,293b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on thesis.dvi (43 pages, 160668 bytes).
