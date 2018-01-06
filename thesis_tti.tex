@@ -1,24 +1,15 @@
-\documentclass[a4paper,11truept, oneside, openany, report]{jsbook}
-% \documentclass[a4paper,11pt, oneside, report]{jsbook}
-% \documentclass[11pt, a4paper, papersize, dvipdfmx]{jsarticle}
-% \documentclass{jsarticle}
-% \documentclass[fleqn, 11pt]{jsarticle}
-%
+\documentclass[fleqn,11pt]{TTIthesis}
+%\documentclass[fleqn, 11pt]{jsarticle}
+
+\bibliographystyle{junsrt}
 \usepackage[top=20mm, bottom=20mm, left=25mm, right=25mm]{geometry}
-\usepackage{amsmath,amssymb}
-\usepackage{bm}
-% \usepackage{graphicx}
-\usepackage[dvipdfmx]{graphicx}
-\usepackage{subfigure}
-\usepackage{verbatim}
-\usepackage{wrapfig}
-\usepackage{ascmac}
-\usepackage{makeidx}
-\usepackage{cite}
 \usepackage{times}
 \usepackage{amsmath}
+%\usepackage[dviout]{graphicx}
+\usepackage[dvips]{graphicx}
 \usepackage{setspace}
 \usepackage{here}
+\usepackage{slashbox}
 \usepackage{latexsym}
 \usepackage{bm}
 \usepackage{url}
@@ -26,40 +17,64 @@
 \usepackage{tabularx}
 \usepackage{multirow}
 \usepackage{afterpage}
-\usepackage{caption}
-\usepackage{newtxtext,newtxmath}
-\usepackage[rm,up,sc,compact,topmarks,calcwidth,pagestyles]{titlesec}
-\captionsetup[figure]{format=plain, labelformat=simple, font=small}
-% \captionsetup[table]{format=plain, labelformat=simple, font=normalsize}
-
-%
-\makeindex
-%
-\setlength{\textwidth}{\fullwidth}
-% \setlength{\textheight}{40\baselineskip}
-% \addtolength{\textheight}{\topskip}
-% \setlength{\voffset}{1.55in}
-%
-\newcommand{\diff}{\mathrm{d}}  %微分記号
-\newcommand{\divergence}{\mathrm{div}\,}  %ダイバージェンス
-\newcommand{\grad}{\mathrm{grad}\,}  %グラディエント
-\newcommand{\rot}{\mathrm{rot}\,}  %ローテーション
+\usepackage{cite}
 \renewcommand{\prechaptername}{ }
 \renewcommand{\postchaptername}{ }
-\renewcommand{\baselinestretch}{1.5}
 \newcommand{\argmax}{\mathop{\rm arg~max}\limits}
 \newcommand{\argmin}{\mathop{\rm arg~min}\limits}
 \newcolumntype{Y}{>{\centering\arraybackslash}X} %中央揃え
-\newcolumntype{Z}{>{\raggedleft\arraybackslash}X} 
-%
+\newcolumntype{Z}{>{\raggedleft\arraybackslash}X} %右揃え
 
+% Start:日本語可能なしおりにする
+\AtBeginDvi{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
+\usepackage[dvipdfm]{color}
+\usepackage[%
+dvipdfm,%
+pdfstartview={FitH -32768},%    描画領域の幅に合わせる［default は全体表示］
+bookmarks=true,%                しおり付き［default は false］
+bookmarksnumbered=true,%        章や節の番号をふる［default は false］
+bookmarkstype=toc,%             目次情報のファイル［拡張子 toc］を参照
+colorlinks=false,%              ハイパーリンクを色文字ではなく色枠に［default］
+linkbordercolor={1 1 1},%       link の枠の色
+citebordercolor={1 1 1},%       cite の枠の色
+urlbordercolor={1 1 1},%        url の枠の色
+pdftitle={},%           ［default は空白］
+pdfsubject={},%       ［default は空白］
+pdfauthor={},%              ［default は空白］
+pdfkeywords={}%       ［default は空白］
+]{hyperref}
+% End:日本語可能なしおりにする
 
+\def\diag{\mathop{\rm diag}\nolimits}
 
+% 論文の和文タイトル
+%\jtitle{対麻痺者の歩行支援を行う装着型パワーアシストロボットの開発}
+\jtitle{BCI}
 
-\title{深層学習を用いた脳波信号からの運動意図推定}
-\author{佐野\ \ 光 \\ Sano\ \ Hikaru}
-% \author{Hikaru\ \ Sano}
-\date{\today}
+% 論文の英文タイトル
+%\etitle{English Title}
+
+% ヘッダー用の論文の短縮英文タイトル
+% 必ず1行に収まるように英文タイトルを短縮する．
+%\htitle{English Title for headder}
+
+\jauthor{佐野\ \ 光}     % 氏名(日本語)
+\eauthor{Hikaru\ \ SANO}   % 氏名(英語)
+
+\studentnumber{16414}
+
+\jaffiliciation{制御システム研究室} % 研究室名(日本語)
+\eaffiliciation{Control System Laboratory} % 所属学科名(英語)
+
+\jdate{平成30年 1月}    % 論文提出   (日本語)
+\edate{January 2018}     % 論文提出年月　(英語)
+
+% タイトルなどの定義の終わり
+%\renewcommand{\baselinestretch}{1.5}
+\begin{document}
+\renewcommand{\arraystretch}{0.75}
+    
+
 
 
 \begin{document}
@@ -83,32 +98,6 @@
 \mainmatter
 %input 終了後改ページなし
 %include 終了後改ページあり
-
-% \chapter{Wordとの比較用チャプター}
-% \section{Deep Learning}
-% ニューラルネットワーク
-
-% Neural network
-
-% 人口神経回路網
-% \subsection{活性化関数}
-% ニューラルネットワークは
-% もともと神経回路網を再現した数理モデルであったため、
-% シナプスからの多入力と、入力を受けたニューロンが活性化する様子を
-% 以下の数式により表現した。
-% \begin{equation}
-%     y = {\rm step}(w_1x_1+w_2x_2+b)
-% \end{equation}
-% ステップ関数は数学的に取り扱いづらかったため、
-% 微分可能な形で表現するためにシグモイド関数が考案された（図\ref{fig:シグモイド関数}）。
-% \begin{figure}[t]
-%     \centering
-%     \includegraphics[width=13cm]{images/sigmoid.png}
-%     \caption{シグモイド関数の形状}
-%     \label{fig:シグモイド関数}
-% \end{figure}
-
-
 
 \chapter{序論}
 \input{chapter/chapter1/INTRO}
