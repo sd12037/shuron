@@ -1,11 +1,11 @@
-\section{多変量解析}
+\section{\mc 多変量解析}
 多変量解析とは多変量データを統計的に扱う手法である。
 扱うデータの科学的知識に基づいた特徴量抽出に加え、実データの統計的な性質を考慮した
 特徴量抽出も様々な分野で行われている。
 この章では脳波解析で用いられている多変量解析について紹介し、
 その有用性と限界について考察する。
 
-\subsection{Principal Component Analysis(PCA)}
+\subsection{\rm Principal Component Analysis(PCA)}
 Principal Component Analysis(PCA)は特徴量抽出手法として幅広い分野で活用されている。
 簡単のため時間平均が\(0\)の多次元信号\(x(t)\in \mathbb R^D\)に対してPCAによる特徴抽出を考える。
 PCAでは変換行列\(W^T \in \mathbb R^{D \times D}\)を左から作用させ、特徴量
@@ -94,7 +94,7 @@ PCAでは基底を取り直すことで各成分が無相関な信号を獲得�
 
 
 
-\subsection{Indipendent Component Analysis(ICA)}
+\subsection{\rm Indipendent Component Analysis(ICA)}
 Indipendent Component Analysis(ICA)はPCAを発展させた比較的新しい信号解析手法である。
 ICAはPCAと同様に変換行列\(W^T \in \mathbb R^{D \times D}\)を左から作用させ、特徴量
 \begin{equation}
@@ -132,7 +132,7 @@ FastICAではネゲントロピーの最大化を各成分ごとに順次取り�
 しかし、一方で身体部位に関する脳波成分がその他のあらゆる脳波と独立であるかは定かではなく、仮に独立であった場合にも分解された信号から
 目視によって特定することは困難であると推察される。
 
-\subsection{Blind Source Separation(BSS)}
+\subsection{\rm Blind Source Separation(BSS)}
 上記ではPCAとICAが次元削減として用いられることを見た。
 一方でこれらの手法はBlind Source Separation(BSS)問題の解法として解釈されることも多いため、
 ここで簡単に述べておく。

@@ -1,7 +1,7 @@
 
 
 %%%%%%%%%%%%%% 特徴量工学の説明 %%%%%%%%%%%%
-\section{ニューラルネットワーク}
+\section{\mc ニューラルネットワーク}
 ニューラルネットワークは近年、``深層学習''あるいは``ディープラーニング''の名の元に、
 再注目を浴びている学習モデルである。ニューラルネットワークは元々脳の神経活動を模倣したモデルとして
 提案されたが、現在では学習の力学特性や統計物理学の知見など数理的な解析が行われている\cite{ディープローカルミニマム,DeepvsShallow}。
@@ -14,11 +14,11 @@
 % ニューラルネットワークを構成することで、BCIの候補となる関数族を決めることができるが、
 % 裏を返すと、BCIとしての振る舞いができるようなニューラルネットワークの構成を選ばなければ、
 % 学習を長時間続けたとしても良い結果は得られない。
-\subsection{モデル構築と学習}
+\subsection{\mc モデル構築と学習}
 ニューラルネットワークは
 
-\subsection{ニューラルネットワークに用いられる層}
-\subsubsection{Linear層}
+\subsection{\mc ニューラルネットワークに用いられる層}
+\subsubsection{\rm Linear\mc 層}
 ニューラルネットワークで最も基本的な層はLinear層である。
 Linear層はパラメータとして\(W \in \mathbb R^{d\times D}\)と\(b \in \mathbb R^d\)を有した
 以下の関数である。
@@ -37,7 +37,7 @@ Linear層はパラメータとして\(W \in \mathbb R^{d\times D}\)と\(b \in \m
 ここに\(w_{j,i}\)は行列\(W\)の\((j,i)\)成分、\(b_j\)はベクトル\(b\)の\(j\)番目の成分である。
 % 以下、層のパラメトリックな関数による記述と出力の成分表示にいずれの表記も場面に応じて使い分ける。
 
-\subsubsection{Bilinear層}
+\subsubsection{\rm Bilinear\mc 層}
 Bilinear層は入力として\(x^{(1)}\in \mathbb R^{D_1}\)と\(x^{(2)}\in \mathbb R^{D_2}\)の
 2つを受け取り、1つの出力\(y \in \mathbb R^d\)を返す。
 \begin{equation}
@@ -46,7 +46,7 @@ Bilinear層は入力として\(x^{(1)}\in \mathbb R^{D_1}\)と\(x^{(2)}\in \math
 ここでn階のテンソル\(A\in \mathbb R^{D_1,\cdots ,D_n}\)の\((d_1,\cdots,d_n)\)成分を\(a_{d_1,\cdots,d_n}\)と表記している。
 パラメータは\(W\in \mathbb R^{D_1\times D_2 \times K}\)と\(b \in \mathbb R^K\)である。
 
-\subsubsection{Convolution層}
+\subsubsection{\rm Convolution\mc 層}
 Convolution層はパラメータとして\(H \in \mathbb R^{P\times Q\times C\times L}\)と\(B \in \mathbb R^{I\times J\times L}\)を有し、
 入力を\(X \in \mathbb R^{I\times J\times C}\)として、出力\(Y \in \mathbb R^{I'\times J'\times L}\)は以下で表される。
 \begin{equation}
@@ -63,7 +63,7 @@ Convolution層はパラメータとして\(H \in \mathbb R^{P\times Q\times C\ti
 %     \label{eq:convlayer2}
 % \end{equation}
 
-\subsubsection{Recurrent層}
+\subsubsection{\rm Recurrent\mc 層}
 Recurrent層は入力\(X = (x_1,\cdots,x_T)\in \mathbb R^{D \times T}\)、
 出力\(Y = (y_1,\cdots,y_T)\in \mathbb R^{d \times T}\)として以下で表される。
 \begin{equation}
@@ -78,7 +78,7 @@ Recurrent層は入力\(X = (x_1,\cdots,x_T)\in \mathbb R^{D \times T}\)、
 画像を左から右に走査するような働きを担う。
 \(\rm tanh(\cdot)\)は双曲線正接関数であるが、ニューラルネットワークの活性化関数として広く持ちいられている。
 
-\subsubsection{LSTM層}
+\subsubsection{\rm LSTM\mc 層}
 LSTMはLong Short-Term Memoryの略であり、
 LSTM層はReccurent層が長期的な系列データを上手く学習できない問題を解決した。
 LSTM層は入力\(X = (x_1,\cdots,x_T)\in \mathbb R^{D \times T}\)、
@@ -108,10 +108,10 @@ Recurrent層同様に、系列データを想定した定式化がなされて�
 \(y_t\)は内部情報である\(c_t\)を\((-1,1)^d\)にスケーリングしたベクトルと\(o_t\)との要素積によって算出される。
 すなわち、\(o_t\)の値が内部情報\(c_t\)に応じて大きさと正負が調整されてLSTM層の出力となる。
 
-\subsection{活性化関数}
+\subsection{\mc 活性化関数}
 ここではパラメータを持たない変換について述べる。
 現在は数多くの活性化関数が利用されており、ここでまとめて扱う。
-\subsubsection{シグモイド関数}
+\subsubsection{\mc シグモイド関数}
 シグモイド関数\(\sigma(x)\)は以下で定義される。
 \begin{equation}
     \sigma(z) = \frac{1}{1+\exp(-z)}
@@ -121,7 +121,7 @@ Recurrent層同様に、系列データを想定した定式化がなされて�
 入力値がある閾値を超えると発火するというモデルを表現するためにステップ関数が利用されていた。
 シグモイド関数は、ステップ関数を微分可能な形で表現することを動機に考案された。
 
-\subsubsection{双曲線正接関数}
+\subsubsection{\mc 双曲線正接関数}
 双曲線正接関数\({\rm tanh}(z)\)は以下で定義される。
 \begin{equation}
     {\rm tanh}(z) = \frac{\exp(z) - \exp(-z)}{\exp(z)+\exp(-z)}
@@ -129,7 +129,7 @@ Recurrent層同様に、系列データを想定した定式化がなされて�
 先に述べたシグモイド関数とは\(\sigma(z)=({\rm tanh}(x/2) + 1)/2\)という関係にあり、
 負の値を取ることもできるため状況に応じてシグモイド関数の代わりに用いられる。
 
-\subsubsection{ランプ関数}
+\subsubsection{\mc ランプ関数}
 ランプ関数はニューラルネットワークではRectified Linear Unit(ReLU)関数と呼ばれ、以下で表される。
 \begin{equation}
     {\rm ReLU}(z) = \max(z,0)
@@ -137,14 +137,14 @@ Recurrent層同様に、系列データを想定した定式化がなされて�
 入力が正で\(-1\)の勾配を持ち、その他の場合は勾配は\(0\)となる。
 この性質がニューラルネットワークの勾配消失問題を大きく改善したとされる。
 
-\subsubsection{leaklyReLU関数}
+\subsubsection{\rm leaklyReLU\mc 関数}
 ReLU関数が入力が負の場合にも値を有するように提案された。
 \begin{equation}
     {\rm leaklyReLU}(z) = \max(z,0) + \alpha \min(z,0)
 \end{equation}
 入力が正で\(-1\)の勾配を持ち、その他の場合は勾配は\(\alpha\)でハイパーパラメータである。
 
-\subsubsection{elu関数}
+\subsubsection{\rm elu\mc 関数}
 ReLU関数を全域で微分可能にするように調整された関数。
 \begin{equation}
     {\rm elu}(z) = \max(z,0) + \min(\alpha(\exp(z)-1), 0)
@@ -159,7 +159,7 @@ ReLU関数を全域で微分可能にするように調整された関数。
     \label{fig:activation}
 \end{figure}
 
-\subsubsection{ソフトマックス関数}
+\subsubsection{\mc ソフトマックス関数}
 ソフトマックス関数は一般的に、分類問題におけるニューラルネットワークの出力層に用いられる。
 ベクトルの入力を受け取りベクトルの出力を行うが、以下に要素毎の計算を示す。
 \begin{equation}
@@ -168,8 +168,8 @@ ReLU関数を全域で微分可能にするように調整された関数。
 ここで、\(z_i\)はベクトル\(z\)の\(i\)番目の要素である。
 定義から明らかに、値域は\((0,1)\)に制限され、出力の要素の総和は\(1\)である。
 
-\subsection{過学習抑制手法}
-\subsubsection{ドロップアウト}
+\subsection{\mc 過学習抑制手法}
+\subsubsection{\mc ドロップアウト}
 ドロップアウトは過学習抑制のために考案された手法であり、以下で表される。
 \begin{eqnarray}
     {\rm dropout}(z,p) & = & z \odot b \\
@@ -188,4 +188,4 @@ ReLU関数を全域で微分可能にするように調整された関数。
 ただし、ベイズの解釈としては出力が確率的に\(0\)になるのではなく、学習パラメータが確率的に\(0\)になった結果、
 出力が\(0\)になると考えなければならない。
 
-\subsubsection{バッチ正規化}
+\subsubsection{\mc バッチ正規化}

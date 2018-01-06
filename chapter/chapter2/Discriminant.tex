@@ -1,7 +1,7 @@
-\section{分類手法}
+\section{\mc 分類手法}
 分類問題の説明を行う。
 
-\subsection{Linear Discriminant Analysis(LDA)}
+\subsection{\rm Linear Discriminant Analysis(LDA)}
 \label{subsec:LDA}
 Linear Discriminant Analysis(LDA)は統計分析において伝統的に用いられてきた歴史ある手法である。
 LDAでは多次元データを部分空間で切り取り、切り取った空間で分類超平面を構築することでクラス分類を行う。
@@ -94,7 +94,7 @@ LDAでは以下の評価関数を用いる。
 (\ref{eq:lda_obj_mat})を\(w\)に関して微分して\(0\)と置くことで問題は解析的に解くことができる。
 また問題は一般化固有値問題となり、複数の固有ベクトルを用いて多次元の特徴量を獲得することも可能である。
 
-\subsection{Support Vector Machine(SVM)}
+\subsection{\rm Support Vector Machine(SVM)}
 脳波の分類ではSupport Vector Machine(SVM)の応用例もある。
 基本的にSVMはマージン最大化の考えによって汎化性能の向上に成功した
 2クラス分類のための線形分類器である。まずマージン最大化という概念について説明する。
@@ -261,7 +261,7 @@ BCIも含めた多くの応用では既に知られた優れた性質を持つ�
 従って学習後に保持しておかねければならないデータはサポートベクトルのみに限定でき、
 実用上省メモリに貢献できる。
 
-\subsection{Logistic Regression(LR)}
+\subsection{\rm Logistic Regression(LR)}
 Logistic Regression(LR)は対数オッズ比を線形モデルで表現した分類手法である。
 クラス分類においてデータ\(x\)がクラス\(C_i\)に属する確率を\(p(y=C_i\mid x)\)と表す。
 この時、事象\(y=C_i\)のオッズ比は以下で表される。

@@ -1,11 +1,11 @@
 
-\section{Common Spatial Patternとその派生手法}
+\section{\rm Common Spatial Pattern\mc とその派生手法}
 \label{sec:CSP}
 運動想起型BCIにおいて非常に活発に用いられている``Common Spatial Pattern(CSP)''は1990年にZoltan\cite{CSP1990}により提案されてから、
 数々の派生手法が生み出されてきた\cite{CSP1999,cvscsp,fbcsp,csssp,csp_eigen,カーネルCSP,正則化CSP}。
 このセクションではCSPの基本的な概要と、BCIに適した形で発展してきたCSPの派生手法について述べる。
 
-\subsection{脳波信号の定式化}
+\subsection{\mc 脳波信号の定式化}
 これまで多次元の信号を\(x(t)\in \mathbb R^D\)と表記し、連続時間信号として扱ってきた。
 しかし、通常は計測された脳波はコンピュータで処理するために
 離散時間信号\(x_n \in \mathbb R^D\)に変換される。
@@ -25,7 +25,7 @@
 CSPは運動想起BCIに対して極めて有効に働くとされている特徴量抽出手法である。
 
 
-\subsection{Common Spatial Pattern(CSP)}
+\subsection{\rm Common Spatial Pattern(CSP)}
 \label{subsec:CSP}
 CSPは複数の電極で計測されることが一般的である脳波に対して、
 適切な電極の重み付けを行うことで、重要な頭皮領域の脳波を取り出す手法である。
@@ -127,7 +127,7 @@ CSPでは、ベクトル\(w \in \mathbb {R}^M\)を新たな基底とした電極
 \end{figure}
   
 
-\subsection{Common Sparse Spatio Spectral Pattern(CSSSP)}
+\subsection{\rm Common Sparse Spatio Spectral Pattern(CSSSP)}
 CSPではバンドパスフィルタ\(\cal H\)通過後の信号を扱ったため、
 バンドパスフィルタの設計を終えてからでなければCSPの問題を解くことができない。
 従って、あるバンドパスフィルタを通過した脳波に対して、最適化問題を解いているに過ぎなく、
@@ -170,7 +170,7 @@ CSSSPの主なモチベーションはバンドパスフィルタの設計をCSP
 解析的に解くことは困難であるため、勾配法あるいはニュートン法を用いた直線探索によって数値的に解を得る。
 
 
-\subsection{Filter Bank Common Spatial Pattern(FBCSP)}
+\subsection{\rm Filter Bank Common Spatial Pattern(FBCSP)}
 CSSSPはFIRフィルタの設計をCSPの最適化問題に含むことで、バンドパスフィルタとCSPの同時最適化の定式化に成功した。
 しかし、CSSSPによって求まる特徴量はフィルタ係数\(b\)を持つFIRフィルタを通過し、
 変換行列\(W^T\)のCSPによって変換された脳波信号であり、

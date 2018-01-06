@@ -28,7 +28,16 @@
 \usepackage{afterpage}
 \usepackage{caption}
 \usepackage{newtxtext,newtxmath}
-\usepackage[rm,up,sc,compact,topmarks,calcwidth,pagestyles]{titlesec}
+
+% \usepackage[rm,up,sc,compact,topmarks,calcwidth,pagestyles]{titlesec}
+% \makeatletter
+% \renewcommand{\section}{\@startsection{section}{1}{\z@}%
+% {1.5\Cvs \@plus.5\Cvs \@minus.2\Cvs}%
+% {.5\Cvs \@plus.3\Cvs}%
+% {\reset@font\Large\mcfamily}}
+% \makeatother
+
+
 \captionsetup[figure]{format=plain, labelformat=simple, font=small}
 % \captionsetup[table]{format=plain, labelformat=simple, font=normalsize}
 
@@ -110,11 +119,11 @@
 
 
 
-\chapter{序論}
+\chapter{\mc 序論}
 \input{chapter/chapter1/INTRO}
 \input{chapter/chapter1/Objective}
 
-\chapter{BCIのための要素技術}
+\chapter{{\rm BCI}{\mc のための要素技術}}
 \label{chapter:BCIのための要素技術}
 この章ではBCIに用いられる要素技術について述べる。
 ここで紹介する技術はBCIに限らずデータを扱う場面で広く持ちいられている手法であるため、
@@ -124,23 +133,23 @@
 \input{chapter/chapter2/Discriminant}
 \input{chapter/chapter3/NN}
 
-\chapter{従来の運動想起型BCI}
+\chapter{{\mc 従来の運動想起型}{\rm BCI}}
 この章ではまず、BCIのために開発された解析手法であるCommon Spatial Patternについて紹介する。
 その後、前章の要素技術を含めた従来の運動想起型BCIの構成方法について述べ、課題点を明らかにする。
 \input{chapter/chapter2/FEATURE}
 \input{chapter/chapter2/CSP}
 \input{chapter/chapter2/oldSOTA}
 
-\chapter{提案手法}
+\chapter{\mc 提案手法}
 この章では初めに提案手法の大部分を占めるニューラルネットワークについて簡単に述べる。
 その後、ニューラルネットワークを用いて運動想起型BCIを構築するアイデアと、
 その具体的な提案モデルについて解説する。
 
-\chapter{実験方法}
+\chapter{\mc 実験方法}
 この章では実験に用いたデータについて説明し、
 その後、データを用いた実験に対してどのような評価を行うのかを明示する。
 
-\chapter{結果と考察}
+\chapter{\mc 結果と考察}
 この章では従来手法と提案手法の実験結果をそれぞれ示す。
 結果に対して考察と本研究の結論を述べ、更に今後考えうる改善案などについて簡単に述べる。
 
