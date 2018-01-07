@@ -1,0 +1,29 @@
+\section{\rm pseudo Filter Bank}
+提案手法の特徴でもある第一層目で用いるConvolution層について説明する。
+EEGを\(X\in \mathbb R^{M\times N\times 1}\)とする。
+ここに、\(M\)は電極の数、\(N\)はサンプル点数、\(1\)は後に周波数を示すためのダミーインデックスである。
+\(X\)に対するConvolution層による演算は以下で表される。
+\begin{equation}
+    u_{m,n,k} = \sum_{c=1}^C\sum_{p=0}^{P-1}\sum_{q=0}^{Q-1} x_{m+p,n+q,c} h_{p,q,c,k} + b_{m,n,k}
+\end{equation} 
+この演算に関して、\(P=1,b_{m,n,k}=0,C=1\)でパラメータを与えることにより、
+\begin{equation}
+    u_{m,n,k} = \sum_{q=0}^{Q-1} x_{m,n+q,1} h_{1,q,1,k}
+    \label{eq:pseudoFIR}
+\end{equation} 
+という演算を行うことができる。
+ここでパラメータ\(H\in \mathbb R^{1\times D\times 1\times K}\)と与えることで、
+フィルタ次数\(Q-1\)のFIRフィルタ\(K\)個からなるフィルタバンクとなる。
+また同様にして、EEGが\(X\in \mathbb R^{M_1\times M_2\times N\times 1}\)
+と与えられる場合には、3DConvolutionを用いてフィルタバンクが構成可能である。
+\begin{eqnarray}
+    u_{m_1,m_2,n,k}& = &\sum_{c=1}^C\sum_{p_1=0}^{P_1-1}\sum_{p_2=0}^{P_2-1}\sum_{q=0}^{Q-1} x_{m_1+p_1,m_2+p_2,n+q,c} h_{p_1,p_2,q,c,k} + b_{m_1,m_2,n,k}\\
+    u_{m_1,m_2,n,k}& = &\sum_{q=0}^{Q-1} x_{m_1,m_2,n+q,1} h_{1,1,q,1,k}
+    \label{eq:pseudoFIR3D}
+\end{eqnarray} 
+
+以降ニューラルネットワークの演算を適宜定義することで、
+2層目以降の層は、EEGを入力としたフィルタバンクからの出力を受け取る。
+FBCSPと異なる点は、FBCSPがフィルタバンクの設計とそれ以降の処理の設計が完全に分断されていることに対し、
+提案手法ではフィルタバンクのフィルタ係数と、その後の処理に用いられるパラメータを
+同時に最適化可能な点である。

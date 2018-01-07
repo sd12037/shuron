@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.1.5)  6 JAN 2018 13:42
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.1.5)  7 JAN 2018 15:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -918,23 +918,24 @@ File: images/bilinear.png Graphic file (type bmp)
 
 <images/bilinear.png> [40] [41]) [42]
  4 
+(./chapter/chapter4/pseudoFBCSP.tex) (./chapter/chapter4/3DpseudoFBCSP.tex
 [43
 
-]
+]) (./chapter/chapter4/3Dconv_and_2DconvLSTM.tex) [44]
  5 
-[44
+[45
 
 ]
  6 
-[45
+[46
 
 ]
 \openout2 = `appendix.aux'.
 
- (./appendix.tex) [46
+ (./appendix.tex) [47
 
 
-] (./thesis.bbl [47
+] (./thesis.bbl [48
 
 
 ]
@@ -948,9 +949,9 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 6.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 10.0pt on input line 6.
- [48
+ [49
 
-] [49] [50]) [51]
+] [50] [51]) [52]
 No file thesis.ind.
 (./thesis.aux (./math_rule.aux) (./appendix.aux))
 
@@ -965,12 +966,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6919 strings out of 493723
- 96559 string characters out of 6152571
- 171266 words of memory out of 5000000
- 10204 multiletter control sequences out of 15000+600000
+ 6931 strings out of 493723
+ 96873 string characters out of 6152571
+ 171288 words of memory out of 5000000
+ 10206 multiletter control sequences out of 15000+600000
  87793 words of font info for 167 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  38i,9n,77p,433b,578s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (56 pages, 187580 bytes).
+Output written on thesis.dvi (57 pages, 191648 bytes).
