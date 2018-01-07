@@ -1,9 +1,9 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.1.5)  7 JAN 2018 15:56
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2017.12.21)  7 JAN 2018 22:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**/home/seigyo/Desktop/shuron/thesis
-(/home/seigyo/Desktop/shuron/thesis.tex
+**/home/hikaru/Desktop/original_tex/thesis
+(/home/hikaru/Desktop/original_tex/thesis.tex
 pLaTeX2e <2006/11/10> (based on LaTeX2e <2016/02/01> patch level 0)
 Babel <3.9n> and hyphenation patterns for 80 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/platex/jsclasses/jsbook.cls
@@ -545,48 +545,48 @@ LaTeX Warning: Label `fig:Cz' multiply defined.
 (./appendix.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 76.
-LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 76
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 78.
+LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 78
 .
  (/usr/share/texlive/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMS/ntxsy/m/n on input line 76.
-LaTeX Font Info:    Try loading font information for OMS+ntxsy on input line 76
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMS/ntxsy/m/n on input line 78.
+LaTeX Font Info:    Try loading font information for OMS+ntxsy on input line 78
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/omsntxsy.fd
 File: omsntxsy.fd 2012/11/14 Fontinst v1.933 font definitions for OMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 76.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 76.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 78.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 78.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 76.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 78.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
 
 (I search kanjifont definition file: . . )
 *geometry* driver: auto-detecting
@@ -628,66 +628,66 @@ Package caption Info: End \AtBeginDocument code.
 \c@mv@tabular=\count118
 \c@mv@boldtabular=\count119
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 81.
+(Font)              scaled to size 16.60605pt on input line 83.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 81.
+(Font)              scaled to size 16.60605pt on input line 83.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 17.28pt on input line 81.
+(Font)              scaled to size 17.28pt on input line 83.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 81.
+(Font)              scaled to size 11.53198pt on input line 83.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 81.
+(Font)              scaled to size 11.53198pt on input line 83.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 81.
+(Font)              scaled to size 12.0pt on input line 83.
 LaTeX Font Info:    Try loading font information for OT1+ntxtlf on input line 8
-1.
+3.
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 81.
+(Font)              scaled to size 12.0pt on input line 83.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 81.
+(Font)              scaled to size 8.8pt on input line 83.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.6pt on input line 81.
+(Font)              scaled to size 6.6pt on input line 83.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.45679pt on input line 81.
+(Font)              scaled to size 8.45679pt on input line 83.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.34259pt on input line 81.
-LaTeX Font Info:    Try loading font information for U+msa on input line 81.
+(Font)              scaled to size 6.34259pt on input line 83.
+LaTeX Font Info:    Try loading font information for U+msa on input line 83.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 81.
+LaTeX Font Info:    Try loading font information for U+msb on input line 83.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 81.
+(Font)              scaled to size 11.53198pt on input line 83.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.45679pt on input line 81.
+(Font)              scaled to size 8.45679pt on input line 83.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 6.34259pt on input line 81.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 81.
+(Font)              scaled to size 6.34259pt on input line 83.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 83.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+ntxmia on input line 81.
+LaTeX Font Info:    Try loading font information for U+ntxmia on input line 83.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsym on input line 81.
+LaTeX Font Info:    Try loading font information for U+ntxsym on input line 83.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 81.
+LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 83.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsyc.fd
@@ -746,25 +746,25 @@ Overfull \vbox (210.30632pt too high) has occurred while \output is active []
 
 [2])
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 91.
-LaTeX Font Info:    Try loading font information for T1+qhv on input line 91.
+(Font)              scaled to size 9.60999pt on input line 93.
+LaTeX Font Info:    Try loading font information for T1+qhv on input line 93.
  (/usr/share/texmf/tex/latex/tex-gyre/t1qhv.fd
 File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
 )
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 91.
+(Font)              scaled to size 8.99994pt on input line 93.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 23.90964pt on input line 91.
+(Font)              scaled to size 23.90964pt on input line 93.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 23.90964pt on input line 91.
+(Font)              scaled to size 23.90964pt on input line 93.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 24.88pt on input line 91.
+(Font)              scaled to size 24.88pt on input line 93.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 23.90964pt on input line 91.
+(Font)              scaled to size 23.90964pt on input line 93.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 23.90964pt on input line 91.
+(Font)              scaled to size 23.90964pt on input line 93.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 22.39185pt on input line 91.
+(Font)              scaled to size 22.39185pt on input line 93.
  (./thesis.toc [3
 
 
@@ -773,13 +773,13 @@ LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 \openout4 = `thesis.toc'.
 
  [4]
- 1 
+第1章
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 124.
+(Font)              scaled to size 19.9311pt on input line 126.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 124.
+(Font)              scaled to size 19.9311pt on input line 126.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 18.66588pt on input line 124.
+(Font)              scaled to size 18.66588pt on input line 126.
 (./chapter/chapter1/INTRO.tex
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 1.
@@ -818,7 +818,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 File: images/BCIsystem.png Graphic file (type bmp)
  <images/BCIsystem.png> [4])
 (./chapter/chapter1/Objective.tex [5] [6]) [7]
- 2 
+第2章
 (./chapter/chapter2/SIGNAL.tex
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 7.
@@ -873,7 +873,7 @@ File: images/xorkernelSVM.png Graphic file (type bmp)
 [27] [28]
 File: images/activations.png Graphic file (type bmp)
  <images/activations.png> [29]) [30]
- 3 
+第3章
 (./chapter/chapter2/FEATURE.tex
 File: images/EEGfootmove.png Graphic file (type bmp)
  <images/EEGfootmove.png>
@@ -917,16 +917,16 @@ File: images/CSSSP.png Graphic file (type bmp)
 File: images/bilinear.png Graphic file (type bmp)
 
 <images/bilinear.png> [40] [41]) [42]
- 4 
+第4章
 (./chapter/chapter4/pseudoFBCSP.tex) (./chapter/chapter4/3DpseudoFBCSP.tex
 [43
 
 ]) (./chapter/chapter4/3Dconv_and_2DconvLSTM.tex) [44]
- 5 
+第5章
 [45
 
 ]
- 6 
+第6章
 [46
 
 ]
@@ -967,11 +967,11 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  6931 strings out of 493723
- 96873 string characters out of 6152571
- 171288 words of memory out of 5000000
+ 96891 string characters out of 6152569
+ 171285 words of memory out of 5000000
  10206 multiletter control sequences out of 15000+600000
  87793 words of font info for 167 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 38i,9n,77p,433b,578s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,9n,77p,439b,578s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (57 pages, 191648 bytes).
+Output written on thesis.dvi (57 pages, 191868 bytes).

@@ -1,4 +1,4 @@
-\contentsline {chapter}{\numberline { 1 }\mc 序論}{1}
+\contentsline {chapter}{\numberline {第1章}\mc 序論}{1}
 \contentsline {section}{\numberline {1.1}\mc 研究背景}{1}
 \contentsline {section}{\numberline {1.2}{\rm BCI}{\mc の概要}}{3}
 \contentsline {subsubsection}{{\mc 誘発型}\rm BCI}{3}
@@ -6,7 +6,7 @@
 \contentsline {subsubsection}{\rm BCI\mc の動作原理}{3}
 \contentsline {subsubsection}{\mc 運動想起型\rm BCI\mc 周辺の研究}{4}
 \contentsline {section}{\numberline {1.3}研究の目的}{6}
-\contentsline {chapter}{\numberline { 2 }{\rm BCI}{\mc のための要素技術}}{8}
+\contentsline {chapter}{\numberline {第2章}{\rm BCI}{\mc のための要素技術}}{8}
 \contentsline {section}{\numberline {2.1}\mc 周波数解析}{8}
 \contentsline {subsection}{\numberline {2.1.1}4\mc 種類のフーリエ変換}{8}
 \contentsline {subsubsection}{\mc フーリエ変換}{8}
@@ -40,7 +40,7 @@
 \contentsline {subsection}{\numberline {2.4.4}\mc 過学習抑制手法}{30}
 \contentsline {subsubsection}{\mc ドロップアウト}{30}
 \contentsline {subsubsection}{\mc バッチ正規化}{30}
-\contentsline {chapter}{\numberline { 3 }{\mc 従来の運動想起型}{\rm BCI}}{31}
+\contentsline {chapter}{\numberline {第3章}{\mc 従来の運動想起型}{\rm BCI}}{31}
 \contentsline {section}{\numberline {3.1}\mc 特徴量工学}{31}
 \contentsline {subsection}{\numberline {3.1.1}\mc 頭皮領域と空間フィルタ}{31}
 \contentsline {subsection}{\numberline {3.1.2}\mc 脳波と時間周波数解析}{34}
@@ -52,10 +52,10 @@
 \contentsline {section}{\numberline {3.3}\mc 従来手法のまとめ}{39}
 \contentsline {subsection}{\numberline {3.3.1}\mc 特徴量の観点からの従来手法}{40}
 \contentsline {subsection}{\numberline {3.3.2}\mc 構成の観点からの従来手法}{40}
-\contentsline {chapter}{\numberline { 4 }\mc 提案手法}{43}
+\contentsline {chapter}{\numberline {第4章}\mc 提案手法}{43}
 \contentsline {section}{\numberline {4.1}\rm pseudo Filter Bank}{43}
-\contentsline {chapter}{\numberline { 5 }\mc 実験方法}{45}
-\contentsline {chapter}{\numberline { 6 }\mc 結果と考察}{46}
+\contentsline {chapter}{\numberline {第5章}\mc 実験方法}{45}
+\contentsline {chapter}{\numberline {第6章}\mc 結果と考察}{46}
 \contentsline {chapter}{Appendix}{47}
 \contentsline {section}{\numberline {A.1}セクション}{47}
 \contentsline {subsection}{\numberline {A.1.1}サブセクション}{47}
