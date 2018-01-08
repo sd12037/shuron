@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{京大ドクター}
+笹山瑛由.
+\newblock ブレイン‐マシン・インタフェースに向けた多チャネル
+  脳波計測による脳内情報抽出法および識別法に関する研究.
+\newblock PhD thesis, 京都大学, 2012.
+
 \bibitem{運動想起}
 M.~Jeannerod and V.~Frak.
 \newblock Mental imaging of motor activity in humans.
@@ -148,12 +154,6 @@ E.~Thomas, J.~Fruitet, and M.~Clerc.
 \newblock In {\em 2012 Annual International Conference of the IEEE Engineering
   in Medicine and Biology Society}, pp. 2929--2932, Aug 2012.
 
-\bibitem{京大ドクター}
-笹山瑛由.
-\newblock ブレイン‐マシン・インタフェースに向けた多チャネル
-  脳波計測による脳内情報抽出法および識別法に関する研究.
-\newblock PhD thesis, 京都大学, 2012.
-
 \bibitem{sparsemethod}
 S.~R. Sreeja, Joytirmoy Rabha, Debasis Samanta, Pabitra Mitra, and Monalisa
   Sarma.
@@ -185,6 +185,19 @@ Kenji Kawaguchi.
   editors, {\em Advances in Neural Information Processing Systems 29}, pp.
   586--594. Curran Associates, Inc., 2016.
 
+\bibitem{kNMF}
+M.~Sakai.
+\newblock Kernel nonnegative matrix factorization with constraint increasing
+  the discriminability of two classes for the eeg feature extraction.
+\newblock In {\em 2013 International Conference on Signal-Image Technology
+  Internet-Based Systems}, pp. 966--970, Dec 2013.
+
+\bibitem{kNMF2}
+Hyekyoung Lee, Andrzej Cichocki, and Seungjin Choi.
+\newblock Kernel nonnegative matrix factorization for spectral {EEG} feature
+  extraction.
+\newblock {\em Neurocomputing}, Vol.~72, No. 13-15, pp. 3182--3190, 2009.
+
 \bibitem{スペクトル解析}
 日野幹雄.
 \newblock スペクトル解析（統計ライブラリー）.
@@ -200,18 +213,15 @@ Hiromu Gotanda, Takaaki Ishibashi, Nobuo Iwasaki, and Katsuhiro Inoue.
 \newblock 入門 独立成分分析.
 \newblock 東京電機大学出版, 2004.
 
-\bibitem{ベイズドロップアウト}
-Yarin Gal and Zoubin Ghahramani.
-\newblock Dropout as a bayesian approximation: representing model uncertainty
-  in deep learning.
-\newblock In {\em ICML'16 Proceedings of the 33rd International Conference on
-  International Conference on Machine Learning}, Vol.~48, pp. 1050--1059, June
-  2016.
-
 \bibitem{脳波解析入門}
 開一夫, 金山範明河内山隆紀, 松本敦宮腰誠.
 \newblock 脳波解析入門:EEGLABとSPMを使いこなす.
 \newblock 東京大学出版会, 2016.
+
+\bibitem{グラフフーリエ}
+東広志, 田中聡久.
+\newblock 信号構造を利用する脳波処理.
+\newblock 計測と制御, Vol.~55, No.~11, pp. 960--965, 2016.
 
 \bibitem{EMD}
 Guo Xiaojing, Wu~Xiaopei, and Zhang Dexiang.
@@ -239,32 +249,15 @@ Kai~Keng Ang, Zheng~Yang Chin, ChuanchuWang, , Cuntai Guan, and Haihong Zhang.
   datasets 2a and 2b.
 \newblock {\em frontiers in NEUROSCIENCE}, Vol.~29, pp. 2390--2397, March 2012.
 
-\bibitem{Ztfc}
-A.~S. Aghaei, M.~S. Mahanta, and K.~N. Plataniotis.
-\newblock Separable common spatio-spectral patterns for motor imagery bci
-  systems.
-\newblock {\em IEEE Transactions on Biomedical Engineering}, Vol.~63, No.~1,
-  pp. 15--29, Jan 2016.
-
-\bibitem{kNMF}
-M.~Sakai.
-\newblock Kernel nonnegative matrix factorization with constraint increasing
-  the discriminability of two classes for the eeg feature extraction.
-\newblock In {\em 2013 International Conference on Signal-Image Technology
-  Internet-Based Systems}, pp. 966--970, Dec 2013.
-
-\bibitem{kNMF2}
-Hyekyoung Lee, Andrzej Cichocki, and Seungjin Choi.
-\newblock Kernel nonnegative matrix factorization for spectral {EEG} feature
-  extraction.
-\newblock {\em Neurocomputing}, Vol.~72, No. 13-15, pp. 3182--3190, 2009.
+\bibitem{ベイズドロップアウト}
+Yarin Gal and Zoubin Ghahramani.
+\newblock Dropout as a bayesian approximation: representing model uncertainty
+  in deep learning.
+\newblock In {\em ICML'16 Proceedings of the 33rd International Conference on
+  International Conference on Machine Learning}, Vol.~48, pp. 1050--1059, June
+  2016.
 
 \bibitem{ShallowFBCSP}
 
-
-\bibitem{グラフフーリエ}
-東広志, 田中聡久.
-\newblock 信号構造を利用する脳波処理.
-\newblock 計測と制御, Vol.~55, No.~11, pp. 960--965, 2016.
 
 \end{thebibliography}

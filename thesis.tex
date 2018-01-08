@@ -48,7 +48,7 @@
 
 
 \captionsetup[figure]{format=plain, labelformat=simple, font=small}
-% \captionsetup[table]{format=plain, labelformat=simple, font=normalsize}
+\captionsetup[table]{format=plain, labelformat=simple, font=small}
 
 %
 \makeindex
@@ -142,22 +142,22 @@
 \input{chapter/chapter2/SIGNAL}
 \input{chapter/chapter2/BSS}
 \input{chapter/chapter2/Discriminant}
-\input{chapter/chapter3/NN}
 
 \chapter{{\mc 従来の運動想起型}{\rm BCI}}
 この章ではまず、BCIのために開発された解析手法であるCommon Spatial Patternについて紹介する。
 その後、前章の要素技術を含めた従来の運動想起型BCIの構成方法について述べ、課題点を明らかにする。
 \input{chapter/chapter2/FEATURE}
 \input{chapter/chapter2/CSP}
-\input{chapter/chapter2/oldSOTA}
 
 \chapter{\mc 提案手法}
 この章では初めに提案手法の大部分を占めるニューラルネットワークについて簡単に述べる。
 その後、ニューラルネットワークを用いて運動想起型BCIを構築するアイデアと、
 その具体的な提案モデルについて解説する。
+\input{chapter/chapter3/NN}
 \input{chapter/chapter4/pseudoFBCSP}
 \input{chapter/chapter4/3DpseudoFBCSP}
 \input{chapter/chapter4/3Dconv_and_2DconvLSTM}
+% \input{chapter/chapter2/oldSOTA}
 
 \chapter{\mc 実験方法}
 この章では実験に用いたデータについて説明し、

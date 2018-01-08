@@ -1,66 +1,66 @@
 \contentsline {chapter}{\numberline {第1章}\mc 序論}{1}
-\contentsline {section}{\numberline {1.1}\mc 研究背景}{1}
+\contentsline {section}{\numberline {1.1}\mc 背景}{1}
 \contentsline {section}{\numberline {1.2}{\rm BCI}{\mc の概要}}{3}
 \contentsline {subsubsection}{{\mc 誘発型}\rm BCI}{3}
 \contentsline {subsubsection}{\mc 自発型 \rm BCI}{3}
 \contentsline {subsubsection}{\rm BCI\mc の動作原理}{3}
 \contentsline {subsubsection}{\mc 運動想起型\rm BCI\mc 周辺の研究}{4}
-\contentsline {section}{\numberline {1.3}研究の目的}{6}
-\contentsline {chapter}{\numberline {第2章}{\rm BCI}{\mc のための要素技術}}{8}
-\contentsline {section}{\numberline {2.1}\mc 周波数解析}{8}
-\contentsline {subsection}{\numberline {2.1.1}4\mc 種類のフーリエ変換}{8}
-\contentsline {subsubsection}{\mc フーリエ変換}{8}
-\contentsline {subsubsection}{\mc 離散周波数フーリエ変換}{9}
-\contentsline {subsubsection}{\mc 離散時間フーリエ変換}{10}
-\contentsline {subsubsection}{\mc 離散フーリエ変換}{10}
-\contentsline {subsection}{\numberline {2.1.2}\mc パワースペクトル密度}{10}
-\contentsline {section}{\numberline {2.2}\mc 多変量解析}{11}
-\contentsline {subsection}{\numberline {2.2.1}\rm Principal Component Analysis(PCA)}{12}
-\contentsline {subsection}{\numberline {2.2.2}\rm Indipendent Component Analysis(ICA)}{14}
-\contentsline {subsection}{\numberline {2.2.3}\rm Blind Source Separation(BSS)}{16}
-\contentsline {section}{\numberline {2.3}\mc 分類手法}{18}
-\contentsline {subsection}{\numberline {2.3.1}\rm Linear Discriminant Analysis(LDA)}{18}
-\contentsline {subsection}{\numberline {2.3.2}\rm Support Vector Machine(SVM)}{21}
-\contentsline {subsection}{\numberline {2.3.3}\rm Logistic Regression(LR)}{25}
-\contentsline {section}{\numberline {2.4}\mc ニューラルネットワーク}{26}
-\contentsline {subsection}{\numberline {2.4.1}\mc モデル構築と学習}{26}
-\contentsline {subsection}{\numberline {2.4.2}\mc ニューラルネットワークに用いられる層}{26}
-\contentsline {subsubsection}{\rm Linear\mc 層}{26}
-\contentsline {subsubsection}{\rm Bilinear\mc 層}{27}
-\contentsline {subsubsection}{\rm Convolution\mc 層}{27}
-\contentsline {subsubsection}{\rm Recurrent\mc 層}{27}
-\contentsline {subsubsection}{\rm LSTM\mc 層}{27}
-\contentsline {subsection}{\numberline {2.4.3}\mc 活性化関数}{28}
-\contentsline {subsubsection}{\mc シグモイド関数}{28}
-\contentsline {subsubsection}{\mc 双曲線正接関数}{29}
-\contentsline {subsubsection}{\mc ランプ関数}{29}
-\contentsline {subsubsection}{\rm leaklyReLU\mc 関数}{29}
-\contentsline {subsubsection}{\rm elu\mc 関数}{29}
-\contentsline {subsubsection}{\mc ソフトマックス関数}{29}
-\contentsline {subsection}{\numberline {2.4.4}\mc 過学習抑制手法}{30}
-\contentsline {subsubsection}{\mc ドロップアウト}{30}
-\contentsline {subsubsection}{\mc バッチ正規化}{30}
-\contentsline {chapter}{\numberline {第3章}{\mc 従来の運動想起型}{\rm BCI}}{31}
-\contentsline {section}{\numberline {3.1}\mc 特徴量工学}{31}
-\contentsline {subsection}{\numberline {3.1.1}\mc 頭皮領域と空間フィルタ}{31}
-\contentsline {subsection}{\numberline {3.1.2}\mc 脳波と時間周波数解析}{34}
-\contentsline {section}{\numberline {3.2}\rm Common Spatial Pattern\mc とその派生手法}{34}
-\contentsline {subsection}{\numberline {3.2.1}\mc 脳波信号の定式化}{35}
-\contentsline {subsection}{\numberline {3.2.2}\rm Common Spatial Pattern(CSP)}{35}
-\contentsline {subsection}{\numberline {3.2.3}\rm Common Sparse Spatio Spectral Pattern(CSSSP)}{37}
-\contentsline {subsection}{\numberline {3.2.4}\rm Filter Bank Common Spatial Pattern(FBCSP)}{38}
-\contentsline {section}{\numberline {3.3}\mc 従来手法のまとめ}{39}
-\contentsline {subsection}{\numberline {3.3.1}\mc 特徴量の観点からの従来手法}{40}
-\contentsline {subsection}{\numberline {3.3.2}\mc 構成の観点からの従来手法}{40}
-\contentsline {chapter}{\numberline {第4章}\mc 提案手法}{43}
-\contentsline {section}{\numberline {4.1}\rm Convlution層によるFIR フィルタバンク}{43}
-\contentsline {subsection}{\numberline {4.1.1}\mc 関連研究}{44}
+\contentsline {section}{\numberline {1.3}\mc 目的}{6}
+\contentsline {subsection}{\numberline {1.3.1}\mc モチベーション}{6}
+\contentsline {subsection}{\numberline {1.3.2}\mc 達成目標}{7}
+\contentsline {subsection}{\numberline {1.3.3}\mc 技術的貢献}{7}
+\contentsline {chapter}{\numberline {第2章}{\rm BCI}{\mc のための要素技術}}{10}
+\contentsline {section}{\numberline {2.1}\mc 周波数解析}{10}
+\contentsline {subsection}{\numberline {2.1.1}4\mc 種類のフーリエ変換}{10}
+\contentsline {subsubsection}{\mc フーリエ変換}{10}
+\contentsline {subsubsection}{\mc 離散周波数フーリエ変換}{11}
+\contentsline {subsubsection}{\mc 離散時間フーリエ変換}{12}
+\contentsline {subsubsection}{\mc 離散フーリエ変換}{12}
+\contentsline {subsection}{\numberline {2.1.2}\mc パワースペクトル密度}{12}
+\contentsline {section}{\numberline {2.2}\mc 多変量解析}{13}
+\contentsline {subsection}{\numberline {2.2.1}\rm Principal Component Analysis(PCA)}{14}
+\contentsline {subsection}{\numberline {2.2.2}\rm Indipendent Component Analysis(ICA)}{16}
+\contentsline {subsection}{\numberline {2.2.3}\rm Blind Source Separation(BSS)}{18}
+\contentsline {section}{\numberline {2.3}\mc 分類手法}{20}
+\contentsline {subsection}{\numberline {2.3.1}\rm Linear Discriminant Analysis(LDA)}{20}
+\contentsline {subsection}{\numberline {2.3.2}\rm Support Vector Machine(SVM)}{23}
+\contentsline {subsection}{\numberline {2.3.3}\rm Logistic Regression(LR)}{27}
+\contentsline {chapter}{\numberline {第3章}{\mc 従来の運動想起型}{\rm BCI}}{29}
+\contentsline {section}{\numberline {3.1}\mc 特徴量工学}{29}
+\contentsline {subsection}{\numberline {3.1.1}\mc 頭皮領域と空間フィルタ}{29}
+\contentsline {subsection}{\numberline {3.1.2}\mc EEGと時間周波数解析}{32}
+\contentsline {section}{\numberline {3.2}\rm Common Spatial Pattern\mc とその派生手法}{33}
+\contentsline {subsection}{\numberline {3.2.1}\mc 脳波信号の定式化}{33}
+\contentsline {subsection}{\numberline {3.2.2}\rm Common Spatial Pattern(CSP)}{33}
+\contentsline {subsection}{\numberline {3.2.3}\rm Common Sparse Spatio Spectral Pattern(CSSSP)}{35}
+\contentsline {subsection}{\numberline {3.2.4}\rm Filter Bank Common Spatial Pattern(FBCSP)}{37}
+\contentsline {chapter}{\numberline {第4章}\mc 提案手法}{38}
+\contentsline {section}{\numberline {4.1}\mc ニューラルネットワーク}{38}
+\contentsline {subsection}{\numberline {4.1.1}\mc モデル構築と学習}{38}
+\contentsline {subsection}{\numberline {4.1.2}\mc ニューラルネットワークに用いられる層}{38}
+\contentsline {subsubsection}{\rm Linear\mc 層}{38}
+\contentsline {subsubsection}{\rm Bilinear\mc 層}{39}
+\contentsline {subsubsection}{\rm Convolution\mc 層}{39}
+\contentsline {subsubsection}{\rm Recurrent\mc 層}{39}
+\contentsline {subsubsection}{\rm LSTM\mc 層}{40}
+\contentsline {subsection}{\numberline {4.1.3}\mc 活性化関数}{40}
+\contentsline {subsubsection}{\mc シグモイド関数}{40}
+\contentsline {subsubsection}{\mc 双曲線正接関数}{41}
+\contentsline {subsubsection}{\mc ランプ関数}{41}
+\contentsline {subsubsection}{\rm leaklyReLU\mc 関数}{41}
+\contentsline {subsubsection}{\rm elu\mc 関数}{41}
+\contentsline {subsubsection}{\mc ソフトマックス関数}{42}
+\contentsline {subsection}{\numberline {4.1.4}\mc 過学習抑制手法}{42}
+\contentsline {subsubsection}{\mc ドロップアウト}{42}
+\contentsline {subsubsection}{\mc バッチ正規化}{43}
+\contentsline {section}{\numberline {4.2}\rm EEG\mc のためのニューラルネットワーク(提案手法)}{43}
+\contentsline {subsection}{\numberline {4.2.1}\rm Convlution層によるFIR フィルタバンク}{43}
+\contentsline {section}{\numberline {4.3}\rm 高階テンソルとしてのEEG\mc データ構造}{43}
+\contentsline {subsection}{\numberline {4.3.1}\mc 関連研究}{44}
 \contentsline {subsubsection}{\rm Shallow FBCSP}{44}
-\contentsline {section}{\numberline {4.2}\rm 高階テンソルとしてのEEG\mc データ構造}{44}
-\contentsline {subsection}{\numberline {4.2.1}\mc 関連研究：\rm グラフフーリエ}{44}
-\contentsline {chapter}{\numberline {第5章}\mc 実験方法}{46}
-\contentsline {chapter}{\numberline {第6章}\mc 結果と考察}{47}
-\contentsline {chapter}{Appendix}{48}
-\contentsline {section}{\numberline {A.1}セクション}{48}
-\contentsline {subsection}{\numberline {A.1.1}サブセクション}{48}
-\contentsline {chapter}{参考文献}{50}
+\contentsline {chapter}{\numberline {第5章}\mc 実験方法}{45}
+\contentsline {chapter}{\numberline {第6章}\mc 結果と考察}{46}
+\contentsline {chapter}{Appendix}{47}
+\contentsline {section}{\numberline {A.1}セクション}{47}
+\contentsline {subsection}{\numberline {A.1.1}サブセクション}{47}
+\contentsline {chapter}{参考文献}{49}
