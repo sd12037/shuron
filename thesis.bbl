@@ -259,4 +259,12 @@ Hyekyoung Lee, Andrzej Cichocki, and Seungjin Choi.
   extraction.
 \newblock {\em Neurocomputing}, Vol.~72, No. 13-15, pp. 3182--3190, 2009.
 
+\bibitem{ShallowFBCSP}
+
+
+\bibitem{グラフフーリエ}
+東広志, 田中聡久.
+\newblock 信号構造を利用する脳波処理.
+\newblock 計測と制御, Vol.~55, No.~11, pp. 960--965, 2016.
+
 \end{thebibliography}
