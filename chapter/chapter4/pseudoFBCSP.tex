@@ -1,5 +1,5 @@
 \section{\rm pseudo Filter Bank}
-提案手法の特徴でもある第一層目で用いるConvolution層について説明する。
+提案手法の特徴でもある第1層目で用いるConvolution層について説明する。
 EEGを\(X\in \mathbb R^{M\times N\times 1}\)とする。
 ここに、\(M\)は電極の数、\(N\)はサンプル点数、\(1\)は後に周波数を示すためのダミーインデックスである。
 \(X\)に対するConvolution層による演算は以下で表される。
@@ -14,6 +14,12 @@ EEGを\(X\in \mathbb R^{M\times N\times 1}\)とする。
 という演算を行うことができる。
 ここでパラメータ\(H\in \mathbb R^{1\times D\times 1\times K}\)と与えることで、
 フィルタ次数\(Q-1\)のFIRフィルタ\(K\)個からなるフィルタバンクとなる。
+続いて、第2層について\(Q=1\)でパラメータを与えることにより
+\begin{equation}
+    v_{m,n,l} = \sum_{p=0}^{P-1} x_{m+p,n,k} h_{1,q,1,k}
+    \label{eq:pseudoFIR}
+\end{equation} 
+
 また同様にして、EEGが\(X\in \mathbb R^{M_1\times M_2\times N\times 1}\)
 と与えられる場合には、3DConvolutionを用いてフィルタバンクが構成可能である。
 \begin{eqnarray}

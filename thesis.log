@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2017.12.21)  7 JAN 2018 22:22
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2017.12.21)  7 JAN 2018 23:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -542,6 +542,9 @@ LaTeX Warning: Label `eq:obj nonlinear' multiply defined.
 
 LaTeX Warning: Label `fig:Cz' multiply defined.
 
+
+LaTeX Warning: Label `eq:pseudoFIR' multiply defined.
+
 (./appendix.aux))
 \openout1 = `thesis.aux'.
 
@@ -918,10 +921,10 @@ File: images/bilinear.png Graphic file (type bmp)
 
 <images/bilinear.png> [40] [41]) [42]
 第4章
-(./chapter/chapter4/pseudoFBCSP.tex) (./chapter/chapter4/3DpseudoFBCSP.tex
-[43
+(./chapter/chapter4/pseudoFBCSP.tex [43
 
-]) (./chapter/chapter4/3Dconv_and_2DconvLSTM.tex) [44]
+]) (./chapter/chapter4/3DpseudoFBCSP.tex) (./chapter/chapter4/3Dconv_and_2Dconv
+LSTM.tex) [44]
 第5章
 [45
 
@@ -974,4 +977,4 @@ Here is how much of TeX's memory you used:
  934 hyphenation exceptions out of 8191
  38i,9n,77p,439b,578s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (57 pages, 191868 bytes).
+Output written on thesis.dvi (57 pages, 192236 bytes).
