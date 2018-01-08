@@ -29,21 +29,64 @@ BCIにおいて脳信号を計測する方法は、大きく分けて以下の3�
 
 BCIで用いられる非侵襲式の計測に以下のようなものがある。
 \begin{itemize}
-    \item functional Magnetic Resonance Imaging (fMRI)：血流変化を計測する。この測定は、脳の神経細胞が活動中により多くの酸素を含む血流を必要とするという事実に基づいている。
-    \item functional Near-Infrared Spectroscopy (fNIR)：この方法では、近赤外線電磁波を用いて、脳皮質の異なる部分における酸素化および脱酸素化ヘモグロビンの濃度を測定する。
+    \item functional Magnetic Resonance Imaging (fMRI)：
+    MRIによって脳活動時の血流によって生ずる磁場を測定する。
+    この測定は、脳の神経細胞が活動中により多くの酸素を含む血流を必要とするという事実に基づいている。
+    \item functional Near-Infrared Spectroscopy (fNIR)：
+    近赤外線電磁波を用いて、
+    脳皮質の異なる部分における酸素化および脱酸素化ヘモグロビンの濃度を測定する。
     これらの測定は、fMRIと同様に、皮質の活性部分を決定する。 
-    fNRIとfMRIとの重要な違いは、fNIR法は数センチメートルのオーダーの非常に限られた侵入深さでの測定に限定されるが、fMRI法は任意の深さで脳活動を測定できることである。
-    \item Magnetoencephalography (MEG)：この方法は、高感度磁力計のアレイを使用して、脳の神経活動によって生成される磁場を直接測定する。
-    MEGは主に、接線電流源に由来する磁場を記録するが、これは通常皮質の漿膜壁に位置する。MEGを利用する大きな利点は、
-    頭蓋骨や他の組織は磁場に対してほとんど透明であるため、MEG記録には減衰や歪みが生じないことが挙げられる。
-    \item Electroencephalography (EEG)：この方法では、頭皮上のいくつかの小さな電極を用いて、脳全体の神経アセンブリによって生成された電場が測定される。
-    EEGは、通常、大脳皮質のジャイロ表面上に位置する放射状の電流源によって生成される電場に敏感である。
+    fNRIとfMRIとの重要な違いは、fNIR法は数センチメートルのオーダーの非常に限られた侵入深さでの測定、すなわち脳の表層上に限定されるが、fMRI法は任意の深さで脳活動を測定できることである。
+    \item Magnetoencephalography (MEG)：
+    この方法は、高感度磁力計アレイを使用して、
+    脳の神経活動によって生成される磁場を直接測定する。
+    MEGは主に、接線電流源に由来する磁場を記録するが、
+    これは通常皮質の漿膜壁に位置する。MEGを利用する大きな利点は、
+    頭蓋骨や他の組織は磁場に対してほとんど透明であるため、
+    MEGには減衰や歪みが生じないことが挙げられる。
+    \item Electroencephalography (EEG)：
+    この方法では頭皮上にいくつかの小さな電極を配置し、
+    脳全体の神経アセンブリによって生成された電場が測定される。
+    EEGは、通常、大脳皮質の表面上に位置する放射状の電流源によって
+    生成される電場に敏感である。
 \end{itemize}
 これらの方法の中で、fMRIおよびMEGは、fNIRおよびEEGと比較して比較的高い空間分解能を提供する。
-しかし、fMRI及びMEGは、非常に高価な装置及びその動作のための整備された環境を必要とする。
-さらに、fMRIとMEGは大型機器であり、BCIアプリケーションで必要とされるような要件を満たすとは言い難い。
-fNIRはポータブルであるが、脳活動から数秒程度の遅れで測定が行われるという時間分解能の低さが問題となる。
+しかし、fMRI及びMEGは、非常に高価な装置である上に、その動作のために整備された環境を必要とする。
+さらに、fMRI(図\ref{fig:fMRI})とMEG(図\ref{fig:MEG})は大型機器であるため、
+BCIアプリケーションで必要とされるような要件を満たすとは言い難い。
+fNIRはポータブル(図\ref{fig:fNIR})であるが、脳活動から数秒程度の遅れで測定が行われるという時間分解能の低さが問題となる。
 結果として、EEGはBCIにおいて脳活動を測定するために最も広く使用されている方法であり、したがって、本論文の研究の焦点とする。
+\begin{figure}
+    \begin{center}
+    \includegraphics[width=140mm]{images/fMRI.jpg}
+    \end{center}
+    \caption{fMRI(参照明記english wiki)}
+    \label{fig:fMRI}
+\end{figure}
+\begin{figure}
+    \begin{center}
+    \includegraphics[width=70mm]{images/MEG.jpg}
+    \end{center}
+    \caption{MEG(参照明記english wiki)}
+    \label{fig:MEG}
+\end{figure}
+
+\begin{figure}[t]
+    \begin{minipage}{0.5\hsize}
+        \begin{center}
+            \includegraphics[width=60mm]{images/eeg.png}
+        \end{center}
+        \caption{fNIRキャップ(参照明記englishwiki)}
+        \label{fig:fNIR}
+    \end{minipage}
+    \begin{minipage}{0.5\hsize}
+        \begin{center}
+            \includegraphics[width=60mm]{images/eeg.png}
+        \end{center}
+        \caption{EEGキャップ(参照明記englishwiki)}
+        \label{fig:EEG}
+    \end{minipage}
+\end{figure}
 
 EEGには、BCIシステムの設計で考慮すべき大きな制限事項が2つある。
 それは、限られた空間分解能と、限られた浸透深度である。

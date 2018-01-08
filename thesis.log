@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.1.5)  8 JAN 2018 22:42
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.1.5)  9 JAN 2018 05:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -753,7 +753,7 @@ Writing index file thesis.idx
 LaTeX Warning: Unused global option(s):
     [11turept].
 
-(./thesis.aux (./math_rule.aux)
+(./thesis.aux
 
 LaTeX Warning: Label `eq:obj nonlinear' multiply defined.
 
@@ -865,38 +865,13 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 
 
 ]
-\openout2 = `math_rule.aux'.
-
- (./math_rule.tex
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 3.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 3.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 20.74pt on input line 3.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 10.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 10.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 10.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 10.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 4.805pt on input line 10.
-
-[1
-
-
-]
-Overfull \vbox (209.45288pt too high) has occurred while \output is active []
-
-
-[2])
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 100.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 100.
 LaTeX Font Info:    Try loading font information for T1+qhv on input line 100.
- (/usr/share/texmf/tex/latex/tex-gyre/t1qhv.fd
+
+(/usr/share/texmf/tex/latex/tex-gyre/t1qhv.fd
 File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
 )
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
@@ -913,15 +888,30 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 23.90964pt on input line 100.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 (Font)              scaled to size 22.39185pt on input line 100.
- (./thesis.toc [3
+ (./thesis.toc
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 2.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 2.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 2.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 4.805pt on input line 2.
+ [1
 
 
 ])
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [4]
+ [2]
 第1章
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 19.9311pt on input line 133.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 19.9311pt on input line 133.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 20.74pt on input line 133.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 19.9311pt on input line 133.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
@@ -952,30 +942,42 @@ LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
  [1
 
 
-] [2]
-File: images/BCIclass.png Graphic file (type bmp)
+]
+File: images/fMRI.jpg Graphic file (type bmp)
 
-<images/BCIclass.png>
+<images/fMRI.jpg>
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 87.
+(Font)              scaled to size 8.64899pt on input line 63.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 87.
+(Font)              scaled to size 8.64899pt on input line 63.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 87.
- [3]
+(Font)              scaled to size 9.0pt on input line 63.
+File: images/MEG.jpg Graphic file (type bmp)
+ <images/MEG.jpg>
+File: images/eeg.png Graphic file (type bmp)
+ <images/eeg.png>
+File: images/eeg.png Graphic file (type bmp)
+ <images/eeg.png>
+Overfull \hbox (1.49992pt too wide) in paragraph at lines 75--89
+[]$[]$ $[]$ 
+ []
+
+[2] [3] [4]
+File: images/BCIclass.png Graphic file (type bmp)
+ <images/BCIclass.png> [5]
 File: images/BCIsystem.png Graphic file (type bmp)
- <images/BCIsystem.png> [4])
+ <images/BCIsystem.png> [6])
 (./chapter/chapter1/Objective.tex
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 2.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 (Font)              scaled to size 10.79993pt on input line 2.
- [5] [6] [7] [8]) [9]
+ [7] [8] [9]) [10]
 第2章
-(./chapter/chapter2/SIGNAL.tex [10
+(./chapter/chapter2/SIGNAL.tex [11
 
-] [11] [12]) (./chapter/chapter2/BSS.tex
-[13]
+] [12] [13]) (./chapter/chapter2/BSS.tex
+[14]
 File: images/x(t).png Graphic file (type bmp)
  <images/x(t).png>
 File: images/z(t).png Graphic file (type bmp)
@@ -985,39 +987,38 @@ Overfull \hbox (1.49992pt too wide) in paragraph at lines 42--56
  []
 
 File: images/z=Wx.png Graphic file (type bmp)
-<images/z=Wx.png> [14] [15] [16]
+<images/z=Wx.png> [15] [16]
 File: images/ica_pca.png Graphic file (type bmp)
  <images/ica_pca.png> [17] [18]
 File: images/bss.png Graphic file (type bmp)
-
-<images/bss.png>) (./chapter/chapter2/Discriminant.tex [19]
+ <images/bss.png>)
+(./chapter/chapter2/Discriminant.tex [19] [20]
 File: images/mean_dis.png Graphic file (type bmp)
-
-<images/mean_dis.png> [20]
+ <images/mean_dis.png> [21]
 File: images/var_dis.png Graphic file (type bmp)
- <images/var_dis.png> [21] [22]
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 143.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.0pt on input line 143.
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 143.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.0pt on input line 143.
- [23]
-File: images/margin.png Graphic file (type bmp)
 
-<images/margin.png> [24]
+<images/var_dis.png> [22] [23]
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 141.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 7.0pt on input line 141.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 141.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 5.0pt on input line 141.
+File: images/margin.png Graphic file (type bmp)
+ <images/margin.png> [24] [25]
 File: images/linearSVM.png Graphic file (type bmp)
- <images/linearSVM.png>
+
+<images/linearSVM.png>
 File: images/xorlinearSVM.png Graphic file (type bmp)
  <images/xorlinearSVM.png>
-Overfull \hbox (1.49992pt too wide) in paragraph at lines 209--223
+Overfull \hbox (1.49992pt too wide) in paragraph at lines 207--221
 []$[]$ $[]$ 
  []
 
 File: images/xorkernelSVM.png Graphic file (type bmp)
-<images/xorkernelSVM.png> [25] [26] [27]) [28]
+<images/xorkernelSVM.png> [26] [27]) [28]
 第3章
 (./chapter/chapter2/FEATURE.tex
 File: images/EEGfootmove.png Graphic file (type bmp)
@@ -1028,9 +1029,9 @@ File: images/EEGhandmove.png Graphic file (type bmp)
 File: images/CzEEG.png Graphic file (type bmp)
  <images/CzEEG.png> [29
 
-] [30]
+]
 File: images/rapCzEEG.png Graphic file (type bmp)
- <images/rapCzEEG.png>
+ <images/rapCzEEG.png> [30]
 [31]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 136.
@@ -1049,14 +1050,14 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 
 LaTeX Warning: Reference `fig:ERD' on page 32 undefined on input line 136.
 
-[32]) (./chapter/chapter2/CSP.tex
+) (./chapter/chapter2/CSP.tex [32]
 File: images/CSP.png Graphic file (type bmp)
  <images/CSP.png> [33] [34]
 File: images/apple.png Graphic file (type bmp)
 
 <images/apple.png> [35]
 
-LaTeX Warning: Reference `fig:CSSSP' on page 36 undefined on input line 159.
+LaTeX Warning: Reference `fig:CSSSP' on page 36 undefined on input line 160.
 
 File: images/CSSSP.png Graphic file (type bmp)
 <images/CSSSP.png> [36]) [37]
@@ -1065,24 +1066,27 @@ File: images/CSSSP.png Graphic file (type bmp)
 
 ] [39] [40]
 File: images/activations.png Graphic file (type bmp)
- <images/activations.png> [41]
-[42]) (./chapter/chapter4/pseudoFBCSP.tex [43])
-(./chapter/chapter4/3DpseudoFBCSP.tex)
-(./chapter/chapter4/3Dconv_and_2DconvLSTM.tex) [44]
+ <images/activations.png> [41])
+(./chapter/chapter4/pseudoFBCSP.tex [42] [43]) [44]
 第5章
+(./chapter/chapter5/data.tex
+File: images/system1010.png Graphic file (type bmp)
+ <images/system1010.png>
+File: images/motorimage.png Graphic file (type bmp)
+ <images/motorimage.png>)
 [45
 
-]
+] [46]
 第6章
-[46
+[47
 
 ]
 \openout2 = `appendix.aux'.
 
- (./appendix.tex) [47
+ (./appendix.tex) [48
 
 
-] (./thesis.bbl [48
+] (./thesis.bbl [49
 
 
 ]
@@ -1096,11 +1100,11 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 12.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 10.0pt on input line 12.
- [49
+ [50
 
-] [50] [51]) [52]
+] [51] [52]) [53]
 No file thesis.ind.
-(./thesis.aux (./math_rule.aux) (./appendix.aux))
+(./thesis.aux (./appendix.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -1109,12 +1113,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6479 strings out of 493723
- 90757 string characters out of 6152571
- 167477 words of memory out of 5000000
- 9767 multiletter control sequences out of 15000+600000
+ 6491 strings out of 493723
+ 90907 string characters out of 6152571
+ 154183 words of memory out of 5000000
+ 9782 multiletter control sequences out of 15000+600000
  78002 words of font info for 153 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  38i,9n,77p,433b,578s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (57 pages, 186912 bytes).
+Output written on thesis.dvi (56 pages, 182948 bytes).

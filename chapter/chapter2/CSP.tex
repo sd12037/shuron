@@ -103,10 +103,10 @@ CSPでは、ベクトル\(w \in \mathbb {R}^M\)を新たな基底とした電極
 \begin{equation}
     y = (\sigma^2(\hat X,w^{(1)}), \cdots, \sigma^2(\hat X,w^{(m)}), \cdots, \sigma^2(\hat X,w^{(M-m+1)}), \cdots, \sigma^2(\hat X,w^{(M)}))^T
 \end{equation}
-あるいは\(y=(y_1, \cdots, y_{2m})\)に対して以下のような変換を行った特徴量\(f\)を使う。
+あるいは\(y=(y_1, \cdots, y_{2m})\)に対して以下のような変換を行った特徴量\(Y\)を使う(図\ref{fig:apple})。
 \begin{eqnarray}
-    f_i &=& \log \left( \frac{y_i}{\sum_{i=1}^{2m}y_i} \right) \nonumber \\
-    f &=& (f_1, \cdots, f_{2m})^T 
+    Y_i &=& \log \left( \frac{y_i}{\sum_{i=1}^{2m}y_i} \right) \nonumber \\
+    Y &=& (f_1, \cdots, f_{2m})^T 
 \end{eqnarray}
 また\(m=1,2\)が多くのCSPの応用研究で使われており、\(m\)を増やしてもBCIの性能向上には繋がらないことが報告されている\cite{cvscsp}。
 % 行列\(W_{csp}\)を
@@ -122,8 +122,9 @@ CSPでは、ベクトル\(w \in \mathbb {R}^M\)を新たな基底とした電極
 
 \begin{figure}
     \centering
-    \includegraphics[width=12cm]{images/apple.png}
-    \caption{林檎の図}
+    \includegraphics[width=14cm]{images/apple.png}
+    \caption{CSPの動作(a)観測点、(b)観測時の座標、(c)特徴量、(d)変換された座標}
+    \label{fig:apple}
 \end{figure}
   
 
@@ -185,9 +186,9 @@ CSSSPの解がいずれかの情報を失ってしまっている可能性が考
 このバンドパスフィルタバンクは1つ1つのフィルタ\({\cal H}_k\)が異なる周波数領域を通過させるように設計される。
 各バンドパスフィルタを通過した\(\hat X_k = {\cal H}_k(X)\)に対して、
 それぞれCSPの問題を解くことで各周波数領域における空間的な特徴量を獲得することが可能となる。
-\({\hat X}_k\)に対してCSPによって取り出した特徴量を\(f_k\)とすれば、最終的な特徴ベクトル\(f\)は
+\({\hat X}_k\)に対してCSPによって取り出した特徴量を\(Y_k\)とすれば、最終的な特徴ベクトル\(Y\)は
 \begin{equation}
-    f = (f_1^T,\cdots, f_K^T)^T
+    Y = (Y_1^T,\cdots, Y_K^T)^T
 \end{equation}
 であり、単に各周波数帯域のCSPによる特徴量を連結したベクトルとなる。
 ただしCSSSPとは異なり、CSPとバンドパスフィルタの同時最適化を行ってはいない。

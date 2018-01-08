@@ -1,25 +1,25 @@
 \contentsline {chapter}{\numberline {第1章}\mc 序論}{1}
 \contentsline {section}{\numberline {1.1}\mc 背景}{1}
-\contentsline {section}{\numberline {1.2}{\rm BCI}{\mc の概要}}{3}
-\contentsline {subsubsection}{{\mc 誘発型}\rm BCI}{3}
-\contentsline {subsubsection}{\mc 自発型 \rm BCI}{3}
-\contentsline {subsubsection}{\rm BCI\mc の動作原理}{3}
-\contentsline {subsubsection}{\mc 運動想起型\rm BCI\mc 周辺の研究}{4}
-\contentsline {section}{\numberline {1.3}\mc 目的}{6}
-\contentsline {subsection}{\numberline {1.3.1}\mc モチベーション}{6}
-\contentsline {subsection}{\numberline {1.3.2}\mc 達成目標}{7}
-\contentsline {subsection}{\numberline {1.3.3}\mc 技術的貢献}{7}
-\contentsline {chapter}{\numberline {第2章}{\rm BCI}{\mc のための要素技術}}{10}
-\contentsline {section}{\numberline {2.1}\mc 周波数解析}{10}
-\contentsline {subsection}{\numberline {2.1.1}4\mc 種類のフーリエ変換}{10}
-\contentsline {subsubsection}{\mc フーリエ変換}{10}
-\contentsline {subsubsection}{\mc 離散周波数フーリエ変換}{11}
+\contentsline {section}{\numberline {1.2}{\rm BCI}{\mc の概要}}{4}
+\contentsline {subsubsection}{{\mc 誘発型}\rm BCI}{4}
+\contentsline {subsubsection}{\mc 自発型 \rm BCI}{4}
+\contentsline {subsubsection}{\rm BCI\mc の動作原理}{5}
+\contentsline {subsubsection}{\mc 運動想起型\rm BCI\mc 周辺の研究}{6}
+\contentsline {section}{\numberline {1.3}\mc 目的}{7}
+\contentsline {subsection}{\numberline {1.3.1}\mc モチベーション}{7}
+\contentsline {subsection}{\numberline {1.3.2}\mc 達成目標}{8}
+\contentsline {subsection}{\numberline {1.3.3}\mc 技術的貢献}{9}
+\contentsline {chapter}{\numberline {第2章}{\rm BCI}{\mc のための要素技術}}{11}
+\contentsline {section}{\numberline {2.1}\mc 周波数解析}{11}
+\contentsline {subsection}{\numberline {2.1.1}4\mc 種類のフーリエ変換}{11}
+\contentsline {subsubsection}{\mc フーリエ変換}{11}
+\contentsline {subsubsection}{\mc 離散周波数フーリエ変換}{12}
 \contentsline {subsubsection}{\mc 離散時間フーリエ変換}{12}
-\contentsline {subsubsection}{\mc 離散フーリエ変換}{12}
-\contentsline {subsection}{\numberline {2.1.2}\mc パワースペクトル密度}{12}
-\contentsline {section}{\numberline {2.2}\mc 多変量解析}{13}
+\contentsline {subsubsection}{\mc 離散フーリエ変換}{13}
+\contentsline {subsection}{\numberline {2.1.2}\mc パワースペクトル密度}{13}
+\contentsline {section}{\numberline {2.2}\mc 多変量解析}{14}
 \contentsline {subsection}{\numberline {2.2.1}\rm Principal Component Analysis(PCA)}{14}
-\contentsline {subsection}{\numberline {2.2.2}\rm Indipendent Component Analysis(ICA)}{16}
+\contentsline {subsection}{\numberline {2.2.2}\rm Indipendent Component Analysis(ICA)}{17}
 \contentsline {subsection}{\numberline {2.2.3}\rm Blind Source Separation(BSS)}{18}
 \contentsline {section}{\numberline {2.3}\mc 分類手法}{20}
 \contentsline {subsection}{\numberline {2.3.1}\rm Linear Discriminant Analysis(LDA)}{20}
@@ -36,31 +36,31 @@
 \contentsline {subsection}{\numberline {3.2.4}\rm Filter Bank Common Spatial Pattern(FBCSP)}{37}
 \contentsline {chapter}{\numberline {第4章}\mc 提案手法}{38}
 \contentsline {section}{\numberline {4.1}\mc ニューラルネットワーク}{38}
-\contentsline {subsection}{\numberline {4.1.1}\mc モデル構築と学習}{38}
-\contentsline {subsection}{\numberline {4.1.2}\mc ニューラルネットワークに用いられる層}{38}
+\contentsline {subsection}{\numberline {4.1.1}\mc ニューラルネットワークに用いられる層}{38}
 \contentsline {subsubsection}{\rm Linear\mc 層}{38}
-\contentsline {subsubsection}{\rm Bilinear\mc 層}{39}
+\contentsline {subsubsection}{\rm Bilinear\mc 層}{38}
 \contentsline {subsubsection}{\rm Convolution\mc 層}{39}
 \contentsline {subsubsection}{\rm Recurrent\mc 層}{39}
-\contentsline {subsubsection}{\rm LSTM\mc 層}{40}
-\contentsline {subsection}{\numberline {4.1.3}\mc 活性化関数}{40}
+\contentsline {subsubsection}{\rm LSTM\mc 層}{39}
+\contentsline {subsection}{\numberline {4.1.2}\mc 活性化関数}{40}
 \contentsline {subsubsection}{\mc シグモイド関数}{40}
 \contentsline {subsubsection}{\mc 双曲線正接関数}{41}
 \contentsline {subsubsection}{\mc ランプ関数}{41}
 \contentsline {subsubsection}{\rm leaklyReLU\mc 関数}{41}
 \contentsline {subsubsection}{\rm elu\mc 関数}{41}
-\contentsline {subsubsection}{\mc ソフトマックス関数}{42}
-\contentsline {subsection}{\numberline {4.1.4}\mc 過学習抑制手法}{42}
-\contentsline {subsubsection}{\mc ドロップアウト}{42}
-\contentsline {subsubsection}{\mc バッチ正規化}{43}
-\contentsline {section}{\numberline {4.2}\rm EEG\mc のためのニューラルネットワーク(提案手法)}{43}
-\contentsline {subsection}{\numberline {4.2.1}\rm Convlution層によるFIR フィルタバンク}{43}
+\contentsline {subsubsection}{\mc ソフトマックス関数}{41}
+\contentsline {subsection}{\numberline {4.1.3}\mc ニューラルネットワークの設計と学習}{42}
+\contentsline {section}{\numberline {4.2}\mc 従来手法をモデル化したニューラルネットワーク(提案手法1)}{43}
+\contentsline {subsection}{\numberline {4.2.1}\mc アイデア}{43}
+\contentsline {subsubsection}{\rm Convlution\mc 層によるFIR フィルタバンク}{43}
+\contentsline {subsubsection}{\rm Convlution\mc 層による空間フィルタ}{43}
+\contentsline {subsection}{\numberline {4.2.2}\mc モデルの構造}{43}
 \contentsline {section}{\numberline {4.3}\rm 高階テンソルとしてのEEG\mc データ構造}{43}
-\contentsline {subsection}{\numberline {4.3.1}\mc 関連研究}{44}
-\contentsline {subsubsection}{\rm Shallow FBCSP}{44}
-\contentsline {chapter}{\numberline {第5章}\mc 実験方法}{45}
-\contentsline {chapter}{\numberline {第6章}\mc 結果と考察}{46}
-\contentsline {chapter}{Appendix}{47}
-\contentsline {section}{\numberline {A.1}セクション}{47}
-\contentsline {subsection}{\numberline {A.1.1}サブセクション}{47}
-\contentsline {chapter}{参考文献}{49}
+\contentsline {chapter}{\numberline {第5章}\mc BCIの評価に用いるデータと評価方法}{45}
+\contentsline {section}{\numberline {5.1}\rm EEG \mc データ}{45}
+\contentsline {subsection}{\numberline {5.1.1}評価方法}{45}
+\contentsline {chapter}{\numberline {第6章}\mc 結果と考察}{47}
+\contentsline {chapter}{Appendix}{48}
+\contentsline {section}{\numberline {A.1}セクション}{48}
+\contentsline {subsection}{\numberline {A.1.1}サブセクション}{48}
+\contentsline {chapter}{参考文献}{50}

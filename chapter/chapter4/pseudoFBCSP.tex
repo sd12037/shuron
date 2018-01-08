@@ -1,5 +1,5 @@
-\section{\rm EEG\mc のためのニューラルネットワーク(提案手法)}
-\subsection{\rm Convlution層によるFIR フィルタバンク}
+\section{\mc 従来手法をモデル化したニューラルネットワーク(提案手法1)}
+\subsubsection{\rm Convlution\mc 層によるFIR フィルタバンク}
 EEGを\(X\in \mathbb R^{M\times N\times 1}\)とする。
 ここに、\(M\)は電極の数、\(N\)はサンプル点数、\(1\)は後に周波数を示すためのダミーインデックスである。
 \(X\)に対するConvolution層による演算は以下で表される。
@@ -14,6 +14,8 @@ EEGを\(X\in \mathbb R^{M\times N\times 1}\)とする。
 という演算を行うことができる。
 ここでパラメータ\(H\in \mathbb R^{1\times D\times 1\times K}\)と与えることで、
 フィルタ次数\(Q-1\)のFIRフィルタ\(K\)個からなるフィルタバンクとなる。
+
+\subsubsection{\rm Convlution\mc 層による空間フィルタ}
 続いて、第2層について\(Q=1\)でパラメータを与えることにより
 \begin{equation}
     v_{m,n,l} = \sum_{p=0}^{P-1} u_{m+p,n,k} g_{1,q,1,k}
@@ -26,10 +28,11 @@ EEGを\(X\in \mathbb R^{M\times N\times 1}\)とする。
 2層目以降の層は、EEGを入力としたフィルタバンクからの出力を受け取る。
 FBCSPと異なる点は、FBCSPがフィルタバンクの設計とそれ以降の処理の設計が完全に分断されていることに対し、
 提案手法ではフィルタバンクのフィルタ係数と、その後の処理に用いられるパラメータを
-同時に最適化可能な点である。
+同時に最適化可能な点である。具体的なニューラルネットワークの構造は実験結果と共に記す。
 
 
-\section{\rm 高階テンソルとしてのEEG\mc データ構造}
+\section{\rm 3DConvlution + 2DConvLSTM\mc (提案手法2)}
+\subsubsection{\mc 高階テンソルとしての \rm EEG\mc データ構造}
 通常、EEGのデータは時間の次元を持つサンプル点数と空間的な情報を有する電極をインデックスとした
 2階テンソルとして表現されるが、本論文では運動想起時のEEGは時間、電極、周波数をインデックスとした
 高階テンソルで表されると仮定する。
@@ -51,13 +54,25 @@ Convlution層を用いたFIRフィルタバンクは、3DConvlution層を用い�
     \label{eq:pseudoFIR3D}
 \end{eqnarray} 
 \(u_{m_1,m_2,n,k}\)について\(m_1,m_2\)が頭皮上の座標を表すインデックスである。
-この\(4\)階テンソルを適切に処理する構造を更に構築することで、End to EndのBCI構築を可能とする。
 
+\subsubseciton{\rm 2DConvLSTM}
+2DConvLSTMは、通常のLSTMのLinear層の計算をConvolution層に変更することで
+入力\(X = (X_1,\cdots,X_T)\in \mathbb R^{M_1 \times M_2 \times T \times K}\)を受け取り
+出力\(Y = (Y_1,\cdots,Y_T)\in \mathbb R^{M_1' \times M_2' \times T \times C}\)を出力する。
+ここに\(C\)は任意の正数であり、\(M_1',M_2'\)はパラメータの与え方で決定される。
+この構造を入れることによって、
+電極のインデックスを頭皮上に展開しフィルタバンクを通過した4階テンソルEEGを入力として受け取ることができる。
+ここでConvLSTM内でのCovolution演算は頭皮上の2次元に対して行い、LSTMの処理は時間方向に行うようにする。
 
-\subsection{\mc 関連研究}
-\subsubsection{\rm Shallow FBCSP}
-〜らの\cite{ShallowFBCSP}では、Convolution層を1層目に用いる際に
-時間方向にのみ畳み込みを行うことを提案しており、
-フィルタバンクを構成しているとみなせる。〜らはその後電極方向の畳み込みを行い、
-Spartial Patternを抽出していると主張しており、論文内でのニューラルネットワークを
-ShallowFBCSPと名づけている。
+これは頭皮空間上の周波数スペクトルを観測しながら、
+その時間経過を追うことで運動想起部位を分類するというモデルを構築する狙いがある。
+また、頭皮上に展開された2次元に対してConvolution演算を用いることは、
+電極配置が距離的に近い場合において強い関連性を有するという前提を与えることになり、
+東らのグラフフーリエ領域\cite{グラフフーリエ}の研究で仮定されている前提に近い。
+% \subsection{\mc 関連研究}
+% \subsubsection{\rm Shallow FBCSP}
+% 〜らの\cite{ShallowFBCSP}では、Convolution層を1層目に用いる際に
+% 時間方向にのみ畳み込みを行うことを提案しており、
+% フィルタバンクを構成しているとみなせる。〜らはその後電極方向の畳み込みを行い、
+% Spartial Patternを抽出していると主張しており、論文内でのニューラルネットワークを
+% ShallowFBCSPと名づけている。

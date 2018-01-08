@@ -1,56 +1,51 @@
 This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
-A level-1 auxiliary file: math_rule.aux
 A level-1 auxiliary file: appendix.aux
 The style file: junsrt.bst
 Database file #1: reference.bib
 Warning--can't use both author and editor fields in sparsemethod
 Warning--can't use both author and editor fields in bootCSP
-Warning--empty author in ShallowFBCSP
-Warning--empty title in ShallowFBCSP
-Warning--empty journal in ShallowFBCSP
-Warning--empty year in ShallowFBCSP
-You've used 42 entries,
+You've used 40 entries,
             2270 wiz_defined-function locations,
-            809 strings with 11827 characters,
-and the built_in function-call counts, 15041 in all, are:
-= -- 1173
-> -- 433
-< -- 72
-+ -- 172
-- -- 130
-* -- 796
-:= -- 1777
-add.period$ -- 125
-call.type$ -- 42
-change.case$ -- 34
+            800 strings with 11540 characters,
+and the built_in function-call counts, 14447 in all, are:
+= -- 1130
+> -- 425
+< -- 70
++ -- 168
+- -- 128
+* -- 761
+:= -- 1722
+add.period$ -- 121
+call.type$ -- 40
+change.case$ -- 33
 chr.to.int$ -- 0
-cite$ -- 48
-duplicate$ -- 973
-empty$ -- 1419
-format.name$ -- 260
-if$ -- 3785
+cite$ -- 42
+duplicate$ -- 930
+empty$ -- 1352
+format.name$ -- 256
+if$ -- 3635
 int.to.chr$ -- 0
-int.to.str$ -- 42
-missing$ -- 44
-newline$ -- 211
-num.names$ -- 43
-pop$ -- 270
+int.to.str$ -- 40
+missing$ -- 42
+newline$ -- 203
+num.names$ -- 42
+pop$ -- 249
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 805
+skip$ -- 766
 stack$ -- 0
-substring$ -- 847
-swap$ -- 347
-text.length$ -- 72
+substring$ -- 811
+swap$ -- 333
+text.length$ -- 70
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 6
-while$ -- 105
-width$ -- 44
-write$ -- 457
-is.kanji.str$ -- 508
-(There were 6 warnings)
+warning$ -- 2
+while$ -- 102
+width$ -- 42
+write$ -- 441
+is.kanji.str$ -- 490
+(There were 2 warnings)
