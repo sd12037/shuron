@@ -1,4 +1,19 @@
-\section{\mc 従来手法をモデル化したニューラルネットワーク(提案手法1)}
+\section{\mc スペクトログラムを画像とみなしたニューラルネットワーク(提案手法1)}
+\subsubsection{\mc 最大エントロピー法によるスペクトル密度推定}
+スペクトログラムの獲得には最大エントロピー法を用いる。
+フーリエ変換を用いたスペクトル密度推定法にはEEGには成り立たないであろう
+仮定を要請しなければならないが、最大エントロピー法はウィーナー・ヒンチンの定理以外の一切の仮定を必要としないため、
+ロバストな推定が可能である。
+最大エントロピー法のスペクトル密度推定法を時間窓をずらしながらEEGに適用することでスペクトログラムを獲得する。
+
+\subsubsection{\mc 画像認識の手法の適用}
+Convolution層は通常画像認識のために用いられるが、スペクトログラムからERDを検知する研究は従来より盛んであり、
+これは人間がERDを可視化、画像化してきたことに他ならない。
+スペクトログラムをERDの生じる周波数を特定するために用いるのではなく、
+直接、畳み込みニューラルネットワークに与えることで分類させることを試みた。
+
+
+\section{\mc 従来手法をモデル化したニューラルネットワーク(提案手法2)}
 \subsubsection{\rm Convlution\mc 層によるFIR フィルタバンク}
 EEGを\(X\in \mathbb R^{M\times N\times 1}\)とする。
 ここに、\(M\)は電極の数、\(N\)はサンプル点数、\(1\)は後に周波数を示すためのダミーインデックスである。
@@ -31,7 +46,7 @@ FBCSPと異なる点は、FBCSPがフィルタバンクの設計とそれ以降�
 同時に最適化可能な点である。具体的なニューラルネットワークの構造は実験結果と共に記す。
 
 
-\section{\rm 3DConvlution + 2DConvLSTM\mc (提案手法2)}
+\section{\rm 3DConvlution + 2DConvLSTM\mc （提案手法3）}
 \subsubsection{\mc 高階テンソルとしての \rm EEG\mc データ構造}
 通常、EEGのデータは時間の次元を持つサンプル点数と空間的な情報を有する電極をインデックスとした
 2階テンソルとして表現されるが、本論文では運動想起時のEEGは時間、電極、周波数をインデックスとした
@@ -55,8 +70,8 @@ Convlution層を用いたFIRフィルタバンクは、3DConvlution層を用い�
 \end{eqnarray} 
 \(u_{m_1,m_2,n,k}\)について\(m_1,m_2\)が頭皮上の座標を表すインデックスである。
 
-\subsubseciton{\rm 2DConvLSTM}
-2DConvLSTMは、通常のLSTMのLinear層の計算をConvolution層に変更することで
+\subsubsection{\rm ConvLSTM}
+ConvLSTMは、通常のLSTMのLinear層の計算をConvolution層に変更することで
 入力\(X = (X_1,\cdots,X_T)\in \mathbb R^{M_1 \times M_2 \times T \times K}\)を受け取り
 出力\(Y = (Y_1,\cdots,Y_T)\in \mathbb R^{M_1' \times M_2' \times T \times C}\)を出力する。
 ここに\(C\)は任意の正数であり、\(M_1',M_2'\)はパラメータの与え方で決定される。

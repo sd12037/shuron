@@ -25,7 +25,7 @@
 \contentsline {subsection}{\numberline {2.3.1}\rm Linear Discriminant Analysis(LDA)}{20}
 \contentsline {subsection}{\numberline {2.3.2}\rm Support Vector Machine(SVM)}{23}
 \contentsline {subsection}{\numberline {2.3.3}\rm Logistic Regression(LR)}{27}
-\contentsline {chapter}{\numberline {第3章}{\mc 従来の運動想起型}{\rm BCI}}{29}
+\contentsline {chapter}{\numberline {第3章}{\mc 従来手法}{\rm BCI}}{29}
 \contentsline {section}{\numberline {3.1}\mc 特徴量工学}{29}
 \contentsline {subsection}{\numberline {3.1.1}\mc 頭皮領域と空間フィルタ}{29}
 \contentsline {subsection}{\numberline {3.1.2}\mc EEGと時間周波数解析}{32}
@@ -50,17 +50,20 @@
 \contentsline {subsubsection}{\rm elu\mc 関数}{41}
 \contentsline {subsubsection}{\mc ソフトマックス関数}{41}
 \contentsline {subsection}{\numberline {4.1.3}\mc ニューラルネットワークの設計と学習}{42}
-\contentsline {section}{\numberline {4.2}\mc 従来手法をモデル化したニューラルネットワーク(提案手法1)}{43}
-\contentsline {subsection}{\numberline {4.2.1}\mc アイデア}{43}
+\contentsline {section}{\numberline {4.2}\mc スペクトログラムを画像とみなしたニューラルネットワーク(提案手法1)}{43}
+\contentsline {subsubsection}{\mc 最大エントロピー法によるスペクトル密度推定}{43}
+\contentsline {subsubsection}{\mc 画像認識の手法の適用}{43}
+\contentsline {section}{\numberline {4.3}\mc 従来手法をモデル化したニューラルネットワーク(提案手法2)}{43}
 \contentsline {subsubsection}{\rm Convlution\mc 層によるFIR フィルタバンク}{43}
-\contentsline {subsubsection}{\rm Convlution\mc 層による空間フィルタ}{43}
-\contentsline {subsection}{\numberline {4.2.2}\mc モデルの構造}{43}
-\contentsline {section}{\numberline {4.3}\rm 高階テンソルとしてのEEG\mc データ構造}{43}
-\contentsline {chapter}{\numberline {第5章}\mc BCIの評価に用いるデータと評価方法}{45}
-\contentsline {section}{\numberline {5.1}\rm EEG \mc データ}{45}
-\contentsline {subsection}{\numberline {5.1.1}評価方法}{45}
-\contentsline {chapter}{\numberline {第6章}\mc 結果と考察}{47}
-\contentsline {chapter}{Appendix}{48}
-\contentsline {section}{\numberline {A.1}セクション}{48}
-\contentsline {subsection}{\numberline {A.1.1}サブセクション}{48}
-\contentsline {chapter}{参考文献}{50}
+\contentsline {subsubsection}{\rm Convlution\mc 層による空間フィルタ}{44}
+\contentsline {section}{\numberline {4.4}\rm 3DConvlution + 2DConvLSTM\mc （提案手法3）}{44}
+\contentsline {subsubsection}{\mc 高階テンソルとしての \rm EEG\mc データ構造}{44}
+\contentsline {subsubsection}{\rm ConvLSTM}{45}
+\contentsline {chapter}{\numberline {第5章}\mc データと評価方法について}{46}
+\contentsline {section}{\numberline {5.1}\rm EEG \mc データ}{46}
+\contentsline {subsection}{\numberline {5.1.1}評価方法}{46}
+\contentsline {chapter}{\numberline {第6章}\mc 結果と考察}{48}
+\contentsline {chapter}{Appendix}{49}
+\contentsline {section}{\numberline {A.1}セクション}{49}
+\contentsline {subsection}{\numberline {A.1.1}サブセクション}{49}
+\contentsline {chapter}{参考文献}{51}
