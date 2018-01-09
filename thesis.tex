@@ -30,6 +30,9 @@
 \usepackage{afterpage}
 \usepackage{caption}
 \usepackage{newtxtext}
+
+%%%日本語フォント
+\usepackage[deluxe]{otf}
 %%%数式フォント
 \usepackage{mathabx}
 % \usepackage{euler}
@@ -70,13 +73,13 @@
 \newcolumntype{Z}{>{\raggedleft\arraybackslash}X} 
 %
 % \renewcommand{\thechapter}{第\arabic{chapter}章}
-\renewcommand{\postchaptername}{章}
-\renewcommand{\prechaptername}{第}
+\renewcommand{\postchaptername}{\mc 章}
+\renewcommand{\prechaptername}{\mc 第}
 
 
 
-\title{深層学習を用いた脳波信号からの運動意図推定}
-\author{佐野\ \ 光 \\ Sano\ \ Hikaru}
+\title{\mc 脳波を用いた運動想起型{\rm Brain Computer Interface}のためのEnd to End学習}
+\author{\mc 佐野\ \ 光 \\ \rm Sano\ \ Hikaru}
 % \author{Hikaru\ \ Sano}
 \date{\today}
 
@@ -129,7 +132,7 @@
 
 
 
-\chapter{\mc 序論}
+\chapter{{\mc 序論}}
 \input{chapter/chapter1/INTRO}
 \input{chapter/chapter1/Objective}
 

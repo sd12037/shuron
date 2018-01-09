@@ -1,4 +1,4 @@
-\contentsline {chapter}{\numberline {第1章}\mc 序論}{1}
+\contentsline {chapter}{\numberline {\mc 第1\mc 章}{\mc 序論}}{1}
 \contentsline {section}{\numberline {1.1}\mc 背景}{1}
 \contentsline {section}{\numberline {1.2}{\rm BCI}{\mc の概要}}{4}
 \contentsline {subsubsection}{{\mc 誘発型}\rm BCI}{4}
@@ -9,7 +9,7 @@
 \contentsline {subsection}{\numberline {1.3.1}\mc モチベーション}{7}
 \contentsline {subsection}{\numberline {1.3.2}\mc 達成目標}{8}
 \contentsline {subsection}{\numberline {1.3.3}\mc 技術的貢献}{9}
-\contentsline {chapter}{\numberline {第2章}{\rm BCI}{\mc のための要素技術}}{11}
+\contentsline {chapter}{\numberline {\mc 第2\mc 章}{\rm BCI}{\mc のための要素技術}}{11}
 \contentsline {section}{\numberline {2.1}\mc 周波数解析}{11}
 \contentsline {subsection}{\numberline {2.1.1}4\mc 種類のフーリエ変換}{11}
 \contentsline {subsubsection}{\mc フーリエ変換}{11}
@@ -25,7 +25,7 @@
 \contentsline {subsection}{\numberline {2.3.1}\rm Linear Discriminant Analysis(LDA)}{20}
 \contentsline {subsection}{\numberline {2.3.2}\rm Support Vector Machine(SVM)}{23}
 \contentsline {subsection}{\numberline {2.3.3}\rm Logistic Regression(LR)}{27}
-\contentsline {chapter}{\numberline {第3章}{\mc 従来手法}{\rm BCI}}{29}
+\contentsline {chapter}{\numberline {\mc 第3\mc 章}{\mc 従来手法}{\rm BCI}}{29}
 \contentsline {section}{\numberline {3.1}\mc 特徴量工学}{29}
 \contentsline {subsection}{\numberline {3.1.1}\mc 頭皮領域と空間フィルタ}{29}
 \contentsline {subsection}{\numberline {3.1.2}\mc EEGと時間周波数解析}{32}
@@ -34,7 +34,7 @@
 \contentsline {subsection}{\numberline {3.2.2}\rm Common Spatial Pattern(CSP)}{33}
 \contentsline {subsection}{\numberline {3.2.3}\rm Common Sparse Spatio Spectral Pattern(CSSSP)}{35}
 \contentsline {subsection}{\numberline {3.2.4}\rm Filter Bank Common Spatial Pattern(FBCSP)}{37}
-\contentsline {chapter}{\numberline {第4章}\mc 提案手法}{38}
+\contentsline {chapter}{\numberline {\mc 第4\mc 章}\mc 提案手法}{38}
 \contentsline {section}{\numberline {4.1}\mc ニューラルネットワーク}{38}
 \contentsline {subsection}{\numberline {4.1.1}\mc ニューラルネットワークに用いられる層}{38}
 \contentsline {subsubsection}{\rm Linear\mc 層}{38}
@@ -56,7 +56,7 @@
 \contentsline {section}{\numberline {4.3}\rm 3DConvlution + 2DConvLSTM\mc （提案手法2）}{43}
 \contentsline {subsubsection}{\mc 高階テンソルとしての \rm EEG\mc データ構造}{43}
 \contentsline {subsubsection}{\rm ConvLSTM}{44}
-\contentsline {chapter}{\numberline {第5章}\mc 実験結果と考察}{45}
+\contentsline {chapter}{\numberline {\mc 第5\mc 章}\mc 実験結果と考察}{45}
 \contentsline {section}{\numberline {5.1}提案手法1}{45}
 \contentsline {subsection}{\numberline {5.1.1}\rm EEG \mc データ}{45}
 \contentsline {subsection}{\numberline {5.1.2}評価方法}{45}
@@ -64,7 +64,7 @@
 \contentsline {subsection}{\numberline {5.1.4}結果}{48}
 \contentsline {subsection}{\numberline {5.1.5}考察}{49}
 \contentsline {subsection}{\numberline {5.1.6}追加実験とその結果}{49}
-\contentsline {chapter}{\numberline {第6章}\mc 結論}{51}
+\contentsline {chapter}{\numberline {\mc 第6\mc 章}\mc 結論}{51}
 \contentsline {chapter}{Appendix}{52}
 \contentsline {section}{\numberline {A.1}セクション}{52}
 \contentsline {subsection}{\numberline {A.1.1}サブセクション}{52}
