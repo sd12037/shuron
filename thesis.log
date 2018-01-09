@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.1.5)  10 JAN 2018 01:56
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.1.5)  10 JAN 2018 04:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -791,7 +791,7 @@ LaTeX Warning: Label `eq:pseudoFIR' multiply defined.
 
 LaTeX Warning: Label `fig:overfit' multiply defined.
 
-(./appendix.aux))
+)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
@@ -980,8 +980,19 @@ LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 
 
 ]
-File: images/fMRI.jpg Graphic file (type bmp)
+LaTeX Font Info:    Font shape `JT1/hmc/bx/n' will be
+(Font)              scaled to size 9.24683pt on input line 57.
+LaTeX Font Info:    Font shape `JY1/hmc/bx/n' will be
+(Font)              scaled to size 9.24683pt on input line 57.
+LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <10> not available
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 57.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 10.0pt on input line 57.
 
+
+LaTeX Warning: Reference `fig:fNIR' on page 2 undefined on input line 57.
+
+File: images/fMRI.jpg Graphic file (type bmp)
 <images/fMRI.jpg>
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
 (Font)              scaled to size 8.32214pt on input line 63.
@@ -992,16 +1003,10 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 File: images/MEG.jpg Graphic file (type bmp)
  <images/MEG.jpg>
 File: images/eeg.png Graphic file (type bmp)
- <images/eeg.png>
-File: images/eeg.png Graphic file (type bmp)
- <images/eeg.png>
-Overfull \hbox (1.49992pt too wide) in paragraph at lines 75--89
-[]$[]$ $[]$ 
- []
-
-[2] [3] [4]
+ <images/eeg.png> [2] [3] [4]
 File: images/BCIclass.png Graphic file (type bmp)
- <images/BCIclass.png> [5]
+
+<images/BCIclass.png> [5]
 File: images/BCIsystem.png Graphic file (type bmp)
  <images/BCIsystem.png> [6])
 (./chapter/chapter1/Objective.tex
@@ -1071,21 +1076,7 @@ File: images/CzEEG.png Graphic file (type bmp)
 ]
 File: images/rapCzEEG.png Graphic file (type bmp)
  <images/rapCzEEG.png> [30]
-[31]
-LaTeX Font Info:    Font shape `JT1/hmc/bx/n' will be
-(Font)              scaled to size 9.24683pt on input line 136.
-LaTeX Font Info:    Font shape `JY1/hmc/bx/n' will be
-(Font)              scaled to size 9.24683pt on input line 136.
-LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <10> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 136.
-
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 136.
-
-
-LaTeX Warning: Reference `fig:ERD' on page 32 undefined on input line 136.
-
-) (./chapter/chapter2/CSP.tex [32]
+[31]) (./chapter/chapter2/CSP.tex [32]
 File: images/CSP.png Graphic file (type bmp)
  <images/CSP.png> [33] [34]
 File: images/apple.png Graphic file (type bmp)
@@ -1173,22 +1164,22 @@ File: images/overfitting.png Graphic file (type bmp)
  <images/overfitting.png>
 File: images/linearof.png Graphic file (type bmp)
  <images/linearof.png>
-Overfull \hbox (1.49992pt too wide) in paragraph at lines 280--292
+Overfull \hbox (1.49992pt too wide) in paragraph at lines 279--291
 []$[]$ $[]$ 
  []
 
-[49]) [50]
+[49] [50]
+File: images/tester_acc.png Graphic file (type bmp)
+ <images/tester_acc.png>
+File: images/traineracc.png Graphic file (type bmp)
+ <images/traineracc.png>
+File: images/crosshist.png Graphic file (type bmp)
+
+<images/crosshist.png>) [51] [52]
 \mc 第6\mc 章
-[51
+(./chapter/chapter5/lastw.tex) [53
 
-]
-\openout2 = `appendix.aux'.
-
- (./appendix.tex) [52
-
-
-] (./thesis.bbl [53
-
+] [54] (./thesis.bbl [55
 
 ]
 
@@ -1205,11 +1196,11 @@ LaTeX Font Info:    Font shape `JT1/hgt/m/it' will be
 (Font)              scaled to size 9.24683pt on input line 19.
 LaTeX Font Info:    Font shape `JY1/hgt/m/it' will be
 (Font)              scaled to size 9.24683pt on input line 19.
-[54
+[56
 
-] [55] [56]) [57]
+] [57] [58]) [59]
 No file thesis.ind.
-(./thesis.aux (./appendix.aux))
+(./thesis.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1221,12 +1212,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 9020 strings out of 493723
- 125754 string characters out of 6152571
- 177799 words of memory out of 5000000
- 12289 multiletter control sequences out of 15000+600000
+ 9027 strings out of 493723
+ 125970 string characters out of 6152571
+ 177455 words of memory out of 5000000
+ 12296 multiletter control sequences out of 15000+600000
  77673 words of font info for 160 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  38i,10n,77p,433b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (61 pages, 208284 bytes).
+Output written on thesis.dvi (63 pages, 215708 bytes).

@@ -1,4 +1,4 @@
-\section{提案手法の評価}
+\section{\mc 提案手法の評価}
 \subsection{\rm EEG \mc データ}
 実験データとしてBCI2000システム\cite{BCI2000}を用いて記録された
 PhysioNet\cite{PhysioNet}が提供する運動想起データセットを用いた。
@@ -36,7 +36,7 @@ PhysioNetが提供する運動想起時のEEGデータベースは、
 \end{figure}
 
 
-\subsection{評価方法}
+\subsection{\mc 評価方法}
 本研究では各運動想起時間である4秒間のデータを取り出して、
 2クラス分類の問題を\(_4C_2=6\)種類準備した。
 ここで運動想起は一人あたり計90回行っており4部位あるため、
@@ -74,7 +74,7 @@ EEG計測時に被験者が行った運動想起が一致している割合で�
 各問題について99人の被験者の正解率の平均を取ることで、
 単一のニューラルネットワークが各問題に適応可能かを評価する。
 
-\subsection{ニューラルネットワークの構成}
+\subsection{\mc ニューラルネットワークの構成}
 n階のテンソル\(A\in \mathbb R^{D_1,\cdots ,D_n}\)の
 \((d_1,\cdots,d_n)\)成分を\(a_{d_1,\cdots,d_n}\)と表記する。
 入力\(X \in \mathbb R^{M\times N\times C}\)に対して
@@ -87,12 +87,12 @@ Convolution層のパラメータを\(H \in \mathbb R^{P\times Q \times C \times 
 提案手法のニューラルネットワークの構成は入力側から
 \begin{enumerate}
     \item 時間平均と時間分散による正規化
-    \item 畳み込み層\(H_1 \in \mathbb R^{36\times 1 \times 1 \times 32}\)
-    \item 畳み込み層\(H_2 \in \mathbb R^{1\times 64 \times 32 \times 32}\)
+    \item 畳み込み層\(H_1 \in \mathbb R^{1\times 75 \times 1 \times 32}\)
+    \item 畳み込み層\(H_2 \in \mathbb R^{64\times 1 \times 32 \times 32}\)
     \item バッチ正規化
     \item 平均プーリング1（プーリングサイズ:75とストライド:25)
     \item ドロップアウト
-    \item \(H_3 \in \mathbb R^{6\times 1 \times 32 \times 2}\)
+    \item \(H_3 \in \mathbb R^{1\times 12 \times 32 \times 2}\)
     \item 平均プーリング2（出力サイズが\(1\times 1\times 2\)となるように設定）
     \item ソフトマックス
 \end{enumerate}
@@ -107,15 +107,15 @@ Convolution層のパラメータを\(H \in \mathbb R^{P\times Q \times C \times 
 時間平均と時間分散による正規化について説明する。
 時間平均と時間分散による正規化は、\(X \in \mathbb R^{M\times N\times C}\)に対して
 \begin{eqnarray}
-    mu_{m,1,1} & = & \frac{1}{N}\sum_n x_{m,n,1} \\
-    var_{m,1,1} & = & \frac{1}{N}\sum_n (x_{m,n,1} - mu)^2 \\
-    x_{m,n,1} & \mapsto & \frac{x_{m,n,1} - mu_{m,1,1}}{\sqrt{var_{m,1,1}+\epsilon}}
+    \mu_{m,1,1} & = & \frac{1}{N}\sum_n x_{m,n,1} \\
+    {\rm var}_{m,1,1} & = & \frac{1}{N}\sum_n (x_{m,n,1} - mu)^2 \\
+    x_{m,n,1} & \mapsto & \frac{x_{m,n,1} - \mu_{m,1,1}}{\sqrt{{\rm var}_{m,1,1}+\epsilon}}
 \end{eqnarray}
 という処理を行う層である。
 
 
 
-\subsection{結果}
+\subsection{\mc 結果}
 各分類問題における正解率のヒストグラムを示す（図\ref{fig:LRhist}-\ref{fig:RFhist}）。
 横軸が正解率で、縦軸が被験者の数である。
 どの分類問題においても60〜70\%付近の正解率となる被験者が多い。
@@ -206,7 +206,7 @@ CSPとLDAを組み合わせた手法\cite{benth}（表\ref{table:meanacc_csp}）
     \end{minipage}
 \end{table}
 
-\subsection{考察}
+\subsection{\mc 考察}
 表\ref{table:meanacc} によると提案手法1のニューラルネットワークは
 いずれの問題に対しても平均的には同等の対応力を有するように捉えられる。
 しかし図\ref{fig:LRhist}-\ref{fig:RFhist}からは、
@@ -233,17 +233,16 @@ CSPとLDAを組み合わせた手法\cite{benth}（表\ref{table:meanacc_csp}）
 
 従って特定のタスクに対する個人のためのBCIを、ごく少数の学習データによって構築する場合には
 ニューラルネットワークを用いる方法は不適だと考えられる。
-この考察を確認するために以下の実験を行った。
 
-\section{被験者のデータを混合したBCI構築}
-\subsection{データの混合}
-追加実験ではLR問題のみを扱った。
+\section{\mc 被験者のデータを混合したBCI構築}
+\subsection{\mc データの混合}
+実験ではLR問題のみを扱った。
 LR問題のデータを50人分集めすべてのデータを統合し、2200個へと増加させた。
 すなわち左手の運動想起が1100回分と右手の運動想起が1100回分準備されたことになる。
 実際には質の悪いEEGに関しては排除したため、
 右手のデータを1042個、左手のデータを1050個用いることにし10-交差検証によって正解率を算出した。
 
-\subsection{混合データに対する結果}
+\subsection{\mc 混合データに対する結果}
 ニューラルネットワークの構造やハイパーパラメータの調整は行っておらず、
 個人事に学習を行った際に使ったニューラルネットと全く同等のモデルを用いた。
 結果として交差検証の平均正解率は0.8032となった。
@@ -267,7 +266,7 @@ LR問題のデータを50人分集めすべてのデータを統合し、2200個
 一般にデータの多様性が上がることでニューラルネットワークの要求される表現力も高まるため、
 非線形活性化関数を用いて以下の実験を行った。
 
-\subsection{活性化関数にeluを用いた場合の結果}
+\subsection{\mc 活性化関数に \rm elu \mc を用いた場合の結果}
 ニューラルネットワークのすべての畳込み層の後にelu関数を追加した。
 一般的に非線形関数を組み込むことでニューラルネットワークの表現力は向上する。
 結果としては交差検証の平均正解率は0.8000となった。活性化関数を用いない場合に比べ、性能は若干劣っている。
@@ -285,13 +284,13 @@ LR問題のデータを50人分集めすべてのデータを統合し、2200個
     \end{minipage}
     \begin{minipage}{0.5\hsize}
         \centering
-        \includegraphics[width=5cm]{images/linearof.png}
+        \includegraphics[width=6.4cm]{images/linearof.png}
         \caption{過学習の様子：活性関数を用いない場合}
         \label{fig:overfit}
     \end{minipage}
 \end{figure}
 
-\subsection{考察}
+\subsection{\mc 考察}
 結果は個々の人間に対して学習させた正解率の結果よりも向上している。
 すなわち、学習データが多い場合には、EEGに対してもニューラルネットワークの性能を活用することが可能であると言える。
 また、50人すべてのLR問題に対応できるようにニューラルネットワークが学習を行っている点で、
@@ -310,9 +309,55 @@ LR問題のデータを50人分集めすべてのデータを統合し、2200個
 活性化関数を用いない方法と正解率は僅差であるので、
 適切な正則化によって非線形の表現力を維持しながら過学習を抑えるという方向性が有効だと言える。
 
-多くのデータを用いることでニューラルネットが学習可能になったが、
-実際にBCIを利用するのはある特定の個人である。
+多数のデータを用いることでニューラルネットが学習可能になったが、
 多くの被験者の学習データを用いて構築されたニューラルネットワークが
-特定の個人用途へと再学習することが可能であるかを調べるために以下の実験を行った。
+社会的に大きなメリットを有するためには、新規の被験者へ転用できることが望ましい。
+従って以下の追加実験を実施した。
 
-\section{転移学習による個人へのフィッティング}
+\section{\mc 新規被験者への適用検討}
+\subsection{\mc 実験内容と結果}
+ニューラルネットワークの学習データに
+用いた50人の被験者を、以後トレーナーと記す。
+またトレーナー以外の被験者49人をテスターと記す。
+まずトレーナーのLRデータを入力し、学習が確実に行われたのかを確認した。
+トレーナーのデータは学習に使われた訓練データも学習に使われていない検証データもまとめて
+ニューラルネットワークへ入力した。
+従ってニューラルネットワークの評価としては無意味な正解率を算出することとなるが、
+テスターとの比較を行うために用意した。
+次にニューラルネットワークに対してテスターのLRデータを入力し、その正解率を算出した。
+すなわち、ニューラルネットワークにとっては全く未知の人間のEEGを受け取ることとなる。
+
+テスターとトレーナーの正解率のヒストグラムを図\ref{fig:tesacc}-\ref{fig:tracc}に示す。
+図の通りトレーナーとテスターではトレーナーの正解率のほうが比較的高い。
+これは学習に参加している被験者であるため当然の結果と言える。
+しかし、テスターのヒストグラム図\ref{fig:tesacc}を図\ref{fig:croshis}とを比較した場合に、
+図\ref{fig:tesacc}の方が比較的高い正解率を有する被験者が多いことが分かる。
+テスターのデータに対する正解率の平均値は0.7696であり、
+テスターに対して個別に学習を行った際の交差検証の正解率0.6681よりも高い。
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=10cm]{images/tester_acc.png}
+    \caption{テスターの正解率ヒストグラム}
+    \label{fig:tesacc}
+\end{figure}
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=10cm]{images/traineracc.png}
+    \caption{トレーナーの正解率ヒストグラム}
+    \label{fig:tracc}
+\end{figure}
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=10cm]{images/crosshist.png}
+    \caption{テスター毎に学習した際の交差検証正解率ヒストグラム}
+    \label{fig:croshis}
+\end{figure}
+
+\subsection{\mc 考察}
+テスターのデータに対する正解率が
+個々の学習時よりも高かったことから、
+多数のデータを用いなければニューラルネットワークの性能を引き出せない一方で、
+多数のデータを用いて学習したニューラルネットワークは
+運動想起実行時に人間に共通したEEGの特徴を取り出すことができていると考えられる。
+
+

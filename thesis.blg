@@ -1,14 +1,13 @@
 This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
-A level-1 auxiliary file: appendix.aux
 The style file: junsrt.bst
 Database file #1: reference.bib
 Warning--can't use both author and editor fields in sparsemethod
 Warning--can't use both author and editor fields in bootCSP
 You've used 43 entries,
             2270 wiz_defined-function locations,
-            820 strings with 12311 characters,
+            819 strings with 12299 characters,
 and the built_in function-call counts, 15936 in all, are:
 = -- 1245
 > -- 485
