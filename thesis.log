@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.1.5)  9 JAN 2018 07:59
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.1.5)  9 JAN 2018 21:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -766,28 +766,28 @@ LaTeX Warning: Label `eq:pseudoFIR' multiply defined.
 (./appendix.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 85.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 85.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 84.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    ... okay on input line 84.
 
 (I search kanjifont definition file: . . )
 *geometry* driver: auto-detecting
@@ -829,35 +829,35 @@ Package caption Info: End \AtBeginDocument code.
 \c@mv@tabular=\count121
 \c@mv@boldtabular=\count122
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 90.
+(Font)              scaled to size 16.60605pt on input line 89.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 90.
+(Font)              scaled to size 16.60605pt on input line 89.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 17.28pt on input line 90.
+(Font)              scaled to size 17.28pt on input line 89.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 90.
+(Font)              scaled to size 11.53198pt on input line 89.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 90.
+(Font)              scaled to size 11.53198pt on input line 89.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 90.
+(Font)              scaled to size 12.0pt on input line 89.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 90.
-LaTeX Font Info:    Try loading font information for U+msa on input line 90.
+(Font)              scaled to size 5.76599pt on input line 89.
+LaTeX Font Info:    Try loading font information for U+msa on input line 89.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 90.
+LaTeX Font Info:    Try loading font information for U+msb on input line 89.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 90.
+(Font)              scaled to size 11.53198pt on input line 89.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 90.
+(Font)              scaled to size 7.68799pt on input line 89.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 90.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 90.
+(Font)              scaled to size 5.76599pt on input line 89.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 89.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
@@ -866,28 +866,28 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 
 ]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 100.
+(Font)              scaled to size 9.60999pt on input line 99.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 100.
-LaTeX Font Info:    Try loading font information for T1+qhv on input line 100.
+(Font)              scaled to size 9.60999pt on input line 99.
+LaTeX Font Info:    Try loading font information for T1+qhv on input line 99.
 
 (/usr/share/texmf/tex/latex/tex-gyre/t1qhv.fd
 File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
 )
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 100.
+(Font)              scaled to size 8.99994pt on input line 99.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 23.90964pt on input line 100.
+(Font)              scaled to size 23.90964pt on input line 99.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 23.90964pt on input line 100.
+(Font)              scaled to size 23.90964pt on input line 99.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 24.88pt on input line 100.
+(Font)              scaled to size 24.88pt on input line 99.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 23.90964pt on input line 100.
+(Font)              scaled to size 23.90964pt on input line 99.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 23.90964pt on input line 100.
+(Font)              scaled to size 23.90964pt on input line 99.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 22.39185pt on input line 100.
+(Font)              scaled to size 22.39185pt on input line 99.
  (./thesis.toc
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 6.72699pt on input line 2.
@@ -907,17 +907,17 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
  [2]
 第1章
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 133.
+(Font)              scaled to size 19.9311pt on input line 132.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 133.
+(Font)              scaled to size 19.9311pt on input line 132.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 20.74pt on input line 133.
+(Font)              scaled to size 20.74pt on input line 132.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 133.
+(Font)              scaled to size 19.9311pt on input line 132.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 133.
+(Font)              scaled to size 19.9311pt on input line 132.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 18.66588pt on input line 133.
+(Font)              scaled to size 18.66588pt on input line 132.
 (./chapter/chapter1/INTRO.tex
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 1.
@@ -1067,26 +1067,83 @@ File: images/CSSSP.png Graphic file (type bmp)
 ] [39] [40]
 File: images/activations.png Graphic file (type bmp)
  <images/activations.png> [41])
-(./chapter/chapter4/pseudoFBCSP.tex [42] [43] [44]) [45]
+(./chapter/chapter4/pseudoFBCSP.tex [42] [43]) [44]
 第5章
 (./chapter/chapter5/data.tex
 File: images/system1010.png Graphic file (type bmp)
  <images/system1010.png>
 File: images/motorimage.png Graphic file (type bmp)
- <images/motorimage.png>)
-[46
+ <images/motorimage.png>
+[45
 
-] [47]
+] [46] [47]
+File: images/LR.png Graphic file (type bmp)
+ <images/LR.png>
+Overfull \hbox (1.07368pt too wide) in paragraph at lines 116--117
+ [] 
+ []
+
+File: images/HF.png Graphic file (type bmp)
+<images/HF.png>
+Overfull \hbox (1.07368pt too wide) in paragraph at lines 123--124
+ [] 
+ []
+
+
+Overfull \hbox (1.49992pt too wide) in paragraph at lines 114--128
+[]$[]$ $[]$ 
+ []
+
+File: images/LH.png Graphic file (type bmp)
+<images/LH.png>
+Overfull \hbox (1.07368pt too wide) in paragraph at lines 132--133
+ [] 
+ []
+
+File: images/RH.png Graphic file (type bmp)
+<images/RH.png>
+Overfull \hbox (1.07368pt too wide) in paragraph at lines 139--140
+ [] 
+ []
+
+
+Overfull \hbox (1.49992pt too wide) in paragraph at lines 130--144
+[]$[]$ $[]$ 
+ []
+
+File: images/LF.png Graphic file (type bmp)
+<images/LF.png>
+Overfull \hbox (1.07368pt too wide) in paragraph at lines 148--149
+ [] 
+ []
+
+File: images/RF.png Graphic file (type bmp)
+<images/RF.png>
+Overfull \hbox (1.07368pt too wide) in paragraph at lines 155--156
+ [] 
+ []
+
+
+Overfull \hbox (1.49992pt too wide) in paragraph at lines 146--160
+[]$[]$ $[]$ 
+ []
+
+
+Overfull \hbox (1.49992pt too wide) in paragraph at lines 168--196
+[]$[]$ $[]$ 
+ []
+
+[48] [49]) [50]
 第6章
-[48
+[51
 
 ]
 \openout2 = `appendix.aux'.
 
- (./appendix.tex) [49
+ (./appendix.tex) [52
 
 
-] (./thesis.bbl [50
+] (./thesis.bbl [53
 
 
 ]
@@ -1100,9 +1157,9 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 12.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 10.0pt on input line 12.
- [51
+ [54
 
-] [52] [53]) [54]
+] [55] [56]) [57]
 No file thesis.ind.
 (./thesis.aux (./appendix.aux))
 
@@ -1113,12 +1170,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6491 strings out of 493723
- 90907 string characters out of 6152571
- 154183 words of memory out of 5000000
- 9782 multiletter control sequences out of 15000+600000
+ 6521 strings out of 493723
+ 91361 string characters out of 6152571
+ 154294 words of memory out of 5000000
+ 9806 multiletter control sequences out of 15000+600000
  78002 words of font info for 153 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 38i,9n,77p,433b,578s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,10n,77p,453b,590s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (57 pages, 185588 bytes).
+Output written on thesis.dvi (60 pages, 200356 bytes).

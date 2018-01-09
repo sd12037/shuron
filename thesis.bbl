@@ -249,4 +249,24 @@ Kai~Keng Ang, Zheng~Yang Chin, ChuanchuWang, , Cuntai Guan, and Haihong Zhang.
   datasets 2a and 2b.
 \newblock {\em frontiers in NEUROSCIENCE}, Vol.~29, pp. 2390--2397, March 2012.
 
+\bibitem{BCI2000}
+G.~Schalk, D.~J. McFarland, T.~Hinterberger, N.~Birbaumer, and J.~R. Wolpaw.
+\newblock Bci2000: a general-purpose brain-computer interface (bci) system.
+\newblock {\em IEEE Transactions on Biomedical Engineering}, Vol.~51, No.~6,
+  pp. 1034--1043, June 2004.
+
+\bibitem{PhysioNet}
+Ary~L. Goldberger, Luis A.~N. Amaral, Leon Glass, Jeffrey~M. Hausdorff,
+  Plamen~Ch. Ivanov, Roger~G. Mark, Joseph~E. Mietus, George~B. Moody,
+  Chung-Kang Peng, and H.~Eugene Stanley.
+\newblock Physiobank, physiotoolkit, and physionet.
+\newblock {\em Circulation}, Vol. 101, No.~23, pp. e215--e220, 2000.
+
+\bibitem{benth}
+Hyun~Seok Kim, Min~Hye Chang, Hong~Ji Lee, and Kwang~Suk Park.
+\newblock A comparison of classification performance among the various
+  combination of motor imagery tasks for brain-computer interface.
+\newblock In {\em 6th IEEE Annual International EMBS Conference of Neural
+  Engineering}, pp. 435--438, November 2013.
+
 \end{thebibliography}
