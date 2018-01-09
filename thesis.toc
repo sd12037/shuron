@@ -50,20 +50,22 @@
 \contentsline {subsubsection}{\rm elu\mc 関数}{41}
 \contentsline {subsubsection}{\mc ソフトマックス関数}{41}
 \contentsline {subsection}{\numberline {4.1.3}\mc ニューラルネットワークの設計と学習}{42}
-\contentsline {section}{\numberline {4.2}\mc 従来手法をモデル化したニューラルネットワーク(提案手法1)}{43}
+\contentsline {section}{\numberline {4.2}\mc 提案手法のアイデア}{43}
 \contentsline {subsubsection}{\rm Convlution\mc 層によるFIR フィルタバンク}{43}
 \contentsline {subsubsection}{\rm Convlution\mc 層による空間フィルタ}{43}
-\contentsline {section}{\numberline {4.3}\rm 3DConvlution + 2DConvLSTM\mc （提案手法2）}{43}
-\contentsline {subsubsection}{\mc 高階テンソルとしての \rm EEG\mc データ構造}{43}
-\contentsline {subsubsection}{\rm ConvLSTM}{44}
-\contentsline {chapter}{\numberline {\mc 第5\mc 章}\mc 実験結果と考察}{45}
-\contentsline {section}{\numberline {5.1}提案手法1}{45}
-\contentsline {subsection}{\numberline {5.1.1}\rm EEG \mc データ}{45}
-\contentsline {subsection}{\numberline {5.1.2}評価方法}{45}
-\contentsline {subsection}{\numberline {5.1.3}ニューラルネットワークの構成}{47}
-\contentsline {subsection}{\numberline {5.1.4}結果}{48}
-\contentsline {subsection}{\numberline {5.1.5}考察}{49}
-\contentsline {subsection}{\numberline {5.1.6}追加実験とその結果}{49}
+\contentsline {chapter}{\numberline {\mc 第5\mc 章}\mc 実験結果と考察}{44}
+\contentsline {section}{\numberline {5.1}提案手法の評価}{44}
+\contentsline {subsection}{\numberline {5.1.1}\rm EEG \mc データ}{44}
+\contentsline {subsection}{\numberline {5.1.2}評価方法}{44}
+\contentsline {subsection}{\numberline {5.1.3}ニューラルネットワークの構成}{46}
+\contentsline {subsection}{\numberline {5.1.4}結果}{47}
+\contentsline {subsection}{\numberline {5.1.5}考察}{48}
+\contentsline {section}{\numberline {5.2}被験者のデータを混合したBCI構築}{49}
+\contentsline {subsection}{\numberline {5.2.1}データの混合}{49}
+\contentsline {subsection}{\numberline {5.2.2}混合データに対する結果}{49}
+\contentsline {subsection}{\numberline {5.2.3}活性化関数にeluを用いた場合の結果}{49}
+\contentsline {subsection}{\numberline {5.2.4}考察}{50}
+\contentsline {section}{\numberline {5.3}転移学習による個人へのフィッティング}{50}
 \contentsline {chapter}{\numberline {\mc 第6\mc 章}\mc 結論}{51}
 \contentsline {chapter}{Appendix}{52}
 \contentsline {section}{\numberline {A.1}セクション}{52}

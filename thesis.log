@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.1.5)  9 JAN 2018 21:43
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.1.5)  10 JAN 2018 01:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -788,6 +788,9 @@ LaTeX Warning: Label `fig:Cz' multiply defined.
 
 LaTeX Warning: Label `eq:pseudoFIR' multiply defined.
 
+
+LaTeX Warning: Label `fig:overfit' multiply defined.
+
 (./appendix.aux))
 \openout1 = `thesis.aux'.
 
@@ -934,11 +937,11 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
  [1
 
 
-])
+] [2])
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [2]
+ [3]
 \mc 第1\mc 章
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
 (Font)              scaled to size 19.17792pt on input line 135.
@@ -1099,73 +1102,82 @@ File: images/CSSSP.png Graphic file (type bmp)
 ] [39] [40]
 File: images/activations.png Graphic file (type bmp)
  <images/activations.png> [41])
-(./chapter/chapter4/pseudoFBCSP.tex [42] [43]) [44]
+(./chapter/chapter4/pseudoFBCSP.tex [42]) [43]
 \mc 第5\mc 章
 (./chapter/chapter5/data.tex
 File: images/system1010.png Graphic file (type bmp)
  <images/system1010.png>
 File: images/motorimage.png Graphic file (type bmp)
  <images/motorimage.png>
-[45
+[44
 
-] [46] [47]
+] [45] [46]
 File: images/LR.png Graphic file (type bmp)
  <images/LR.png>
-Overfull \hbox (1.07368pt too wide) in paragraph at lines 116--117
+Overfull \hbox (1.07368pt too wide) in paragraph at lines 127--128
  [] 
  []
 
 File: images/HF.png Graphic file (type bmp)
 <images/HF.png>
-Overfull \hbox (1.07368pt too wide) in paragraph at lines 123--124
+Overfull \hbox (1.07368pt too wide) in paragraph at lines 134--135
  [] 
  []
 
 
-Overfull \hbox (1.49992pt too wide) in paragraph at lines 114--128
+Overfull \hbox (1.49992pt too wide) in paragraph at lines 125--139
 []$[]$ $[]$ 
  []
 
 File: images/LH.png Graphic file (type bmp)
 <images/LH.png>
-Overfull \hbox (1.07368pt too wide) in paragraph at lines 132--133
+Overfull \hbox (1.07368pt too wide) in paragraph at lines 143--144
  [] 
  []
 
 File: images/RH.png Graphic file (type bmp)
 <images/RH.png>
-Overfull \hbox (1.07368pt too wide) in paragraph at lines 139--140
+Overfull \hbox (1.07368pt too wide) in paragraph at lines 150--151
  [] 
  []
 
 
-Overfull \hbox (1.49992pt too wide) in paragraph at lines 130--144
+Overfull \hbox (1.49992pt too wide) in paragraph at lines 141--155
 []$[]$ $[]$ 
  []
 
 File: images/LF.png Graphic file (type bmp)
 <images/LF.png>
-Overfull \hbox (1.07368pt too wide) in paragraph at lines 148--149
+Overfull \hbox (1.07368pt too wide) in paragraph at lines 159--160
  [] 
  []
 
 File: images/RF.png Graphic file (type bmp)
 <images/RF.png>
-Overfull \hbox (1.07368pt too wide) in paragraph at lines 155--156
+Overfull \hbox (1.07368pt too wide) in paragraph at lines 166--167
  [] 
  []
 
 
-Overfull \hbox (1.49992pt too wide) in paragraph at lines 146--160
+Overfull \hbox (1.49992pt too wide) in paragraph at lines 157--171
 []$[]$ $[]$ 
  []
 
 
-Overfull \hbox (1.49992pt too wide) in paragraph at lines 168--196
+Overfull \hbox (1.49992pt too wide) in paragraph at lines 179--207
 []$[]$ $[]$ 
  []
 
-[48] [49]) [50]
+[47] [48]
+File: images/overfitting.png Graphic file (type bmp)
+ <images/overfitting.png>
+File: images/linearof.png Graphic file (type bmp)
+ <images/linearof.png>
+Overfull \hbox (1.49992pt too wide) in paragraph at lines 280--292
+[]$[]$ $[]$ 
+ []
+
+[49]) [50]
 \mc 第6\mc 章
 [51
 
@@ -1209,12 +1221,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 9014 strings out of 493723
- 125612 string characters out of 6152571
+ 9020 strings out of 493723
+ 125754 string characters out of 6152571
  177799 words of memory out of 5000000
- 12285 multiletter control sequences out of 15000+600000
+ 12289 multiletter control sequences out of 15000+600000
  77673 words of font info for 160 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  38i,10n,77p,433b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (60 pages, 205644 bytes).
+Output written on thesis.dvi (61 pages, 208284 bytes).
