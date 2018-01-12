@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.1.5)  10 JAN 2018 04:46
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.1.5)  10 JAN 2018 06:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -980,19 +980,8 @@ LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 
 
 ]
-LaTeX Font Info:    Font shape `JT1/hmc/bx/n' will be
-(Font)              scaled to size 9.24683pt on input line 57.
-LaTeX Font Info:    Font shape `JY1/hmc/bx/n' will be
-(Font)              scaled to size 9.24683pt on input line 57.
-LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <10> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 57.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 57.
-
-
-LaTeX Warning: Reference `fig:fNIR' on page 2 undefined on input line 57.
-
 File: images/fMRI.jpg Graphic file (type bmp)
+
 <images/fMRI.jpg>
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
 (Font)              scaled to size 8.32214pt on input line 63.
@@ -1082,6 +1071,16 @@ File: images/CSP.png Graphic file (type bmp)
 File: images/apple.png Graphic file (type bmp)
 
 <images/apple.png> [35]
+LaTeX Font Info:    Font shape `JT1/hmc/bx/n' will be
+(Font)              scaled to size 9.24683pt on input line 160.
+LaTeX Font Info:    Font shape `JY1/hmc/bx/n' will be
+(Font)              scaled to size 9.24683pt on input line 160.
+LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <10> not available
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 160.
+
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 10.0pt on input line 160.
+
 
 LaTeX Warning: Reference `fig:CSSSP' on page 36 undefined on input line 160.
 
@@ -1212,12 +1211,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 9027 strings out of 493723
- 125970 string characters out of 6152571
+ 9026 strings out of 493723
+ 125960 string characters out of 6152571
  177455 words of memory out of 5000000
- 12296 multiletter control sequences out of 15000+600000
+ 12295 multiletter control sequences out of 15000+600000
  77673 words of font info for 160 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  38i,10n,77p,433b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (63 pages, 215708 bytes).
+Output written on thesis.dvi (63 pages, 215684 bytes).
