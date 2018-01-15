@@ -5,36 +5,36 @@ The style file: junsrt.bst
 Database file #1: reference.bib
 Warning--can't use both author and editor fields in sparsemethod
 Warning--can't use both author and editor fields in bootCSP
-You've used 43 entries,
+You've used 44 entries,
             2270 wiz_defined-function locations,
-            819 strings with 12299 characters,
-and the built_in function-call counts, 15936 in all, are:
-= -- 1245
-> -- 485
+            823 strings with 12385 characters,
+and the built_in function-call counts, 16101 in all, are:
+= -- 1257
+> -- 489
 < -- 77
-+ -- 190
-- -- 147
-* -- 858
-:= -- 1897
-add.period$ -- 130
-call.type$ -- 43
-change.case$ -- 36
++ -- 192
+- -- 148
+* -- 860
+:= -- 1923
+add.period$ -- 133
+call.type$ -- 44
+change.case$ -- 38
 chr.to.int$ -- 0
-cite$ -- 45
-duplicate$ -- 1014
-empty$ -- 1476
-format.name$ -- 294
-if$ -- 4004
+cite$ -- 46
+duplicate$ -- 1026
+empty$ -- 1494
+format.name$ -- 296
+if$ -- 4042
 int.to.chr$ -- 0
-int.to.str$ -- 43
+int.to.str$ -- 44
 missing$ -- 45
-newline$ -- 218
-num.names$ -- 45
-pop$ -- 266
+newline$ -- 223
+num.names$ -- 46
+pop$ -- 273
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 842
+skip$ -- 849
 stack$ -- 0
 substring$ -- 915
 swap$ -- 372
@@ -43,8 +43,8 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 112
-width$ -- 45
-write$ -- 474
-is.kanji.str$ -- 538
+while$ -- 113
+width$ -- 46
+write$ -- 485
+is.kanji.str$ -- 545
 (There were 2 warnings)
