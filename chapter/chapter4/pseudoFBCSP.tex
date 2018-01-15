@@ -77,7 +77,7 @@ Convlution層を用いたFIRフィルタバンクは、3DConvlution層を用い�
     \label{eq:pseudoFIR3D}
 \end{eqnarray} 
 \(u_{m_1,m_2,n,k}\)について\(m_1,m_2\)が頭皮上の座標を表すインデックスである。
-3DConvlutionによるデータの形状の変化を図\ref{fig:eq:pseudFBCSP3d}に示す。
+3DConvlutionによるデータの形状の変化を図\ref{fig:pseudFBCSP3d}に示す。
 
 
 \subsubsection{\rm ConvLSTM}
@@ -87,7 +87,7 @@ ConvLSTMは、通常のLSTMのLinear層の計算をConvolution層に変更する
 ここに\(C\)は任意の正数であり、\(M_1',M_2'\)はパラメータの与え方で決定される。
 この構造を入れることによって、
 電極のインデックスを頭皮上に展開しフィルタバンクを通過した4階テンソルEEGを入力として受け取ることができる。
-ここでConvLSTM内でのCovolution演算は頭皮上の2次元に対して行い、LSTMの処理は時間方向に行うようにする（図\ref{fig;ConvLSTM})。
+ここでConvLSTM内でのCovolution演算は頭皮上の2次元に対して行い、LSTMの処理は時間方向に行うようにする（図\ref{fig:ConvLSTM})。
 
 この手法には頭皮空間上でEEGを観測しながら、
 その時間経過を追うことで運動想起部位を分類するというモデルを構築する狙いがある。
