@@ -24,57 +24,57 @@
 \contentsline {subsection}{\numberline {2.3.1}\rm Principal Component Analysis(PCA)}{22}
 \contentsline {subsection}{\numberline {2.3.2}\rm Indipendent Component Analysis(ICA)}{25}
 \contentsline {subsection}{\numberline {2.3.3}\rm Blind Source Separation(BSS)}{26}
-\contentsline {section}{\numberline {2.4}\mc 分類手法}{29}
-\contentsline {subsection}{\numberline {2.4.1}\rm Linear Discriminant Analysis(LDA)}{29}
-\contentsline {subsection}{\numberline {2.4.2}\rm Support Vector Machine(SVM)}{34}
-\contentsline {subsection}{\numberline {2.4.3}\rm Logistic Regression(LR)}{39}
-\contentsline {chapter}{\numberline {\mc 第3\mc 章}{\mc 従来手法}{\rm BCI}}{42}
-\contentsline {section}{\numberline {3.1}\mc 特徴量工学}{42}
-\contentsline {subsection}{\numberline {3.1.1}\mc 頭皮領域と空間フィルタ}{42}
-\contentsline {subsection}{\numberline {3.1.2}\mc EEGと時間周波数解析}{46}
-\contentsline {section}{\numberline {3.2}\rm Common Spatial Pattern\mc とその派生手法}{47}
-\contentsline {subsection}{\numberline {3.2.1}\mc 脳波信号の定式化}{47}
-\contentsline {subsection}{\numberline {3.2.2}\rm Common Spatial Pattern(CSP)}{48}
-\contentsline {subsection}{\numberline {3.2.3}\rm Common Sparse Spatio Spectral Pattern(CSSSP)}{50}
-\contentsline {subsection}{\numberline {3.2.4}\rm Filter Bank Common Spatial Pattern(FBCSP)}{52}
-\contentsline {chapter}{\numberline {\mc 第4\mc 章}\mc 提案手法}{54}
-\contentsline {section}{\numberline {4.1}\mc ニューラルネットワーク}{54}
-\contentsline {subsection}{\numberline {4.1.1}\mc ニューラルネットワークに用いられる層}{54}
-\contentsline {subsubsection}{\rm Linear\mc 層}{54}
-\contentsline {subsubsection}{\rm Bilinear\mc 層}{55}
-\contentsline {subsubsection}{\rm Convolution\mc 層}{55}
-\contentsline {subsubsection}{\rm Recurrent\mc 層}{55}
-\contentsline {subsubsection}{\rm LSTM\mc 層}{56}
-\contentsline {subsection}{\numberline {4.1.2}\mc 活性化関数}{57}
-\contentsline {subsubsection}{\mc シグモイド関数}{57}
-\contentsline {subsubsection}{\mc 双曲線正接関数}{57}
-\contentsline {subsubsection}{\mc ランプ関数}{57}
-\contentsline {subsubsection}{\rm leaklyReLU\mc 関数}{58}
-\contentsline {subsubsection}{\rm elu\mc 関数}{58}
-\contentsline {subsubsection}{\mc ソフトマックス関数}{59}
-\contentsline {subsection}{\numberline {4.1.3}\mc ニューラルネットワークの設計と学習}{59}
-\contentsline {section}{\numberline {4.2}\mc 提案手法のアイデア}{59}
-\contentsline {subsubsection}{\rm Convlution\mc 層によるFIR フィルタバンク}{59}
-\contentsline {subsubsection}{\rm Convlution\mc 層による空間フィルタ}{60}
-\contentsline {section}{\numberline {4.3}\rm 3DConvlution + 2DConvLSTM\mc （提案手法2）}{61}
-\contentsline {subsubsection}{\mc 高階テンソルとしての \rm EEG\mc データ構造}{61}
-\contentsline {subsubsection}{\rm ConvLSTM}{62}
-\contentsline {chapter}{\numberline {\mc 第5\mc 章}\mc 実験結果と考察}{64}
-\contentsline {section}{\numberline {5.1}\mc 提案手法の評価}{64}
-\contentsline {subsection}{\numberline {5.1.1}\rm EEG \mc データ}{64}
-\contentsline {subsection}{\numberline {5.1.2}\mc 評価方法}{65}
-\contentsline {subsection}{\numberline {5.1.3}\mc ニューラルネットワークの構成}{67}
-\contentsline {subsection}{\numberline {5.1.4}\mc 結果}{68}
-\contentsline {subsection}{\numberline {5.1.5}\mc 考察}{69}
-\contentsline {section}{\numberline {5.2}\mc 被験者のデータを混合したBCI構築}{70}
-\contentsline {subsection}{\numberline {5.2.1}\mc データの混合}{70}
-\contentsline {subsection}{\numberline {5.2.2}\mc 混合データに対する結果}{71}
-\contentsline {subsection}{\numberline {5.2.3}\mc 活性化関数に \rm elu \mc を用いた場合の結果}{71}
+\contentsline {section}{\numberline {2.4}\mc 分類手法}{30}
+\contentsline {subsection}{\numberline {2.4.1}\rm Linear Discriminant Analysis(LDA)}{30}
+\contentsline {subsection}{\numberline {2.4.2}\rm Support Vector Machine(SVM)}{33}
+\contentsline {subsection}{\numberline {2.4.3}\rm Logistic Regression(LR)}{38}
+\contentsline {chapter}{\numberline {\mc 第3\mc 章}{\mc 従来手法}{\rm BCI}}{41}
+\contentsline {section}{\numberline {3.1}\mc 特徴量工学}{41}
+\contentsline {subsection}{\numberline {3.1.1}\mc 頭皮領域と空間フィルタ}{41}
+\contentsline {subsection}{\numberline {3.1.2}\mc EEGと時間周波数解析}{45}
+\contentsline {section}{\numberline {3.2}\rm Common Spatial Pattern\mc とその派生手法}{46}
+\contentsline {subsection}{\numberline {3.2.1}\mc 脳波信号の定式化}{46}
+\contentsline {subsection}{\numberline {3.2.2}\rm Common Spatial Pattern(CSP)}{47}
+\contentsline {subsection}{\numberline {3.2.3}\rm Common Sparse Spatio Spectral Pattern(CSSSP)}{49}
+\contentsline {subsection}{\numberline {3.2.4}\rm Filter Bank Common Spatial Pattern(FBCSP)}{51}
+\contentsline {chapter}{\numberline {\mc 第4\mc 章}\mc 提案手法}{53}
+\contentsline {section}{\numberline {4.1}\mc ニューラルネットワーク}{53}
+\contentsline {subsection}{\numberline {4.1.1}\mc ニューラルネットワークに用いられる層}{53}
+\contentsline {subsubsection}{\rm Linear\mc 層}{53}
+\contentsline {subsubsection}{\rm Bilinear\mc 層}{54}
+\contentsline {subsubsection}{\rm Convolution\mc 層}{54}
+\contentsline {subsubsection}{\rm Recurrent\mc 層}{54}
+\contentsline {subsubsection}{\rm LSTM\mc 層}{55}
+\contentsline {subsection}{\numberline {4.1.2}\mc 活性化関数}{56}
+\contentsline {subsubsection}{\mc シグモイド関数}{56}
+\contentsline {subsubsection}{\mc 双曲線正接関数}{56}
+\contentsline {subsubsection}{\mc ランプ関数}{56}
+\contentsline {subsubsection}{\rm leaklyReLU\mc 関数}{57}
+\contentsline {subsubsection}{\rm elu\mc 関数}{57}
+\contentsline {subsubsection}{\mc ソフトマックス関数}{58}
+\contentsline {subsection}{\numberline {4.1.3}\mc ニューラルネットワークの設計と学習}{58}
+\contentsline {section}{\numberline {4.2}\mc 提案手法のアイデア}{58}
+\contentsline {subsubsection}{\rm Convlution\mc 層によるFIR フィルタバンク}{58}
+\contentsline {subsubsection}{\rm Convlution\mc 層による空間フィルタ}{59}
+\contentsline {section}{\numberline {4.3}\rm 3DConvlution + 2DConvLSTM\mc （提案手法2）}{60}
+\contentsline {subsubsection}{\mc 高階テンソルとしての \rm EEG\mc データ構造}{60}
+\contentsline {subsubsection}{\rm ConvLSTM}{61}
+\contentsline {chapter}{\numberline {\mc 第5\mc 章}\mc 実験結果と考察}{63}
+\contentsline {section}{\numberline {5.1}\mc 提案手法の評価}{63}
+\contentsline {subsection}{\numberline {5.1.1}\rm EEG \mc データ}{63}
+\contentsline {subsection}{\numberline {5.1.2}\mc 評価方法}{64}
+\contentsline {subsection}{\numberline {5.1.3}\mc ニューラルネットワークの構成}{66}
+\contentsline {subsection}{\numberline {5.1.4}\mc 結果}{67}
+\contentsline {subsection}{\numberline {5.1.5}\mc 考察}{68}
+\contentsline {section}{\numberline {5.2}\mc 被験者のデータを混合したBCI構築}{69}
+\contentsline {subsection}{\numberline {5.2.1}\mc データの混合}{69}
+\contentsline {subsection}{\numberline {5.2.2}\mc 混合データに対する結果}{70}
+\contentsline {subsection}{\numberline {5.2.3}\mc 活性化関数に \rm elu \mc を用いた場合の結果}{70}
 \contentsline {subsection}{\numberline {5.2.4}\mc 考察}{72}
 \contentsline {section}{\numberline {5.3}\mc 新規被験者への適用検討}{73}
 \contentsline {subsection}{\numberline {5.3.1}\mc 実験内容と結果}{73}
 \contentsline {subsection}{\numberline {5.3.2}\mc 考察}{73}
-\contentsline {chapter}{\numberline {\mc 第6\mc 章}\mc 結論}{77}
-\contentsline {section}{\numberline {6.1}\mc まとめ}{77}
-\contentsline {section}{\numberline {6.2}\mc 今後の展望}{78}
-\contentsline {chapter}{参考文献}{80}
+\contentsline {chapter}{\numberline {\mc 第6\mc 章}\mc 結論}{76}
+\contentsline {section}{\numberline {6.1}\mc まとめ}{76}
+\contentsline {section}{\numberline {6.2}\mc 今後の展望}{77}
+\contentsline {chapter}{参考文献}{79}

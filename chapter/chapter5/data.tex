@@ -124,14 +124,14 @@ Convolution層のパラメータを\(H \in \mathbb R^{P\times Q \times C \times 
 \begin{figure}[t]
     \begin{minipage}{0.5\hsize}
      \begin{center}
-      \includegraphics[width=80mm]{images/LR.png}
+      \includegraphics[width=65mm]{images/LR.png}
      \end{center}
      \caption{LR問題の正解率ヒストグラム}
      \label{fig:LRhist}
     \end{minipage}
     \begin{minipage}{0.5\hsize}
      \begin{center}
-      \includegraphics[width=80mm]{images/HF.png}
+      \includegraphics[width=65mm]{images/HF.png}
      \end{center}
      \caption{LR問題の正解率ヒストグラム}
      \label{fig:HFhist}
@@ -140,14 +140,14 @@ Convolution層のパラメータを\(H \in \mathbb R^{P\times Q \times C \times 
 \begin{figure}[t]
     \begin{minipage}{0.5\hsize}
      \begin{center}
-      \includegraphics[width=80mm]{images/LH.png}
+      \includegraphics[width=65mm]{images/LH.png}
      \end{center}
      \caption{LH問題の正解率ヒストグラム}
      \label{fig:LHhist}
     \end{minipage}
     \begin{minipage}{0.5\hsize}
      \begin{center}
-      \includegraphics[width=80mm]{images/RH.png}
+      \includegraphics[width=65mm]{images/RH.png}
      \end{center}
      \caption{RH問題の正解率ヒストグラム}
      \label{fig:RHhist}
@@ -156,14 +156,14 @@ Convolution層のパラメータを\(H \in \mathbb R^{P\times Q \times C \times 
 \begin{figure}[t]
     \begin{minipage}{0.5\hsize}
      \begin{center}
-      \includegraphics[width=80mm]{images/LF.png}
+      \includegraphics[width=65mm]{images/LF.png}
      \end{center}
      \caption{LF問題の正解率ヒストグラム}
      \label{fig:LFhist}
     \end{minipage}
     \begin{minipage}{0.5\hsize}
      \begin{center}
-      \includegraphics[width=80mm]{images/RF.png}
+      \includegraphics[width=65mm]{images/RF.png}
      \end{center}
      \caption{RF問題の正解率ヒストグラム}
      \label{fig:RFhist}
@@ -192,7 +192,7 @@ CSPとLDAを組み合わせた手法\cite{benth}（表\ref{table:meanacc_csp}）
     \end{minipage}
     \begin{minipage}{0.5\hsize}
         \centering
-        \caption{従来手法の問題毎の平均}
+        \caption{従来手法の問題毎の平均\cite{benth}}
         \begin{tabular}{|c|c|} \hline
             分類問題 & 平均正解率 \\ \hline
             LR & 0.6124 \\ \hline
@@ -254,41 +254,63 @@ LR問題のデータを50人分集めすべてのデータを統合し、2200個
 \begin{table}[t]
     \centering
     \caption{10交差検証の内訳}
+    \scalebox{0.85}{
     \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|} \hline
         検証1 & 検証2 & 検証3 & 検証4 & 検証5 &
         検証6 & 検証7 & 検証8 & 検証9 & 検証10 \\ \hline
         0.8318 & 0.8136 & 0.7909 & 0.7955 & 0.7909 &
         0.7500 & 0.8090 & 0.8318 & 0.8045 & 0.8136 \\ \hline
     \end{tabular}
+    }
     \label{table:allvalidation}
 \end{table}
 
-一般にデータの多様性が上がることでニューラルネットワークの要求される表現力も高まるため、
-非線形活性化関数を用いて以下の実験を行った。
+学習時のAccuracyの変化を図\ref{fig:overfit1}に示す。
+訓練データに対するAccuracyは学習epochが進む毎に増加傾向にあるにも関わらず、
+検証データに対するAccuracyは学習epochが進むに連れて減少していく様子が分かる。
+現状では過学習に陥ってしまっていることが確認される。
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=10cm]{images/linearof.png}
+    \caption{過学習の様子：活性関数を用いない場合}
+    \label{fig:overfit1}
+\end{figure}
+
 
 \subsection{\mc 活性化関数に \rm elu \mc を用いた場合の結果}
 ニューラルネットワークのすべての畳込み層の後にelu関数を追加した。
-一般的に非線形関数を組み込むことでニューラルネットワークの表現力は向上する。
+その他の変更は行っていない。活性化関数をニューラルネットワークに導入することで、
+通常は表現力を向上させ、高い性能を引き出すことが可能である。
+ニューラルネットワークは通常何らかの活性化関数を用いるが、
+活性化関数を用いない場合においても、既に過学習に陥っていることから
+
 結果としては交差検証の平均正解率は0.8000となった。活性化関数を用いない場合に比べ、性能は若干劣っている。
-しかし学習は極めて素早く収束したことが伺える(図\(\ref{fig:overfit}\))。
+しかし学習は極めて素早く収束したことが伺える(図\ref{fig:overfit2})。
 ただし、学習を続けても検証データに対する性能は向上しなかった。
 一方で活性関数を用いない場合には検証データに対して80\%を越える正解率にたどり着く代わりに
 収束は極めて遅い。また学習を続けていくと活性関数を用いる場合と同様に過学習引き起こしている。
 
 \begin{figure}[t]
-    \begin{minipage}{0.5\hsize}
-        \centering
-        \includegraphics[width=6cm]{images/overfitting.png}
-        \caption{過学習の様子：elu活性化関数を用いた場合}
-        \label{fig:overfit}
-    \end{minipage}
-    \begin{minipage}{0.5\hsize}
-        \centering
-        \includegraphics[width=6.4cm]{images/linearof.png}
-        \caption{過学習の様子：活性関数を用いない場合}
-        \label{fig:overfit}
-    \end{minipage}
+    \centering
+    \includegraphics[width=10cm]{images/overfitting.png}
+    \caption{過学習の様子：elu活性化関数を用いた場合}
+    \label{fig:overfit2}
 \end{figure}
+
+% \begin{figure}[t]
+%     \begin{minipage}{0.5\hsize}
+%         \centering
+%         \includegraphics[width=6cm]{images/overfitting.png}
+%         \caption{過学習の様子：elu活性化関数を用いた場合}
+%         \label{fig:overfit}
+%     \end{minipage}
+%     \begin{minipage}{0.5\hsize}
+%         \centering
+%         \includegraphics[width=6.4cm]{images/linearof.png}
+%         \caption{過学習の様子：活性関数を用いない場合}
+%         \label{fig:overfit}
+%     \end{minipage}
+% \end{figure}
 
 \subsection{\mc 考察}
 結果は個々の人間に対して学習させた正解率の結果よりも向上している。

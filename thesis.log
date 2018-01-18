@@ -1,9 +1,9 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.1.5)  17 JAN 2018 14:33
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2017.12.21)  18 JAN 2018 10:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**/home/seigyo/Desktop/shuron/thesis
-(/home/seigyo/Desktop/shuron/thesis.tex
+**/home/hikaru/Desktop/shuron/thesis
+(/home/hikaru/Desktop/shuron/thesis.tex
 pLaTeX2e <2006/11/10> (based on LaTeX2e <2016/02/01> patch level 0)
 Babel <3.9n> and hyphenation patterns for 80 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/platex/jsclasses/jsbook.cls
@@ -784,9 +784,6 @@ LaTeX Warning: Label `fig:Cz' multiply defined.
 
 LaTeX Warning: Label `eq:pseudoFIR' multiply defined.
 
-
-LaTeX Warning: Label `fig:overfit' multiply defined.
-
 )
 \openout1 = `thesis.aux'.
 
@@ -1016,37 +1013,19 @@ LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
  [9] [10] [11]
 File: images/BCIpattern.PNG Graphic file (type bmp)
 
-<images/BCIpattern.PNG>
-Overfull \hbox (56.91646pt too wide) in paragraph at lines 138--139
- [][] 
- []
-
-[12] [13]) [14]
+<images/BCIpattern.PNG> [12]) [13] [14]
 \mc 第2\mc 章
 (./chapter/chapter2/measurement.tex
 File: images/signalflow.png Graphic file (type bmp)
- <images/signalflow.png>
-Overfull \hbox (56.91646pt too wide) in paragraph at lines 16--17
- [][] 
- []
+ <images/signalflow.png> [15
 
-[15
-
-] [16]) (./chapter/chapter2/SIGNAL.tex [17] [18] [19] [20])
-(./chapter/chapter2/BSS.tex [21] [22]
+] [16])
+(./chapter/chapter2/SIGNAL.tex [17] [18] [19] [20]) (./chapter/chapter2/BSS.tex
+[21] [22]
 File: images/x(t).png Graphic file (type bmp)
  <images/x(t).png>
-Overfull \hbox (14.23184pt too wide) in paragraph at lines 44--45
- [] 
- []
-
 File: images/z(t).png Graphic file (type bmp)
-<images/z(t).png>
-Overfull \hbox (14.23184pt too wide) in paragraph at lines 51--52
- [] 
- []
-
-
+ <images/z(t).png>
 Overfull \hbox (1.49994pt too wide) in paragraph at lines 42--56
 []$[]$ $[]$ 
  []
@@ -1054,24 +1033,15 @@ Overfull \hbox (1.49994pt too wide) in paragraph at lines 42--56
 File: images/z=Wx.png Graphic file (type bmp)
 <images/z=Wx.png> [23] [24] [25]
 File: images/ica_pca.png Graphic file (type bmp)
- <images/ica_pca.png>
-Overfull \hbox (56.91646pt too wide) in paragraph at lines 122--123
- [][] 
- []
-
-[26] [27] [28]
+ <images/ica_pca.png> [26] [27]
 File: images/bss.png Graphic file (type bmp)
- <images/bss.png>
-Overfull \hbox (56.91646pt too wide) in paragraph at lines 193--194
- [][] 
- []
 
-) (./chapter/chapter2/Discriminant.tex [29] [30]
+<images/bss.png>) (./chapter/chapter2/Discriminant.tex [28] [29]
 File: images/mean_dis.png Graphic file (type bmp)
- <images/mean_dis.png>
-File: images/var_dis.png Graphic file (type bmp)
 
-<images/var_dis.png> [31] [32] [33] [34]
+<images/mean_dis.png> [30] [31]
+File: images/var_dis.png Graphic file (type bmp)
+ <images/var_dis.png> [32] [33]
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
 (Font)              scaled to size 6.47278pt on input line 141.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
@@ -1081,10 +1051,10 @@ LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 5.0pt on input line 141.
 File: images/margin.png Graphic file (type bmp)
- <images/margin.png> [35] [36]
-File: images/linearSVM.png Graphic file (type bmp)
 
-<images/linearSVM.png>
+<images/margin.png> [34] [35]
+File: images/linearSVM.png Graphic file (type bmp)
+ <images/linearSVM.png>
 File: images/xorlinearSVM.png Graphic file (type bmp)
  <images/xorlinearSVM.png>
 Overfull \hbox (1.49994pt too wide) in paragraph at lines 207--221
@@ -1092,37 +1062,32 @@ Overfull \hbox (1.49994pt too wide) in paragraph at lines 207--221
  []
 
 File: images/xorkernelSVM.png Graphic file (type bmp)
-<images/xorkernelSVM.png> [37] [38] [39]) [40] [41]
+<images/xorkernelSVM.png> [36] [37] [38] [39]) [40]
 \mc 第3\mc 章
 (./chapter/chapter2/FEATURE.tex
 File: images/EEGfootmove.png Graphic file (type bmp)
  <images/EEGfootmove.png>
 File: images/EEGhandmove.png Graphic file (type bmp)
 
-<images/EEGhandmove.png> [42
+<images/EEGhandmove.png> [41
 
 ]
 File: images/CzEEG.png Graphic file (type bmp)
- <images/CzEEG.png> [43]
+ <images/CzEEG.png> [42]
 File: images/rapCzEEG.png Graphic file (type bmp)
  <images/rapCzEEG.png>
-[44]
+[43]
 Underfull \hbox (badness 1478) in paragraph at lines 85--88
 \JY1/hmc/m/n/10 を計算した場合は $\OML/cmm/m/it/10 w$ \JY1/hmc/m/n/10 を空間フ 
 ィルタと呼ぶ 。 より一般的には行列 $\OML/cmm/m/it/10 W \U/matha/m/n/10 ^^P
  []
 
-[45] [46]) (./chapter/chapter2/CSP.tex
+[44] [45]) (./chapter/chapter2/CSP.tex
 File: images/CSP.png Graphic file (type bmp)
- <images/CSP.png> [47] [48] [49]
+ <images/CSP.png> [46] [47] [48]
 File: images/apple.png Graphic file (type bmp)
 
-<images/apple.png>
-Overfull \hbox (28.4637pt too wide) in paragraph at lines 125--126
- [][] 
- []
-
-[50]
+<images/apple.png> [49]
 LaTeX Font Info:    Font shape `JT1/hmc/bx/n' will be
 (Font)              scaled to size 9.24683pt on input line 160.
 LaTeX Font Info:    Font shape `JY1/hmc/bx/n' will be
@@ -1134,104 +1099,60 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 10.0pt on input line 160.
 
 
-LaTeX Warning: Reference `fig:CSSSP' on page 51 undefined on input line 160.
+LaTeX Warning: Reference `fig:CSSSP' on page 50 undefined on input line 160.
 
 File: images/CSSSP.png Graphic file (type bmp)
-<images/CSSSP.png> [51] [52]) [53]
+<images/CSSSP.png> [50] [51]) [52]
 \mc 第4\mc 章
-(./chapter/chapter3/NN.tex [54
+(./chapter/chapter3/NN.tex [53
 
-] [55]
+] [54]
 Overfull \hbox (6.60625pt too wide) in paragraph at lines 92--100
 \JY1/hmc/m/n/10 ここに $\U/matha/m/n/10 d$ \JY1/hmc/m/n/10 は同じ次元のベクトル
 の要素ごとの積である 。 パラメ ータは $\OML/cmm/m/it/10 W[]; W[]; W[]; W[] \U/m
 atha/m/n/10 P
  []
 
-[56] [57]
+[55] [56]
 File: images/activations.png Graphic file (type bmp)
- <images/activations.png>
-Overfull \hbox (28.4637pt too wide) in paragraph at lines 154--155
- [][] 
- []
-
-[58]) (./chapter/chapter4/pseudoFBCSP.tex [59]
+ <images/activations.png> [57]) (./chapter/chapter4/pseudoFBCSP.tex
+[58]
 File: images/pseudFBCSP.png Graphic file (type bmp)
- <images/pseudFBCSP.png>
-Overfull \hbox (85.3692pt too wide) in paragraph at lines 48--49
- [][] 
- []
-
-[60] [61]
+ <images/pseudFBCSP.png> [59] [60]
 File: images/pseudFBCSP3d.png Graphic file (type bmp)
  <images/pseudFBCSP3d.png>
-Overfull \hbox (85.3692pt too wide) in paragraph at lines 103--104
- [][] 
- []
-
 File: images/ConvLSTM2d.png Graphic file (type bmp)
-<images/ConvLSTM2d.png>
-Overfull \hbox (85.3692pt too wide) in paragraph at lines 109--110
- [][] 
- []
 
-) [62] [63]
+<images/ConvLSTM2d.png>) [61] [62]
 \mc 第5\mc 章
-(./chapter/chapter5/data.tex [64
+(./chapter/chapter5/data.tex [63
 
 ]
 File: images/system1010.png Graphic file (type bmp)
  <images/system1010.png>
 File: images/motorimage.png Graphic file (type bmp)
 
-<images/motorimage.png> [65] [66] [67]
+<images/motorimage.png> [64] [65] [66]
 File: images/LR.png Graphic file (type bmp)
  <images/LR.png>
-Overfull \hbox (42.6846pt too wide) in paragraph at lines 127--128
- [] 
- []
-
 File: images/HF.png Graphic file (type bmp)
-<images/HF.png>
-Overfull \hbox (42.6846pt too wide) in paragraph at lines 134--135
- [] 
- []
-
-
+ <images/HF.png>
 Overfull \hbox (1.49994pt too wide) in paragraph at lines 125--139
 []$[]$ $[]$ 
  []
 
 File: images/LH.png Graphic file (type bmp)
 <images/LH.png>
-Overfull \hbox (42.6846pt too wide) in paragraph at lines 143--144
- [] 
- []
-
 File: images/RH.png Graphic file (type bmp)
-<images/RH.png>
-Overfull \hbox (42.6846pt too wide) in paragraph at lines 150--151
- [] 
- []
-
-
+ <images/RH.png>
 Overfull \hbox (1.49994pt too wide) in paragraph at lines 141--155
 []$[]$ $[]$ 
  []
 
 File: images/LF.png Graphic file (type bmp)
 <images/LF.png>
-Overfull \hbox (42.6846pt too wide) in paragraph at lines 159--160
- [] 
- []
-
 File: images/RF.png Graphic file (type bmp)
-<images/RF.png>
-Overfull \hbox (42.6846pt too wide) in paragraph at lines 166--167
- [] 
- []
-
-
+ <images/RF.png>
 Overfull \hbox (1.49994pt too wide) in paragraph at lines 157--171
 []$[]$ $[]$ 
  []
@@ -1241,31 +1162,23 @@ Overfull \hbox (1.49994pt too wide) in paragraph at lines 179--207
 []$[]$ $[]$ 
  []
 
-[68] [69] [70]
-Overfull \hbox (33.0187pt too wide) in paragraph at lines 257--264
- [][] 
- []
-
-File: images/overfitting.png Graphic file (type bmp)
-<images/overfitting.png>
+[67] [68] [69]
 File: images/linearof.png Graphic file (type bmp)
- <images/linearof.png>
-Overfull \hbox (1.49994pt too wide) in paragraph at lines 279--291
-[]$[]$ $[]$ 
- []
-
-[71] [72]
+ <images/linearof.png> [70]
+File: images/overfitting.png Graphic file (type bmp)
+ <images/overfitting.png> [71]
+[72]
 File: images/tester_acc.png Graphic file (type bmp)
  <images/tester_acc.png>
 File: images/traineracc.png Graphic file (type bmp)
  <images/traineracc.png>
 File: images/crosshist.png Graphic file (type bmp)
-
-<images/crosshist.png> [73]) [74] [75] [76]
+ <images/crosshist.png>)
+[73] [74] [75]
 \mc 第6\mc 章
-(./chapter/chapter5/lastw.tex [77
+(./chapter/chapter5/lastw.tex [76
 
-]) [78] (./thesis.bbl [79
+]) [77] (./thesis.bbl [78
 
 ]
 
@@ -1282,9 +1195,9 @@ LaTeX Font Info:    Font shape `JT1/hgt/m/it' will be
 (Font)              scaled to size 9.24683pt on input line 19.
 LaTeX Font Info:    Font shape `JY1/hgt/m/it' will be
 (Font)              scaled to size 9.24683pt on input line 19.
-[80
+[79
 
-] [81] [82] [83]) [84]
+] [80] [81] [82]) [83]
 No file thesis.ind.
 (./thesis.aux)
 
@@ -1298,12 +1211,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 9051 strings out of 493723
- 126508 string characters out of 6152571
- 177515 words of memory out of 5000000
- 12311 multiletter control sequences out of 15000+600000
+ 9052 strings out of 493723
+ 126523 string characters out of 6152569
+ 177525 words of memory out of 5000000
+ 12312 multiletter control sequences out of 15000+600000
  77673 words of font info for 160 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  38i,10n,77p,433b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (88 pages, 230632 bytes).
+Output written on thesis.dvi (87 pages, 231248 bytes).
