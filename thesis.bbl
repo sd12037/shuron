@@ -1,10 +1,70 @@
 \begin{thebibliography}{10}
 
-\bibitem{京大ドクター}
-笹山瑛由.
-\newblock ブレイン‐マシン・インタフェースに向けた多チャネル
-  脳波計測による脳内情報抽出法および識別法に関する研究.
-\newblock PhD thesis, 京都大学, 2012.
+\bibitem{宮内1}
+宮内哲.
+\newblock Hans bergerの夢 ー how did eeg become the eeg? ー　その1.
+\newblock 臨床神経生理学, Vol.~44, No.~1, pp. 20--27, 2016.
+
+\bibitem{宮内2}
+宮内哲.
+\newblock Hans bergerの夢 ー how did eeg become the eeg? ー　その2.
+\newblock 臨床神経生理学, Vol.~44, No.~2, pp. 60--70, 2016.
+
+\bibitem{宮内3}
+宮内哲.
+\newblock Hans bergerの夢 ― how did eeg become the eeg? ―　その3.
+\newblock 臨床神経生理学, Vol.~44, No.~3, pp. 106--114, 2016.
+
+\bibitem{精神疾患}
+谷口豪, 澤田欣吾, 渡辺雅子, 成島健二.
+\newblock 総合病院精神科臨床における脳波の役割.
+\newblock 総合病院精神医学, Vol.~26, No.~1, pp. 11--20, 2014.
+
+\bibitem{認知症}
+高梨淳子.
+\newblock 認知症の脳波検査.
+\newblock 医学検査, Vol.~66, No. J-STAGE-2, pp. 55--61, 2017.
+
+\bibitem{個人認証}
+石川由羽, 吉田智奈美, 高田雅美, 城和貴.
+\newblock 脳波個人認証のための特徴抽出.
+\newblock 研究報告数理モデル化と問題解決（MPS）, Vol. 2014, No.~20, pp. 1--6,
+  feb 2014.
+
+\bibitem{ウェアラブル個人認証}
+唐山英明.
+\newblock ウェアラブル型bmi走査のための屋外脳波個人認証
+  -直立・歩行時の少人数集団への適用-.
+\newblock 知能と情報（日本知能情報ファジィ学会誌）, Vol.~26, No.~2, pp.
+  606--616, 2014.
+
+\bibitem{DNI}
+Gaurav Rathee and Niti~Gupta himanshu sharma.
+\newblock Direct neural interface(dni).
+\newblock In {\em Proceedings of National Conference on Recent Advances in
+  Electronics and Communication Engineering(RACE-2014)}, 2014.
+
+\bibitem{BCIbasic}
+J.~R. Wolpaw, N.~Birbaumera, D.~J. McFarland, G.~Pfurtscheller, and T.~M.
+  Vaughan.
+\newblock Brain-computer interfaces for communication and control.
+\newblock {\em Clinical Neurophysiology}, Vol. 113, No.~6, pp. 767--791, 2002.
+
+\bibitem{VRBCI}
+A.~L^^c3^^a9cuyer, F.~Lotte, R.~B. Reilly, R.~Leeb, M.~Hirose, and M.~Slater.
+\newblock Brain-computer interfaces, virtual reality, and videogames.
+\newblock {\em Computer}, Vol.~41, No.~10, pp. 66--72, Oct 2008.
+
+\bibitem{VRBCIsv}
+S.~Li, A.~Leider, M.~Qiu, K.~Gai, and M.~Liu.
+\newblock Brain-based computer interfaces in virtual reality.
+\newblock In {\em 2017 IEEE 4th International Conference on Cyber Security and
+  Cloud Computing (CSCloud)}, pp. 300--305, June 2017.
+
+\bibitem{脳を測る}
+宮内哲.
+\newblock 脳を測る -改定 ヒトの脳機能の非侵襲的測定.
+\newblock Technical report, 情報通信研究機構 未来ICT研究所, 2014.
 
 \bibitem{運動想起}
 M.~Jeannerod and V.~Frak.
@@ -100,8 +160,7 @@ Guido Dornhege, Benjamin Blankertz, Matthias Krauledat, Florian Losch, Gabriel
   Curio, and Klaus-Robert Muller.
 \newblock Combined optimization of spatial and temporal filters for improving
   brain-computer interfacing.
-\newblock {\em IEEE TRANSACTIONS ON BIOMEDICAL ENGINEERING}, Vol.~XX, No.~Y,
-  2006.
+\newblock {\em IEEE TRANSACTIONS ON BIOMEDICAL ENGINEERING}, Vol.~53, , 2006.
 
 \bibitem{正則化CSP}
 F.~Lotte and C.~Guan.
@@ -197,11 +256,6 @@ Hyekyoung Lee, Andrzej Cichocki, and Seungjin Choi.
 \newblock Kernel nonnegative matrix factorization for spectral {EEG} feature
   extraction.
 \newblock {\em Neurocomputing}, Vol.~72, No. 13-15, pp. 3182--3190, 2009.
-
-\bibitem{脳を測る}
-宮内哲.
-\newblock 脳を測る -改定 ヒトの脳機能の非侵襲的測定.
-\newblock Technical report, 情報通信研究機構 未来ICT研究所, 2014.
 
 \bibitem{スペクトル解析}
 日野幹雄.
