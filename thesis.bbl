@@ -213,50 +213,6 @@ E.~Thomas, J.~Fruitet, and M.~Clerc.
 \newblock In {\em 2012 Annual International Conference of the IEEE Engineering
   in Medicine and Biology Society}, pp. 2929--2932, Aug 2012.
 
-\bibitem{sparsemethod}
-S.~R. Sreeja, Joytirmoy Rabha, Debasis Samanta, Pabitra Mitra, and Monalisa
-  Sarma.
-\newblock {\em Classification of Motor Imagery Based EEG Signals Using Sparsity
-  Approach}, pp. 47--59.
-\newblock Springer International Publishing, Cham, 2017.
-
-\bibitem{bootCSP}
-Rachel Rajan and Sunny Thekkan~Devassy.
-\newblock {\em Improving Classification Performance by Combining Feature
-  Vectors with a Boosting Approach for Brain Computer Interface (BCI)}, pp.
-  73--85.
-\newblock Springer International Publishing, Cham, 2017.
-
-\bibitem{CheapLearning}
-Henry~W. Lin, Max Tegmark, and David Rolnick.
-\newblock Why does deep and cheap learning work so well?
-\newblock {\em Journal of Statistical Physics}, Vol. 168, pp. 1223--1247, 2017.
-
-\bibitem{DeepvsShallow}
-Hrushikesh Mhaskar and Tomaso~A. Poggio.
-\newblock Deep vs. shallow networks : An approximation theory perspective.
-\newblock {\em Analysis and Applications}, Vol.~14, , November 2016.
-
-\bibitem{ディープローカルミニマム}
-Kenji Kawaguchi.
-\newblock Deep learning without poor local minima.
-\newblock In D.~D. Lee, M.~Sugiyama, U.~V. Luxburg, I.~Guyon, and R.~Garnett,
-  editors, {\em Advances in Neural Information Processing Systems 29}, pp.
-  586--594. Curran Associates, Inc., 2016.
-
-\bibitem{kNMF}
-M.~Sakai.
-\newblock Kernel nonnegative matrix factorization with constraint increasing
-  the discriminability of two classes for the eeg feature extraction.
-\newblock In {\em 2013 International Conference on Signal-Image Technology
-  Internet-Based Systems}, pp. 966--970, Dec 2013.
-
-\bibitem{kNMF2}
-Hyekyoung Lee, Andrzej Cichocki, and Seungjin Choi.
-\newblock Kernel nonnegative matrix factorization for spectral {EEG} feature
-  extraction.
-\newblock {\em Neurocomputing}, Vol.~72, No. 13-15, pp. 3182--3190, 2009.
-
 \bibitem{スペクトル解析}
 日野幹雄.
 \newblock スペクトル解析（統計ライブラリー）.
@@ -302,11 +258,55 @@ B.~Blankertz, M.~Kawanabe, R.~Tomioka, F.~Hohlefeld, V.~Nikulin, and K.~R. M.
 \newblock {\em Advances in Neural Information Processing Systems}, Vol.~20, pp.
   113--120, 2008.
 
+\bibitem{sparsemethod}
+S.~R. Sreeja, Joytirmoy Rabha, Debasis Samanta, Pabitra Mitra, and Monalisa
+  Sarma.
+\newblock {\em Classification of Motor Imagery Based EEG Signals Using Sparsity
+  Approach}, pp. 47--59.
+\newblock Springer International Publishing, Cham, 2017.
+
+\bibitem{bootCSP}
+Rachel Rajan and Sunny Thekkan~Devassy.
+\newblock {\em Improving Classification Performance by Combining Feature
+  Vectors with a Boosting Approach for Brain Computer Interface (BCI)}, pp.
+  73--85.
+\newblock Springer International Publishing, Cham, 2017.
+
 \bibitem{fbcspBCICOMPE}
 Kai~Keng Ang, Zheng~Yang Chin, ChuanchuWang, , Cuntai Guan, and Haihong Zhang.
 \newblock Filter bank common spatial pattern algorithm on bci competition iv
   datasets 2a and 2b.
 \newblock {\em frontiers in NEUROSCIENCE}, Vol.~29, pp. 2390--2397, March 2012.
+
+\bibitem{kNMF}
+M.~Sakai.
+\newblock Kernel nonnegative matrix factorization with constraint increasing
+  the discriminability of two classes for the eeg feature extraction.
+\newblock In {\em 2013 International Conference on Signal-Image Technology
+  Internet-Based Systems}, pp. 966--970, Dec 2013.
+
+\bibitem{kNMF2}
+Hyekyoung Lee, Andrzej Cichocki, and Seungjin Choi.
+\newblock Kernel nonnegative matrix factorization for spectral {EEG} feature
+  extraction.
+\newblock {\em Neurocomputing}, Vol.~72, No. 13-15, pp. 3182--3190, 2009.
+
+\bibitem{CheapLearning}
+Henry~W. Lin, Max Tegmark, and David Rolnick.
+\newblock Why does deep and cheap learning work so well?
+\newblock {\em Journal of Statistical Physics}, Vol. 168, pp. 1223--1247, 2017.
+
+\bibitem{DeepvsShallow}
+Hrushikesh Mhaskar and Tomaso~A. Poggio.
+\newblock Deep vs. shallow networks : An approximation theory perspective.
+\newblock {\em Analysis and Applications}, Vol.~14, , November 2016.
+
+\bibitem{ディープローカルミニマム}
+Kenji Kawaguchi.
+\newblock Deep learning without poor local minima.
+\newblock In D.~D. Lee, M.~Sugiyama, U.~V. Luxburg, I.~Guyon, and R.~Garnett,
+  editors, {\em Advances in Neural Information Processing Systems 29}, pp.
+  586--594. Curran Associates, Inc., 2016.
 
 \bibitem{BCI2000}
 G.~Schalk, D.~J. McFarland, T.~Hinterberger, N.~Birbaumer, and J.~R. Wolpaw.

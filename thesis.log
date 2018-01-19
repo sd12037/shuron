@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2017.12.21)  18 JAN 2018 22:57
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2017.12.21)  20 JAN 2018 08:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1000,14 +1000,14 @@ LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
 (Font)              scaled to size 11.09619pt on input line 2.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 (Font)              scaled to size 10.79993pt on input line 2.
- [9] [10] [11]
-[12]
+ [9] [10]
 File: images/BCIpattern.PNG Graphic file (type bmp)
- <images/BCIpattern.PNG>) [13] [14]
-\mc 第2\mc 章
-(./chapter/chapter2/SIGNAL.tex [15
 
-] [16] [17] [18]) (./chapter/chapter2/BSS.tex [19]
+<images/BCIpattern.PNG> [11]) [12]
+\mc 第2\mc 章
+(./chapter/chapter2/SIGNAL.tex [13
+
+] [14] [15] [16]) (./chapter/chapter2/BSS.tex [17]
 File: images/x(t).png Graphic file (type bmp)
  <images/x(t).png>
 File: images/z(t).png Graphic file (type bmp)
@@ -1016,19 +1016,19 @@ Overfull \hbox (1.49994pt too wide) in paragraph at lines 42--56
 []$[]$ $[]$ 
  []
 
-[20]
+[18]
 File: images/z=Wx.png Graphic file (type bmp)
- <images/z=Wx.png> [21] [22]
+ <images/z=Wx.png> [19] [20]
 File: images/ica_pca.png Graphic file (type bmp)
- <images/ica_pca.png> [23] [24] [25]
+ <images/ica_pca.png> [21] [22] [23]
 File: images/bss.png Graphic file (type bmp)
 
-<images/bss.png>) (./chapter/chapter2/Discriminant.tex [26] [27]
+<images/bss.png>) (./chapter/chapter2/Discriminant.tex [24] [25]
 File: images/mean_dis.png Graphic file (type bmp)
 
-<images/mean_dis.png> [28]
+<images/mean_dis.png> [26]
 File: images/var_dis.png Graphic file (type bmp)
- <images/var_dis.png> [29] [30] [31]
+ <images/var_dis.png> [27] [28] [29]
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
 (Font)              scaled to size 6.47278pt on input line 141.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
@@ -1039,7 +1039,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 5.0pt on input line 141.
 File: images/margin.png Graphic file (type bmp)
 
-<images/margin.png> [32] [33]
+<images/margin.png> [30] [31]
 File: images/linearSVM.png Graphic file (type bmp)
  <images/linearSVM.png>
 File: images/xorlinearSVM.png Graphic file (type bmp)
@@ -1049,52 +1049,52 @@ Overfull \hbox (1.49994pt too wide) in paragraph at lines 207--221
  []
 
 File: images/xorkernelSVM.png Graphic file (type bmp)
-<images/xorkernelSVM.png> [34] [35] [36]) [37] [38]
+<images/xorkernelSVM.png> [32] [33] [34]) [35] [36]
 \mc 第3\mc 章
 (./chapter/chapter2/FEATURE.tex
 File: images/EEGfootmove.png Graphic file (type bmp)
  <images/EEGfootmove.png>
 File: images/EEGhandmove.png Graphic file (type bmp)
 
-<images/EEGhandmove.png> [39
+<images/EEGhandmove.png> [37
 
 ]
 File: images/CzEEG.png Graphic file (type bmp)
- <images/CzEEG.png> [40]
+ <images/CzEEG.png> [38]
 File: images/rapCzEEG.png Graphic file (type bmp)
  <images/rapCzEEG.png>
-[41]
+[39]
 Underfull \hbox (badness 1478) in paragraph at lines 85--88
 \JY1/hmc/m/n/10 を計算した場合は $\OML/cmm/m/it/10 w$ \JY1/hmc/m/n/10 を空間フ 
 ィルタと呼ぶ 。 より一般的には行列 $\OML/cmm/m/it/10 W \U/matha/m/n/10 ^^P
  []
 
-[42] [43]) (./chapter/chapter2/CSP.tex
+[40] [41]) (./chapter/chapter2/CSP.tex
 File: images/CSP.png Graphic file (type bmp)
- <images/CSP.png> [44] [45] [46]
+ <images/CSP.png> [42] [43] [44]
 File: images/apple.png Graphic file (type bmp)
 
-<images/apple.png> [47]
+<images/apple.png> [45]
 LaTeX Font Info:    Font shape `JT1/hmc/bx/n' will be
-(Font)              scaled to size 9.24683pt on input line 160.
+(Font)              scaled to size 9.24683pt on input line 161.
 LaTeX Font Info:    Font shape `JY1/hmc/bx/n' will be
-(Font)              scaled to size 9.24683pt on input line 160.
+(Font)              scaled to size 9.24683pt on input line 161.
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <10> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 160.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 161.
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 160.
+(Font)              scaled to size 10.0pt on input line 161.
 
 
-LaTeX Warning: Reference `fig:CSSSP' on page 48 undefined on input line 160.
+LaTeX Warning: Reference `fig:CSSSP' on page 46 undefined on input line 161.
 
 File: images/CSSSP.png Graphic file (type bmp)
-<images/CSSSP.png> [48] [49]) [50]
+<images/CSSSP.png> [46] [47]) [48]
 \mc 第4\mc 章
-(./chapter/chapter3/NN.tex [51
+(./chapter/chapter3/NN.tex [49
 
-] [52]
-Overfull \hbox (6.60625pt too wide) in paragraph at lines 92--100
+] [50] [51] [52]
+Overfull \hbox (6.60625pt too wide) in paragraph at lines 170--178
 \JY1/hmc/m/n/10 ここに $\U/matha/m/n/10 d$ \JY1/hmc/m/n/10 は同じ次元のベクトル
 の要素ごとの積である 。 パラメ ータは $\OML/cmm/m/it/10 W[]; W[]; W[]; W[] \U/m
 atha/m/n/10 P
@@ -1200,10 +1200,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  9059 strings out of 493723
  126534 string characters out of 6152569
- 177563 words of memory out of 5000000
+ 177565 words of memory out of 5000000
  12322 multiletter control sequences out of 15000+600000
  77673 words of font info for 160 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  38i,10n,77p,433b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (86 pages, 228768 bytes).
+Output written on thesis.dvi (86 pages, 229336 bytes).
