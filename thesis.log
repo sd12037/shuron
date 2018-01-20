@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2017.12.21)  20 JAN 2018 10:16
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2017.12.21)  20 JAN 2018 11:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -977,23 +977,23 @@ File: images/fMRI.jpg Graphic file (type bmp)
 
 <images/fMRI.jpg>
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 60.
+(Font)              scaled to size 8.32214pt on input line 58.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 60.
+(Font)              scaled to size 8.32214pt on input line 58.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 60.
+(Font)              scaled to size 9.0pt on input line 58.
 File: images/MEG.jpg Graphic file (type bmp)
  <images/MEG.jpg>
 File: images/eeg.png Graphic file (type bmp)
  <images/eeg.png> [2]
 File: images/signalflow.png Graphic file (type bmp)
 
-<images/signalflow.png> [3] [4] [5] [6]
-File: images/BCIclass.png Graphic file (type bmp)
- <images/BCIclass.png> [7]
+<images/signalflow.png> [3] [4] [5]
 File: images/BCIsystem.png Graphic file (type bmp)
+ <images/BCIsystem.png> [6] [7]
+File: images/BCIclass.png Graphic file (type bmp)
 
-<images/BCIsystem.png> [8]) (./chapter/chapter1/Objective.tex
+<images/BCIclass.png> [8]) (./chapter/chapter1/Objective.tex
 LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
 (Font)              scaled to size 11.09619pt on input line 2.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
@@ -1003,7 +1003,7 @@ LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
  [9] [10]
 File: images/BCIpattern.PNG Graphic file (type bmp)
 
-<images/BCIpattern.PNG>) (./chapter/chapter1/component.tex [11] [12]) [13]
+<images/BCIpattern.PNG> [11]) (./chapter/chapter1/component.tex [12]) [13]
 \mc 第2\mc 章
 (./chapter/chapter2/SIGNAL.tex [14
 
@@ -1184,7 +1184,7 @@ LaTeX Font Info:    Font shape `JY1/hgt/m/it' will be
 (Font)              scaled to size 9.24683pt on input line 51.
 [78
 
-] [79] [80] [81] [82]) [83]
+] [79] [80] [81] [82] [83]) [84]
 No file thesis.ind.
 (./thesis.aux)
 
@@ -1198,12 +1198,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 9062 strings out of 493723
- 126605 string characters out of 6152569
- 177565 words of memory out of 5000000
- 12322 multiletter control sequences out of 15000+600000
+ 9064 strings out of 493723
+ 126622 string characters out of 6152569
+ 177573 words of memory out of 5000000
+ 12324 multiletter control sequences out of 15000+600000
  77673 words of font info for 160 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  38i,10n,77p,433b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (87 pages, 230700 bytes).
+Output written on thesis.dvi (88 pages, 230344 bytes).

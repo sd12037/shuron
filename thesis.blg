@@ -3,48 +3,49 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: junsrt.bst
 Database file #1: reference.bib
+Warning--can't use both volume and number fields in SSVEP
 Warning--can't use both author and editor fields in sparsemethod
 Warning--can't use both author and editor fields in bootCSP
-You've used 54 entries,
+You've used 56 entries,
             2270 wiz_defined-function locations,
-            880 strings with 13725 characters,
-and the built_in function-call counts, 19946 in all, are:
-= -- 1551
-> -- 589
-< -- 104
-+ -- 232
-- -- 178
-* -- 1080
-:= -- 2361
-add.period$ -- 163
-call.type$ -- 54
-change.case$ -- 49
+            891 strings with 13958 characters,
+and the built_in function-call counts, 20775 in all, are:
+= -- 1619
+> -- 609
+< -- 107
++ -- 240
+- -- 184
+* -- 1127
+:= -- 2454
+add.period$ -- 169
+call.type$ -- 56
+change.case$ -- 51
 chr.to.int$ -- 0
-cite$ -- 56
-duplicate$ -- 1278
-empty$ -- 1863
-format.name$ -- 356
-if$ -- 5024
+cite$ -- 59
+duplicate$ -- 1330
+empty$ -- 1943
+format.name$ -- 368
+if$ -- 5237
 int.to.chr$ -- 0
-int.to.str$ -- 54
-missing$ -- 56
-newline$ -- 273
-num.names$ -- 56
-pop$ -- 335
+int.to.str$ -- 56
+missing$ -- 58
+newline$ -- 283
+num.names$ -- 58
+pop$ -- 347
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1054
+skip$ -- 1101
 stack$ -- 0
-substring$ -- 1139
-swap$ -- 471
-text.length$ -- 104
+substring$ -- 1195
+swap$ -- 494
+text.length$ -- 107
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 143
-width$ -- 56
-write$ -- 594
-is.kanji.str$ -- 670
-(There were 2 warnings)
+warning$ -- 3
+while$ -- 149
+width$ -- 58
+write$ -- 617
+is.kanji.str$ -- 695
+(There were 3 warnings)
