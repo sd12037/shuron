@@ -13,7 +13,7 @@
 % 直接、畳み込みニューラルネットワークに与えることで分類させることを試みた。
 
 
-\section{\mc 提案手法のアイデア}
+\section{\rm FilterBank Network \mc（提案手法1）}
 \subsubsection{\rm Convlution\mc 層によるFIR フィルタバンク}
 EEGを\(X\in \mathbb R^{M\times N\times 1}\)とする。
 ここに、\(M\)は電極の数、\(N\)はサンプル点数、\(1\)は後に周波数を示すためのダミーインデックスである。
@@ -49,8 +49,7 @@ EEGを\(X\in \mathbb R^{M\times N\times 1}\)とする。
     \caption{Convlution層を用いたFIRフィルタバンクによるデータの形状変化}
     \label{fig:pseudFBCSP}
 \end{figure}
-FBCSPと異なる点は、FBCSPがフィルタバンクの設計とそれ以降の処理の設計が完全に分断されていることに対し、
-提案手法ではフィルタバンクのフィルタ係数と、その後の処理に用いられるパラメータを
+
 同時に最適化可能な点である。具体的なニューラルネットワークの構造は実験結果と共に記す。
 
 
