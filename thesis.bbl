@@ -186,21 +186,6 @@ S.~J. Pan and Q.~Yang.
 \newblock {\em IEEE Transactions on Knowledge and Data Engineering}, Vol.~22,
   No.~10, pp. 1345--1359, Oct 2010.
 
-\bibitem{スペクトル解析}
-日野幹雄.
-\newblock スペクトル解析（統計ライブラリー）.
-\newblock 朝倉書店, 1977.
-
-\bibitem{ICA1}
-Hiromu Gotanda, Takaaki Ishibashi, Nobuo Iwasaki, and Katsuhiro Inoue.
-\newblock 独立成分分析の基礎と応用.
-\newblock Technical Report 1743, 数理解析研究所, 2011.
-
-\bibitem{ICA2}
-村田昇.
-\newblock 入門 独立成分分析.
-\newblock 東京電機大学出版, 2004.
-
 \bibitem{脳波解析入門}
 開一夫, 金山範明河内山隆紀, 松本敦宮腰誠.
 \newblock 脳波解析入門:EEGLABとSPMを使いこなす.
@@ -269,6 +254,21 @@ Kai~Keng Ang, Zheng~Yang Chin, ChuanchuWang, , Cuntai Guan, and Haihong Zhang.
 \newblock Filter bank common spatial pattern algorithm on bci competition iv
   datasets 2a and 2b.
 \newblock {\em frontiers in NEUROSCIENCE}, Vol.~29, pp. 2390--2397, March 2012.
+
+\bibitem{スペクトル解析}
+日野幹雄.
+\newblock スペクトル解析（統計ライブラリー）.
+\newblock 朝倉書店, 1977.
+
+\bibitem{ICA1}
+Hiromu Gotanda, Takaaki Ishibashi, Nobuo Iwasaki, and Katsuhiro Inoue.
+\newblock 独立成分分析の基礎と応用.
+\newblock Technical Report 1743, 数理解析研究所, 2011.
+
+\bibitem{ICA2}
+村田昇.
+\newblock 入門 独立成分分析.
+\newblock 東京電機大学出版, 2004.
 
 \bibitem{kNMF}
 M.~Sakai.
