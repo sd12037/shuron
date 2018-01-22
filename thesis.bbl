@@ -61,6 +61,11 @@ S.~Li, A.~Leider, M.~Qiu, K.~Gai, and M.~Liu.
 \newblock In {\em 2017 IEEE 4th International Conference on Cyber Security and
   Cloud Computing (CSCloud)}, pp. 300--305, June 2017.
 
+\bibitem{BCImeasure}
+Bernhard Graimann, Bredan Allison, and Gert Pfurstcheller.
+\newblock {\em BRAIN-COMPUTER INTERFACES}, p.~31.
+\newblock Springer, 2010.
+
 \bibitem{脳を測る}
 宮内哲.
 \newblock 脳を測る -改定 ヒトの脳機能の非侵襲的測定.
@@ -95,6 +100,12 @@ G.~Pfurtscheller and F.~H.~L. da~Silva.
 \newblock 運動想起フィードバック訓練による事象関連脱同期 (erd) 出現の検証.
 \newblock システム制御情報学会論文誌, Vol.~22, No.~5, pp. 199--205, 2009.
 
+\bibitem{Beta波によるBCI}
+G.~Pfurtscheller and T.~Solis-Escalante.
+\newblock Could the beta rebound in the eeg be suitable to realize a “brain
+  switch”?
+\newblock {\em Clinical Neurophysiology}, Vol. 120, No.~1, pp. 24--29, 2009.
+
 \bibitem{プリミティブERD}
 D.~Huang, K.~Qian, S.~Oxenham, D.~Y. Fei, and O.~Bai.
 \newblock Event-related desynchronization/ synchronization-based brain-computer
@@ -102,25 +113,12 @@ D.~Huang, K.~Qian, S.~Oxenham, D.~Y. Fei, and O.~Bai.
 \newblock In {\em 2011 IEEE Symposium on Computational Intelligence, Cognitive
   Algorithms, Mind, and Brain (CCMB)}, pp. 1--8, April 2011.
 
-\bibitem{Beta波によるBCI}
-G.~Pfurtscheller and T.~Solis-Escalante.
-\newblock Could the beta rebound in the eeg be suitable to realize a “brain
-  switch”?
-\newblock {\em Clinical Neurophysiology}, Vol. 120, No.~1, pp. 24--29, 2009.
-
 \bibitem{waveletFSVM}
 Q.~Xu, H.~Zhou, Y.~Wang, and J.~Huang.
 \newblock Fuzzy support vector machine for classification of eeg signals using
   wavelet-based features.
 \newblock {\em Medical Engineering \& Physics}, Vol.~31, No.~7, pp. 858--865,
   2009.
-
-\bibitem{時間周波数解析の比較}
-Kenji Kato, Kensho Takahashi, Nobuaki Mizuguchi, and Junichi Ushiba.
-\newblock Online detection of amplitude modulation of motor-related eeg
-  desynchronization using a lock-in amplifier: Comparison with a fast fourier
-  transform, a continuous wavelet transform, and an autoregressive algorithm.
-\newblock {\em Journal of Neuroscience Methods}, Vol. 293, pp. 289--298, 2018.
 
 \bibitem{運動準備電位肢体}
 北山真平, 佐々木実, 伊藤聡, 安田晴信, 小嶋俊史.
@@ -154,19 +152,6 @@ Zoltan~J. Koles, Michael~S. Lazar, and Steven~Z. Zhou.
   eeg.
 \newblock {\em Brain Topography}, Vol.~2, pp. 275--284, 1990.
 
-\bibitem{CSP1999}
-G.~Pfurtscheller, C.~Guger, and H.~Ramoser.
-\newblock International work-conference on artificial neural networks.
-\newblock In {\em Engineering Applications of Bio-Inspired Artificial Neural
-  Networks}, 1999.
-
-\bibitem{csssp}
-Guido Dornhege, Benjamin Blankertz, Matthias Krauledat, Florian Losch, Gabriel
-  Curio, and Klaus-Robert Muller.
-\newblock Combined optimization of spatial and temporal filters for improving
-  brain-computer interfacing.
-\newblock {\em IEEE TRANSACTIONS ON BIOMEDICAL ENGINEERING}, Vol.~53, , 2006.
-
 \bibitem{正則化CSP}
 F.~Lotte and C.~Guan.
 \newblock Regularizing common spatial patterns to improve bci designs: Unified
@@ -180,11 +165,12 @@ N.~Behrooz, B.~Reza, and J.~M. Zolghadri.
   extraction.
 \newblock {\em Neurocomputing}, Vol.~73, pp. 432--437, 2009.
 
-\bibitem{cvscsp}
-Jyoti~Singh Kirara and R.~K.~Agrawala and.
-\newblock Optimal spatio-spectral variable size subbands filter formotor
-  imagery brain computer interface.
-\newblock {\em Procedia Computer Science}, Vol.~84, pp. 14--21, 2016.
+\bibitem{csssp}
+Guido Dornhege, Benjamin Blankertz, Matthias Krauledat, Florian Losch, Gabriel
+  Curio, and Klaus-Robert Muller.
+\newblock Combined optimization of spatial and temporal filters for improving
+  brain-computer interfacing.
+\newblock {\em IEEE TRANSACTIONS ON BIOMEDICAL ENGINEERING}, Vol.~53, , 2006.
 
 \bibitem{fbcsp}
 Kai~Keng Ang, Zheng~Yang Chin, Haihong Zhang, and Cuntai Guan.
@@ -193,30 +179,6 @@ Kai~Keng Ang, Zheng~Yang Chin, Haihong Zhang, and Cuntai Guan.
 \newblock In {\em 2008 IEEE International Joint Conference on Neural Networks
   (IEEE World Congress on Computational Intelligence)}, pp. 2390--2397, June
   2008.
-
-\bibitem{BCIの比較}
-Bashashati H, Ward RK, Birch GE, and Bashashati A.
-\newblock Comparing different classifiers in sensory motor brain computer
-  interfaces.
-\newblock {\em PLoS ONE}, Vol.~10, No.~6, 2015.
-
-\bibitem{脳波解析BCI}
-板井陽俊, 船瀬親王.
-\newblock Bciシステムの構築を目指した単一試行脳波の解析技術.
-\newblock 日本神経回路学会誌, Vol.~19, No.~3, pp. 118--125, 2012.
-
-\bibitem{脳波分析BCI}
-吉岡将孝.
-\newblock 脳波分析に基づいた Brain-Machine Interface
-  パワーアシストシステムの構築 -周期パワースペクトルによる運動に関する
-  脳波の解析および関節トルクの推定-.
-\newblock PhD thesis, 前橋工科大学, 2016.
-
-\bibitem{ERSBCI}
-E.~Thomas, J.~Fruitet, and M.~Clerc.
-\newblock Investigating brief motor imagery for an erd/ers based bci.
-\newblock In {\em 2012 Annual International Conference of the IEEE Engineering
-  in Medicine and Biology Society}, pp. 2929--2932, Aug 2012.
 
 \bibitem{転移学習}
 S.~J. Pan and Q.~Yang.
@@ -249,6 +211,13 @@ Hiromu Gotanda, Takaaki Ishibashi, Nobuo Iwasaki, and Katsuhiro Inoue.
 \newblock 信号構造を利用する脳波処理.
 \newblock 計測と制御, Vol.~55, No.~11, pp. 960--965, 2016.
 
+\bibitem{時間周波数解析の比較}
+Kenji Kato, Kensho Takahashi, Nobuaki Mizuguchi, and Junichi Ushiba.
+\newblock Online detection of amplitude modulation of motor-related eeg
+  desynchronization using a lock-in amplifier: Comparison with a fast fourier
+  transform, a continuous wavelet transform, and an autoregressive algorithm.
+\newblock {\em Journal of Neuroscience Methods}, Vol. 293, pp. 289--298, 2018.
+
 \bibitem{EMD}
 Guo Xiaojing, Wu~Xiaopei, and Zhang Dexiang.
 \newblock Motor imagery eeg detection by empirical mode decomposition.
@@ -261,6 +230,18 @@ SachinTaran, VarunBajaj, DheerajSharma, SiulySiuly, and A.Sengur.
 \newblock Features based on analytic imf for classifying motor imagery eeg
   signals in bci applications.
 \newblock {\em Measurement}, Vol. 116, pp. 68--76, 2018.
+
+\bibitem{CSP1999}
+G.~Pfurtscheller, C.~Guger, and H.~Ramoser.
+\newblock International work-conference on artificial neural networks.
+\newblock In {\em Engineering Applications of Bio-Inspired Artificial Neural
+  Networks}, 1999.
+
+\bibitem{cvscsp}
+Jyoti~Singh Kirara and R.~K.~Agrawala and.
+\newblock Optimal spatio-spectral variable size subbands filter formotor
+  imagery brain computer interface.
+\newblock {\em Procedia Computer Science}, Vol.~84, pp. 14--21, 2016.
 
 \bibitem{csp_eigen}
 B.~Blankertz, M.~Kawanabe, R.~Tomioka, F.~Hohlefeld, V.~Nikulin, and K.~R. M.
