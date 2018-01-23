@@ -29,7 +29,7 @@ CSPは運動想起BCIに対して極めて有効に働くとされている特�
 \subsection{\rm Common Spatial Pattern(CSP)}
 \label{subsec:CSP}
 CSPは複数の電極で計測されることが一般的である脳波に対して、
-適切な電極の重み付けを行うことで、重要な頭皮領域の脳波を取り出す手法である\cite{CSP1990,CSP1999}。
+適切な電極の重み付けを行うことで、重要な頭皮領域の脳波を取り出す手法である\cite{CSP1990}。
 CSPを脳波に用いる際は、脳波信号\(X\)を直接扱うのではなく、何らかの前処理を施した信号\(\hat{X} = {\cal H}(X) \)を用いる。
 通常、\(\cal H\)には、運動想起に関連のある周波数帯域のみを通過させるバンドパスフィルタを用いる(図\ref{fig:CSP})。
 \begin{figure}
@@ -104,7 +104,7 @@ CSPでは、ベクトル\(w \in \mathbb {R}^M\)を新たな基底とした電極
 \begin{equation}
     y = (\sigma^2(\hat X,w^{(1)}), \cdots, \sigma^2(\hat X,w^{(m)}), \cdots, \sigma^2(\hat X,w^{(M-m+1)}), \cdots, \sigma^2(\hat X,w^{(M)}))^T
 \end{equation}
-あるいは\(y=(y_1, \cdots, y_{2m})\)に対して以下のような変換を行った特徴量\(Y\)を使う(図\ref{fig:apple})。
+あるいは\(y=(y_1, \cdots, y_{2m})\)に対して以下のような変換を行った特徴量\(Y\)を使う。
 \begin{eqnarray}
     Y_i &=& \log \left( \frac{y_i}{\sum_{i=1}^{2m}y_i} \right) \nonumber \\
     Y &=& (f_1, \cdots, f_{2m})^T 
@@ -121,20 +121,19 @@ CSPでは、ベクトル\(w \in \mathbb {R}^M\)を新たな基底とした電極
 % ここで通常は\(Z=(z_1, z_2, \cdot, z_N)\)の成分毎の時間分散を特徴量とする。
 % \(Z\)の脳波のパワーを評価することが可能となる。
 
-\begin{figure}
-    \centering
-    \includegraphics[width=13cm]{images/apple.png}
-    \caption{CSPの動作(a)観測点、(b)観測時の座標、(c)特徴量、(d)変換された座標}
-    \label{fig:apple}
-\end{figure}
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=13cm]{images/apple.png}
+%     \caption{CSPの動作(a)観測点、(b)観測時の座標、(c)特徴量、(d)変換された座標}
+%     \label{fig:apple}
+% \end{figure}
   
 
 \subsection{\rm Common Sparse Spatio Spectral Pattern(CSSSP)}
 CSPではバンドパスフィルタ\(\cal H\)通過後の信号を扱ったため、
 バンドパスフィルタの設計を終えてからでなければCSPの問題を解くことができない。
 従って、あるバンドパスフィルタを通過した脳波に対して、最適化問題を解いているに過ぎなく、
-バンドパスフィルタ自体が適切であったかに関しては一切述べられない。
-このことによって生じる問題点に関しては、更に詳しく後述する。
+バンドパスフィルタ自体が適切であったかに関して述べられない。
 CSSSPの主なモチベーションはバンドパスフィルタの設計をCSPの問題の中に取り込むことである\cite{csssp}。
 
 まず脳波信号\(X = \left[ x_1, \cdots, x_N \right] \in \mathbb{R}^{M \times N}\)に対して、
@@ -163,7 +162,7 @@ CSSSPの主なモチベーションはバンドパスフィルタの設計をCSP
     \centering
     \includegraphics[width=9cm]{images/CSSSP.png}
     \caption{CSSSPの働き}
-    \label{fig:FBCSP}
+    \label{fig:CSSSP}
 \end{figure}
 目的関数における第二項は正則化項であり、$\alpha$はハイパーパラメータである。
 この正則化によってFIRフィルタの系列ベクトルに対してスパース性が要請され、
@@ -195,7 +194,7 @@ CSSSPの解がいずれかの情報を失ってしまっている可能性が考
 従って、特徴ベクトル\(f\)のいずれの要素が重要であるか、すなわちいずれの周波数帯域が重要であるか
 に関しての最適化は行われておらず、あくまで複数の周波数帯域において
 それぞれの最適な電極の重み付けをCSPによって獲得したにすぎない。
-そのため、FBCSPによって得られた特徴量から更に特徴量を抽出する手法が別途用いられる図\ref{fig:FBCSP}。
+そのため、FBCSPによって得られた特徴量から更に特徴量を抽出する手法が別途用いられる。
 また、FBCSP後の特徴量の選定を行う方法として相互情報量を用いた手法が提案されている\cite{fbcspBCICOMPE}。
 
 % \begin{figure}

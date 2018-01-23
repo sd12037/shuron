@@ -10,31 +10,35 @@
 \contentsline {subsection}{\numberline {1.2.1}\mc モチベーション}{10}
 \contentsline {subsection}{\numberline {1.2.2}\mc 目的}{12}
 \contentsline {section}{\numberline {1.3}本論文の構成}{12}
-\contentsline {chapter}{\numberline {\mc 第2\mc 章}{\mc 従来手法}{\rm BCI}}{14}
-\contentsline {section}{\numberline {2.1}\mc 特徴量工学}{14}
-\contentsline {subsection}{\numberline {2.1.1}\mc 頭皮領域と空間フィルタ}{14}
-\contentsline {subsection}{\numberline {2.1.2}\mc EEGと時間周波数解析}{18}
-\contentsline {section}{\numberline {2.2}\rm Common Spatial Pattern\mc とその派生手法}{19}
-\contentsline {subsection}{\numberline {2.2.1}\mc 脳波信号の定式化}{19}
-\contentsline {subsection}{\numberline {2.2.2}\rm Common Spatial Pattern(CSP)}{20}
-\contentsline {subsection}{\numberline {2.2.3}\rm Common Sparse Spatio Spectral Pattern(CSSSP)}{22}
-\contentsline {subsection}{\numberline {2.2.4}\rm Filter Bank Common Spatial Pattern(FBCSP)}{24}
-\contentsline {chapter}{\numberline {\mc 第3\mc 章}{\rm BCI}{\mc のための要素技術と予備実験}}{26}
-\contentsline {section}{\numberline {3.1}\mc 周波数解析}{26}
-\contentsline {subsection}{\numberline {3.1.1}4\mc 種類のフーリエ変換}{26}
-\contentsline {subsubsection}{\mc フーリエ変換}{27}
-\contentsline {subsubsection}{\mc 離散周波数フーリエ変換}{27}
-\contentsline {subsubsection}{\mc 離散時間フーリエ変換}{28}
-\contentsline {subsubsection}{\mc 離散フーリエ変換}{29}
-\contentsline {subsection}{\numberline {3.1.2}\mc パワースペクトル密度}{29}
-\contentsline {section}{\numberline {3.2}\mc 多変量解析}{30}
-\contentsline {subsection}{\numberline {3.2.1}\rm Principal Component Analysis(PCA)}{31}
-\contentsline {subsection}{\numberline {3.2.2}\rm Indipendent Component Analysis(ICA)}{34}
-\contentsline {subsection}{\numberline {3.2.3}\rm Blind Source Separation(BSS)}{36}
-\contentsline {section}{\numberline {3.3}\mc 分類手法}{38}
-\contentsline {subsection}{\numberline {3.3.1}\rm Linear Discriminant Analysis(LDA)}{38}
-\contentsline {subsection}{\numberline {3.3.2}\rm Support Vector Machine(SVM)}{42}
-\contentsline {subsection}{\numberline {3.3.3}\rm Logistic Regression(LR)}{47}
+\contentsline {chapter}{\numberline {\mc 第2\mc 章}{\rm BCI}{\mc のための要素技術}}{14}
+\contentsline {section}{\numberline {2.1}\mc 周波数解析}{14}
+\contentsline {subsection}{\numberline {2.1.1}4\mc 種類のフーリエ変換}{14}
+\contentsline {subsubsection}{\mc フーリエ変換}{15}
+\contentsline {subsubsection}{\mc 離散周波数フーリエ変換}{15}
+\contentsline {subsubsection}{\mc 離散時間フーリエ変換}{16}
+\contentsline {subsubsection}{\mc 離散フーリエ変換}{17}
+\contentsline {subsection}{\numberline {2.1.2}\mc パワースペクトル密度}{17}
+\contentsline {section}{\numberline {2.2}\mc 多変量解析}{18}
+\contentsline {subsection}{\numberline {2.2.1}\rm Principal Component Analysis(PCA)}{19}
+\contentsline {subsection}{\numberline {2.2.2}\rm Indipendent Component Analysis(ICA)}{22}
+\contentsline {subsection}{\numberline {2.2.3}\rm Blind Source Separation(BSS)}{24}
+\contentsline {section}{\numberline {2.3}\mc 分類手法}{26}
+\contentsline {subsection}{\numberline {2.3.1}\rm Linear Discriminant Analysis(LDA)}{26}
+\contentsline {subsection}{\numberline {2.3.2}\rm Support Vector Machine(SVM)}{30}
+\contentsline {subsection}{\numberline {2.3.3}\rm Logistic Regression(LR)}{35}
+\contentsline {chapter}{\numberline {\mc 第3\mc 章}{\mc 運動想起型{\rm BCI}の従来手法}}{38}
+\contentsline {section}{\numberline {3.1}\mc 時間周波数解析の基づく手法}{38}
+\contentsline {subsection}{\numberline {3.1.1}\mc 頭皮領域と空間フィルタ}{38}
+\contentsline {subsubsection}{\mc スモールラプラシアンとラージラプラシアン}{38}
+\contentsline {subsubsection}{一般的な空間フィルタ}{40}
+\contentsline {subsection}{\numberline {3.1.2}\mc 時間周波数解析}{42}
+\contentsline {section}{\numberline {3.2}\rm Common Spatial Pattern\mc とその派生手法}{42}
+\contentsline {subsection}{\numberline {3.2.1}\mc 脳波信号の定式化}{42}
+\contentsline {subsection}{\numberline {3.2.2}\rm Common Spatial Pattern(CSP)}{43}
+\contentsline {subsection}{\numberline {3.2.3}\rm Common Sparse Spatio Spectral Pattern(CSSSP)}{45}
+\contentsline {subsection}{\numberline {3.2.4}\rm Filter Bank Common Spatial Pattern(FBCSP)}{47}
+\contentsline {section}{\numberline {3.3}従来手法を用いた足動作検知実験}{48}
+\contentsline {subsection}{\numberline {3.3.1}利用したEEGについて}{48}
 \contentsline {chapter}{\numberline {\mc 第4\mc 章}\mc 提案手法}{50}
 \contentsline {section}{\numberline {4.1}\mc 提案手法の狙い}{50}
 \contentsline {subsection}{\numberline {4.1.1}従来手法の問題点}{50}

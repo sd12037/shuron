@@ -86,7 +86,8 @@
 
 \begin{document}
 %
-
+% \setlength{\abovedisplayskip}{2pt} % 上部のマージン
+% \setlength{\belowdisplayskip}{2pt} % 下部のマージン
 
 %
 \maketitle
@@ -137,19 +138,20 @@
 \input{chapter/chapter1/Objective}
 \input{chapter/chapter1/component}
 
-\chapter{{\mc 従来手法}{\rm BCI}}
-\input{chapter/chapter2/FEATURE}
-\input{chapter/chapter2/CSP}
-
-\chapter{{\rm BCI}{\mc のための要素技術と予備実験}}
+\chapter{{\rm BCI}{\mc のための要素技術}}
 \label{chapter:BCIのための要素技術}
 % \input{chapter/chapter2/measurement}
 \input{chapter/chapter2/SIGNAL}
 \input{chapter/chapter2/BSS}
 \input{chapter/chapter2/Discriminant}
 
+\chapter{{\mc 運動想起型{\rm BCI}の従来手法}}
+\input{chapter/chapter3/FEATURE}
+\input{chapter/chapter3/CSP}
+\input{chapter/chapter3/sotuken}
+
 \chapter{\mc 提案手法}
-\input{chapter/chapter3/NN}
+\input{chapter/chapter4/NN}
 \input{chapter/chapter4/pseudoFBCSP}
 % \input{chapter/chapter4/3DpseudoFBCSP}
 % \input{chapter/chapter4/3Dconv_and_2DconvLSTM}
