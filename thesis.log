@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.1.5)  24 JAN 2018 02:49
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.1.5)  24 JAN 2018 02:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -999,4 +999,129 @@ File: images/BCIclass.png Graphic file (type bmp)
 <images/BCIclass.png> [8] [9]) (./chapter/chapter1/Objective.tex [10] [11]
 File: images/BCIpattern.PNG Graphic file (type bmp)
 
-<images/BCIpattern.P
+<images/BCIpattern.PNG>) (./chapter/chapter1/component.tex [12]) [13]
+\mc 第2\mc 章
+(./chapter/chapter2/SIGNAL.tex [14
+
+] [15] [16] [17]) (./chapter/chapter2/BSS.tex [18]
+File: images/x(t).png Graphic file (type bmp)
+ <images/x(t).png>
+File: images/z(t).png Graphic file (type bmp)
+ <images/z(t).png>
+Overfull \hbox (1.49994pt too wide) in paragraph at lines 43--57
+[]$[]$ $[]$ 
+ []
+
+[19]
+File: images/z=Wx.png Graphic file (type bmp)
+ <images/z=Wx.png> [20] [21]
+File: images/ica_pca.png Graphic file (type bmp)
+ <images/ica_pca.png> [22] [23] [24]
+File: images/bss.png Graphic file (type bmp)
+
+<images/bss.png>) (./chapter/chapter2/Discriminant.tex [25] [26]
+File: images/mean_dis.png Graphic file (type bmp)
+
+<images/mean_dis.png> [27]
+File: images/var_dis.png Graphic file (type bmp)
+ <images/var_dis.png> [28] [29] [30]
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 6.47278pt on input line 141.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 7.0pt on input line 141.
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 4.62341pt on input line 141.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 5.0pt on input line 141.
+File: images/margin.png Graphic file (type bmp)
+
+<images/margin.png> [31] [32]
+File: images/linearSVM.png Graphic file (type bmp)
+ <images/linearSVM.png>
+File: images/xorlinearSVM.png Graphic file (type bmp)
+ <images/xorlinearSVM.png>
+Overfull \hbox (1.49994pt too wide) in paragraph at lines 207--221
+[]$[]$ $[]$ 
+ []
+
+File: images/xorkernelSVM.png Graphic file (type bmp)
+<images/xorkernelSVM.png> [33] [34] [35]) [36] [37]
+\mc 第3\mc 章
+(./chapter/chapter3/FEATURE.tex [38
+
+]
+File: images/smalllap.png Graphic file (type bmp)
+ <images/smalllap.png>
+File: images/largelap.png Graphic file (type bmp)
+
+<images/largelap.png> [39]
+Underfull \hbox (badness 1478) in paragraph at lines 116--119
+\JY1/hmc/m/n/10 を計算した場合は $\OML/cmm/m/it/10 w$ \JY1/hmc/m/n/10 を空間フ 
+ィルタと呼ぶ 。 より一般的には行列 $\OML/cmm/m/it/10 W \U/matha/m/n/10 ^^P
+ []
+
+[40] [41]) (./chapter/chapter3/CSP.tex [42]
+File: images/CSP.png Graphic file (type bmp)
+ <images/CSP.png> [43] [44] [45]
+File: images/CSSSP.png Graphic file (type bmp)
+
+<images/CSSSP.png> [46]) (./chapter/chapter3/sotuken.tex [47]
+\mc 第4\mc 章
+File: images/asibumi.png Graphic file (type bmp)
+<images/asibumi.png>
+File: images/usbamp.png Graphic file (type bmp)
+ <images/usbamp.png> [48
+
+]
+File: images/eeg_sub1.png Graphic file (type bmp)
+ <images/eeg_sub1.png>
+File: images/eeg_sub2.png Graphic file (type bmp)
+
+<images/eeg_sub2.png>) [49] [50]
+\mc 第5\mc 章
+(./chapter/chapter4/NN.tex [51
+
+] [52] [53] [54]
+Overfull \hbox (6.60625pt too wide) in paragraph at lines 170--178
+\JY1/hmc/m/n/10 ここに $\U/matha/m/n/10 d$ \JY1/hmc/m/n/10 は同じ次元のベクトル
+の要素ごとの積である 。 パラメ ータは $\OML/cmm/m/it/10 W[]; W[]; W[]; W[] \U/m
+atha/m/n/10 P
+ []
+
+[55] [56]
+File: images/activations.png Graphic file (type bmp)
+ <images/activations.png> [57]) (./chapter/chapter4/pseudoFBCSP.tex
+[58]
+File: images/pseudFBCSP.png Graphic file (type bmp)
+ <images/pseudFBCSP.png> [59] [60]
+File: images/pseudFBCSP3d.png Graphic file (type bmp)
+ <images/pseudFBCSP3d.png>
+File: images/ConvLSTM2d.png Graphic file (type bmp)
+
+<images/ConvLSTM2d.png>) [61] [62]
+\mc 第6\mc 章
+(./chapter/chapter5/data.tex [63
+
+]
+File: images/system1010.png Graphic file (type bmp)
+ <images/system1010.png>
+File: images/motorimage.png Graphic file (type bmp)
+
+<images/motorimage.png> [64] [65] [66]
+File: images/LR.png Graphic file (type bmp)
+ <images/LR.png>
+File: images/HF.png Graphic file (type bmp)
+ <images/HF.png>
+Overfull \hbox (1.49994pt too wide) in paragraph at lines 125--139
+[]$[]$ $[]$ 
+ []
+
+File: images/LH.png Graphic file (type bmp)
+<images/LH.png>
+File: images/RH.png Graphic file (type bmp)
+ <images/RH.png>
+Overfull \hbox (1.49994pt too wide) in paragraph at lines 141--155
+[]$[]$ $[]$ 
+ []
+
+File: images/LF.png Graph
