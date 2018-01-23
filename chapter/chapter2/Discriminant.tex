@@ -31,7 +31,7 @@ zに対してある閾値を設定し、\(z \geq -w_0\)の場合はクラス\(C_
 \begin{figure}
     \centering
     \includegraphics[width=12cm]{images/mean_dis.png}
-    \caption{クラス毎の平均間の距離を射影先で最大化した判別分析}
+    \caption{クラス毎の平均間の距離を射影先で最大化した判別分析\cite{BRML}}
     \label{fig:mean_dis}
 \end{figure}
 この問題を解決するためにはデータの分散を考慮する必要がある。
@@ -57,7 +57,7 @@ LDAでは以下の評価関数を用いる。
 \begin{figure}
     \centering
     \includegraphics[width=12cm]{images/var_dis.png}
-    \caption{クラス毎の平均間の距離を射影先で最大化し、総クラス内分散を最小化した判別分析}
+    \caption{クラス毎の平均間の距離を射影先で最大化し、総クラス内分散を最小化した判別分析\cite{BRML}}
     \label{fig:var_dis}
 \end{figure}
 
@@ -233,7 +233,7 @@ BCIも含めた多くの応用では既に知られた優れた性質を持つ�
 \end{equation}
 ここで学習データの数を\(N\)としている。
 また\(a_n\)はスカラーのパラメータであり、ラグランジュ法で双対問題を考えた際のラグランジュ乗数である。
-また最適化問題は以下で定式化される。
+また最適化問題は以下で定式化される\cite{PRMLSVM}。
 \begin{equation}
     \begin{aligned}
     & \argmax_{a_1,\cdots,a_N}
