@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.1.5)  25 JAN 2018 06:46
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.1.5)  25 JAN 2018 07:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1079,52 +1079,52 @@ File: images/allERDs.png Graphic file (type bmp)
 
 <images/allERDs.png>
 File: images/walkERD.png Graphic file (type bmp)
- <images/walkERD.png> [50] [51]
-File: images/footBCI.png Graphic file (type bmp)
- <images/footBCI.png>
+ <images/walkERD.png> [50] [51] [52]
+File: images/prepro.png Graphic file (type bmp)
+ <images/prepro.png>
 File: images/feature_sub1_nofilter.png Graphic file (type bmp)
 
-<images/feature_sub1_nofilter.png> [52]
+<images/feature_sub1_nofilter.png>
 File: images/feature_sub1_l.png Graphic file (type bmp)
- <images/feature_sub1_l.png>
+ <images/feature_sub1_l.png> [53]
 File: images/feature_sub1.png Graphic file (type bmp)
 
-<images/feature_sub1.png> [53] [54]
+<images/feature_sub1.png>
 File: images/feature_sub1_fft.png Graphic file (type bmp)
  <images/feature_sub1_fft.png>
 File: images/feature_sub1_welch.png Graphic file (type bmp)
 
-<images/feature_sub1_welch.png>) [55]
+<images/feature_sub1_welch.png>) [54] [55] [56]
 \mc 第5\mc 章
-(./chapter/chapter4/NN.tex [56
+(./chapter/chapter4/NN.tex [57
 
-] [57] [58] [59]
+] [58] [59] [60]
 Overfull \hbox (6.60625pt too wide) in paragraph at lines 170--178
 \JY1/hmc/m/n/10 ここに $\U/matha/m/n/10 d$ \JY1/hmc/m/n/10 は同じ次元のベクトル
 の要素ごとの積である 。 パラメ ータは $\OML/cmm/m/it/10 W[]; W[]; W[]; W[] \U/m
 atha/m/n/10 P
  []
 
-[60] [61]
+[61] [62]
 File: images/activations.png Graphic file (type bmp)
- <images/activations.png> [62]) (./chapter/chapter4/pseudoFBCSP.tex
-[63]
+ <images/activations.png> [63]) (./chapter/chapter4/pseudoFBCSP.tex
+[64]
 File: images/pseudFBCSP.png Graphic file (type bmp)
- <images/pseudFBCSP.png> [64] [65]
+ <images/pseudFBCSP.png> [65] [66]
 File: images/pseudFBCSP3d.png Graphic file (type bmp)
  <images/pseudFBCSP3d.png>
 File: images/ConvLSTM2d.png Graphic file (type bmp)
 
-<images/ConvLSTM2d.png>) [66] [67]
+<images/ConvLSTM2d.png>) [67] [68]
 \mc 第6\mc 章
-(./chapter/chapter5/data.tex [68
+(./chapter/chapter5/data.tex [69
 
 ]
 File: images/system1010.png Graphic file (type bmp)
  <images/system1010.png>
 File: images/motorimage.png Graphic file (type bmp)
 
-<images/motorimage.png> [69] [70] [71]
+<images/motorimage.png> [70] [71] [72]
 File: images/LR.png Graphic file (type bmp)
  <images/LR.png>
 File: images/HF.png Graphic file (type bmp)
@@ -1154,23 +1154,23 @@ Overfull \hbox (1.49994pt too wide) in paragraph at lines 179--207
 []$[]$ $[]$ 
  []
 
-[72] [73] [74]
+[73] [74] [75]
 File: images/linearof.png Graphic file (type bmp)
- <images/linearof.png> [75]
+ <images/linearof.png> [76]
 File: images/overfitting.png Graphic file (type bmp)
- <images/overfitting.png> [76]
-[77]
+ <images/overfitting.png> [77]
+[78]
 File: images/tester_acc.png Graphic file (type bmp)
  <images/tester_acc.png>
 File: images/traineracc.png Graphic file (type bmp)
  <images/traineracc.png>
 File: images/crosshist.png Graphic file (type bmp)
  <images/crosshist.png>)
-[78] [79] [80]
+[79] [80] [81]
 \mc 第7\mc 章
-(./chapter/chapter5/lastw.tex [81
+(./chapter/chapter5/lastw.tex [82
 
-]) [82] (./thesis.bbl [83
+]) [83] (./thesis.bbl [84
 
 ]
 
@@ -1187,15 +1187,15 @@ LaTeX Font Info:    Font shape `JT1/hgt/m/it' will be
 (Font)              scaled to size 9.24683pt on input line 51.
 LaTeX Font Info:    Font shape `JY1/hgt/m/it' will be
 (Font)              scaled to size 9.24683pt on input line 51.
-[84
+[85
 
-] [85] [86]
+] [86] [87]
 Underfull \hbox (badness 10000) in paragraph at lines 205--209
 []\T1/ntxtlf/m/n/10 David Bar-ber.  Bayesian rea-son-ing and ma-chine learn-ing
 .
  []
 
-[87] [88] [89]) [90]
+[88] [89] [90]) [91]
 No file thesis.ind.
 (./thesis.aux)
 
@@ -1207,11 +1207,11 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  9098 strings out of 493723
- 127393 string characters out of 6152571
+ 127390 string characters out of 6152571
  177694 words of memory out of 5000000
  12346 multiletter control sequences out of 15000+600000
  74675 words of font info for 157 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  38i,10n,77p,433b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (94 pages, 245600 bytes).
+Output written on thesis.dvi (95 pages, 246388 bytes).
