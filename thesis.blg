@@ -6,46 +6,46 @@ Database file #1: reference.bib
 Warning--can't use both volume and number fields in SSVEP
 Warning--can't use both author and editor fields in sparsemethod
 Warning--can't use both author and editor fields in bootCSP
-You've used 56 entries,
+You've used 57 entries,
             2270 wiz_defined-function locations,
-            885 strings with 13685 characters,
-and the built_in function-call counts, 20799 in all, are:
-= -- 1616
-> -- 618
-< -- 104
-+ -- 243
-- -- 187
-* -- 1112
-:= -- 2455
-add.period$ -- 169
-call.type$ -- 56
+            888 strings with 13704 characters,
+and the built_in function-call counts, 21348 in all, are:
+= -- 1667
+> -- 628
+< -- 106
++ -- 247
+- -- 190
+* -- 1137
+:= -- 2514
+add.period$ -- 172
+call.type$ -- 57
 change.case$ -- 49
 chr.to.int$ -- 0
-cite$ -- 59
-duplicate$ -- 1330
-empty$ -- 1955
-format.name$ -- 374
-if$ -- 5252
+cite$ -- 60
+duplicate$ -- 1365
+empty$ -- 2009
+format.name$ -- 380
+if$ -- 5399
 int.to.chr$ -- 0
-int.to.str$ -- 56
-missing$ -- 61
-newline$ -- 283
-num.names$ -- 58
-pop$ -- 365
+int.to.str$ -- 57
+missing$ -- 63
+newline$ -- 288
+num.names$ -- 59
+pop$ -- 376
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1100
+skip$ -- 1132
 stack$ -- 0
-substring$ -- 1183
-swap$ -- 491
-text.length$ -- 104
+substring$ -- 1231
+swap$ -- 508
+text.length$ -- 106
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 150
-width$ -- 58
-write$ -- 615
-is.kanji.str$ -- 692
+while$ -- 155
+width$ -- 59
+write$ -- 627
+is.kanji.str$ -- 703
 (There were 3 warnings)

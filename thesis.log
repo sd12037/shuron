@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.1.5)  24 JAN 2018 02:54
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.1.5)  25 JAN 2018 02:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1072,42 +1072,44 @@ File: images/asibumi.png Graphic file (type bmp)
 File: images/usbamp.png Graphic file (type bmp)
  <images/usbamp.png> [48
 
-]
+] [49]
 File: images/eeg_sub1.png Graphic file (type bmp)
  <images/eeg_sub1.png>
-File: images/eeg_sub2.png Graphic file (type bmp)
+File: images/allERDs.png Graphic file (type bmp)
 
-<images/eeg_sub2.png>) [49] [50]
+<images/allERDs.png>
+File: images/walkERD.png Graphic file (type bmp)
+ <images/walkERD.png>) [50] [51] [52]
 \mc 第5\mc 章
-(./chapter/chapter4/NN.tex [51
+(./chapter/chapter4/NN.tex [53
 
-] [52] [53] [54]
+] [54] [55] [56]
 Overfull \hbox (6.60625pt too wide) in paragraph at lines 170--178
 \JY1/hmc/m/n/10 ここに $\U/matha/m/n/10 d$ \JY1/hmc/m/n/10 は同じ次元のベクトル
 の要素ごとの積である 。 パラメ ータは $\OML/cmm/m/it/10 W[]; W[]; W[]; W[] \U/m
 atha/m/n/10 P
  []
 
-[55] [56]
+[57] [58]
 File: images/activations.png Graphic file (type bmp)
- <images/activations.png> [57]) (./chapter/chapter4/pseudoFBCSP.tex
-[58]
+ <images/activations.png> [59]) (./chapter/chapter4/pseudoFBCSP.tex
+[60]
 File: images/pseudFBCSP.png Graphic file (type bmp)
- <images/pseudFBCSP.png> [59] [60]
+ <images/pseudFBCSP.png> [61] [62]
 File: images/pseudFBCSP3d.png Graphic file (type bmp)
  <images/pseudFBCSP3d.png>
 File: images/ConvLSTM2d.png Graphic file (type bmp)
 
-<images/ConvLSTM2d.png>) [61] [62]
+<images/ConvLSTM2d.png>) [63] [64]
 \mc 第6\mc 章
-(./chapter/chapter5/data.tex [63
+(./chapter/chapter5/data.tex [65
 
 ]
 File: images/system1010.png Graphic file (type bmp)
  <images/system1010.png>
 File: images/motorimage.png Graphic file (type bmp)
 
-<images/motorimage.png> [64] [65] [66]
+<images/motorimage.png> [66] [67] [68]
 File: images/LR.png Graphic file (type bmp)
  <images/LR.png>
 File: images/HF.png Graphic file (type bmp)
@@ -1124,4 +1126,77 @@ Overfull \hbox (1.49994pt too wide) in paragraph at lines 141--155
 []$[]$ $[]$ 
  []
 
-File: images/LF.png Graph
+File: images/LF.png Graphic file (type bmp)
+<images/LF.png>
+File: images/RF.png Graphic file (type bmp)
+ <images/RF.png>
+Overfull \hbox (1.49994pt too wide) in paragraph at lines 157--171
+[]$[]$ $[]$ 
+ []
+
+
+Overfull \hbox (1.49994pt too wide) in paragraph at lines 179--207
+[]$[]$ $[]$ 
+ []
+
+[69] [70] [71]
+File: images/linearof.png Graphic file (type bmp)
+ <images/linearof.png> [72]
+File: images/overfitting.png Graphic file (type bmp)
+ <images/overfitting.png> [73]
+[74]
+File: images/tester_acc.png Graphic file (type bmp)
+ <images/tester_acc.png>
+File: images/traineracc.png Graphic file (type bmp)
+ <images/traineracc.png>
+File: images/crosshist.png Graphic file (type bmp)
+ <images/crosshist.png>)
+[75] [76] [77]
+\mc 第7\mc 章
+(./chapter/chapter5/lastw.tex [78
+
+]) [79] (./thesis.bbl [80
+
+]
+
+LaTeX Font Warning: Font shape `JT1/hgt/m/it' undefined
+(Font)              using `JT1/hgt/m/n' instead on input line 44.
+
+
+LaTeX Font Warning: Font shape `JY1/hgt/m/it' undefined
+(Font)              using `JY1/hgt/m/n' instead on input line 44.
+
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
+(Font)              scaled to size 10.0pt on input line 44.
+LaTeX Font Info:    Font shape `JT1/hgt/m/it' will be
+(Font)              scaled to size 9.24683pt on input line 51.
+LaTeX Font Info:    Font shape `JY1/hgt/m/it' will be
+(Font)              scaled to size 9.24683pt on input line 51.
+[81
+
+] [82] [83]
+Underfull \hbox (badness 10000) in paragraph at lines 205--209
+[]\T1/ntxtlf/m/n/10 David Bar-ber.  Bayesian rea-son-ing and ma-chine learn-ing
+.
+ []
+
+[84] [85] [86]) [87]
+No file thesis.ind.
+(./thesis.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 9074 strings out of 493723
+ 126778 string characters out of 6152571
+ 177626 words of memory out of 5000000
+ 12328 multiletter control sequences out of 15000+600000
+ 74675 words of font info for 157 fonts, out of 8000000 for 9000
+ 934 hyphenation exceptions out of 8191
+ 38i,10n,77p,433b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on thesis.dvi (91 pages, 238404 bytes).

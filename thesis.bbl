@@ -219,7 +219,7 @@ Bernhard Graimann, Bredan Allison, and Gert Pfurstcheller.
 
 \bibitem{脳波解析入門}
 開一夫, 金山範明河内山隆紀, 松本敦宮腰誠.
-\newblock 脳波解析入門:EEGLABとSPMを使いこなす.
+\newblock 脳波解析入門:EEGLABとSPMを使いこなす, pp. 157--186.
 \newblock 東京大学出版会, 2016.
 
 \bibitem{グラフフーリエ}
@@ -285,6 +285,11 @@ Kai~Keng Ang, Zheng~Yang Chin, ChuanchuWang, , Cuntai Guan, and Haihong Zhang.
 \newblock Filter bank common spatial pattern algorithm on bci competition iv
   datasets 2a and 2b.
 \newblock {\em frontiers in NEUROSCIENCE}, Vol.~29, pp. 2390--2397, March 2012.
+
+\bibitem{erdfreq}
+Bernhard Graimann, Bredan Allison, and Gert Pfurstcheller.
+\newblock {\em BRAIN-COMPUTER INTERFACES}, pp. 98--99.
+\newblock Springer, 2010.
 
 \bibitem{kNMF}
 M.~Sakai.
