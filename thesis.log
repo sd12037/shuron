@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.1.5)  25 JAN 2018 02:04
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.1.5)  25 JAN 2018 05:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1079,37 +1079,47 @@ File: images/allERDs.png Graphic file (type bmp)
 
 <images/allERDs.png>
 File: images/walkERD.png Graphic file (type bmp)
- <images/walkERD.png>) [50] [51] [52]
-\mc 第5\mc 章
-(./chapter/chapter4/NN.tex [53
+ <images/walkERD.png> [50] [51]
+File: images/footBCI.png Graphic file (type bmp)
+ <images/footBCI.png>
+File: images/feature_sub1_nofilter.png Graphic file (type bmp)
 
-] [54] [55] [56]
+<images/feature_sub1_nofilter.png> [52]
+File: images/feature_sub1_l.png Graphic file (type bmp)
+ <images/feature_sub1_l.png>
+File: images/feature_sub1.png Graphic file (type bmp)
+
+<images/feature_sub1.png>) [53] [54]
+\mc 第5\mc 章
+(./chapter/chapter4/NN.tex [55
+
+] [56] [57] [58]
 Overfull \hbox (6.60625pt too wide) in paragraph at lines 170--178
 \JY1/hmc/m/n/10 ここに $\U/matha/m/n/10 d$ \JY1/hmc/m/n/10 は同じ次元のベクトル
 の要素ごとの積である 。 パラメ ータは $\OML/cmm/m/it/10 W[]; W[]; W[]; W[] \U/m
 atha/m/n/10 P
  []
 
-[57] [58]
+[59] [60]
 File: images/activations.png Graphic file (type bmp)
- <images/activations.png> [59]) (./chapter/chapter4/pseudoFBCSP.tex
-[60]
+ <images/activations.png> [61]) (./chapter/chapter4/pseudoFBCSP.tex
+[62]
 File: images/pseudFBCSP.png Graphic file (type bmp)
- <images/pseudFBCSP.png> [61] [62]
+ <images/pseudFBCSP.png> [63] [64]
 File: images/pseudFBCSP3d.png Graphic file (type bmp)
  <images/pseudFBCSP3d.png>
 File: images/ConvLSTM2d.png Graphic file (type bmp)
 
-<images/ConvLSTM2d.png>) [63] [64]
+<images/ConvLSTM2d.png>) [65] [66]
 \mc 第6\mc 章
-(./chapter/chapter5/data.tex [65
+(./chapter/chapter5/data.tex [67
 
 ]
 File: images/system1010.png Graphic file (type bmp)
  <images/system1010.png>
 File: images/motorimage.png Graphic file (type bmp)
 
-<images/motorimage.png> [66] [67] [68]
+<images/motorimage.png> [68] [69] [70]
 File: images/LR.png Graphic file (type bmp)
  <images/LR.png>
 File: images/HF.png Graphic file (type bmp)
@@ -1139,23 +1149,23 @@ Overfull \hbox (1.49994pt too wide) in paragraph at lines 179--207
 []$[]$ $[]$ 
  []
 
-[69] [70] [71]
+[71] [72] [73]
 File: images/linearof.png Graphic file (type bmp)
- <images/linearof.png> [72]
+ <images/linearof.png> [74]
 File: images/overfitting.png Graphic file (type bmp)
- <images/overfitting.png> [73]
-[74]
+ <images/overfitting.png> [75]
+[76]
 File: images/tester_acc.png Graphic file (type bmp)
  <images/tester_acc.png>
 File: images/traineracc.png Graphic file (type bmp)
  <images/traineracc.png>
 File: images/crosshist.png Graphic file (type bmp)
  <images/crosshist.png>)
-[75] [76] [77]
+[77] [78] [79]
 \mc 第7\mc 章
-(./chapter/chapter5/lastw.tex [78
+(./chapter/chapter5/lastw.tex [80
 
-]) [79] (./thesis.bbl [80
+]) [81] (./thesis.bbl [82
 
 ]
 
@@ -1172,15 +1182,15 @@ LaTeX Font Info:    Font shape `JT1/hgt/m/it' will be
 (Font)              scaled to size 9.24683pt on input line 51.
 LaTeX Font Info:    Font shape `JY1/hgt/m/it' will be
 (Font)              scaled to size 9.24683pt on input line 51.
-[81
+[83
 
-] [82] [83]
+] [84] [85]
 Underfull \hbox (badness 10000) in paragraph at lines 205--209
 []\T1/ntxtlf/m/n/10 David Bar-ber.  Bayesian rea-son-ing and ma-chine learn-ing
 .
  []
 
-[84] [85] [86]) [87]
+[86] [87] [88]) [89]
 No file thesis.ind.
 (./thesis.aux)
 
@@ -1191,12 +1201,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 9074 strings out of 493723
- 126778 string characters out of 6152571
- 177626 words of memory out of 5000000
- 12328 multiletter control sequences out of 15000+600000
+ 9090 strings out of 493723
+ 127177 string characters out of 6152571
+ 177670 words of memory out of 5000000
+ 12340 multiletter control sequences out of 15000+600000
  74675 words of font info for 157 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  38i,10n,77p,433b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (91 pages, 238404 bytes).
+Output written on thesis.dvi (93 pages, 244328 bytes).
