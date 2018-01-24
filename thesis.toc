@@ -41,46 +41,46 @@
 \contentsline {section}{\numberline {4.1}計測したEEGについて}{48}
 \contentsline {section}{\numberline {4.2}EEGの解析}{49}
 \contentsline {subsection}{\numberline {4.2.1}足動作検知の信号処理}{52}
-\contentsline {chapter}{\numberline {\mc 第5\mc 章}\mc 提案手法}{55}
-\contentsline {section}{\numberline {5.1}\mc 提案手法の狙い}{55}
-\contentsline {subsection}{\numberline {5.1.1}従来手法の問題点}{55}
-\contentsline {subsection}{\numberline {5.1.2}End to End学習}{56}
-\contentsline {subsection}{\numberline {5.1.3}\mc ニューラルネットワークに用いられる層}{57}
-\contentsline {subsubsection}{\rm Linear\mc 層}{57}
-\contentsline {subsubsection}{\rm Bilinear\mc 層}{58}
-\contentsline {subsubsection}{\rm Convolution\mc 層}{58}
-\contentsline {subsubsection}{\rm Recurrent\mc 層}{58}
-\contentsline {subsubsection}{\rm LSTM\mc 層}{59}
-\contentsline {subsection}{\numberline {5.1.4}\mc 活性化関数}{60}
-\contentsline {subsubsection}{\mc シグモイド関数}{60}
-\contentsline {subsubsection}{\mc 双曲線正接関数}{60}
-\contentsline {subsubsection}{\mc ランプ関数}{60}
-\contentsline {subsubsection}{\rm leaklyReLU\mc 関数}{61}
-\contentsline {subsubsection}{\rm elu\mc 関数}{61}
-\contentsline {subsubsection}{\mc ソフトマックス関数}{62}
-\contentsline {subsection}{\numberline {5.1.5}\mc ニューラルネットワークの設計と学習}{62}
-\contentsline {section}{\numberline {5.2}\rm FilterBank Network \mc （提案手法1）}{62}
-\contentsline {subsubsection}{\rm Convlution\mc 層によるFIR フィルタバンク}{62}
-\contentsline {subsubsection}{\rm Convlution\mc 層による空間フィルタ}{63}
-\contentsline {section}{\numberline {5.3}\rm 3DConvlution + 2DConvLSTM\mc （提案手法2）}{64}
-\contentsline {subsubsection}{\mc 高階テンソルとしての \rm EEG\mc データ構造}{64}
-\contentsline {subsubsection}{\rm ConvLSTM}{65}
-\contentsline {chapter}{\numberline {\mc 第6\mc 章}\mc 実験結果と考察}{67}
-\contentsline {section}{\numberline {6.1}\mc 提案手法の評価}{67}
-\contentsline {subsection}{\numberline {6.1.1}\rm EEG \mc データ}{67}
-\contentsline {subsection}{\numberline {6.1.2}\mc 評価方法}{68}
-\contentsline {subsection}{\numberline {6.1.3}\mc ニューラルネットワークの構成}{70}
-\contentsline {subsection}{\numberline {6.1.4}\mc 結果}{71}
-\contentsline {subsection}{\numberline {6.1.5}\mc 考察}{72}
-\contentsline {section}{\numberline {6.2}\mc 被験者のデータを混合したBCI構築}{73}
-\contentsline {subsection}{\numberline {6.2.1}\mc データの混合}{73}
-\contentsline {subsection}{\numberline {6.2.2}\mc 混合データに対する結果}{74}
-\contentsline {subsection}{\numberline {6.2.3}\mc 活性化関数に \rm elu \mc を用いた場合の結果}{74}
-\contentsline {subsection}{\numberline {6.2.4}\mc 考察}{76}
-\contentsline {section}{\numberline {6.3}\mc 新規被験者への適用検討}{77}
-\contentsline {subsection}{\numberline {6.3.1}\mc 実験内容と結果}{77}
-\contentsline {subsection}{\numberline {6.3.2}\mc 考察}{77}
-\contentsline {chapter}{\numberline {\mc 第7\mc 章}\mc 結論}{80}
-\contentsline {section}{\numberline {7.1}\mc まとめ}{80}
-\contentsline {section}{\numberline {7.2}\mc 今後の展望}{81}
-\contentsline {chapter}{参考文献}{83}
+\contentsline {chapter}{\numberline {\mc 第5\mc 章}\mc 提案手法}{56}
+\contentsline {section}{\numberline {5.1}\mc 提案手法の狙い}{56}
+\contentsline {subsection}{\numberline {5.1.1}従来手法の問題点}{56}
+\contentsline {subsection}{\numberline {5.1.2}End to End学習}{57}
+\contentsline {subsection}{\numberline {5.1.3}\mc ニューラルネットワークに用いられる層}{58}
+\contentsline {subsubsection}{\rm Linear\mc 層}{58}
+\contentsline {subsubsection}{\rm Bilinear\mc 層}{59}
+\contentsline {subsubsection}{\rm Convolution\mc 層}{59}
+\contentsline {subsubsection}{\rm Recurrent\mc 層}{59}
+\contentsline {subsubsection}{\rm LSTM\mc 層}{60}
+\contentsline {subsection}{\numberline {5.1.4}\mc 活性化関数}{61}
+\contentsline {subsubsection}{\mc シグモイド関数}{61}
+\contentsline {subsubsection}{\mc 双曲線正接関数}{61}
+\contentsline {subsubsection}{\mc ランプ関数}{61}
+\contentsline {subsubsection}{\rm leaklyReLU\mc 関数}{62}
+\contentsline {subsubsection}{\rm elu\mc 関数}{62}
+\contentsline {subsubsection}{\mc ソフトマックス関数}{63}
+\contentsline {subsection}{\numberline {5.1.5}\mc ニューラルネットワークの設計と学習}{63}
+\contentsline {section}{\numberline {5.2}\rm FilterBank Network \mc （提案手法1）}{63}
+\contentsline {subsubsection}{\rm Convlution\mc 層によるFIR フィルタバンク}{63}
+\contentsline {subsubsection}{\rm Convlution\mc 層による空間フィルタ}{64}
+\contentsline {section}{\numberline {5.3}\rm 3DConvlution + 2DConvLSTM\mc （提案手法2）}{65}
+\contentsline {subsubsection}{\mc 高階テンソルとしての \rm EEG\mc データ構造}{65}
+\contentsline {subsubsection}{\rm ConvLSTM}{66}
+\contentsline {chapter}{\numberline {\mc 第6\mc 章}\mc 実験結果と考察}{68}
+\contentsline {section}{\numberline {6.1}\mc 提案手法の評価}{68}
+\contentsline {subsection}{\numberline {6.1.1}\rm EEG \mc データ}{68}
+\contentsline {subsection}{\numberline {6.1.2}\mc 評価方法}{69}
+\contentsline {subsection}{\numberline {6.1.3}\mc ニューラルネットワークの構成}{71}
+\contentsline {subsection}{\numberline {6.1.4}\mc 結果}{72}
+\contentsline {subsection}{\numberline {6.1.5}\mc 考察}{73}
+\contentsline {section}{\numberline {6.2}\mc 被験者のデータを混合したBCI構築}{74}
+\contentsline {subsection}{\numberline {6.2.1}\mc データの混合}{74}
+\contentsline {subsection}{\numberline {6.2.2}\mc 混合データに対する結果}{75}
+\contentsline {subsection}{\numberline {6.2.3}\mc 活性化関数に \rm elu \mc を用いた場合の結果}{75}
+\contentsline {subsection}{\numberline {6.2.4}\mc 考察}{77}
+\contentsline {section}{\numberline {6.3}\mc 新規被験者への適用検討}{78}
+\contentsline {subsection}{\numberline {6.3.1}\mc 実験内容と結果}{78}
+\contentsline {subsection}{\numberline {6.3.2}\mc 考察}{78}
+\contentsline {chapter}{\numberline {\mc 第7\mc 章}\mc 結論}{81}
+\contentsline {section}{\numberline {7.1}\mc まとめ}{81}
+\contentsline {section}{\numberline {7.2}\mc 今後の展望}{82}
+\contentsline {chapter}{参考文献}{84}

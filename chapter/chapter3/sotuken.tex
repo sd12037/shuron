@@ -158,12 +158,32 @@ rest状態とwalk状態の相対的なパワーの変化に着目する必要が
 また、ERDを検知する場合には
 rest状態とwalk状態の各状態間のパワースペクトル密度の相対的差異が重要である
 と考えられることを前述した。
-同時に、分類機にとっても相対的差異のみが重要であり絶対値は影響しないことを考慮し、
+同時に、分類器にとっても相対的差異のみが重要であり絶対値は影響しないことを考慮し、
 5.ハイパスフィルタによって定常成分をカットした（図\ref{fig:filterERD}）。
-
 \begin{figure}[p]
     \centering
     \includegraphics[width=13cm]{images/feature_sub1.png}
     \caption{ローパスフィルタとハイパスフィルタを追加した28個の特徴量の時間変化}
     \label{fig:filterERD}
+\end{figure}
+
+バーグ法によるスペクトル密度推定値をピリオドグラムに置き換え、
+同様の処理を行った際の特徴量の時間変化を図\ref{fig:fftERD}に示す。
+またバーグ法をウェルチのピリオドグラム法で置き換えた際の特徴量の時間変化を
+図\ref{fig:welchERD}に示す。
+いずれもスペクトル密度推定として広く用いられる方法であるが、バーグ法を用いた
+場合のスペクトル密度の時間変化（図\ref{fig:filterERD}）は
+特徴量（ERD）が目視できるほどに強調されていることが分かる。
+
+\begin{figure}[tp]
+    \centering
+    \includegraphics[width=13cm]{images/feature_sub1_fft.png}
+    \caption{ピリオドグラムを用いた28個の特徴量の時間変化}
+    \label{fig:fftERD}
+\end{figure}
+\begin{figure}[tp]
+    \centering
+    \includegraphics[width=13cm]{images/feature_sub1_welch.png}
+    \caption{ウェルチのピリオドグラム法を用いた28個の特徴量の時間変化}
+    \label{fig:welchERD}
 \end{figure}
