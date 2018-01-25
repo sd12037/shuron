@@ -37,52 +37,52 @@
 \contentsline {subsection}{\numberline {3.2.2}\rm Common Spatial Pattern(CSP)}{43}
 \contentsline {subsection}{\numberline {3.2.3}\rm Common Sparse Spatio Spectral Pattern(CSSSP)}{45}
 \contentsline {subsection}{\numberline {3.2.4}\rm Filter Bank Common Spatial Pattern(FBCSP)}{47}
-\contentsline {chapter}{\numberline {\mc 第4\mc 章}従来手法を用いた足動作検知のためのBCI}{48}
-\contentsline {section}{\numberline {4.1}計測したEEGについて}{48}
-\contentsline {section}{\numberline {4.2}EEGの解析}{49}
-\contentsline {subsection}{\numberline {4.2.1}スペクトル密度推定によるERDの確認}{49}
-\contentsline {subsection}{\numberline {4.2.2}足動作検知のための信号処理}{52}
-\contentsline {subsection}{\numberline {4.2.3}分類器}{54}
-\contentsline {chapter}{\numberline {\mc 第5\mc 章}\mc 提案手法}{57}
-\contentsline {section}{\numberline {5.1}\mc 提案手法の狙い}{57}
-\contentsline {subsection}{\numberline {5.1.1}従来手法の問題点}{57}
-\contentsline {subsection}{\numberline {5.1.2}End to End学習}{58}
-\contentsline {subsection}{\numberline {5.1.3}\mc ニューラルネットワークに用いられる層}{59}
-\contentsline {subsubsection}{\rm Linear\mc 層}{59}
-\contentsline {subsubsection}{\rm Bilinear\mc 層}{60}
-\contentsline {subsubsection}{\rm Convolution\mc 層}{60}
-\contentsline {subsubsection}{\rm Recurrent\mc 層}{60}
-\contentsline {subsubsection}{\rm LSTM\mc 層}{61}
-\contentsline {subsection}{\numberline {5.1.4}\mc 活性化関数}{62}
-\contentsline {subsubsection}{\mc シグモイド関数}{62}
-\contentsline {subsubsection}{\mc 双曲線正接関数}{62}
-\contentsline {subsubsection}{\mc ランプ関数}{62}
-\contentsline {subsubsection}{\rm leaklyReLU\mc 関数}{63}
-\contentsline {subsubsection}{\rm elu\mc 関数}{63}
-\contentsline {subsubsection}{\mc ソフトマックス関数}{64}
-\contentsline {subsection}{\numberline {5.1.5}\mc ニューラルネットワークの設計と学習}{64}
-\contentsline {section}{\numberline {5.2}\rm FilterBank Network \mc （提案手法1）}{64}
-\contentsline {subsubsection}{\rm Convlution\mc 層によるFIR フィルタバンク}{64}
-\contentsline {subsubsection}{\rm Convlution\mc 層による空間フィルタ}{65}
-\contentsline {section}{\numberline {5.3}\rm 3DConvlution + 2DConvLSTM\mc （提案手法2）}{66}
-\contentsline {subsubsection}{\mc 高階テンソルとしての \rm EEG\mc データ構造}{66}
-\contentsline {subsubsection}{\rm ConvLSTM}{67}
-\contentsline {chapter}{\numberline {\mc 第6\mc 章}\mc 実験結果と考察}{69}
-\contentsline {section}{\numberline {6.1}\mc 提案手法の評価}{69}
-\contentsline {subsection}{\numberline {6.1.1}\rm EEG \mc データ}{69}
-\contentsline {subsection}{\numberline {6.1.2}\mc 評価方法}{70}
-\contentsline {subsection}{\numberline {6.1.3}\mc ニューラルネットワークの構成}{72}
-\contentsline {subsection}{\numberline {6.1.4}\mc 結果}{73}
-\contentsline {subsection}{\numberline {6.1.5}\mc 考察}{74}
-\contentsline {section}{\numberline {6.2}\mc 被験者のデータを混合したBCI構築}{75}
-\contentsline {subsection}{\numberline {6.2.1}\mc データの混合}{75}
-\contentsline {subsection}{\numberline {6.2.2}\mc 混合データに対する結果}{76}
-\contentsline {subsection}{\numberline {6.2.3}\mc 活性化関数に \rm elu \mc を用いた場合の結果}{76}
-\contentsline {subsection}{\numberline {6.2.4}\mc 考察}{78}
-\contentsline {section}{\numberline {6.3}\mc 新規被験者への適用検討}{79}
-\contentsline {subsection}{\numberline {6.3.1}\mc 実験内容と結果}{79}
-\contentsline {subsection}{\numberline {6.3.2}\mc 考察}{79}
-\contentsline {chapter}{\numberline {\mc 第7\mc 章}\mc 結論}{82}
-\contentsline {section}{\numberline {7.1}\mc まとめ}{82}
-\contentsline {section}{\numberline {7.2}\mc 今後の展望}{83}
-\contentsline {chapter}{参考文献}{85}
+\contentsline {chapter}{\numberline {\mc 第4\mc 章}\mc 従来手法を用いた足動作検知のための\rm BCI}{48}
+\contentsline {section}{\numberline {4.1}\mc 計測した\rm EEG\mc について}{48}
+\contentsline {section}{\numberline {4.2}\rm EEG \mc の解析}{49}
+\contentsline {subsection}{\numberline {4.2.1}\mc スペクトル密度推定による\rm ERD\mc の確認}{49}
+\contentsline {subsection}{\numberline {4.2.2}\mc 足動作検知のための信号処理}{52}
+\contentsline {subsection}{\numberline {4.2.3}\mc 次元削減と分類}{54}
+\contentsline {chapter}{\numberline {\mc 第5\mc 章}\mc 提案手法}{58}
+\contentsline {section}{\numberline {5.1}\mc 提案手法の狙い}{58}
+\contentsline {subsection}{\numberline {5.1.1}従来手法の問題点}{58}
+\contentsline {subsection}{\numberline {5.1.2}End to End学習}{59}
+\contentsline {subsection}{\numberline {5.1.3}\mc ニューラルネットワークに用いられる層}{60}
+\contentsline {subsubsection}{\rm Linear\mc 層}{60}
+\contentsline {subsubsection}{\rm Bilinear\mc 層}{61}
+\contentsline {subsubsection}{\rm Convolution\mc 層}{61}
+\contentsline {subsubsection}{\rm Recurrent\mc 層}{61}
+\contentsline {subsubsection}{\rm LSTM\mc 層}{62}
+\contentsline {subsection}{\numberline {5.1.4}\mc 活性化関数}{63}
+\contentsline {subsubsection}{\mc シグモイド関数}{63}
+\contentsline {subsubsection}{\mc 双曲線正接関数}{63}
+\contentsline {subsubsection}{\mc ランプ関数}{63}
+\contentsline {subsubsection}{\rm leaklyReLU\mc 関数}{64}
+\contentsline {subsubsection}{\rm elu\mc 関数}{64}
+\contentsline {subsubsection}{\mc ソフトマックス関数}{65}
+\contentsline {subsection}{\numberline {5.1.5}\mc ニューラルネットワークの設計と学習}{65}
+\contentsline {section}{\numberline {5.2}\rm FilterBank Network \mc （提案手法1）}{65}
+\contentsline {subsubsection}{\rm Convlution\mc 層によるFIR フィルタバンク}{65}
+\contentsline {subsubsection}{\rm Convlution\mc 層による空間フィルタ}{66}
+\contentsline {section}{\numberline {5.3}\rm 3DConvlution + 2DConvLSTM\mc （提案手法2）}{67}
+\contentsline {subsubsection}{\mc 高階テンソルとしての \rm EEG\mc データ構造}{67}
+\contentsline {subsubsection}{\rm ConvLSTM}{68}
+\contentsline {chapter}{\numberline {\mc 第6\mc 章}\mc 実験結果と考察}{70}
+\contentsline {section}{\numberline {6.1}\mc 提案手法の評価}{70}
+\contentsline {subsection}{\numberline {6.1.1}\rm EEG \mc データ}{70}
+\contentsline {subsection}{\numberline {6.1.2}\mc 評価方法}{71}
+\contentsline {subsection}{\numberline {6.1.3}\mc ニューラルネットワークの構成}{73}
+\contentsline {subsection}{\numberline {6.1.4}\mc 結果}{74}
+\contentsline {subsection}{\numberline {6.1.5}\mc 考察}{75}
+\contentsline {section}{\numberline {6.2}\mc 被験者のデータを混合したBCI構築}{76}
+\contentsline {subsection}{\numberline {6.2.1}\mc データの混合}{76}
+\contentsline {subsection}{\numberline {6.2.2}\mc 混合データに対する結果}{77}
+\contentsline {subsection}{\numberline {6.2.3}\mc 活性化関数に \rm elu \mc を用いた場合の結果}{77}
+\contentsline {subsection}{\numberline {6.2.4}\mc 考察}{79}
+\contentsline {section}{\numberline {6.3}\mc 新規被験者への適用検討}{80}
+\contentsline {subsection}{\numberline {6.3.1}\mc 実験内容と結果}{80}
+\contentsline {subsection}{\numberline {6.3.2}\mc 考察}{80}
+\contentsline {chapter}{\numberline {\mc 第7\mc 章}\mc 結論}{83}
+\contentsline {section}{\numberline {7.1}\mc まとめ}{83}
+\contentsline {section}{\numberline {7.2}\mc 今後の展望}{84}
+\contentsline {chapter}{参考文献}{86}
