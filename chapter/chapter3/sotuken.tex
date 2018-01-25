@@ -222,6 +222,17 @@ PCAを次元削減に用いた場合、ロジスティック回帰の交差検�
 PCAを用いない場合の交差検証Accuracyは88.3\%となり、テストAccuracyは69.6\%となった。
 PCAを用いた場合の交差検証Accuracyは85.5\%となり、テストAccuracyは72.9\%となった。
 
+\begin{table}[t]
+    \centering
+    \caption{提案手法の問題毎の平均}
+    \begin{tabular}{|c|c|c|} \hline
+        分類手法 & 被験者1 & 被験者2 \\ \hline
+        LR &  & \\ \hline
+        PCA + LR & 0.6636 & \\ \hline
+    \end{tabular}
+    \label{table:meanacc}
+\end{table}
+
 そこで、\(x_i\)を28個並べたベクトル\(z_i=(x_i^T, x_{i+1}^T,\cdots, x_{i+27}^T)^T\ \in \mathbb R^{784}\)
 を導入する。分類器\(y_i=f(z_i)\)を考えた場合には各時刻の\(z_i\)に対して個々に分類を行うことになるが、
 \(z_i\)は28点分の時刻の情報を有しているため、分類器は\(x_i\)の時間変化を取り入れた学習が可能である。
