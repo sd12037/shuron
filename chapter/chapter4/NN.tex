@@ -60,16 +60,36 @@ EEGがどのように測定されるかはタスクに依存するが、
 しかしこのとき、BCIのデータの流れから明らかに関数\(f_i\)を設計するためには
 \(f_{i-1}\)の設計が終了していなければならない。
 
-\subsection{End to End学習}
-本研究では音声認識や画像認識の分野で高い性能を発揮している
-ニューラルネットワークに着目する。
-ニューラルネットワークは学習時の計算量が膨大であることから、
-長い間研究が滞っていたが、近年の計算機の発展により応用研究に用いられるようになり、
-人間の設計した分類器を凌駕する性能の高さから注目が集まっている。
+更に、商業利用が目される中で従来の方法によって設計が個別に行われることを想定した場合には
+BCIの設計者の負担と不足が見込まれる。
 
+\begin{figure}[pt]
+    \centering
+    \includegraphics[width=13cm]{images/jurai.png}
+    \caption{従来のBCI設計法}
+    \label{fig:hikaku1}
+\end{figure}
+\begin{figure}[pt]
+    \centering
+    \includegraphics[width=13cm]{images/teian.png}
+    \caption{提案するBCI設計法}
+    \label{fig:hikaku2}
+\end{figure}
+
+\subsection{End to End学習}
+End to End学習による狙いはEEGの個別の解析を排除し、
+BCIの設計を自動化することである。
+% 本研究では音声認識や画像認識の分野で高い性能を発揮している
+% ニューラルネットワークに着目する。
+% ニューラルネットワークは学習時の計算量が膨大であることから、
+% 長い間研究が滞っていたが、近年の計算機の発展により応用研究に用いられるようになり、
+% 人間の設計した分類器を凌駕する性能の高さから注目が集まっている。
+
+本研究ではBCIが元来合成関数として構築されてきたことを考慮し、
+適切なニューラルネットワークを構成することでEnd to End学習を目指した。
 ニューラルネットワークの実体は巨大な合成関数であり、
 事実上単なるパラメトリックな数理モデルである。
-しかし、誤差逆伝播学習によって原理上極めて
+誤差逆伝播学習によって原理上極めて
 深い合成関数の形式であっても学習が可能であるため、
 問題に応じてネットワーク構造の設計を適切に行うことで、
 特徴量抽出と分類を同時に達成できる可能性がある。
@@ -78,6 +98,13 @@ EEGがどのように測定されるかはタスクに依存するが、
 加えて、ニューラルネットワークの深層構造によって高い性能が引き出されること\cite{DeepvsShallow}や、
 モデルの複雑さと比較して最適化問題の目的関数は病理的ではない、
 あるいは病理的な形状を回避できることが示唆されるようになった\cite{ディープローカルミニマム}。
+
+更にニューラルネットワークは学習済のパラメータを初期値に再学習が可能である。
+また、学習済のパラメータの一部を定数として扱うことで、一種の特徴抽出器として転用（転移学習）することもできる。
+この性質を利用することでEnd to Endで多数の人間のEEGを学習させておき、
+実際にBCIを利用する際には個別用に転移学習という形で簡易に設計が済まされる。
+従来の設計方法との違いの概念図を図\ref{fig:hikaku1}、\ref{fig:hikaku2}に示す。
+
 
 
 初めに提案手法の大部分を占めるニューラルネットワークについて説明する。
@@ -96,6 +123,7 @@ EEGがどのように測定されるかはタスクに依存するが、
 % \subsection{\mc モデル構築と学習}
 % ニューラルネットワークは
 
+\section{\mc ニューラルネットワーク}
 \subsection{\mc ニューラルネットワークに用いられる層}
 \subsubsection{\rm Linear\mc 層}
 ニューラルネットワークで最も基本的な層はLinear層である。
@@ -113,14 +141,14 @@ Linear層は入力としてベクトル\(x \in \mathbb R^D\)、パラメータ�
 ここに\(w_{j,i}\)は行列\(W\)の\((j,i)\)成分、\(b_j\)はベクトル\(b\)の\(j\)番目の成分である。
 % 以下、層のパラメトリックな関数による記述と出力の成分表示にいずれの表記も場面に応じて使い分ける。
 
-\subsubsection{\rm Bilinear\mc 層}
-Bilinear層は入力として\(x^{(1)}\in \mathbb R^{D_1}\)と\(x^{(2)}\in \mathbb R^{D_2}\)の
-2つを受け取り、1つの出力\(y \in \mathbb R^d\)を返す。
-\begin{equation}
-    y_k = \sum_{j=1}^{D_1}\sum_{i=1}^{D_2}w_{j,i,k}x_j^{(1)}x_i^{(2)} + b_k
-\end{equation}
-ここでn階のテンソル\(A\in \mathbb R^{D_1,\cdots ,D_n}\)の\((d_1,\cdots,d_n)\)成分を\(a_{d_1,\cdots,d_n}\)と表記している。
-パラメータは\(W\in \mathbb R^{D_1\times D_2 \times K}\)と\(b \in \mathbb R^K\)である。
+% \subsubsection{\rm Bilinear\mc 層}
+% Bilinear層は入力として\(x^{(1)}\in \mathbb R^{D_1}\)と\(x^{(2)}\in \mathbb R^{D_2}\)の
+% 2つを受け取り、1つの出力\(y \in \mathbb R^d\)を返す。
+% \begin{equation}
+%     y_k = \sum_{j=1}^{D_1}\sum_{i=1}^{D_2}w_{j,i,k}x_j^{(1)}x_i^{(2)} + b_k
+% \end{equation}
+% ここでn階のテンソル\(A\in \mathbb R^{D_1,\cdots ,D_n}\)の\((d_1,\cdots,d_n)\)成分を\(a_{d_1,\cdots,d_n}\)と表記している。
+% パラメータは\(W\in \mathbb R^{D_1\times D_2 \times K}\)と\(b \in \mathbb R^K\)である。
 
 \subsubsection{\rm Convolution\mc 層}
 Convolution層はパラメータとして\(H \in \mathbb R^{P\times Q\times C\times L}\)と\(B \in \mathbb R^{I\times J\times L}\)を有し、

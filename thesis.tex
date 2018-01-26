@@ -48,6 +48,13 @@
 % {\reset@font\Large\mcfamily}}
 % \makeatother
 
+% \makeatletter
+% \renewcommand{\subsubsection}{\@startsection{subsubsection}{1}
+% {\z@}%
+% {1.5\Cvs \@plus.5\Cvs \@minus.2\Cvs}%
+% {.5\Cvs \@plus.3\Cvs}%
+% {\reset@font\large\bfseries}}
+% \makeatother
 
 \captionsetup[figure]{format=plain, labelformat=simple, font=small}
 \captionsetup[table]{format=plain, labelformat=simple, font=small}
@@ -150,7 +157,8 @@
 \input{chapter/chapter3/CSP}
 \input{chapter/chapter3/sotuken}
 
-\chapter{\mc 提案手法}
+\chapter{\mc End to Endに向けた提案手法}
+\label{chapter:myop}
 \input{chapter/chapter4/NN}
 \input{chapter/chapter4/pseudoFBCSP}
 % \input{chapter/chapter4/3DpseudoFBCSP}
