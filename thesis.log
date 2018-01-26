@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.1.5)  26 JAN 2018 18:11
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.1.5)  27 JAN 2018 05:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1224,12 +1224,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 9125 strings out of 493723
- 127944 string characters out of 6152571
- 177794 words of memory out of 5000000
- 12367 multiletter control sequences out of 15000+600000
+ 9126 strings out of 493723
+ 127950 string characters out of 6152571
+ 177798 words of memory out of 5000000
+ 12368 multiletter control sequences out of 15000+600000
  74675 words of font info for 157 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  38i,10n,77p,433b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (100 pages, 262164 bytes).
+Output written on thesis.dvi (100 pages, 264184 bytes).

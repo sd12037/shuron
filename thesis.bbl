@@ -321,6 +321,11 @@ Kenji Kawaguchi.
   editors, {\em Advances in Neural Information Processing Systems 29}, pp.
   586--594. Curran Associates, Inc., 2016.
 
+\bibitem{LSTM}
+岡谷貴之.
+\newblock 深層学習, pp. 120--124.
+\newblock 講談社, 2015.
+
 \bibitem{BCI2000}
 G.~Schalk, D.~J. McFarland, T.~Hinterberger, N.~Birbaumer, and J.~R. Wolpaw.
 \newblock Bci2000: a general-purpose brain-computer interface (bci) system.
