@@ -188,18 +188,13 @@ S.~J. Pan and Q.~Yang.
 
 \bibitem{スペクトル解析}
 日野幹雄.
-\newblock スペクトル解析（統計ライブラリー）.
+\newblock スペクトル解析（統計ライブラリー）, pp. 86--91.
 \newblock 朝倉書店, 1977.
 
 \bibitem{ICA1}
 Hiromu Gotanda, Takaaki Ishibashi, Nobuo Iwasaki, and Katsuhiro Inoue.
 \newblock 独立成分分析の基礎と応用.
 \newblock Technical Report 1743, 数理解析研究所, 2011.
-
-\bibitem{ICA2}
-村田昇.
-\newblock 入門 独立成分分析.
-\newblock 東京電機大学出版, 2004.
 
 \bibitem{BRML}
 David Barber.
@@ -345,5 +340,25 @@ Hyun~Seok Kim, Min~Hye Chang, Hong~Ji Lee, and Kwang~Suk Park.
   combination of motor imagery tasks for brain-computer interface.
 \newblock In {\em 6th IEEE Annual International EMBS Conference of Neural
   Engineering}, pp. 435--438, November 2013.
+
+\bibitem{eegdataset}
+Cho Hohyun, Minkyu Ahn, Sangtae Ahn, Moonyoung Kwon, and Sung~Chan jun.
+\newblock Eeg datasets for motor imagery brain-computer interface.
+\newblock Vol.~6, No.~7, 2017.
+
+\bibitem{wavenet}
+A^^c3^^a4ron van~den Oord, Sander Dieleman, Heiga Zen, Karen Simonyan, Oriol
+  Vinyals, Alexander Graves, Nal Kalchbrenner, Andrew Senior, and Koray
+  Kavukcuoglu.
+\newblock Wavenet: A generative model for raw audio.
+\newblock In {\em Arxiv}, 2016.
+
+\bibitem{RCNN}
+Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun.
+\newblock Faster r-cnn: Towards real-time object detection with region proposal
+  networks.
+\newblock In C.~Cortes, N.~D. Lawrence, D.~D. Lee, M.~Sugiyama, and R.~Garnett,
+  editors, {\em Advances in Neural Information Processing Systems 28}, pp.
+  91--99. Curran Associates, Inc., 2015.
 
 \end{thebibliography}

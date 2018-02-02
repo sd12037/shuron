@@ -50,8 +50,44 @@ EEGを\(X\in \mathbb R^{M\times N\times 1}\)とする。
     \label{fig:pseudFBCSP}
 \end{figure}
 
-同時に最適化可能な点である。具体的なニューラルネットワークの構造は実験結果と共に記す。
-
+\subsection{\mc ニューラルネットワークの構成}
+n階のテンソル\(A\in \mathbb R^{D_1,\cdots ,D_n}\)の
+\((d_1,\cdots,d_n)\)成分を\(a_{d_1,\cdots,d_n}\)と表記する。
+入力\(X \in \mathbb R^{M\times N\times C}\)に対して
+Convolution層のパラメータを\(H \in \mathbb R^{P\times Q \times C \times L}\)として
+\begin{equation}
+    u_{m,n,k} = \sum_{c=1}^C\sum_{p=0}^{P-1}\sum_{q=0}^{Q-1} x_{m+p,n+q,c} h_{p,q,c,k} + b_{m,n,k}
+\end{equation} 
+と計算する。
+ここでテンソルの各次元について\(X \in \mathbb R^{space\times time\times frequency}\)であると仮定する。
+提案手法のニューラルネットワークの構成は入力側から
+\begin{enumerate}
+    \item 時間平均と時間分散による正規化
+    \item 畳み込み層\(H_1 \in \mathbb R^{1\times 75 \times 1 \times 32}\)
+    \item 畳み込み層\(H_2 \in \mathbb R^{64\times 1 \times 32 \times 32}\)
+    \item バッチ正規化
+    \item 平均プーリング1（プーリングサイズ:75とストライド:25)
+    \item ドロップアウト
+    \item \(H_3 \in \mathbb R^{1\times 12 \times 32 \times 2}\)
+    \item 平均プーリング2（出力サイズが\(1\times 1\times 2\)となるように設定）
+    \item ソフトマックス
+\end{enumerate}
+とした。
+損失関数としては交差エントロピー関数を用いた。
+最適化法としては比較的収束が速いとされるAdamを利用した。
+ドロップアウト率は0.5であり、\(L_1\)正則化や\(L_2\)正則化などの手法は用いていない。
+平均プーリング1はtime方向のみに行った。
+平均プーリング2は出力の要素数が\(2\)になるように調整し、
+各要素が2クラス分類におけるlogitを出力するようにした。
+ここでニューラルネットワークでは一般的には用いられない言葉である
+時間平均と時間分散による正規化について説明する。
+時間平均と時間分散による正規化は、\(X \in \mathbb R^{M\times N\times C}\)に対して
+\begin{eqnarray}
+    \mu_{m,1,1} & = & \frac{1}{N}\sum_n x_{m,n,1} \\
+    {\rm var}_{m,1,1} & = & \frac{1}{N}\sum_n (x_{m,n,1} - mu)^2 \\
+    x_{m,n,1} & \mapsto & \frac{x_{m,n,1} - \mu_{m,1,1}}{\sqrt{{\rm var}_{m,1,1}+\epsilon}}
+\end{eqnarray}
+という処理を行う層である。
 
 \section{\rm 3DConvlution + 2DConvLSTM\mc （提案手法2）}
 \subsubsection{\mc 高階テンソルとしての \rm EEG\mc データ構造}
@@ -115,3 +151,44 @@ Convolutionの演算時にパラメータのサイズによって覆われる空
 良い推定結果が得られるという東らの研究\cite{グラフフーリエ}がある。
 グラフフーリエでも、空間的に距離の近い電極によって測定されるEEGほど
 類似性が高いという仮定が決定論的に与えられる。
+
+\subsection{\mc ニューラルネットワークの構成}
+入力\(X = (X_1,\cdots,X_T)\in \mathbb R^{M_1 \times M_2 \times T \times K}\)の\(M_1,M_2\)は
+図\ref{fig:electo2}に示すように電極を\(11\times 11\)の2次元配列に格納することで実現する。
+\(T\)は計測時間点数であり、\(K=1\)である。
+\begin{figure}
+    \centering
+    \includegraphics[width=13cm]{images/denkyokuhaiti.png}
+    \caption{電極インデックスの2次元配列化}
+    \label{fig:electo2}
+\end{figure}
+
+ニューラルネットワークの構成は以下である。
+\begin{enumerate}
+    \item 時間平均と時間分散による正規化
+    \item 畳み込み層\(H_1 \in \mathbb R^{1 \times 1 \times 75 \times 1 \times 32}\)
+    \item バッチ正規化
+    \item 平均プーリング1（プーリングサイズ:75とストライド:25)
+    \item 畳み込みLSTM（カーネルサイズ\((3, 3)\)、隠れノード64）
+    \item 畳み込み層\(H_1 \in \mathbb R^{3 \times 3 \times 64 \times 128}\)
+    \item バッチ正規化    
+    \item ドロップアウト
+    \item 畳み込み層\(H_1 \in \mathbb R^{3 \times 3 \times 128 \times 256}\)
+    \item バッチ正規化    
+    \item ドロップアウト
+    \item 畳み込み層\(H_1 \in \mathbb R^{3 \times 3 \times 256 \times 512}\)
+    \item バッチ正規化    
+    \item ドロップアウト
+    \item 畳み込み層\(H_1 \in \mathbb R^{5 \times 5 \times 75 \times 512 \times 1024}\)
+    \item バッチ正規化    
+    \item ドロップアウト
+    \item 線形層\(W \in \mathbb R^{2\times 1024}\)
+    \item ソフトマックス
+\end{enumerate}
+
+本手法は畳み込み層によるFIRフィルタバンク（周波数領域）
+とLSTMによる自己回帰結合（時間領域）
+、そして空間フィルタとしての2D畳み込み（頭皮領域）
+の役割をそれぞれの層に分散させ階層的に学習させることを狙いとした。
+転移学習を行う場合には、ほとんどの層のパラメータを固定して一部のパラメータのみを更新する。
+その際、個人差として効いてくるパラメータがどの層に存在しうるのかが特定しやすい方が良いと考えられる。

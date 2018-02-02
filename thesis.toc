@@ -69,25 +69,24 @@
 \contentsline {section}{\numberline {5.3}\rm FilterBank Network \mc （提案手法1）}{70}
 \contentsline {subsubsection}{\rm Convlution\mc 層によるFIR フィルタバンク}{70}
 \contentsline {subsubsection}{\rm Convlution\mc 層による空間フィルタ}{71}
-\contentsline {section}{\numberline {5.4}\rm 3DConvlution + 2DConvLSTM\mc （提案手法2）}{71}
-\contentsline {subsubsection}{\mc 高階テンソルとしての \rm EEG\mc データ構造}{71}
-\contentsline {subsubsection}{\rm ConvLSTM}{72}
-\contentsline {chapter}{\numberline {\mc 第6\mc 章}\mc 実験結果と考察}{74}
-\contentsline {section}{\numberline {6.1}\mc 提案手法の評価}{74}
-\contentsline {subsection}{\numberline {6.1.1}\rm EEG \mc データ}{74}
-\contentsline {subsection}{\numberline {6.1.2}\mc 評価方法}{75}
-\contentsline {subsection}{\numberline {6.1.3}\mc ニューラルネットワークの構成}{77}
-\contentsline {subsection}{\numberline {6.1.4}\mc 結果}{78}
-\contentsline {subsection}{\numberline {6.1.5}\mc 考察}{79}
-\contentsline {section}{\numberline {6.2}\mc 被験者のデータを混合したBCI構築}{80}
-\contentsline {subsection}{\numberline {6.2.1}\mc データの混合}{80}
-\contentsline {subsection}{\numberline {6.2.2}\mc 混合データに対する結果}{81}
-\contentsline {subsection}{\numberline {6.2.3}\mc 活性化関数に \rm elu \mc を用いた場合の結果}{81}
-\contentsline {subsection}{\numberline {6.2.4}\mc 考察}{83}
-\contentsline {section}{\numberline {6.3}\mc 新規被験者への適用検討}{84}
-\contentsline {subsection}{\numberline {6.3.1}\mc 実験内容と結果}{84}
-\contentsline {subsection}{\numberline {6.3.2}\mc 考察}{84}
-\contentsline {chapter}{\numberline {\mc 第7\mc 章}\mc 結論}{87}
-\contentsline {section}{\numberline {7.1}\mc まとめ}{87}
-\contentsline {section}{\numberline {7.2}\mc 今後の展望}{88}
-\contentsline {chapter}{参考文献}{90}
+\contentsline {subsection}{\numberline {5.3.1}\mc ニューラルネットワークの構成}{71}
+\contentsline {section}{\numberline {5.4}\rm 3DConvlution + 2DConvLSTM\mc （提案手法2）}{73}
+\contentsline {subsubsection}{\mc 高階テンソルとしての \rm EEG\mc データ構造}{73}
+\contentsline {subsubsection}{\rm ConvLSTM}{73}
+\contentsline {subsection}{\numberline {5.4.1}\mc ニューラルネットワークの構成}{75}
+\contentsline {chapter}{\numberline {\mc 第6\mc 章}\mc 実験結果と考察}{78}
+\contentsline {section}{\numberline {6.1}\mc 提案手法の評価}{78}
+\contentsline {subsection}{\numberline {6.1.1}\rm EEG \mc データ}{78}
+\contentsline {subsection}{\numberline {6.1.2}\mc 評価方法}{79}
+\contentsline {subsection}{\numberline {6.1.3}\mc 結果}{81}
+\contentsline {subsection}{\numberline {6.1.4}\mc 考察}{82}
+\contentsline {section}{\numberline {6.2}\mc 被験者のデータを混合したBCI構築}{83}
+\contentsline {subsection}{\numberline {6.2.1}\mc データの混合}{83}
+\contentsline {subsection}{\numberline {6.2.2}\mc 混合データに対する結果}{83}
+\contentsline {subsection}{\numberline {6.2.3}\mc 活性化関数に \rm elu \mc を用いた場合の結果}{85}
+\contentsline {section}{\numberline {6.3}\mc 新規被験者への適用}{85}
+\contentsline {subsection}{\numberline {6.3.1}\mc 考察}{86}
+\contentsline {chapter}{\numberline {\mc 第7\mc 章}\mc 結論}{89}
+\contentsline {section}{\numberline {7.1}\mc まとめ}{89}
+\contentsline {section}{\numberline {7.2}\mc 今後の展望}{90}
+\contentsline {chapter}{参考文献}{93}

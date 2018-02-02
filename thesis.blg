@@ -6,46 +6,47 @@ Database file #1: reference.bib
 Warning--can't use both volume and number fields in SSVEP
 Warning--can't use both author and editor fields in sparsemethod
 Warning--can't use both author and editor fields in bootCSP
-You've used 58 entries,
+Warning--empty journal in eegdataset
+You've used 60 entries,
             2270 wiz_defined-function locations,
-            895 strings with 13745 characters,
-and the built_in function-call counts, 21717 in all, are:
-= -- 1700
-> -- 632
-< -- 107
-+ -- 249
-- -- 191
-* -- 1148
-:= -- 2554
-add.period$ -- 175
-call.type$ -- 58
-change.case$ -- 49
+            905 strings with 14356 characters,
+and the built_in function-call counts, 22795 in all, are:
+= -- 1769
+> -- 701
+< -- 111
++ -- 273
+- -- 213
+* -- 1224
+:= -- 2699
+add.period$ -- 182
+call.type$ -- 60
+change.case$ -- 52
 chr.to.int$ -- 0
-cite$ -- 61
-duplicate$ -- 1392
-empty$ -- 2050
-format.name$ -- 382
-if$ -- 5497
+cite$ -- 64
+duplicate$ -- 1444
+empty$ -- 2132
+format.name$ -- 426
+if$ -- 5756
 int.to.chr$ -- 0
-int.to.str$ -- 58
-missing$ -- 65
-newline$ -- 293
-num.names$ -- 60
-pop$ -- 388
+int.to.str$ -- 60
+missing$ -- 66
+newline$ -- 303
+num.names$ -- 64
+pop$ -- 401
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1154
+skip$ -- 1196
 stack$ -- 0
-substring$ -- 1259
-swap$ -- 517
-text.length$ -- 107
+substring$ -- 1303
+swap$ -- 536
+text.length$ -- 111
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 3
-while$ -- 158
-width$ -- 60
-write$ -- 638
-is.kanji.str$ -- 711
-(There were 3 warnings)
+warning$ -- 4
+while$ -- 166
+width$ -- 62
+write$ -- 661
+is.kanji.str$ -- 755
+(There were 4 warnings)
